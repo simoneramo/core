@@ -1,0 +1,41 @@
+$use-objects-rules: true !default;
+
+@if $use-objects-rules == true{
+  /* ==========================================================================
+   Object - Social Rules
+   ========================================================================== */
+   
+  @include object(o-rule) {
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    color: $c-type-1;
+    margin-bottom: 1em;
+
+    @include modifier(dotted) {
+      border-bottom-style: dotted;
+    }
+
+    @include modifier(dashed) {
+      border-bottom-style: dashed;
+    }
+
+    @include modifier(ornament) {
+      position:relative;
+      &:after{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        content: "†";
+        text-align: center;
+        line-height: 0;
+      }
+      &[data-ornament]:after{
+        content:attr(data-ornament);
+      }
+    }
+
+  }
+
+}//endif

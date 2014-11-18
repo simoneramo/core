@@ -1,0 +1,60 @@
+$use-utilities-widths:  true !default;
+   
+@if $use-utilities-widths == true{
+
+/* ==========================================================================
+   Utilities - Widths
+   ========================================================================== */
+   
+  @include add(u-one-whole)                    { width: 100%; }
+  @include add(u-one-half)                     { width: 50%; }
+
+  @include add(u-one-third)                    { width: 33.333%; }
+  @include add(u-two-thirds)                   { width: 66.666%; }
+
+  @include add(u-one-quarter)                  { width: 25%; }
+  @include add(u-two-quarters)                 { @extend %e-one-half; }
+  @include add(u-three-quarters)               { width: 75%; }
+
+  @include add(u-one-fifth)                    { width: 20%; }
+  @include add(u-two-fifths)                   { width: 40%; }
+  @include add(u-three-fifths)                 { width: 60%; }
+  @include add(u-four-fifths)                  { width: 80%; }
+
+  @include add(u-one-sixth)                    { width: 16.666%; }
+  @include add(u-two-sixths)                   { @extend %e-one-third; }
+  @include add(u-three-sixths)                 { @extend %e-one-half; }
+  @include add(u-four-sixths)                  { @extend %e-two-thirds; }
+  @include add(u-five-sixths)                  { width: 83.333%; }
+
+  @include add(u-one-eighth)                   { width: 12.5%; }
+  @include add(u-two-eighths)                  { @extend %e-one-quarter; }
+  @include add(u-three-eighths)                { width: 37.5%; }
+  @include add(u-four-eighths)                 { @extend %e-one-half; }
+  @include add(u-five-eighths)                 { width: 62.5%; }
+  @include add(u-six-eighths)                  { @extend %e-three-quarters; }
+  @include add(u-seven-eighths)                { width: 87.5%; }
+
+  @include add(u-one-tenth)                    { width: 10%; }
+  @include add(u-two-tenths)                   { @extend %e-one-fifth; }
+  @include add(u-three-tenths)                 { width: 30%; }
+  @include add(u-four-tenths)                  { @extend %e-two-fifths; }
+  @include add(u-five-tenths)                  { @extend %e-one-half; }
+  @include add(u-six-tenths)                   { @extend %e-three-fifths; }
+  @include add(u-seven-tenths)                 { width: 70%; }
+  @include add(u-eight-tenths)                 { @extend %e-four-fifths; }
+  @include add(u-nine-tenths)                  { width: 90%; }  
+  
+  @include add(u-one-twelfth)                  { width: 8.333%; } 
+  @include add(u-two-twelfths)                 { @extend %e-one-sixth; }
+  @include add(u-three-twelfths)               { @extend %e-one-quarter; }
+  @include add(u-four-twelfths)                { @extend %e-one-third; }
+  @include add(u-five-twelfths)                { width: 41.666% } 
+  @include add(u-six-twelfths)                 { @extend %e-one-half; }
+  @include add(u-seven-twelfths)               { width: 58.333%; }
+  @include add(u-eight-twelfths)               { @extend %e-two-thirds; }
+  @include add(u-nine-twelfths)                { @extend %e-three-quarters; } 
+  @include add(u-ten-twelfths)                 { @extend %e-five-sixths; }
+  @include add(u-eleven-twelfths)              { width: 91.666%; }
+
+}//endif

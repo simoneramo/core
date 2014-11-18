@@ -1,0 +1,65 @@
+$use-objects-labels-pills:	true !default;
+
+@if $use-objects-labels-pills == true{
+/* ==========================================================================
+   Object - Labels & Pills
+   ========================================================================== */
+   
+	@include object(o-label){
+		display:inline-block;
+		text-align:center;
+		background-color:$bgc-btn-1;
+		padding-left:$space-half;
+		padding-right:$space-half;
+		border-radius:$label-round;
+		line-height: normal;
+
+
+		// Make pill default pill	 
+		@include modifier(pill) {
+			border-radius:100px;
+		}
+	}
+
+
+
+
+	// // Make label & pill align top
+	// .o-label--top{
+	// 	@extend %o-label;
+	// 	vertical-align: text-top;
+	// }
+	// .o-pill--top{
+	// 	@extend %o-pill;
+	// 	vertical-align: text-top;
+	// }
+
+
+	// // Make label & pill align bottom
+	// .o-label--bottom{
+	// 	@extend %o-label;
+	// 	vertical-align: text-bottom;
+	// }
+	// .o-pill--bottom{
+	// 	@extend %o-pill;
+	// 	vertical-align: text-bottom;
+	// }
+
+
+	// // Make label & pill colors, change in _vars.scss
+	// .o-label--error, .o-pill--error					{ background-color:$alert-bgc-error;}
+	// .o-label--success, .o-pill--success 		{ background-color:$alert-bgc-success;}
+	// .o-label--info, .o-pill--info 					{ background-color:$alert-bgc-info;}
+	// .o-label--warning, .o-pill--warning 		{ background-color:$alert-bgc-warning;}
+	// .o-label--danger, .o-pill--danger 			{ background-color:$alert-bgc-danger;} 	
+
+
+	// .o-label--disabled, .o-pill--disabled 	{ 
+	// 	@extend %is-disabled; 
+	// }
+
+	// .o-label:empty, .o-pill:empty{
+	// 	display: none;
+	// }
+ 
+}//endif

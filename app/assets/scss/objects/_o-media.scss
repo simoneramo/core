@@ -1,0 +1,31 @@
+$use-objects-media:	true !default;
+
+@if $use-objects-media == true{
+	/* ==========================================================================
+   Object - Media
+   ========================================================================== */
+   
+  @include object(o-media) {
+  	@include clearfix;
+    display:block;
+
+  	@include element(img) {
+    	float:left;
+    	margin-right:$space;
+    	background-color: green;
+    	
+	  	@include modifier(right) {
+	    	float:right;
+	    	margin-left:$space;
+	    	background-color: blue;
+	    	margin-right: 0;
+	  	}
+  	}
+
+  	@include element(body){
+    	overflow:hidden;
+ 		}
+
+	}
+
+}//endif

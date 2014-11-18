@@ -1,0 +1,71 @@
+$use-objects-blockquote:	true !default;
+
+@if $use-objects-blockquote == true{
+/* ==========================================================================
+   Ojects - Blockquotes
+   ========================================================================== */
+   
+
+  .o-blockquote{
+		padding-left:$base-space;
+		border-left:8px solid rgba(0, 0, 0, 0.1);
+  }
+
+	.o-blockquote,.o-blockquote-right{
+		// background-color: red;
+		quotes:"\201C" "\201D";
+		p:before{
+		  content:"\201C";
+		  content:open-quote;
+		}
+		p:after{
+		  content:"";
+		  content:no-close-quote;
+		}
+		p:last-of-type:after{
+		  content:"\201D";
+		  content:close-quote;
+		}
+		q:before{
+		  content:"\2018";
+		  content:open-quote;
+		}
+		q:after{
+		  content:"\2019";
+		  content:close-quote;
+		}
+	}
+
+  .o-blockquote,.o-blockquote-right{
+  	p:last-of-type{
+  		margin-bottom:0;
+  	}
+  }
+
+  .o-blockquote-right{
+  	padding-right:$base-space;
+  	border-right:8px solid rgba(0, 0, 0, 0.1);
+   	p{
+   		text-align: right;
+  	} 
+  	.o-blockquote__source{
+      text-align: right;
+    	&:before{
+    		content:"";
+   		}
+   		&:after{
+    		content:"\00a0" "\2014";
+   		}
+  	}
+  }
+
+  .o-blockquote__source{
+  	font-weight: bold;
+  	display:block;
+  	text-indent:0;
+  	&:before{
+			content:"\2014" "\00a0";
+ 		}
+  }
+
+}//endif

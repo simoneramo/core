@@ -1,0 +1,64 @@
+$use-objects-sprite:  true !default;
+
+@if $use-objects-sprite == true{
+  /* ==========================================================================
+   Object - Sprite
+   ========================================================================== */
+
+  /**
+   * Tip Hat : inuite.css
+   * Demo: jsfiddle.net/inuitcss/6TKuS 
+   * 
+   * Explanation:
+   * Giving an element a class of `.sprite` will throw it into ‘sprite’ mode and apply
+   * a background image e.g.:
+   *
+   * <a class="sprite  sprite--question-mark">More info&hellip;</a>
+   *
+   * These all require extension in your theme stylesheet, e.g. in your own CSS:
+   *
+   * .sprite{
+   *  background-image:url(path/to/your/sprite.png);
+   * }
+   *
+   * .sprite-link{ background-position:0   0  ; }
+   * .sprite-star{ background-position:0 -16px; }
+   */
+
+
+  @include object(o-sprite) {
+    position:relative;
+    top:-1px;
+    display:inline-block;
+    overflow:hidden;
+    vertical-align:middle;
+    text-align:center;
+    font-weight:normal;
+    font-style:normal;
+    line-height:1;
+    zoom:1;
+    *text-indent:-9999px;
+    
+    // make spirte image + width & size in site styles
+    width: 16px;
+    height:16px;
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARlJREFUeNrMlTEOgjAYhVvD6O7qyhU4AFyC3YXN2ckTmLiwcwk4AFdgZXV3x9ekAxoV2/cSfOEtTR/9lOZ/djIGT7xsPdmXpRwu4AxO/doA93ALd095IcAeruADvP2w/Q7X8BUe3UJiNHKHn+FyYZ8DO8I7+OQgNiKA6ofD5yp9xigAcv+3h8plcgVA8eWbL32OQgGQMVkFQMpkVZcwWgqAgckqAHomqwBo/YQLlcu0CoDOj9dQuUynuoRutjcB+xufkXXB6Gf7LbSM7Op1/Ob4oBdMF/IHzOJRfc4CJGyfqyZhdJ8rAKg+VwBQfa4AoPpcAUD1+T/UMQ1A9bkCgOpzBQDV5woAqs9VlzC6z1klbJ+zWr2OHwIMAKtEXw3hKHeyAAAAAElFTkSuQmCC);
+    
+    &:before{
+      display:block;
+      width:0;
+      height:100%;
+      content:"";
+    }
+
+  }
+
+
+  // make spirte positions in site styles
+  @include add(red-square)    { background-position:  0     0  ; }
+  @include add(blue-circle)   { background-position:-16px   0  ; }
+  @include add(orange-sqaure) { background-position:-16px -16px; }
+  @include add(green-circle)  { background-position:  0   -16px; }
+
+
+}//endif

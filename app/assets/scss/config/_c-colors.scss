@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Globals - Colour
+   ========================================================================== */
+
+// 1. custom
+// 2. background
+// 3. selection
+// 4. type
+// 5. buttons
+// 6. form
+// 7. code
+// 8. brand
+
+
+// colors
+$white: 									white;
+$yellow:									yellow;
+$orange: 									orange;
+$red: 										red;
+$green: 									green;
+$blue: 										blue;
+$light-grey:							lightgrey;
+$grey: 										grey;
+$black: 									black;
+
+// background
+$bgc-1:          					#ffffff;
+$bgc-2:        						#f3f3f3;
+$bgc-3:         					#ccc;
+
+// selection 
+$c-selection:             #161616;
+$bgc-selection:           rgba(44, 143, 235, 0.5);
+
+// type
+$c-type-1:            		#2c2c2c;
+$c-type-2:          			#424242;
+$c-type-3:          			#585858;
+
+// headings
+$c-heading-1:         		#2c2c2c;
+$c-heading-2:       			#424242;
+$c-heading-3:        			#585858;
+
+// button
+$c-btn-1:            			#222222;
+$c-btn-2:           			#aeaeae;
+$bgc-btn-1:           		#bebebe;
+$bgc-btn-2:         			#a6a6a6;
+
+// alert
+$c-alert-primary:   	    $bgc-btn-1;
+$c-alert-success:   	    #4FC56B;
+$c-alert-info:     		    #59A7F2;
+$c-alert-warning:   	    #FADB40;
+$c-alert-danger:    	    #F58E45;
+$c-alert-error:     	    #F45757;
+
+// form
+$c-form-1:          			rgb(153, 153, 153);
+$c-form-2:        				rgb(119, 119, 119);
+
+$c-form-input: 	          rgb(190, 190, 190);
+$c-form-hover: 						rgb(42, 145, 240);
+$c-form-active:           rgb(164, 210, 158);
+$c-form-focus:            rgb(39, 146, 206);
+
+// code 
+$bgc-code: 								rgb(247, 247, 247);
+$c-code:                  rgb(51, 51, 51);
+
+// link 
+$c-link:              		#2046df;
+$c-link-hover:        		#ec1831;
+$c-link-active:       		#ff001e;
+$c-link-visited:      		#d01fe0;
+
+// social 
+$c-google:    	   				rgb(211, 72, 54);
+$c-facebook:    	   			rgb(59, 89, 152);
+$c-twitter:     	   			rgb(0, 172, 237);
+$c-linkedin:    	   			rgb(0, 123, 182);
+$c-dribble:     	   			rgb(255, 51, 153);
+$c-instagram:   	   			rgb(81, 127, 164);
+$c-googleplus:  	   			rgb(221, 75, 57);
+$c-behance:  	   		 			rgb(20, 120, 255);
+$c-gimmebar:        			rgb(223, 61, 107);
+$c-github:        				rgb(87, 87, 87);
+$c-tumblr:        				rgb(50, 80, 109);
+$c-youtube:        				rgb(187, 0, 0);
+$c-vine:  								rgb(0, 191, 143);
+$c-kickstarter: 					rgb(125, 190, 75);
+$c-dropbox:								rgb(0, 126, 230);
+$c-rss:										rgb(235, 127, 56);
+$c-facebook:							rgb(0, 126, 230);
+$c-codepen:								rgb(67, 67, 70);
+$c-foursquare:						rgb(45, 160, 199);
+$c-soundcloud:						rgb(247, 161, 50);
+$c-wordpress:							rgb(7, 160, 202); 
+$c-tumblr:								rgb(55, 84, 116);
+$c-blogger:								rgb(242, 128, 32);
+$c-squarespace:						rgb(51, 51, 51);
+$c-joomla :								rgb(94, 94, 94); 
+$c-drupal:								rgb(13, 139, 199);
+$c-typepad:								rgb(98, 152, 65);
+$c-expression-engine:			rgb(92, 129, 165); 
+$c-kirby:									rgb(255, 4, 0); 
+$c-moveabletype:					rgb(156, 186, 202); 
+$c-disqus:								rgb(46, 159, 255); 
+$c-html:									rgb(237, 62, 53); 

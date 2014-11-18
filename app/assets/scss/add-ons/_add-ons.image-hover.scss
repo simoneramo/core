@@ -1,0 +1,44 @@
+$use-add-ons-image-hover:	true !default;
+
+@if $use-add-ons-image-hover == true{
+	/* ==========================================================================
+   Addon - Image Hover
+   ========================================================================== */
+
+	.a-img--hover{
+		position: relative;
+		display: inline-block;
+	}
+
+	.a-img--hover:after{
+		box-shadow: inset 0 0 0 $space-half rgba(255, 222, 0, 0.8);
+		bottom: 0;
+		content: "";
+		left: 0;
+		@if $legacy_browser_support {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+		}
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 100;
+		transition: opacity 150ms;
+	}
+
+	// the effect border
+	.a-img--hover.border:after{
+		box-shadow: inset 0 0 0 $base-space rgba(255, 222, 0, 0.8);
+	}
+
+	// the effect background-color
+	.a-img--hover.background-color:after{
+		box-shadow: inset 0 0 0 30em rgba(131, 157, 238, 0.8);
+	}
+
+	// show the effect - hover
+	a:hover.a-img--hover:after {
+		opacity: 1;
+	}
+
+}// end if

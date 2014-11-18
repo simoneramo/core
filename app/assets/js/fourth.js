@@ -1,0 +1,3 @@
+function myFourthFunction(){
+	return 'forth';
+}

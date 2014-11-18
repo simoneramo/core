@@ -1,0 +1,70 @@
+$use-objects-nav: true !default;
+
+@if $use-objects-nav == true or $use-objects-options == true or $use-objects-pagination == true or $use-obj-breadcrumb == true{
+  /* ==========================================================================
+   Object - Navigation
+   ========================================================================== */
+   
+  @include object(o-nav){
+    @include unstyled;
+    > li{
+      &, > a{
+        display:inline-block;
+        @if $legacy_browser_support {
+          *display:inline;
+          zoom:1;
+        }
+      }
+    }
+
+    // strech
+    @include modifier(stacked) {
+      > li{
+        display:list-item;
+        > a{
+          display:block;
+        }
+      }
+    }
+
+    // banner
+    @include modifier(banner) {
+      text-align:center;
+    }
+
+    // block
+    @include modifier(block) {
+      > li{
+        > a{
+          padding:$space-half $space;
+        }
+      }
+    }
+
+    // fit
+    @include modifier(fit) {
+      display:table;
+      width:100%;
+      > li{
+        display:table-cell;
+        > a{
+          display:block;
+        }
+      }
+    }
+
+    // keywords
+    @include modifier(keywords) {
+      > li{
+        &:after{
+          content:"\002C" "\00A0";
+        }
+        &:last-child:after{
+          display:none;
+        }
+      }
+    }
+
+  }
+
+}//endif

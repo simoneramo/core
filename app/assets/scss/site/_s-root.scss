@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Root
+   ========================================================================== */
+
+	::selection{ 
+		background-color:$bgc-selection; 
+		color:$c-selection; 
+	}
+
+	
+	// :root{
+	// }
+
+	// body{
+	// 	@include breakpoint($tablet){
+	// 		font-size: 1.25em;  
+	// 	}
+	// 	@include breakpoint($desktop){
+	// 		font-size: 1.375em;  
+	// 	}	
+	// 	@include breakpoint($display){
+	// 		font-size: 1.5em;  
+	// 	}
+	// 	@include breakpoint($tv){
+	// 		font-size: 1.65em;  
+	// 	}
+	// }
+	
+
+
+
+	// overright object sprite example
+	//  @include object(o-sprite) {
+	//  	width: 62px;
+	//    height: 62px;
+	//    background-image: url(/assets/icons/icons--social/dribble.svg);
+	//    background-color: red;
+	// 	}
+
+  //  overright object spirte add positions
+  //  @include add(red-square)    { background-position:  0     0  ; }
+  //  @include add(blue-circle)   { background-position:-16px   0  ; }
+  //  @include add(orange-sqaure) { background-position:-16px -16px; }
+  //  @include add(green-circle)  { background-position:  0   -16px; }
+

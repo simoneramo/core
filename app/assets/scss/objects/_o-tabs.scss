@@ -1,0 +1,30 @@
+$use-objects-tabs:	true !default;
+
+@if $use-objects-tabs == true{
+/* ==========================================================================
+   Ojects - Tabs
+   ========================================================================== */
+   
+	@include object(o-tabs) {
+		@include clearfix;
+		@include unstyled;
+
+		> li {
+			display: inline-block;
+			margin: 0 $space-fifth;
+			a {
+				border-radius: $tabs-round $tabs-round 0 0;
+			}
+		}
+
+		@include modifier(right) {
+			text-align: right;
+		}
+
+		@include modifier(centered) {
+			text-align: center;
+		}
+
+	}
+
+}//endif

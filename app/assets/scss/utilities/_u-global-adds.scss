@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Utilities - Global Adds
+   ========================================================================== */
+
+  // round
+  @include add(rounded)     { border-radius: $global-round; }
+
+  // disabled
+  @include add(disabled)    { @extend %e-disabled; }
+
+  // active
+  @include add(active)      { @extend %e-active; }
+
+  // bgc colors
+  @include add(success)     { background-color: $c-alert-success; }
+  @include add(info)        { background-color: $c-alert-info; }
+  @include add(warning)     { background-color: $c-alert-warning; }
+  @include add(danger)      { background-color: $c-alert-danger; }
+  @include add(error)       { background-color: $c-alert-error; }
+
+  // colors
+  @include add(c-success)   { color: $c-alert-success; }
+  @include add(c-info)      { color: $c-alert-info; }
+  @include add(c-warning)   { color: $c-alert-warning; }
+  @include add(c-danger)    { color: $c-alert-danger; }
+  @include add(c-error)     { color: $c-alert-error; }

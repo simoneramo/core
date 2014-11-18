@@ -1,0 +1,4 @@
+.grid {
+  @include container($grid);
+  padding: 0 10px;
+}

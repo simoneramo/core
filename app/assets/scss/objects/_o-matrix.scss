@@ -1,0 +1,62 @@
+$use-objects-matrix:	true !default;
+
+@if $use-objects-matrix == true{
+	/* ==========================================================================
+   Object - Matrix
+   ========================================================================== */
+  
+  // extend from o-block-list from o-block-list.scss 
+  // extend --bordered by extending .\--bordered from o-block-list.scss 
+  @include object(o-matrix) {
+		@include clearfix;
+		@extend .o-block-list;
+		@extend .\--bordered;
+		> li{
+			float:left;
+		}
+
+
+		// Apply these classes alongside the `.o-matrix` classes on
+   	// lists to determine how wide their columns are.
+	  @include modifier(two) { 
+	  	> li{
+	      @extend %e-one-half;
+	       &.o-matrix__full {
+					@extend %e-one-whole;
+				}
+	    }
+	  }
+	  @include modifier(three) { 
+	  	> li{
+	      @extend %e-one-third;
+	       &.o-matrix__full {
+					@extend %e-one-whole;
+				}
+	    }
+	  }
+	  @include modifier(four) { 
+	  	> li{
+	      @extend %e-one-quarter; 
+	       &.o-matrix__full {
+					@extend %e-one-whole;
+				}
+	    }
+	  }
+	  @include modifier(five) { 
+	  	> li{
+	      @extend %e-one-fifth;
+	      &.o-matrix__full {
+					@extend %e-one-whole;
+				}
+	    }
+	  }
+
+
+		// extend from o-block-list.scss
+		@include element(link) {
+	  	@extend .o-block-list__link;
+	  }
+
+	}
+
+}//endif

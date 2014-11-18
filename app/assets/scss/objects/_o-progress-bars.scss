@@ -1,0 +1,36 @@
+$use-objects-progress-bars:	true !default;
+
+@if $use-objects-progress-bars == true{
+/* ==========================================================================
+   Ojects - Pagination
+   ========================================================================== */
+   
+	@include object(o-progress) {
+		height: $space-3;
+		background-color: $bgc-btn-1;
+		
+		@include element(bar){
+			height: 100%;
+			text-align: center;
+			background-color: shade($bgc-btn-1,10%);
+			display: table;
+			&[aria-valuenow="0"]{
+				background-color: rgba(0, 0, 0, 0);
+				background-image: none;
+			}
+
+			@include modifier(striped){
+				background-image: linear-gradient(45deg,rgba(255, 255, 255, 0.15) 25%,rgba(0, 0, 0, 0) 25%,rgba(0, 0, 0, 0) 50%,rgba(255, 255, 255, 0.15) 50%,rgba(255, 255, 255, 0.15) 75%,rgba(0, 0, 0, 0) 75%,rgba(0, 0, 0, 0));
+				background-size: 40px 40px;
+			}
+
+		}
+
+		@include element(bar-label) {
+			vertical-align: middle;
+			display: table-cell;
+			padding: 0 $space;
+		}
+	}
+
+}//endif

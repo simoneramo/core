@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Globals - Imports
+   ========================================================================== */
+
+// icon fonts one imports
+$icon-font-family:          			feather;
+$icon-name:                 			feather;
+$icon-folder:               			feather;
+
+// icon fonts two imports
+$icon-font-family-two:          	github;
+$icon-name-two:                 	github;
+$icon-folder-two:               	github;
+
+// type imports
+$type-font-family:          			gt-walsheim;
+$type-name:                 			gt-walsheim;
+$type-folder:               			gt-walsheim;
+
+
+@if $use-globals-imports == true{
+
+	//icon fonts feather
+  @font-face {
+    font-family: '#{$icon-font-family}';
+    	src:url('/assets/icons/icons--fonts/#{$icon-folder}/#{$icon-name}.eot');
+    	src:url('/assets/icons/icons--fonts/#{$icon-folder}/#{$icon-name}.eot?#iefix') format('embedded-opentype'),
+          url('/assets/icons/icons--fonts/#{$icon-folder}/#{$icon-name}.ttf') format('truetype'),
+          url('/assets/icons/icons--fonts/#{$icon-folder}/#{$icon-name}.woff') format('woff'),
+          url('/assets/icons/icons--fonts/#{$icon-folder}/#{$icon-name}.svg#{$icon-name}') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+	//icon fonts github
+	@font-face {
+	  font-family: '#{$icon-font-family-two}';
+	  	src:url('/assets/icons/icons--fonts/#{$icon-folder-two}/#{$icon-name-two}.eot');
+	  	src:url('/assets/icons/icons--fonts/#{$icon-folder-two}/#{$icon-name-two}.eot?#iefix') format('embedded-opentype'),
+	        url('/assets/icons/icons--fonts/#{$icon-folder-two}/#{$icon-name-two}.ttf') format('truetype'),
+	        url('/assets/icons/icons--fonts/#{$icon-folder-two}/#{$icon-name-two}.woff') format('woff'),
+	        url('/assets/icons/icons--fonts/#{$icon-folder-two}/#{$icon-name-two}.svg#{$icon-name}') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	// type fonts example
+	@font-face {
+	    font-family: '#{$type-font-family}';
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-thin-web.eot');
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-thin-web.eot#?iefix') format('embedded-opentype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-thin-web.woff') format('woff'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-thin-web.ttf') format('truetype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-thin-web.svg.html#gt_walsheim_thin') format('svg');
+	    font-weight: 200;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: '#{$type-font-family}';
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-thin-oblique-web.eot');
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-thin-oblique-web.eot?#iefix') format('embedded-opentype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-thin-oblique-web.woff') format('woff'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-thin-oblique-web.ttf') format('truetype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-thin-oblique-web.svg.html#gt_walsheim_thin_oblique') format('svg');
+	    font-weight: 300;
+	    font-style: italic;
+	}
+
+	@font-face {
+	    font-family: '#{$type-font-family}';
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-web.eot');
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-web.eot?#iefix') format('embedded-opentype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-web.woff') format('woff'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-web.ttf') format('truetype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-web.svg#gt_walsheim_regular') format('svg');
+	    font-weight: 400;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: '#{$type-font-family}';
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-regular-oblique-web.eot');
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-regular-oblique-web.eot?#iefix') format('embedded-opentype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-regular-oblique-web.woff') format('woff'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-regular-oblique-web.ttf') format('truetype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-regular-oblique-web.svg#gt_walsheim_regular_oblique') format('svg');
+	    font-weight: 400;
+	    font-style: italic;
+	}
+
+	@font-face {
+	    font-family: '#{$type-font-family}';
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-medium-web.eot');
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-medium-web.eot?#iefix') format('embedded-opentype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-medium-web.woff') format('woff'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-medium-web.ttf') format('truetype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-medium-web.svg#gt_walsheim_medium_oblique') format('svg');
+	    font-weight: 500;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: '#{$type-font-family}';
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-medium-oblique-web.eot');
+	    src: url('/assets/fonts/#{$type-folder}/#{$type-name}-medium-oblique-web.eot?#iefix') format('embedded-opentype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-medium-oblique-web.woff') format('woff'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-medium-oblique-web.ttf') format('truetype'),
+	         url('/assets/fonts/#{$type-folder}/#{$type-name}-medium-oblique-web.svg#gt_walsheim_medium_oblique') format('svg');
+	    font-weight: 500;
+	    font-style: italic;
+	}
+
+}//end if

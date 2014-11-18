@@ -1,0 +1,35 @@
+$use-objects-images:	true !default;
+
+@if $use-objects-images == true{
+/* ==========================================================================
+   Object - Images / Figure
+   ========================================================================== */
+   
+	// images
+	  @include object(o-img) {
+
+		@include modifier(circle){
+			display:block;
+			border-radius: 50%;
+		}
+
+		@include modifier(right){
+			float:right;
+		}
+
+		@include modifier(left){
+			float:left;
+		}
+		
+		@include modifier(center){
+			display:block;
+			margin-right:auto;
+			margin-left:auto;
+		}
+		
+		@include modifier(full){
+			width:100%;
+		}
+	}
+
+}// end

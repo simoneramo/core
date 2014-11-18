@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Globals - Type
+   ========================================================================== */
+ 
+$base-line-height:				1.375;
+$base-space:							em(20);  
+
+$f-base:            			em(16);
+
+$f-micro:									$f-base / 2; 
+$f-smallest:							em(10); 
+$f-smaller:								em(12);
+$f-small:									em(14);
+
+$f-lead:									$f-base * 1.125; 
+$f-half:									$f-base / 2; 
+
+$f-h1:										em(32);
+$f-h2:										em(26);
+$f-h3:										em(22);
+$f-h4:                		em(20);
+$f-h5:										em(18);
+$f-h6:										em(16);
+
+$f-large:									em(48); 
+$f-larger:								em(56); 
+$f-largest:								em(64); 
+$f-jumbo:									em(72);    
+
+$georgia:									Georgia, Cambria, "Times New Roman", Times, serif;
+$helvetica:								"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$lucida-grande:						"Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+$monospace:								"Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+$verdana:									Verdana, Geneva, sans-serif;
+
+$f-base-face:            	$helvetica;
+$f-base-family:          	$helvetica;
+$f-base-heading-family:  	$helvetica;
