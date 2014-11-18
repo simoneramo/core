@@ -3,4 +3,4 @@ components-bower/
 .sass-cache
 .dev
 
-build/
+_public/
