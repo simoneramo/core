@@ -1,4 +1,4 @@
-$use-objects-buttons:	true !default;
+$use-objects-buttons: true !default;
 
 @if $use-objects-buttons == true{
 /* ==========================================================================
@@ -7,90 +7,90 @@ $use-objects-buttons:	true !default;
   
   // object
   @include object(o-btn) {
-		display:inline-block;                
-		margin:0;                              
-		padding: 0 $space;             
-		border:none;                      
-		background: $bgc-btn-1;       
-		vertical-align:middle;      
-		white-space:nowrap;        
-		font-size:100%;         
-		font-family:inherit;           
-		line-height: 2.4;             
-		cursor: pointer;
-		
-		&:hover{
-			background: shade($bgc-btn-1,10%);
-		}
+    display:inline-block;                
+    margin:0;                              
+    padding: 0 $space;             
+    border:none;                      
+    background: $bgc-btn-1;       
+    vertical-align:middle;      
+    white-space:nowrap;        
+    font-size:100%;         
+    font-family:inherit;           
+    line-height: 2.4;             
+    cursor: pointer;
+    
+    &:hover{
+      background: shade($bgc-btn-1,10%);
+    }
 
-		// modifier
-		@include modifier(small) {
-			padding-right: $space-half;
-			padding-left: $space-half;
-			line-height: 1.8;
-		}
+    // modifier
+    @include modifier(small) {
+      padding-right: $space-half;
+      padding-left: $space-half;
+      line-height: 1.8;
+    }
 
-		// modifier
-		@include modifier(large) {
-			padding-right: $space-1-half;
-			padding-left: $space-1-half;
-			line-height: 3.4;
-		}
+    // modifier
+    @include modifier(large) {
+      padding-right: $space-1-half;
+      padding-left: $space-1-half;
+      line-height: 3.4;
+    }
 
-		// modifier
-		@include modifier(huge) {
-			padding-right: $space-2;
-			padding-left: $space-2;
-			line-height:4.4;
-		}
+    // modifier
+    @include modifier(huge) {
+      padding-right: $space-2;
+      padding-left: $space-2;
+      line-height:4.4;
+    }
 
-		// modifier
-		@include modifier(full) {
-			padding-right:0;          
-			padding-left: 0;           
-			width:100%;
-			text-align:center;
-		}
+    // modifier
+    @include modifier(full) {
+      padding-right:0;          
+      padding-left: 0;           
+      width:100%;
+      text-align:center;
+    }
 
-		// modifier
-		@include modifier(alpha) {
-			font-size:1.75em;
-		}
+    // modifier
+    @include modifier(alpha) {
+      font-size:1.75em;
+    }
 
-		// modifier
-		@include modifier(beta) {
-			font-size:1.5em;
-		}
+    // modifier
+    @include modifier(beta) {
+      font-size:1.5em;
+    }
 
-		// modifier
-		@include modifier(gamma) {
-			font-size:1.25em;
-		}
+    // modifier
+    @include modifier(gamma) {
+      font-size:1.25em;
+    }
 
-		// modifier
-		@include modifier(natural) {
-			padding-right: $space-1-half;
-			padding-left: $space-1-half;
-			vertical-align:baseline;
-			font-size:inherit;
-			line-height:inherit;
-		}
+    // modifier
+    @include modifier(natural) {
+      padding-right: $space-1-half;
+      padding-left: $space-1-half;
+      vertical-align:baseline;
+      font-size:inherit;
+      line-height:inherit;
+    }
 
-		// modifier
-		@include modifier(positive) {
-			@extend %e-success;
-		}
+    // modifier
+    @include modifier(positive) {
+      @extend %e-success;
+    }
 
-		// modifier
-		@include modifier(negative) {
-			@extend %e-danger;
-		}
+    // modifier
+    @include modifier(negative) {
+      @extend %e-danger;
+    }
 
-		// modifier
-		@include modifier(round) {
-			border-radius: 200px;     
-		}
-	
-	}
+    // modifier
+    @include modifier(round) {
+      border-radius: 200px;     
+    }
+  
+  }
 
 }//endif
