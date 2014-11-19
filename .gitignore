@@ -2,5 +2,5 @@ node_modules/
 components-bower/
 .sass-cache
 .dev
-
+.DS_Store
 _public/
