@@ -1,6 +1,4 @@
-## Jade Changed
-
-This is a simple example showing how to use a conditional to check which environment Harp is running in, in Jade.
+## Jade Partial in Markdown
 
 ```jade
 h1 Harp is in #{ environment }
