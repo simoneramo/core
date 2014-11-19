@@ -298,6 +298,154 @@
     }
   }
     
+  // 
+  // CONFIG COLOURS
+  //
+	.styleguide-base.config{
+		div.styleguide-colors{
+			width: 40px;
+			height: 40px;
+			margin-left: 4px;
+			display: inline-block;
+			border-radius: $global-round;
+			&.red{
+				background-color: $red;
+			}
+			&.green{
+				background-color: $green;
+			}
+			&.yellow{
+				background-color: $yellow;
+			}
+			&.orange{
+				background-color: $orange;
+			}
+			&.blue{
+				background-color: $blue;
+			}
+			&.light-grey{
+				background-color: $light-grey;
+			}
+			&.black{
+				background-color: $black;
+			}
+			&.grey{
+				background-color: $grey;
+			}
+			&.white{
+				background-color: $white;
+			}
+			// code
+			&.code-bgc{
+				background-color: $bgc-code;
+			}
+			&.code-c{
+				background-color: $c-code;
+			}
+			// buttons
+			&.c-btn-1{background-color:$c-btn-1;}
+			&.c-btn-2{background-color:$c-btn-2;}
+			&.bgc-btn-1{background-color:$bgc-btn-1;}
+			&.bgc-btn-2{background-color:$bgc-btn-2;}
+			// social
+			&.google{
+				background-color: $c-google;
+			}
+			&.facebook{
+				background-color: $c-facebook;
+			}
+			&.twitter{
+				background-color: $c-twitter;
+			}
+			&.linkedin{
+				background-color: $c-linkedin;
+			}
+			&.dribble{
+				background-color: $c-dribble;
+			}
+			&.instagram{
+				background-color: $c-instagram;
+			}
+			&.googleplus{
+				background-color: $c-googleplus;
+			}
+			&.behance{
+				background-color: $c-behance;
+			}
+			&.gimmebar{
+				background-color: $c-gimmebar;
+			}
+			&.github{
+				background-color: $c-github;
+			}
+			&.tumblr{
+				background-color: $c-tumblr;
+			}
+			&.youtube{
+				background-color: $c-youtube;
+			}
+			&.vine{
+				background-color: $c-vine;
+			}
+			&.kickstarter{
+				background-color: $c-kickstarter;
+			}
+			&.dropbox{
+				background-color: $c-dropbox;
+			}
+			&.rss{
+				background-color: $c-rss;
+			}
+			&.facebook{
+				background-color: $c-facebook;
+			}
+			&.codepen{
+				background-color: $c-codepen;
+			}
+			&.foursquare{
+				background-color: $c-foursquare;
+			}
+			&.soundcloud{
+				background-color: $c-soundcloud;
+			}
+			&.wordpress{
+				background-color: $c-wordpress;
+			}
+			&.tumblr{
+				background-color: $c-tumblr;
+			}
+			&.blogger{
+				background-color: $c-blogger;
+			}
+			&.squarespace{
+				background-color: $c-squarespace;
+			}
+			&.joomla{
+				background-color: $c-joomla;
+			}
+			&.drupal{
+				background-color: $c-drupal;
+			}
+			&.typepad{
+				background-color: $c-typepad;
+			}
+			&.expression-engine{
+				background-color: $c-expression-engine;
+			}
+			&.kirby{
+				background-color: $c-kirby;
+			}
+			&.moveabletype{
+				background-color: $c-moveabletype;
+			}    
+			&.disqus{
+				background-color: $c-disqus;
+			}
+			&.html{
+				background-color: $c-html;
+			}
+		}
+	}
 
 
 
