@@ -1,60 +1,46 @@
 @charset "utf-8";
 
 
-// If SCSS Bower Components
-// ------------------------------------------------
+// bower components
 @import "../../../components-bower/susy/sass/susy"; 
 @import "../../../components-bower/breakpoint-sass/stylesheets/breakpoint"; 
 
 
-// Functions
-// ------------------------------------------------
+// functions
 @import "functions/**/*";
 
 
-// Mixins
-// ------------------------------------------------
+// mixins
 @import "mixins/**/*";
 
 
-// Config
-// ------------------------------------------------
+// config
 @import "config/**/*";
 
 
-// Normalize
-// ------------------------------------------------
-// @import "../../../components-bower/normalize.scss/normalize"; 
-@import "CSS:../../../components-bower/normalize-css/normalize";
+// normalize
+// @import "normalize"; 
 
-// Base
-// ------------------------------------------------
+
+// base
 @import "base/**/*";
 
 
-// Objects
-// ------------------------------------------------
+// objects
 @import "objects/**/*";
 
 
-
-// Site
-// ------------------------------------------------
+// site
 @import "site/**/*";
 
 
-
-// Site
-// ------------------------------------------------
-@import "add-ons/**/*";
+// icons
+@import "icons/**/*";
 
 
-
-// Modules
-// ------------------------------------------------
+// modules
 @import "modules/**/*";
 
 
-// Utilities
-// ------------------------------------------------
+// utilities
 @import "utilities/**/*";

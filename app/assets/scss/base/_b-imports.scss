@@ -1,24 +1,11 @@
+$use-base-imports:	true !default;
+
+@if $use-base-imports == true{
 /* ==========================================================================
-   Globals - Imports
+   Base - Imports
    ========================================================================== */
 
-// icon fonts one imports
-$icon-font-family:          			feather;
-$icon-name:                 			feather;
-$icon-folder:               			feather;
 
-// icon fonts two imports
-$icon-font-family-two:          	github;
-$icon-name-two:                 	github;
-$icon-folder-two:               	github;
-
-// type imports
-$type-font-family:          			gt-walsheim;
-$type-name:                 			gt-walsheim;
-$type-folder:               			gt-walsheim;
-
-
-@if $use-globals-imports == true{
 
 	//icon fonts feather
   @font-face {

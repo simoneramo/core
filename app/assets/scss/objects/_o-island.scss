@@ -7,8 +7,8 @@ $use-objects-island:	true !default;
    
   @include object(o-island) {
   	@include clearfix;
-  	display:block;
-  	padding:$base-space;
+  	display: block;
+  	padding: $space;
   }
 
 }//endif

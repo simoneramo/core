@@ -1,0 +1,90 @@
+$use-objects-hamburger:  true !default;
+
+@if $use-objects-hamburger == true{
+/* ==========================================================================
+   Object - Hamburger
+   ========================================================================== */
+   
+
+
+.o-burger{
+  position: relative; 
+  padding: 0;
+  width: 39px;
+  height: 36px;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  
+  i {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    margin: auto;
+    transition: all .15s ease-in-out;
+  }
+  
+  &:before, &:after {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    margin: auto;
+    content: '';
+    transition: all .15s ease-in-out;
+  }
+  
+}
+  
+  
+#burg{
+
+  &.o-burger {
+    i, &:before, &:after { 
+      background: $black; 
+    }
+    
+    i { 
+      width: 35px; 
+      height: 4px; 
+      box-shadow: 0 -12px $black, 0 12px $black; 
+    }
+    
+    &:before, &:after { 
+      width: 35px; 
+      height: 4px; 
+      opacity: 0; 
+    }
+    
+    &:before { transform: rotate(45deg) scale(0); }
+    &:after { transform: rotate(-45deg) scale(0); }
+  }
+  
+
+
+  &.opened {
+    i {
+      background: transparent;
+      box-shadow: 0 -12px transparent, 0 12px transparent;
+      opacity: 0;
+      transform: scale(0);
+    }
+    
+    &:before, &:after { 
+      opacity: 1; 
+    }
+
+    &:before { transform: rotate(45deg) scale(1); }
+    &:after { transform: rotate(-45deg) scale(1); }
+  }
+
+}
+  
+
+
+
+}//endif

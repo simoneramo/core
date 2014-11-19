@@ -7,7 +7,7 @@ $use-objects-blockquote:	true !default;
    
 
   .o-blockquote{
-		padding-left:$base-space;
+		padding-left:$space;
 		border-left:8px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -43,7 +43,7 @@ $use-objects-blockquote:	true !default;
   }
 
   .o-blockquote-right{
-  	padding-right:$base-space;
+  	padding-right:$space;
   	border-right:8px solid rgba(0, 0, 0, 0.1);
    	p{
    		text-align: right;

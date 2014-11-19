@@ -1,16 +1,17 @@
-$use-objects-options:	true !default;
+$use-objects-options: true !default;
 
 @if $use-objects-options == true{
-	/* ==========================================================================
+  /* ==========================================================================
    Object - Options
    ========================================================================== */
-   
+  
+  // object
   @include object(o-options) {
-  	@include unstyled;
+    @include unstyled;
     > li{
-    	display: list-item;
+      display: list-item;
       > a{
-      	display: block;
+        display: block;
         padding: $space-half $space;
         border: 0 solid $light-grey;
         border-width: 1px;

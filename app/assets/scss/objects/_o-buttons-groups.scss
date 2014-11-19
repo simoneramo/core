@@ -5,10 +5,10 @@ $use-objects-buttons-groups:  true !default;
    Ojects - Buttons Groups
    ========================================================================== */
   
-  // default btn group
+  // object
   @include object(o-btn-group) {
 
-    // btn group round
+    // modifier
     @include modifier(round){
       .o-btn{
         &:first-child{
@@ -22,7 +22,7 @@ $use-objects-buttons-groups:  true !default;
       }
     }
 
-    // btn group rounded
+    // modifier
     @include modifier(rounded){
       .o-btn{
         &:first-child{
@@ -39,19 +39,21 @@ $use-objects-buttons-groups:  true !default;
   }
 
 
-  // btn group toolbar
+  // object
   @include object(o-btn-toolbar) {
     display: inline-block;
-    @include element(group) {
-      float:left;
-      margin-right: $space-quarter;
-    }
+    
+      // element
+      @include element(group) {
+        float:left;
+        margin-right: $space-quarter;
+      }
+
   }
 
   // menu btn group toolbar
-  menu.o-btn-group-toolbar, .o-btn-group menu{
-    @include unstyled;
-  }
-
+  // menu.o-btn-group-toolbar, .o-btn-group menu{
+  //   @include unstyled;
+  // }
 
 }//endif

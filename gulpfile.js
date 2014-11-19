@@ -240,7 +240,7 @@
           notify: true
       });
       gulp.watch(['app/assets/scss/**/*'], ['styles', reload]);
-      gulp.watch(['app/assets/js/*.{js,coffee}'], ['scripts', reload]);
+      gulp.watch(['app/assets/scripts/**/*.{js,coffee}'], ['scripts', reload]);
       gulp.watch(['app/**/*.{jade,md}'], ['html', reload]);    
       gulp.watch(['app/assets/images/**/*'], reload);
       gulp.watch(['app/assets/icons/**/*'], reload);

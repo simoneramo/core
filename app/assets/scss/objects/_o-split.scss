@@ -1,21 +1,22 @@
-$use-objects-split:	true !default;
+$use-objects-split: true !default;
 
 @if $use-objects-split == true{
-	/* ==========================================================================
+  /* ==========================================================================
    Object - Split
    ========================================================================== */
-   
+  
+  // object
   @include object(o-split){
-  	
-  	@include unstyled;
-  	@include clearfix;
+    @include unstyled;
+    @include clearfix;
     text-align:right;
     
-  	@include element(title) {
-    	text-align:left;
-    	float:left;
-    	clear:left;
-  	}
+    // element
+    @include element(title) {
+      text-align:left;
+      float:left;
+      clear:left;
+    }
 
   }
 

@@ -1,28 +1,31 @@
-$use-objects-pagination:	true !default;
+$use-objects-pagination:  true !default;
 
 @if $use-objects-pagination == true{
-	/* ==========================================================================
+  /* ==========================================================================
    Object - Pagination
    ========================================================================== */
 
-	@include object(o-pagination) {
-		@include unstyled;
-		
-		> li > a{
-	  	margin: $space-half;
-		}
+  // object
+  @include object(o-pagination) {
+    @include unstyled;
+    > li > a{
+      margin: $space-half;
+    }
 
-		@include element(first) {
-			a:before{
-		  content:"\00AB" "\00A0";
-		  }
-		}
+    // element
+    @include element(first) {
+      a:before{
+      content:"\00AB" "\00A0";
+      }
+    }
 
-		@include element(last) {
-			a:after{
-			  content:"\00A0" "\00BB";
-			}
-		}
-	}
+    // element
+    @include element(last) {
+      a:after{
+        content:"\00A0" "\00BB";
+      }
+    }
+
+  }
 
 }//endif

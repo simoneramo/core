@@ -5,24 +5,27 @@ $use-objects-stats: true !default;
    Object - Stats
    ========================================================================== */
   
+  // wrapper object
   .o-stat-group{
     @include clearfix;
   }
 
-  // stat object here
+  // object
   @include object(o-stat) {
     display: flex;
     flex-direction: column;
     float: left;
 
+    // element
     @include element(title) {
       order: 1;
     }
-
+    // element
     @include element(value) {
       margin-left: 0;
       order: 2;
     }
+    
   }
 
 }//endif

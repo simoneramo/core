@@ -3,10 +3,6 @@ $use-utilities-spaces:  true !default;
 @if $use-utilities-spaces == true{
 /* ==========================================================================
    Utilities - Spaces
-   
-		html example:
-		<div class="+u-pl-6">Trumps Padding Left 6 x Base Space</div>
-   
    ========================================================================== */
    
   @include add(u-mt-sixth)            { margin-top: $space-sixth!important; }

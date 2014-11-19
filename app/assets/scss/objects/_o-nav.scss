@@ -4,7 +4,8 @@ $use-objects-nav: true !default;
   /* ==========================================================================
    Object - Navigation
    ========================================================================== */
-   
+  
+  // object
   @include object(o-nav){
     @include unstyled;
     > li{
@@ -17,7 +18,7 @@ $use-objects-nav: true !default;
       }
     }
 
-    // strech
+    // modifier
     @include modifier(stacked) {
       > li{
         display:list-item;
@@ -27,12 +28,12 @@ $use-objects-nav: true !default;
       }
     }
 
-    // banner
+    // modifier
     @include modifier(banner) {
       text-align:center;
     }
 
-    // block
+    // modifier
     @include modifier(block) {
       > li{
         > a{
@@ -41,7 +42,7 @@ $use-objects-nav: true !default;
       }
     }
 
-    // fit
+    // modifier
     @include modifier(fit) {
       display:table;
       width:100%;
@@ -53,7 +54,7 @@ $use-objects-nav: true !default;
       }
     }
 
-    // keywords
+    // modifier
     @include modifier(keywords) {
       > li{
         &:after{

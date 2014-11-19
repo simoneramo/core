@@ -1,78 +1,78 @@
-
 /* ==========================================================================
-   Globals - Defaults
+   Config - Global Variables
    ========================================================================== */
-   
+    
+  // normailze legacy
+  $legacy_browser_support:               false; 
+  
+  // border box
+  $global-border-box:                    true;  
+  
+  // base
+  $use-base-imports:                     true;
+  $use-base-root:                        true;
+  $use-base-reset:                       true;
+  $use-base-links:                       true;
+  $use-base-text:                        true;
+  $use-base-media:                       true;
+  $use-base-forms:                       true; 
+  
+  // utilities
+  $use-utilities-widths:                 true;
+  $use-utilities-extends:                true;
+  $use-utilities-spaces:                 true;
+  $use-utilities-display:                true;
+  $use-utilities-print:                  true;
+  $use-utilities-mixins:                 true;  
+  
+  // debug
+  $use-utilities-debug-outlines:         false;
+  $use-utilities-debug-media:            false;
+  $use-utilities-debug-issues:           false; 
+  
+  // objects
+  $use-objects-code:                     true;
+  $use-objects-forms:                    true;
+  $use-objects-images:                   true;
+  $use-objects-rules:                    true;
+  $use-objects-tables:                   true;
+  $use-objects-blockquote:               true;
+  $use-objects-alerts-contextual:        true;
+  $use-objects-labels-pills:             true;
+  $use-objects-buttons:                  true;
+  $use-objects-buttons-groups:           true;
+  $use-objects-columns:                  true;
+  $use-objects-emphasis:                 true;
+  $use-objects-icon-fonts:               true;
+  $use-objects-icon-text:                true;
+  $use-objects-link-complex:             true;
+  $use-objects-lists:                    true;
+  $use-objects-sprite:                   true;
+  $use-objects-block-list:               true;
+  $use-objects-thumbnail:                true;
+  $use-objects-breadcrumb:               true;
+  $use-objects-flyout:                   true;
+  $use-objects-island:                   true;
+  $use-objects-matrix:                   true;
+  $use-objects-media:                    true;
+  $use-objects-hamburger:                true;
+  $use-objects-nav:                      true;
+  $use-objects-options:                  true;
+  $use-objects-pagination:               true;
+  $use-objects-progress-bars:            true;
+  $use-objects-site-map:                 true;
+  $use-objects-split:                    true;
+  $use-objects-loaders:                  true;
+  $use-objects-stats:                    true;
+  $use-objects-this-or-this:             true;  
+  
+  // icons
+  $use-icons-feather:                    true;
+  $use-icons-github:                     true;
 
-// normailze legacy
-$legacy_browser_support:               false;
-
-
-// border box
-$global-border-box:                    true;
-
-
-// globals
-$use-globals-imports:                  true;
-$use-globals-reset:                    true;
-$use-globals-base:                     true;
-
-
-// utilities
-$use-utilities-widths:                 true;
-$use-utilities-extends:                true;
-$use-utilities-spaces:                 true;
-$use-utilities-display:                true;
-$use-utilities-print:                  true;
-$use-utilities-mixins:                 true;
-
-
-// debug
-$use-utilities-debug-outlines:         false;
-$use-utilities-debug-media:            false;
-$use-utilities-debug-issues:           false;
-
-
-// objects
-$use-objects-code:                     true;
-$use-objects-forms:                    true;
-$use-objects-images:                   true;
-$use-objects-rules:                    true;
-$use-objects-tables:                   true;
-$use-objects-blockquote:               true;
-$use-objects-alerts-contextual:        true;
-$use-objects-labels-pills:             true;
-$use-objects-buttons:                  true;
-$use-objects-buttons-groups:           true;
-$use-objects-columns:                  true;
-$use-objects-emphasis:                 true;
-$use-objects-icon-fonts:               true;
-$use-objects-icon-text:                true;
-$use-objects-link-complex:             true;
-$use-objects-lists:                    true;
-$use-objects-sprite:                   true;
-$use-objects-block-list:               true;
-$use-objects-thumbnail:                true;
-$use-objects-breadcrumb:               true;
-$use-objects-flyout:                   true;
-$use-objects-island:                   true;
-$use-objects-matrix:                   true;
-$use-objects-media:                    true;
-$use-objects-menu-icons:               true;
-$use-objects-nav:                      true;
-$use-objects-options:                  true;
-$use-objects-pagination:               true;
-$use-objects-progress-bars:            true;
-$use-objects-site-map:                 true;
-$use-objects-split:                    true;
-$use-objects-loaders:                  true;
-$use-objects-stats:                    true;
-$use-objects-this-or-this:             true;
-
-
-// modules
-$use-modules-social-gallery:           true;
-$use-modules-owl-carousel:             true;
-$use-modules-fit-text:                 true;
-$use-modules-fit-vids:                 true;
-$use-modules-fluid-box:                true;
+  // modules
+  $use-modules-social-gallery:           true;
+  $use-modules-owl-carousel:             true;
+  $use-modules-fit-text:                 true;
+  $use-modules-fit-vids:                 true;
+  $use-modules-fluid-box:                true;
