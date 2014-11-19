@@ -50,7 +50,7 @@ $use-base-forms:  true !default;
   // }
 
 
-  @if $global-border-box == true{
+  @if $use-border-box == true{
 
     input[type="search"] {
       box-sizing:border-box;

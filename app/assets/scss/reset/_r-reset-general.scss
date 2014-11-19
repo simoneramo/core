@@ -1,6 +1,6 @@
-$use-base-reset:  true !default;
+$use-reset-general:  true !default;
 
-@if $use-base-reset == true{
+@if $use-reset-general == true{
 /* ==========================================================================
    Globals - Reset
    ========================================================================== */

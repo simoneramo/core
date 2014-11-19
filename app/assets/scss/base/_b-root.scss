@@ -13,8 +13,8 @@ $use-base-root: true !default;
   }
 
 
-  $global-border-box: true !default;
-    @if $global-border-box == true{
+  $use-border-box: true !default;
+    @if $use-border-box == true{
       html {
         box-sizing: border-box;
       }
