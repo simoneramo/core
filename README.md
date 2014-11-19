@@ -4,7 +4,7 @@ Documentation - Very Soon
 
 
 
-### JADE Help
+#### JADE Help
 
 Jade to HTML help for newbies via NPM - html2jade
 - https://www.npmjs.org/package/html2jade
