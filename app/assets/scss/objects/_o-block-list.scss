@@ -7,33 +7,35 @@ $use-objects-block-list:  true !default;
    
   // object
   @include object(o-block-list) {
-    @include unstyled;    
+    @include unstyled; 
+       
     > li, > dd, > dt{
       padding: $space;
       border:0 solid $light-grey;
     }
+
     > dt{
       padding-bottom: 0;
     }
 
-      // element
-      @include modifier(bordered) {
-        border-top:1px solid $light-grey;
-        border-left:1px solid $light-grey;
-        > li, > dd{
-          border-bottom-width:1px;
-          border-right-width:1px;
-        }
+    // element
+    @include modifier(bordered) {
+      border-top:1px solid $light-grey;
+      border-left:1px solid $light-grey;
+      > li, > dd{
+        border-bottom-width:1px;
+        border-right-width:1px;
       }
+    }
 
-      // element
-      @include element(link) {
-        display:block;
-        padding: $space-1-half $space;
-        margin: -$space-1-half;
-        margin-left: -$space;
-        margin-right: -$space;
-      }
+    // element
+    @include element(link) {
+      display:block;
+      padding: $space-1-half $space;
+      margin: -$space-1-half;
+      margin-left: -$space;
+      margin-right: -$space;
+    }
 
   }
   
