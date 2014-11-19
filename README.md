@@ -1,6 +1,6 @@
-## Easy Documentation - Soon
+## Core 1.0.0
 
-
+Documentation - Very Soon
 
 
 
