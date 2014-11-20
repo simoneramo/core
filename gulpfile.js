@@ -199,7 +199,8 @@
   // copy root files > $ gulp copy
   gulp.task('copy', function () {
     return gulp.src([
-      'app/*.{txt,md,htaccess}'                                         // Directory Files
+      'app/*.{txt,md,htaccess}',
+      'app/CNAME'                                                                   // Directory Files
     ], {
       dot: true
     }).pipe(gulp.dest('_public'))                                          // Destination Path
