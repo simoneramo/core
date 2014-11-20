@@ -1,0 +1,119 @@
+$use-objects-forms:	true !default;
+
+@if $use-objects-forms == true{
+/* ==========================================================================
+   Object - Forms
+   ========================================================================== */
+   
+	.o-form{
+		ul{
+			// // // @include u-clearfix;
+			// @extend %o-list;
+			margin-bottom:0;
+			border: none;
+			li{
+				margin-bottom:$space;
+				.o-alert{
+					margin-top: $space-half;
+					margin-bottom: 0;
+				}
+			}
+			&:last-child{
+					margin-bottom: 0;
+			}
+		}
+
+		textarea,
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="tel"],
+		input[type="search"],
+		input[type="number"],
+		input[type="url"],
+		input[type="date"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="time"],
+		input[type="week"]{
+			border: 1px solid $c-form-input;
+			padding: $space-half;
+			&.is-error{
+				border: 1px $c-alert-error solid!important;
+			}
+			&.is-success{
+				border: 1px $c-alert-success solid!important;
+			}
+			&.is-warning{
+				border: 1px $c-alert-warning solid!important;
+			}
+			&.is-info{
+				border: 1px $c-alert-info solid!important;
+			}
+			&.is-danger{
+				border: 1px $c-alert-danger solid!important;
+			}
+		}
+		input[type="color"], select{
+		   border: 1px solid $c-form-input;
+		}
+	}
+
+	/* span > legend reset legend styles */
+	.o-form__legend-wrap{
+		display: block;
+		margin: 0;
+		padding:0;
+		margin-bottom:$space;
+	}
+
+	// label block
+	.o-form__label-block{
+		display: block;	
+	}
+
+	// label inline
+	.o-form__label-inline{
+		display: inline;	
+	}
+
+	// style inputs 100%
+	.o-form__input-full{
+		width: 100%;
+	}
+
+	// style text file inputs
+	.o-form__text-file{
+		margin-bottom:$space;
+	}
+
+	// help block - under inputes/selects ect.
+	.o-form__help-block{
+		margin-top: $space-half;
+		display: block;
+	}
+
+	// text block top of form information
+	.o-form__text-block{
+		@extend .o-alert;
+		margin-bottom:$space;
+	}
+
+	// forms grid quick classess
+	ul.o-form__grid li{
+		margin-bottom: 0;
+	}
+	// ul.o-form__grid-2 li{
+	// 	@include gallery(6 of 12);
+	// }
+	// ul.o-form__grid-3 li{
+	// 	@include gallery(4 of 12);
+	// }
+	// ul.o-form__grid-4 li{
+	// 	@include gallery(3 of 12);
+	// }
+	// ul.o-form__grid-5 li{
+	// 	@include gallery(2 of 10);
+	// }
+
+}//endif

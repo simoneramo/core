@@ -1,0 +1,31 @@
+$use-objects-stats: true !default;
+
+@if $use-objects-stats == true{
+  /* ==========================================================================
+   Object - Stats
+   ========================================================================== */
+  
+  // wrapper object
+  .o-stat-group{
+    @include clearfix;
+  }
+
+  // object
+  @include object(o-stat) {
+    display: flex;
+    flex-direction: column;
+    float: left;
+
+    // element
+    @include element(title) {
+      order: 1;
+    }
+    // element
+    @include element(value) {
+      margin-left: 0;
+      order: 2;
+    }
+    
+  }
+
+}//endif

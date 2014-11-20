@@ -1,0 +1,22 @@
+$use-objects-cols-or-this:  true !default;
+
+@if $use-objects-this-or-this == true{
+/* ==========================================================================
+   Ojects - This or This
+   ========================================================================== */
+  
+  // object
+  @include object(o-this-or-this) {
+    display:table;
+    width:100%;
+    text-align:center;
+
+    // element
+    @include element(cols) {
+      display:table-cell;
+      vertical-align:middle;
+    }
+
+  }
+  
+}//endif

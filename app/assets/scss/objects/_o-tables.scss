@@ -1,0 +1,119 @@
+$use-objects-tables:  true !default;
+
+@if $use-objects-tables == true{
+/* ==========================================================================
+   Ojects - Tables
+   ========================================================================== */
+  
+  // object
+  @include object(o-table) {
+    width:100%;
+    th, td{
+      padding: $space-quarter $space-half;
+      text-align:left;
+    }
+
+    // cell alignments
+    [colspan]       { text-align:center; }
+    [colspan="1"]   { text-align:left; }
+    [rowspan]       { vertical-align:middle; }
+    [rowspan="1"]   { vertical-align:top; }
+
+    // cell widths
+    .o-t5     { width: 5%; }
+    .o-t10    { width:10%; }
+    .o-t12    { width:12.5%; }     /* 1/8 */
+    .o-t15    { width:15%; }
+    .o-t20    { width:20%; }
+    .o-t25    { width:25%; }       /* 1/4 */
+    .o-t30    { width:30%; }
+    .o-t33    { width:33.333%; }   /* 1/3 */
+    .o-t35    { width:35%; }
+    .o-t37    { width:37.5%; }     /* 3/8 */
+    .o-t40    { width:40%; }
+    .o-t45    { width:45%; }
+    .o-t50    { width:50%; }       /* 1/2 */
+    .o-t55    { width:55%; }
+    .o-t60    { width:60%; }
+    .o-t62    { width:62.5%; }     /* 5/8 */
+    .o-t65    { width:65%; }
+    .o-t66    { width:66.666%; }   /* 2/3 */
+    .o-t70    { width:70%; }
+    .o-t75    { width:75%; }       /* 3/4*/
+    .o-t80    { width:80%; }
+    .o-t85    { width:85%; }
+    .o-t87    { width:87.5%; }     /* 7/8 */
+    .o-t90    { width:90%; }
+    .o-t95    { width:95%; }
+
+
+    // modifier
+    @include modifier(bordered) {
+      th, td{
+        border:1px solid $bgc-btn-1;
+        &:empty{
+          border:none;
+        }
+      }
+      thead tr:last-child th{
+        border-bottom-width:1px;
+      }
+      tbody tr th:last-of-type{
+        border-right-width:1px;
+      }
+    }
+
+
+    // modifier
+    @include modifier(striped) {
+      tbody tr:nth-of-type(odd){
+        background-color: tint($bgc-btn-1,10%);
+      }
+    }
+
+
+    // modifier
+    @include modifier(data) {
+      font-size: .85em;
+    }
+
+
+    // modifier
+    @include modifier(hover) {
+        > tbody > tr:hover > td, 
+        > tbody > tr:hover > th {
+        background-color: tint($bgc-btn-1,10%);
+        cursor: default;
+      }
+    }
+
+
+    // modifier
+    @include modifier(rwd) {
+      min-width: 280px; // adjust to your needs
+      th {
+        display: none;
+      }
+      td {
+        display: block; 
+        &:before {
+          content: attr(data-th)": ";
+          font-weight: bold;
+          width: 7.5em;
+          display: inline-block;
+          @media (min-width: 480px) {
+            display: none;
+          }
+        }
+      }
+      th, td {
+        @media (min-width: 480px) {
+          display: table-cell;
+        }
+      }
+    }
+
+  }
+
+
+}//endif

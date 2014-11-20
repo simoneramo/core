@@ -1,0 +1,23 @@
+// Vertical align with table
+@mixin vertical-align-table{
+	display: table;
+	border-collapse: collapse;
+	width: 100%;
+	@include element(inner){
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+
+// css:
+// .{class-name} {
+// 	@include vertical-align-table;
+// 	height: {needed};
+// 	text-align: {center, right};
+// }
+
+// html:
+// .{class-name}
+//   .{class-name}__inner
+//     p content

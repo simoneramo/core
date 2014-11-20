@@ -1,0 +1,1723 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    title Core 0.0.1 Styleguide
+    meta(name='description', content='')
+    //- meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimal-ui")
+    meta(name="breakpoint" content="small" media="(max-width: 520px)")
+    meta(name="breakpoint" content="medium" media="(min-width: 521px) and (max-width: 900px)")
+    meta(name="breakpoint" content="large" media="(min-width: 901px)")
+    //- include ../components-bower/metaquery/metaquery.min.js 
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    //- Place favicon.ico in the root directory
+    link(type='text/css', rel='stylesheet', href='/assets/css/main.min.css')
+  body.body.styleguide
+
+    header.l-styleguide-header
+      h1(class="+u-font-jumbo") Core
+      h3(class="+u-h2") Styleguide Version 0.0.1
+    div.l-styleguide-container
+      h1 Colors
+      div.styleguide-base.config
+        div.styleguide-colors.red
+        div.styleguide-colors.yellow
+        div.styleguide-colors.orange
+        div.styleguide-colors.green
+        div.styleguide-colors.blue
+        div.styleguide-colors.black
+        div.styleguide-colors.white
+        div.styleguide-colors.grey
+        div.styleguide-colors.light-grey
+        br
+        div.styleguide-colors.c-btn-1
+        div.styleguide-colors.c-btn-2
+        div.styleguide-colors.bgc-btn-1
+        div.styleguide-colors.bgc-btn-2
+        br
+        div.styleguide-colors(class='+success')
+        div.styleguide-colors(class='+info')
+        div.styleguide-colors(class='+error')
+        div.styleguide-colors(class='+warning')
+        div.styleguide-colors(class='+danger')
+        br
+        div.styleguide-colors.code-c
+        div.styleguide-colors.code-bgc
+        br
+        div.styleguide-colors.google
+        div.styleguide-colors.facebook
+        div.styleguide-colors.twitter
+        div.styleguide-colors.linkedin
+        div.styleguide-colors.dribble
+        div.styleguide-colors.instagram
+        div.styleguide-colors.googleplus
+        div.styleguide-colors.behance
+        div.styleguide-colors.gimmebar
+        div.styleguide-colors.github
+        div.styleguide-colors.tumblr
+        div.styleguide-colors.youtube
+        div.styleguide-colors.vine
+        div.styleguide-colors.kickstarter
+        div.styleguide-colors.dropbox
+        div.styleguide-colors.rss
+        div.styleguide-colors.facebook
+        div.styleguide-colors.codepen
+        div.styleguide-colors.foursquare
+        div.styleguide-colors.soundcloud
+        div.styleguide-colors.wordpress
+        div.styleguide-colors.tumblr
+        div.styleguide-colors.blogger
+        div.styleguide-colors.squarespace
+        div.styleguide-colors.joomla
+        div.styleguide-colors.drupal
+        div.styleguide-colors.typepad
+        div.styleguide-colors.expression-engine
+        div.styleguide-colors.kirby
+        div.styleguide-colors.moveabletype
+        div.styleguide-colors.disqus
+        div.styleguide-colors.html
+      button(type="button" id="burg" class="o-burger")
+        i
+      h1(class='styleguide-title +u-font-largest') Base
+      h1 Typography
+      div.styleguide-base.typography
+        h1 h1 Heading
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga ducimus dolorem suscipit.
+        hr.o-rule
+        h2 h2 Heading
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus perspiciatis labore quis, qui, animi hic autem est aut beatae sit!
+        hr.o-rule
+        h3 h3 Heading
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis modi a numquam commodi provident amet.
+        hr.o-rule
+        h4 h4 Heading
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut error voluptates optio dolores vel libero. Odit hic nostrum a tempora, facere aut, quia.
+        hr.o-rule
+        h5 h5 Heading 5
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, reiciendis.
+        hr.o-rule
+        h6 h6 Heading 6
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, repellendus illum ad.
+      h1 Body Copy
+      div.styleguide-base.typograph
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+      h1 Body Copy Lead
+      div.styleguide-base.typograph
+        p(class='+u-font-lead') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+      h1 Text Utility Alignment Classes
+      div.styleguide-base.typography
+        p(class='+u-text-left') Lorem ipsum dolor sit amet.
+        p(class='+u-text-center') Lorem ipsum dolor sit amet.
+        p(class='+u-text-right') Lorem ipsum dolor sit amet.
+        p(class='+u-text-justify') Lorem ipsum dolor sit amet.
+      h1 Text Utility Transform Classes
+      div.styleguide-base.typography
+        p(class='+u-text-lowercase') Lorem ipsum dolor sit amet.
+        p(class='+u-text-uppercase') Lorem ipsum dolor sit amet.
+        p(class='+u-text-capitalize') Lorem ipsum dolor sit amet.
+      h1 Text-level semantics
+      div.styleguide-base.typography
+        p
+        | The
+        a(href='#') a element
+        | example
+        br
+        | The
+        abbr(title='Title text') abbr element
+        | example
+        br
+        | The
+        b b element
+        | example
+        br
+        | The
+        cite cite element
+        | example
+        br
+        | The
+        code code element
+        | example
+        br
+        | The
+        del del element
+        | example
+        br
+        | The
+        dfn dfn element
+        | example
+        br
+        | The
+        em em element
+        | example
+        br
+        | The
+        i i element
+        | example
+        br
+        | The img element
+        img(src='http://placehold.it/16', alt='')
+        | example
+        br
+        | The
+        ins ins element
+        | example
+        br
+        | The
+        kbd kbd element
+        | example
+        mark mark element
+        | example
+        br
+        | The
+        q
+          | q element
+          q inside
+          | a q element
+        | example
+        br
+        | The
+        s s element
+        | example
+        br
+        | The
+        samp samp element
+        | example
+        br
+        | The
+        small small element
+        | example
+        br
+        | The
+        span span element
+        | example
+        br
+        | The
+        strike strike element
+        | example
+        br
+        | The
+        strong strong element
+        | example
+        br
+        | The
+        sub sub element
+        | example
+        br
+        | The
+        sup sup element
+        | example
+        br
+        | The
+        var var element
+        | example
+        br
+        | The
+        u u element
+        | example
+        .styleguide-code
+          p code here
+      h1 Base Lists 
+      div.styleguide-base.lists  
+        h3.styleguide-title--sub Orded lists 
+        ol
+          li list item 1
+          li
+            | list item 1
+            ol
+              li list item 2
+              li
+                | list item 2
+                ol
+                  li list item 3
+                  li list item 3
+              li list item 2
+              li list item 2
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Unordered lists  
+        ul
+          li list item 1
+          li
+            | list item 1
+            ul
+              li list item 2
+              li
+                | list item 2
+                ul
+                  li list item 3
+                  li list item 3
+              li list item 2
+              li list item 2
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Unordered Unsyled lists  
+        ul( class='+u-unstyled')
+          li list item 1
+          li
+            | list item 1
+            ul
+              li list item 2
+              li
+                | list item 2
+                ul
+                  li list item 3
+                  li list item 3
+              li list item 2
+              li list item 2
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Definition list 
+        dl
+          dt Definition name
+          dd Definition value
+          dt Definition name
+          dd Definition value
+          dd Definition value
+          dt Definition name
+          dt Definition name
+          dd Definition value
+        .styleguide-code
+          p code here
+      h1(class='styleguide-title +u-font-largest') Objects
+      h1 Tabs
+      div.styleguide-objects.tabs  
+        ul.o-tabs(style='border-bottom:2px solid #f7f7f7')
+          li
+            a.o-btn(href='http://www.unvisted.io') Tab 1
+          li
+            a(class='o-btn  +active' href='https://twitter.com') Tab 2
+          li
+            a.o-btn(href='http://www.unvisted.io') Tab 3
+        ul.o-tabs.--right(style='border-bottom:2px solid #f7f7f7')
+          li
+            a(class='o-btn  +active'  href='https://twitter.com') Tab 1
+          li
+            a.o-btn(href='http://www.unvisted.io') Tab 2
+          li
+            a.o-btn(href='http://www.unvisted.io') Tab 3
+        ul.o-tabs.--centered(style='border-bottom:2px solid #f7f7f7')
+          li
+            a.o-btn(href='https://twitter.com') Tab 1
+          li
+            a(class='o-btn  +active' href='https://twitter.com') Tab 2
+          li
+            a.o-btn(href='http://www.unvisted.io') Tab 3
+        .styleguide-code
+          p code here
+      h1 Matrix
+      div.styleguide-objects.matrix
+        h3.styleguide-title--sub Three
+        ul.o-matrix.--three
+          li.o-matrix__full Lorem
+          li  
+            a.o-matrix__link(href='#') Ipsuma
+          li
+            a.o-matrix__link(href='#') Site
+          li Amet
+          li.all-cols Consectetuer
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Two
+        ul.o-matrix.--two
+          li.o-matrix__full Lorem
+          li.o-matrix__full  
+            a.o-matrix__link(href='#') Ipsuma
+          li
+            a.o-matrix__link(href='#') Site
+          li Amet
+          li.o-matrix__full Consectetuer
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Two
+        ul.o-matrix.--four
+          li.o-matrix__full Lorem
+          li  
+            a.o-matrix__link(href='#') Ipsuma
+          li
+            a.o-matrix__link(href='#') Site
+          li Amet
+          li.o-matrix__full Consectetuer
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Two
+        ul.o-matrix.--five
+          li.o-matrix__full Lorem
+          li  
+            a.o-matrix__link(href='#') Ipsuma
+          li
+            a.o-matrix__link(href='#') Site
+          li Amet
+          li.o-matrix__full Consectetuer
+        .styleguide-code
+          p code here
+      h1 Options
+      div.styleguide-objects.options
+        ul.o-options
+          li
+            a hello
+          li
+            a hello
+          li
+            a hello
+        .styleguide-code
+          p code here
+      h1 Tables
+      div.styleguide-objects.tables
+        h3.styleguide-title--sub Table
+        table(class='o-table  --rwd  --striped')
+          colgroup
+            col.column1
+            col.columns2plus3(span='2')
+          tbody
+            tr
+              th Lime
+              th Lemon
+              th Orange
+            tr
+              td Green
+              td Yellow
+              td Orange
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Table
+        table(class='o-table  --rwd')
+          tr
+            th First name
+            th Last name
+          tr
+            td John
+            td Doe
+          tr
+            td Jane
+            td Doe
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Table
+        table(class='o-table  --hover  --bordered  --data')
+          tr
+            th First name
+            th Last name
+          tr
+            td John
+            td Doe
+          tr
+            td Jane
+            td Doe
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Table
+        table(class='o-table  --hover  --bordered')
+          tr
+            th First name
+            th Last name
+          tr
+            td John
+            td Doe
+          tr
+            td Jane
+            td Doe
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Table
+        table(class='o-table  --hover')
+          tr
+            th First name
+            th Last name
+          tr
+            td John
+            td Doe
+          tr
+            td Jane
+            td Doe
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Table
+        table.o-table
+          tr
+            th First name
+            th Last name
+          tr
+            td John
+            td Doe
+          tr
+            td Jane
+            td Doe
+        .styleguide-code
+          p code here
+      h1 Link Complex
+      div.styleguide-objects.link-complex
+        a.o-link-complex(href='log-in')
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            span.o-link-complex__target Log in
+        .styleguide-code
+          p code here
+      h1 Blockquote
+      div.styleguide-objects.blockquote
+        h3.styleguide-title--sub Blockquote
+        blockquote
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b Albert Einstein
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Blockquote
+        blockquote.o-blockquote
+          q Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b.o-blockquote__source Albert Einstein
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Blockquote
+        blockquote.o-blockquote-right
+          q Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b.o-blockquote__source Albert Einstein
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Blockquote
+        blockquote.o-blockquote-right
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b.o-blockquote__source Albert Einstein
+        .styleguide-code
+          p code here
+        h3.styleguide-title--sub Blockquote
+        blockquote.o-blockquote
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b.o-blockquote__source Albert Einstein
+        .styleguide-code
+          p code here
+      h1 Progress Bars
+      div.styleguide-objects.progress-bars
+        div.o-progress
+          div(
+              class='o-progress__bar  +info', 
+              role='progressbar', 
+              aria-valuenow='20', 
+              aria-valuemin='0', 
+              aria-valuemax='100', 
+              style='width: 20%;'
+            )
+            span.o-progress__bar-label 20% Complete    
+        div.o-progress
+          div(
+            class='o-progress__bar  --striped  +danger', 
+            role='progressbar', 
+            aria-valuenow='50', 
+            aria-valuemin='0', 
+            aria-valuemax='100', 
+            style='width: 50%;'
+            )
+            span.o-progress__bar-label 50% Complete    
+        div.o-progress
+          div(
+            class='o-progress__bar  +warning', 
+            role='progressbar', a
+            ria-valuenow='30', 
+            aria-valuemin='0', aria-valuemax='100', 
+            style='width: 30%;'
+            )
+            span.o-progress__bar-label.sr-only 30% Complete    
+        div.o-progress
+          div(class='o-progress__bar  +error', 
+            role='progressbar', 
+            aria-valuenow='60', 
+            aria-valuemin='0', 
+            aria-valuemax='100', 
+            style='width: 60%;'
+            )
+            span.o-progress__bar-label 60% Complete    
+        div.o-progress
+          div(class='o-progress__bar  --striped  +success', 
+            role='progressbar', 
+            aria-valuenow='80', 
+            aria-valuemin='0', 
+            aria-valuemax='100', 
+            style='width: 80%;'
+            )
+            span.o-progress__bar-label.sr-only 80% Complete
+        .styleguide-code
+          p this will be code
+      div.styleguide-objects.pagination
+        h1 Pagination
+        ol.o-nav.o-pagination
+          li.o-pagination__first
+            a(class='o-btn' href='') First
+          li
+            a(class='o-btn' href='') 1
+          li
+            a(class='o-btn' href='') 2
+          li
+            a(class='o-btn +active' href='') 3
+          li
+            a(class='o-btn' href='') 4
+          li
+            a(class='o-btn' href='') 5
+          li.o-pagination__last
+            a(class='o-btn' href='') Last
+        .styleguide-code
+          p this will be code
+        ul.o-nav.o-pagination
+          li.o-pagination__first
+            a(href='') First
+          li.o-pagination__prev
+             a(href='/') Previous
+          li
+            a(href='') 1
+          li
+            a(href='/page/2') 2
+          li.current
+            a(href='/page/3') 3
+          li
+            a(href='/page/4') 4
+          li
+            a(href='/page/5') 5
+          li.o-pagination__next
+            a(href='') Next
+          li.o-pagination__last
+            a(href='/') Last
+        .styleguide-code
+          p this will be code
+      div.styleguide-objects.this-that
+        h1 This or That
+        h1.o-this-or-this
+          a(class='o-this-or-this__cols  +u-two-fifths' href='#')
+            | Free
+          span(class='o-this-or-this__cols  +u-one-fifth')
+            | or
+          a(class='o-this-or-this__cols  +u-two-fifths' href='#')
+            | Pro
+        .styleguide-code
+          p this will be code
+        div.o-this-or-this
+          p(class='o-this-or-this__cols  +u-two-fifths')
+            a(href='#') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          span(class='o-this-or-this__cols  +u-one-fifth')
+            | or
+          p(class='o-this-or-this__cols  +u-two-fifths')
+            a(href='#') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        .styleguide-code
+          p this will be code
+      div.styleguide-objects.stat-group
+        h1 Stat Group
+        .o-stat-group
+          dl.o-stat
+            dt.o-stat__title Tweets
+            dd.o-stat__value 27,740
+          dl.o-stat
+            dt.o-stat__title Following
+            dd.o-stat__value 11,529
+          dl.o-stat
+            dt.o-stat__title Followers
+            dd.o-stat__value 12,105
+      h1 Font Icons
+      div.styleguide-objects.icon-fonts
+        h3.styleguide-title--sub Font Icons - Github
+        div
+          i(class='o-icon  +github-alert')
+          i(class='o-icon  +github-alignment-align')
+          i(class='o-icon  +github-alignment-aligned-to')
+          i(class='o-icon  +github-alignment-unalign')
+          i(class='o-icon  +github-arrow-down')
+          i(class='o-icon  +github-arrow-left')
+          i(class='o-icon  +github-arrow-right')
+          i(class='o-icon  +github-arrow-small-down')
+          i(class='o-icon  +github-arrow-small-left')
+          i(class='o-icon  +github-arrow-small-right')
+          i(class='o-icon  +github-arrow-small-up')
+          i(class='o-icon  +github-arrow-up')
+          i(class='o-icon  +github-beer')
+          i(class='o-icon  +github-book')
+          i(class='o-icon  +github-bookmark')
+          i(class='o-icon  +github-briefcase')
+          i(class='o-icon  +github-broadcast')
+          i(class='o-icon  +github-browser')
+          i(class='o-icon  +github-bug')
+          i(class='o-icon  +github-calendar')
+          i(class='o-icon  +github-check')
+          i(class='o-icon  +github-checklist')
+          i(class='o-icon  +github-chevron-down')
+          i(class='o-icon  +github-chevron-left')
+          i(class='o-icon  +github-chevron-right')
+          i(class='o-icon  +github-chevron-up')
+          i(class='o-icon  +github-circle-slash')
+          i(class='o-icon  +github-circuit-board')
+          i(class='o-icon  +github-clippy')
+          i(class='o-icon  +github-clock')
+          i(class='o-icon  +github-cloud-download')
+          i(class='o-icon  +github-cloud-upload')
+          i(class='o-icon  +github-code')
+          i(class='o-icon  +github-color-mode')
+          i(class='o-icon  +github-comment')
+          i(class='o-icon  +github-comment-discussion')
+          i(class='o-icon  +github-credit-card')
+          i(class='o-icon  +github-dash')
+          i(class='o-icon  +github-dashboard')
+          i(class='o-icon  +github-database')
+          i(class='o-icon  +github-device-camera')
+          i(class='o-icon  +github-device-camera-video')
+          i(class='o-icon  +github-device-desktop')
+          i(class='o-icon  +github-device-mobile')
+          i(class='o-icon  +github-diff')
+          i(class='o-icon  +github-diff-added')
+          i(class='o-icon  +github-diff-ignored')
+          i(class='o-icon  +github-diff-modified')
+          i(class='o-icon  +github-diff-removed')
+          i(class='o-icon  +github-diff-renamed')
+          i(class='o-icon  +github-ellipsis')
+          i(class='o-icon  +github-eye')
+          i(class='o-icon  +github-file-binary')
+          i(class='o-icon  +github-file-code')
+          i(class='o-icon  +github-file-directory')
+          i(class='o-icon  +github-file-media')
+          i(class='o-icon  +github-file-pdf')
+          i(class='o-icon  +github-file-submodule')
+          i(class='o-icon  +github-file-symlink-directory')
+          i(class='o-icon  +github-file-symlink-file')
+          i(class='o-icon  +github-file-text')
+          i(class='o-icon  +github-file-zip')
+          i(class='o-icon  +github-flame')
+          i(class='o-icon  +github-fold')
+          i(class='o-icon  +github-gear')
+          i(class='o-icon  +github-gift')
+          i(class='o-icon  +github-gist')
+          i(class='o-icon  +github-gist-secret')
+          i(class='o-icon  +github-git-branch')
+          i(class='o-icon  +github-git-commit')
+          i(class='o-icon  +github-git-compare')
+          i(class='o-icon  +github-git-merge')
+          i(class='o-icon  +github-git-pull-request')
+          i(class='o-icon  +github-globe')
+          i(class='o-icon  +github-graph')
+          i(class='o-icon  +github-heart')
+          i(class='o-icon  +github-history')
+          i(class='o-icon  +github-home')
+          i(class='o-icon  +github-horizontal-rule')
+          i(class='o-icon  +github-hourglass')
+          i(class='o-icon  +github-hubot')
+          i(class='o-icon  +github-inbox')
+          i(class='o-icon  +github-info')
+          i(class='o-icon  +github-issue-closed')
+          i(class='o-icon  +github-issue-opened')
+          i(class='o-icon  +github-issue-reopened')
+          i(class='o-icon  +github-jersey')
+          i(class='o-icon  +github-jump-down')
+          i(class='o-icon  +github-jump-left')
+          i(class='o-icon  +github-jump-right')
+          i(class='o-icon  +github-jump-up')
+          i(class='o-icon  +github-key')
+          i(class='o-icon  +github-keyboard')
+          i(class='o-icon  +github-law')
+          i(class='o-icon  +github-light-bulb')
+          i(class='o-icon  +github-link')
+          i(class='o-icon  +github-link-external')
+          i(class='o-icon  +github-list-ordered')
+          i(class='o-icon  +github-list-unordered')
+          i(class='o-icon  +github-location')
+          i(class='o-icon  +github-lock')
+          i(class='o-icon  +github-logo-github')
+          i(class='o-icon  +github-mail')
+          i(class='o-icon  +github-mail-read')
+          i(class='o-icon  +github-mail-reply')
+          i(class='o-icon  +github-mark-github')
+          i(class='o-icon  +github-markdown')
+          i(class='o-icon  +github-megaphone')
+          i(class='o-icon  +github-mention')
+          i(class='o-icon  +github-microscope')
+          i(class='o-icon  +github-milestone')
+          i(class='o-icon  +github-mirror')
+          i(class='o-icon  +github-mortar-board')
+          i(class='o-icon  +github-move-down')
+          i(class='o-icon  +github-move-left')
+          i(class='o-icon  +github-move-right')
+          i(class='o-icon  +github-move-up')
+          i(class='o-icon  +github-mute')
+          i(class='o-icon  +github-no-newline')
+          i(class='o-icon  +github-octoface')
+          i(class='o-icon  +github-organization')
+          i(class='o-icon  +github-package')
+          i(class='o-icon  +github-paintcan')
+          i(class='o-icon  +github-pencil')
+          i(class='o-icon  +github-person')
+          i(class='o-icon  +github-pin')
+          i(class='o-icon  +github-playback-fast-forward')
+          i(class='o-icon  +github-playback-pause')
+          i(class='o-icon  +github-playback-play')
+          i(class='o-icon  +github-playback-rewind')
+          i(class='o-icon  +github-plug')
+          i(class='o-icon  +github-plus')
+          i(class='o-icon  +github-podium')
+          i(class='o-icon  +github-primitive-dot')
+          i(class='o-icon  +github-primitive-square')
+          i(class='o-icon  +github-pulse')
+          i(class='o-icon  +github-puzzle')
+          i(class='o-icon  +github-question')
+          i(class='o-icon  +github-quote')
+          i(class='o-icon  +github-radio-tower')
+          i(class='o-icon  +github-repo')
+          i(class='o-icon  +github-repo-clone')
+          i(class='o-icon  +github-repo-force-push')
+          i(class='o-icon  +github-repo-forked')
+          i(class='o-icon  +github-repo-pull')
+          i(class='o-icon  +github-repo-push')
+          i(class='o-icon  +github-rocket')
+          i(class='o-icon  +github-rss')
+          i(class='o-icon  +github-ruby')
+          i(class='o-icon  +github-screen-full')
+          i(class='o-icon  +github-screen-normal')
+          i(class='o-icon  +github-search')
+          i(class='o-icon  +github-server')
+          i(class='o-icon  +github-settings')
+          i(class='o-icon  +github-sign-in')
+          i(class='o-icon  +github-sign-out')
+          i(class='o-icon  +github-split')
+          i(class='o-icon  +github-squirrel')
+          i(class='o-icon  +github-star')
+          i(class='o-icon  +github-steps')
+          i(class='o-icon  +github-stop')
+          i(class='o-icon  +github-sync')
+          i(class='o-icon  +github-tag')
+          i(class='o-icon  +github-telescope')
+          i(class='o-icon  +github-terminal')
+          i(class='o-icon  +github-three-bars')
+          i(class='o-icon  +github-tools')
+          i(class='o-icon  +github-trashcan')
+          i(class='o-icon  +github-triangle-down')
+          i(class='o-icon  +github-triangle-left')
+          i(class='o-icon  +github-triangle-right')
+          i(class='o-icon  +github-triangle-up')
+          i(class='o-icon  +github-unfold')
+          i(class='o-icon  +github-unmute')
+          i(class='o-icon  +github-versions')
+          i(class='o-icon  +github-x')
+          i(class='o-icon  +github-zap')
+        .styleguide-code
+          p this will be code
+        h3.styleguide-title--sub Font Icons - Feather
+        div
+          i(class='o-icon  +feather-square-minus')
+          i(class='o-icon  +feather-eye')
+          i(class='o-icon  +feather-paper-clip')
+          i(class='o-icon  +feather-mail')
+          i(class='o-icon  +feather-toggle')
+          i(class='o-icon  +feather-layout')
+          i(class='o-icon  +feather-link')
+          i(class='o-icon  +feather-bell')
+          i(class='o-icon  +feather-lock')
+          i(class='o-icon  +feather-unlock')
+          i(class='o-icon  +feather-ribbon')
+          i(class='o-icon  +feather-image')
+          i(class='o-icon  +feather-signal')
+          i(class='o-icon  +feather-target')
+          i(class='o-icon  +feather-clipboard')
+          i(class='o-icon  +feather-clock')
+          i(class='o-icon  +feather-watch')
+          i(class='o-icon  +feather-air-play')
+          i(class='o-icon  +feather-camera')
+          i(class='o-icon  +feather-video')
+          i(class='o-icon  +feather-disc')
+          i(class='o-icon  +feather-printer')
+          i(class='o-icon  +feather-monitor')
+          i(class='o-icon  +feather-server')
+          i(class='o-icon  +feather-cog')
+          i(class='o-icon  +feather-heart')
+          i(class='o-icon  +feather-paragraph')
+          i(class='o-icon  +feather-align-justify')
+          i(class='o-icon  +feather-align-left')
+          i(class='o-icon  +feather-align-center')
+          i(class='o-icon  +feather-align-right')
+          i(class='o-icon  +feather-book')
+          i(class='o-icon  +feather-layers')
+          i(class='o-icon  +feather-stack')
+          i(class='o-icon  +feather-stack-2')
+          i(class='o-icon  +feather-paper')
+          i(class='o-icon  +feather-paper-stack')
+          i(class='o-icon  +feather-search')
+          i(class='o-icon  +feather-zoom-in')
+          i(class='o-icon  +feather-zoom-out')
+          i(class='o-icon  +feather-reply')
+          i(class='o-icon  +feather-circle-plus')
+          i(class='o-icon  +feather-circle-minus')
+          i(class='o-icon  +feather-circle-check')
+          i(class='o-icon  +feather-circle-cross')
+          i(class='o-icon  +feather-square-plus')
+          i(class='o-icon  +feather-square-minus')
+          i(class='o-icon  +feather-square-check')
+          i(class='o-icon  +feather-square-cross')
+          i(class='o-icon  +feather-microphone')
+          i(class='o-icon  +feather-record')
+          i(class='o-icon  +feather-skip-back')
+          i(class='o-icon  +feather-rewind')
+          i(class='o-icon  +feather-play')
+          i(class='o-icon  +feather-pause')
+          i(class='o-icon  +feather-stop')
+          i(class='o-icon  +feather-fast-forward')
+          i(class='o-icon  +feather-skip-forward')
+          i(class='o-icon  +feather-shuffle')
+          i(class='o-icon  +feather-repeat')
+          i(class='o-icon  +feather-folder')
+          i(class='o-icon  +feather-umbrella')
+          i(class='o-icon  +feather-moon')
+          i(class='o-icon  +feather-thermometer')
+          i(class='o-icon  +feather-drop')
+          i(class='o-icon  +feather-sun')
+          i(class='o-icon  +feather-cloud')
+          i(class='o-icon  +feather-cloud-upload')
+          i(class='o-icon  +feather-cloud-download')
+          i(class='o-icon  +feather-upload')
+          i(class='o-icon  +feather-download')
+          i(class='o-icon  +feather-location')
+          i(class='o-icon  +feather-location-2')
+          i(class='o-icon  +feather-map')
+          i(class='o-icon  +feather-battery')
+          i(class='o-icon  +feather-head')
+          i(class='o-icon  +feather-briefcase')
+          i(class='o-icon  +feather-speech-bubble')
+          i(class='o-icon  +feather-anchor')
+          i(class='o-icon  +feather-globe')
+          i(class='o-icon  +feather-box')
+          i(class='o-icon  +feather-reload')
+          i(class='o-icon  +feather-share')
+          i(class='o-icon  +feather-marquee')
+          i(class='o-icon  +feather-marquee-plus')
+          i(class='o-icon  +feather-marquee-minus')
+          i(class='o-icon  +feather-tag')
+          i(class='o-icon  +feather-power')
+          i(class='o-icon  +feather-command')
+          i(class='o-icon  +feather-alt')
+          i(class='o-icon  +feather-esc')
+          i(class='o-icon  +feather-bar-graph')
+          i(class='o-icon  +feather-bar-graph-2')
+          i(class='o-icon  +feather-pie-graph')
+          i(class='o-icon  +feather-star')
+          i(class='o-icon  +feather-arrow-left')
+          i(class='o-icon  icon-eighty-store')
+          i(class='o-icon  +feather-arrow-right')
+          i(class='o-icon  +feather-arrow-up')
+          i(class='o-icon  +feather-arrow-down')
+          i(class='o-icon  +feather-volume')
+          i(class='o-icon  +feather-mute')
+          i(class='o-icon  +feather-content-right')
+          i(class='o-icon  +feather-content-left')
+          i(class='o-icon  +feather-grid')
+          i(class='o-icon  +feather-grid-2')
+          i(class='o-icon  +feather-columns')
+          i(class='o-icon  +feather-loader')
+          i(class='o-icon  +feather-bag')
+          i(class='o-icon  +feather-ban')
+          i(class='o-icon  +feather-flag')
+          i(class='o-icon  +feather-trash')
+          i(class='o-icon  +feather-expand')
+          i(class='o-icon  +feather-contract')
+          i(class='o-icon  +feather-maximize')
+          i(class='o-icon  +feather-minimize')
+          i(class='o-icon  +feather-plus')
+          i(class='o-icon  +feather-minus')
+          i(class='o-icon  +feather-check')
+          i(class='o-icon  +feather-cross')
+          i(class='o-icon  +feather-move')
+          i(class='o-icon  +feather-delete')
+          i(class='o-icon  +feather-menu')
+          i(class='o-icon  +feather-archive')
+          i(class='o-icon  +feather-inbox')
+          i(class='o-icon  +feather-outbox')
+          i(class='o-icon  +feather-file')
+          i(class='o-icon  +feather-file-add')
+          i(class='o-icon  +feather-file-subtract')
+          i(class='o-icon  +feather-help')
+          i(class='o-icon  +feather-open')
+          i(class='o-icon  +feather-ellipsis')
+        .styleguide-code
+          p this will be code
+        h3.styleguide-title--sub Font Icons - Sizes
+        div
+          i(class='o-icon  --large  --natural  +github-alert')
+          i(class='o-icon  --larger  +github-alert')
+          i(class='o-icon  --largest  +github-alert')
+          i(class='o-icon  --jumbo  +github-alert')
+      div.styleguide-objects.group-buttons
+        h1 Group Buttons
+        .o-btn-group(role='group', aria-label='...')
+          button.btn.btn-default(type='button') Left
+          button.btn.btn-default(type='button') Middle
+          button.btn.btn-default(type='button') Right
+        .o-btn-group(role='group', aria-label='...')
+          button.o-btn(type='button') Left
+          button.o-btn(type='button') Middle
+          button.o-btn(type='button') Right
+        .o-btn-group(class="rounded" role='group', aria-label='...')
+          button.o-btn(type='button') Left
+          button.o-btn(type='button') Middle
+          button.o-btn(type='button') Right
+        .o-btn-toolbar(role='toolbar', aria-label='Toolbar with button groups')
+          .o-btn-toolbar__group(role='group', aria-label='First group')
+            button.o-btn(type='button') 1
+            button.o-btn(type='button') 2
+            button.o-btn(type='button') 3
+            button.o-btn(type='button') 4
+          .o-btn-toolbar__group(role='group', aria-label='Second group')
+            button.o-btn(class="+active" type='button') 5
+            button.o-btn(type='button') 6
+            button.o-btn(type='button') 7
+          .o-btn-toolbar__group(role='group', aria-label='Third group')
+            button.o-btn(type='button') 8
+        .styleguide-code
+          p code here
+      h1 Flyout
+      div.styleguide-objects.flyout
+        .o-flyout.o-btn
+          | Flyout Button
+          .o-flyout__content
+            ul(class='+u-unstyled')
+              li 
+                a.o-btn list item
+              li 
+                a.o-btn list item
+              li 
+                a.o-btn list item
+              li 
+                a.o-btn list item
+        div(class='o-btn  o-flyout  --alt')
+          | Flyout Button
+          .o-flyout__content
+            ul(class='+u-unstyled')
+              li 
+                a.o-btn list item
+              li 
+                a.o-btn list item
+              li 
+                a.o-btn list item
+              li 
+                a.o-btn list item
+        .styleguide-code
+          p code here
+      h1 icons soical 
+      div.styleguide-objects.flyout
+        p.o-image-text
+          i.o-image-text__icon
+          | words
+        p.o-image-text hello
+          i(class='o-image-text__icon  --rev')
+      h1 Rules
+      div.styleguide-objects.rules
+        h3.styleguide-title--sub default
+        hr
+        .styleguide-code
+          p this will be code
+        h3.styleguide-title--sub Rule
+        hr(class='o-rule')
+        .styleguide-code
+          p this will be code
+        h3.styleguide-title--sub Dotted
+        hr(class='o-rule  --dotted')
+        .styleguide-code
+          p this will be code
+        h3.styleguide-title--sub Dashed
+        hr(class='o-rule  --dashed')
+        .styleguide-code
+          p this will be code
+        h3.styleguide-title--sub Ornament
+        hr(class='o-rule  --ornament' data-ornament=".(-).")
+        .styleguide-code
+          p this will be code
+      div.styleguide-objects.split
+        h1 Split
+        dl.o-split
+          dt.o-split__title Burger and fries
+          dd £5.99
+          dt.o-split__title Fillet steak
+          dd £19.99
+          dt.o-split__title Ice cream
+          dd £2.99
+        .styleguide-code
+          p this will be code
+        ol.o-split
+          li.first
+            b.o-split__title 1st place
+            | Bob
+          li.second
+            b.o-split__title 2nd place
+            | Lilly
+          li.third
+            b.o-split__title 3rd place
+            | Ted
+        .styleguide-code
+          p code here
+      div.styleguide-objects.sprite
+        h1 Sprite
+        div
+          i(class='o-sprite') default
+          p default
+        div(class='o-sprite  +red-square')
+        div(class='o-sprite  +blue-circle')
+        div(class='o-sprite  +orange-sqaure')
+        div(class='o-sprite  +green-circle')
+        div(class='o-sprite  +green-circle')
+        ul(class='+u-unstyled')
+          li 
+            a(href='/') 
+              i(class='o-sprite  +red-square') Foo bar
+          li 
+            a(href='/')
+              i(class='o-sprite  +blue-circle') Foo bar
+          li 
+            a(href='#' class='o-sprite  +orange-sqaure') Foo bar or 
+            a(href='#' class='o-sprite  +green-circle') Bar baz
+          li
+            a(href='#')
+              i(class='o-sprite   +red-square')
+              | Foo bar
+          li
+            a(href='#')
+              i(class='o-sprite   +blue-circle')
+              | Foo bar
+          li
+            a(class='o-sprite   +orange-sqaure' href='#') Foo bar
+            | or
+            a(class='o-sprite   +green-circle' href='#') Bar baz
+        .styleguide-code
+          p code here
+      div.styleguide-objects.island
+        h1 Island
+        .o-island
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        .styleguide-code
+          p code here
+      div.styleguide-objects.emphasis
+        h1 emphasis
+        p(class='o-emp  +c-error') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +c-info') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +c-warning') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +c-success') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +c-danger') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +error') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +info') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +warning') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +success') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +danger') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        .styleguide-code
+          p code here
+      div.styleguide-objects.breadcrumb
+        h1 breadcrumbs
+        ul(class='o-nav  o-breadcrumb')
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+        ul(class='o-nav  o-breadcrumb  --line')
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+        ul(class='o-nav  o-breadcrumb  --path')
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+        ul(class='o-nav  o-breadcrumb  --data')
+          li(data-breadcrumb="&")
+            a(class="" href='') one
+          li(data-breadcrumb="&")
+            a(class="" href='') one
+          li(data-breadcrumb="&")
+            a(class="" href='') one
+          li(data-breadcrumb="&")
+            a(class="" href='') one
+        ul(class='o-nav  o-breadcrumb  --arrow')
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+          li
+            a(class="" href='') one
+        ul(class='o-nav  o-breadcrumb  --arrow')
+          a(class="" href='') one
+          a(class="" href='') one
+          a(class="" href='') one
+          a(class="" href='') one
+        .styleguide-code
+          p code here
+      div.styleguide-objects.label-pills
+        h1 Pills and Labels
+        p.o-label hello
+        p(class='o-label  +success') hello
+        p(class='o-label  +info') hello
+        p(class='o-label  +danger') hello
+        p(class='o-label  +warning') hello
+        p(class='o-label  +error') hello
+        p(class='o-label  +disabled') hello
+        p(class='o-label  --pill  +disabled') hello
+        p(class='o-label  --pill  +success') hello
+        p(class='o-label  --pill  +info') hello
+        p(class='o-label  --pill  +danger') hello
+        p(class='o-label  --pill  +warning') hello
+        p(class='o-label  --pill  +error') hello
+        p(class='o-label  --pill  +disabled') hello
+        .styleguide-code
+          p code here
+      div.styleguide-objects.text-columns
+        h1 Text Columns
+        p.o-cols Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        h3.styleguide-title--sub 2 Columns
+        p(class='o-cols  --2') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        h3.styleguide-title--sub 3 Columns
+        p(class='o-cols  --3') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        h3.styleguide-title--sub 4 Columns
+        p(class='o-cols  --4') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        h3.styleguide-title--sub 5 Columns
+        p(class='o-cols  --5') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        .styleguide-code
+          p code here
+      div.styleguide-objects.nav
+        h1 nav
+        ul.o-nav
+          li one
+          li one
+          li one
+          li one
+        ul.o-nav
+          a(href='') one
+          a(href='') one
+          a(href='') one
+          a(href='') one
+        ul(class='o-nav  --block')
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+        ul(class='o-nav  --fit')
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+        ul(class='o-nav  --banner')
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+        ul(class='o-nav  --stacked')
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+        ul(class='o-nav  --keywords')
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+          li
+            a(class="o-btn" href='') one
+        .styleguide-code
+          p code here
+      div.styleguide-objects.lists
+        h1 lists
+        ul
+          li hello
+          li hello
+          li hello
+          li hello
+        ol
+          li hello
+          li hello
+          li hello
+          li hello
+        dl
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+        ul.o-list
+          li hello
+          li hello
+          li hello
+          li hello
+        ol.o-list
+          li hello
+          li hello
+          li hello
+          li hello
+        dl.o-list
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+        ul(class='o-list  --numbered')
+          li this is ul that is number but has li > ul > li numbered: default with --numbered
+            ul
+              li hello
+              li hello
+              li hello
+          li hello
+          li hello
+        ul(class='o-list  --numbered')
+          li this is ul that is number but has li > ul > li disc list style
+            ul
+              li.o-list__disc hello
+              li.o-list__disc hello
+              li.o-list__disc hello
+          li hello
+          li hello
+        ol(class='o-list  --numbered')
+          li this is ol that is number but has li > ol > li disc list style
+            ol
+              li.o-list__disc hello
+              li.o-list__disc hello
+              li.o-list__disc hello
+          li hello
+          li hello
+        ul(class='o-list  --inline')
+          li hello
+          li hello
+          li hello
+          li hello
+        ul(class='o-list  --horizontal')
+          li hello
+          li hello
+          li hello
+          li hello
+        ol(class='o-list  --horizontal')
+          li hello
+          li hello
+          li hello
+          li hello
+        dl(class='o-list  --horizontal')
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+        .styleguide-code
+          p code here
+      h1.styleguide-title Media
+      div.styleguide-objects.media
+        h3.styleguide-title--sub media
+        .o-media
+          img(class='o-media__img' src='http://placehold.it/200' alt="")
+          .media__body
+            h1 Heading
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        h3.styleguide-title--sub media
+        .o-media
+          img(class='o-media__img --right' src='http://placehold.it/200' alt="")
+          .media__body 
+            h1 Heading
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .styleguide-code
+          p code here
+      div.styleguide-objects.buttons
+        h1 Buttons
+        a(class='o-btn  --small', href='') Google
+        a(class='o-btn  --large', href='') Google
+        a(class='o-btn  --huge', href='') Google
+        a(class='o-btn  --full', href='') Google
+        a(class='o-btn  --alpha', href='') Google
+        a(class='o-btn  --beta', href='') Google
+        a(class='o-btn  --gamma', href='') Google
+        a(class='o-btn  --natural', href='') Google
+        a(class='o-btn  --inactive', href='') Google
+        a(class='o-btn  --round', href='') Google
+        a(class='o-btn  +rounded', href='') Google
+        a(class='o-btn  +positive', href='') Google
+        a(class='o-btn  +negative', href='') Google
+        .styleguide-code
+          p code here
+      h1 Figure
+      div.styleguide-objects.figure
+        h3.styleguide-title--sub Figure Add
+        figure.o-fig
+          img(src= "http://placehold.it/200")
+          figcaption.o-fig__capt Lorem ipsum dolor sit amet
+        h3.styleguide-title--sub Figure with rounded image
+        figure.o-fig
+          img(class='+rounded' src= "http://placehold.it/200")
+          figcaption.o-fig__capt Lorem ipsum dolor sit amet
+        .styleguide-code
+          p code here
+      div.styleguide-objects.images
+        h1 Images Objects
+        h3.styleguide-title--sub Standard
+        img(src='http://placehold.it/200')
+        h3.styleguide-title--sub Right
+        img(class='o-img  --right' src='http://placehold.it/200')
+        h3.styleguide-title--sub Left
+        img(class='o-img  --left' src='http://placehold.it/200')
+        h3.styleguide-title--sub Center
+        img(class='o-img  --center' src='http://placehold.it/200')
+        h3.styleguide-title--sub Circle
+        img(class='o-img  --circle' src='http://placehold.it/200')
+        h3.styleguide-title--sub Rounded
+        img(class='o-img  +rounded' src='http://placehold.it/200')
+        h3.styleguide-title--sub Full Width
+        div(style='width:200px')
+          img(class='o-img  --full' src='http://placehold.it/200')  
+      h1 Thumbnail
+      div.styleguide-objects.thumbnail
+        h3.styleguide-title--sub Standard
+        .o-thumb
+          img(class="o-thumb__item" src= "http://placehold.it/200")
+        h3.styleguide-title--sub Thumbnail with rounded
+        .o-thumb
+          img(class="o-thumb__item  +rounded" src= "http://placehold.it/200")
+        .styleguide-code
+          p code here
+      h1 Alerts
+      div.styleguide-objects.alerts
+        .o-alert(class='+success')
+          p success alert
+        .o-alert(class='+danger')
+          p danger alert
+        .o-alert(class='+error')
+          p error alert
+        .o-alert(class='+warning')
+          p warning alert
+        .o-alert(class='+info')
+          p info alert
+        .o-alert(class='+disabled')
+          p disabled alert
+        .styleguide-code
+          p this will be code
+      h1 Block Lists
+      div.styleguide-objects.block-list
+        ul.o-block-list
+          li list
+          li 
+            a(href="/").o-block-list__link another
+          li another
+          li another
+        h3.styleguide-title--sub dl Block Lists
+        dl.o-block-list
+          dt hell
+          dd hell
+          dt hell
+          dd hell
+          dt hell
+          dd hell
+        h3.styleguide-title--sub ul Block Lists bordered
+        ul.o-block-list.--bordered
+          li above
+          li list
+          li asdfas
+          li asdfa
+        h3.styleguide-title--sub dl Block Lists bordered
+        dl.o-block-list.--bordered
+          dt hell
+          dd hell
+          dt hell
+          dd hell
+          dt hell
+          dd hell
+        .styleguide-code
+          p this will be code
+      h1(class='styleguide-title +u-font-largest') Utilites
+      h1 Widths
+      div.styleguide-utilites.widths
+        h3.styleguide-title--sub Full Width Whole
+        div(class='+u-one-whole  +success') width: 100%
+          code +u-one-whole
+        h3.styleguide-title--sub Full Width Halves
+        div(class='+u-one-half  +info') +t-one-half { width: 50%;}
+        h3.styleguide-title--sub Full Width Thirds
+        div(class='+u-one-third  +warning')              { width: 33.333%;}
+        div(class='+u-two-thirds  +warning')             { width: 66.666%;}
+        h3.styleguide-title--sub Full Width Quarter
+        div(class='+u-one-quarter  +danger')            { width: 25%;}
+        div(class='+u-two-quarters  +danger')           { @extend %e-one-half;}
+        div(class='+u-three-quarters  +danger')         { width: 75%;}
+        h3.styleguide-title--sub Full Width Fifth
+        div(class='+u-one-fifth  +error')              { width: 20%;}
+        div(class='+u-two-fifths  +error')             { width: 40%;}
+        div(class='+u-three-fifths  +error')           { width: 60%;}
+        div(class='+u-four-fifths  +error')            { width: 80%;}
+        h3.styleguide-title--sub Full Width Sixth
+        div(class='+u-one-sixth  +success')              { width: 16.666%;}
+        div(class='+u-two-sixths  +success')             { @extend %e-one-third;}
+        div(class='+u-three-sixths  +success')           { @extend %e-one-half;}
+        div(class='+u-four-sixths  +success')            { @extend %e-two-thirds;}
+        div(class='+u-five-sixths  +success')            { width: 83.333%;}
+        h3.styleguide-title--sub Full Width Eighth
+        div(class='+u-one-eighth  +warning')             { width: 12.5%;}
+        div(class='+u-two-eighths  +warning')            { @extend %e-one-quarter;}
+        div(class='+u-three-eighths  +warning')          { width: 37.5%;}
+        div(class='+u-four-eighths  +warning')           { @extend %e-one-half;}
+        div(class='+u-five-eighths  +warning')           { width: 62.5%;}
+        div(class='+u-six-eighths  +warning')            { @extend %e-three-quarters;}
+        div(class='+u-seven-eighths  +warning')          { width: 87.5%;}
+        h3.styleguide-title--sub Full Width Tenth
+        div(class='+u-one-tenth  +danger')              { width: 10%;}
+        div(class='+u-two-tenths  +danger')             { @extend %e-one-fifth;}
+        div(class='+u-three-tenths  +danger')           { width: 30%;}
+        div(class='+u-four-tenths  +danger')            { @extend %e-two-fifths;}
+        div(class='+u-five-tenths  +danger')            { @extend %e-one-half;}
+        div(class='+u-six-tenths  +danger')             { @extend %e-three-fifths;}
+        div(class='+u-seven-tenths  +danger')           { width: 70%;}
+        div(class='+u-eight-tenths  +danger')           { @extend %e-four-fifths;}
+        div(class='+u-nine-tenths  +danger')            { width: 90%;}  
+        h3.styleguide-title--sub Full Width Twelfth
+        div(class='+u-one-twelfth  +error')            { width: 8.333%;} 
+        div(class='+u-two-twelfths  +error')           { @extend %e-one-sixth;}
+        div(class='+u-three-twelfths  +error')         { @extend %e-one-quarter;}
+        div(class='+u-four-twelfths  +error')          { @extend %e-one-third;}
+        div(class='+u-five-twelfths  +error')          { width: 41.666%} 
+        div(class='+u-six-twelfths  +error')           { @extend %e-one-half;}
+        div(class='+u-seven-twelfths  +error')         { width: 58.333%;}
+        div(class='+u-eight-twelfths  +error')         { @extend %e-two-thirds;}
+        div(class='+u-nine-twelfths  +error')          { @extend %e-three-quarters;} 
+        div(class='+u-ten-twelfths  +error')           { @extend %e-five-sixths;}
+        div(class='+u-eleven-twelfths  +error')        { width: 91.666%;}
+        .styleguide-code
+          p this will be code
+      div.styleguide-utilites.spaces
+        h1 Trumps Margins & Padding
+        h3.styleguide-title--sub Full Width 6x Space Margin
+        div
+          p(class='+u-mt-6') Trumps-mt-space-6
+        div
+          p(class='+u-ml-6') Trumps-mt-space-6
+        div
+          p(class='+u-mb-6') Trumps-mt-space-6
+        div
+          p(class='+u-mr-6') Trumps-mt-space-6
+        h3.styleguide-title--sub Full Width 6x Space Padding
+        div
+          p(class='+u-pt-6') Trumps Padding Top 6 x base space
+        div
+          p(class='+u-pl-6') Trumps Padding Left 6 x base space
+        div
+          p(class='+u-pb-6') Trumps Padding Bottom 6 x base space
+        div
+          p(class='+u-pr-6') Trumps Padding Right 6 x base space
+        h3.styleguide-title--sub Full Width 5x Space Margin
+        div
+          p(class='+u-mt-5') Trumps-mt-space-5
+        div
+          p(class='+u-ml-5') Trumps-mt-space-5
+        div
+          p(class='+u-mb-5') Trumps-mt-space-5
+        div
+          p(class='+u-mr-5') Trumps-mt-space-5
+        h3.styleguide-title--sub Full Width 5x Space Padding
+        div
+          p(class='+u-pt-5') Trumps Padding Top 5 x base space
+        div
+          p(class='+u-pl-5') Trumps Padding Left 5 x base space
+        div
+          p(class='+u-pb-5') Trumps Padding Bottom 5 x base space
+        div
+          p(class='+u-pr-5') Trumps Padding Right 5 x base space
+        h3.styleguide-title--sub Full Width 4x Space Margin
+        div
+          p(class='+u-mt-4') Trumps-mt-space-4
+        div
+          p(class='+u-ml-4') Trumps-mt-space-4
+        div
+          p(class='+u-mb-4') Trumps-mt-space-4
+        div
+          p(class='+u-mr-4') Trumps-mt-space-4
+        div
+        h3.styleguide-title--sub Full Width 4x Space Padding
+        div
+          p(class='+u-pt-4') Trumps Padding Top 4 x base space
+        div
+          p(class='+u-pl-4') Trumps Padding Left 4 x base space
+        div
+          p(class='+u-pb-4') Trumps Padding Bottom 4 x base space
+        div
+          p(class='+u-pr-4') Trumps Padding Right 4 x base space
+        h3.styleguide-title--sub Full Width 3x Space Margin
+        div
+          p(class='+u-mt-3') Trumps-mt-space-3
+        div
+          p(class='+u-ml-3') Trumps-mt-space-3
+        div
+          p(class='+u-mb-3') Trumps-mt-space-3
+        div
+          p(class='+u-mr-3') Trumps-mt-space-3
+        h3.styleguide-title--sub Full Width 3x Space Padding
+        div
+          p(class='+u-pt-3') Trumps Padding Top 3 x base space
+        div
+          p(class='+u-pl-3') Trumps Padding Left 3 x base space
+        div
+          p(class='+u-pb-3') Trumps Padding Bottom 3 x base space
+        div
+          p(class='+u-pr-3') Trumps Padding Right 3 x base space
+        h3.styleguide-title--sub Full Width 2x Space Margin
+        div
+          p(class='+u-mt-2') Trumps-mt-space-2
+        div
+          p(class='+u-ml-2') Trumps-mt-space-2
+        div
+          p(class='+u-mb-2') Trumps-mt-space-2
+        div
+          p(class='+u-mr-2') Trumps-mt-space-2
+        h3.styleguide-title--sub Full Width 2x Space Padding
+        div
+          p(class='+u-pt-2') Trumps Padding Top 2 x base space
+        div
+          p(class='+u-pl-2') Trumps Padding Left 2 x base space
+        div
+          p(class='+u-pb-2') Trumps Padding Bottom 2 x base space
+        div
+          p(class='+u-pr-2') Trumps Padding Right 2 x base space
+        h3.styleguide-title--sub Full Width Space Margin
+        div
+          p(class='+u-mt') Trumps-mt-space
+        div
+          p(class='+u-ml') Trumps-mt-space
+        div
+          p(class='+u-mb') Trumps-mt-space
+        div
+          p(class='+u-mr') Trumps-mt-space
+        h3.styleguide-title--sub Full Width Space Padding
+        div
+          p(class='+u-pt') Trumps Padding Top base space
+        div
+          p(class='+u-pl') Trumps Padding Left base space
+        div
+          p(class='+u-pb') Trumps Padding Bottom base space
+        div
+          p(class='+u-pr') Trumps Padding Right base space
+        h3.styleguide-title--sub Full Width 1/2 Space Margin
+        div
+          p(class='+u-mt-half') Trumps-mt-space
+        div
+          p(class='+u-ml-half') Trumps-mt-space
+        div
+          p(class='+u-mb-half') Trumps-mt-space
+        div
+          p(class='+u-mr-half') Trumps-mt-space
+        h3.styleguide-title--sub Full Width 1/2 Space Padding
+        div
+          p(class='+u-pt-half') Trumps Padding Top base space
+        div
+          p(class='+u-pl-half') Trumps Padding Left base space
+        div
+          p(class='+u-pb-half') Trumps Padding Bottom base space
+        div
+          p(class='+u-pr-half') Trumps Padding Right base space
+        h3.styleguide-title--sub Full Width 1/3 Space Margin
+        div
+          p(class='+u-mt-third') Trumps-mt-space
+        div
+          p(class='+u-ml-third') Trumps-mt-space
+        div
+          p(class='+u-mb-third') Trumps-mt-space
+        div
+          p(class='+u-mr-third') Trumps-mt-space
+        h3.styleguide-title--sub Full Width 1/3 Space Padding
+        div
+          p(class='+u-pt-third') Trumps Padding Top base space
+        div
+          p(class='+u-pl-third') Trumps Padding Left base space
+        div
+          p(class='+u-pb-third') Trumps Padding Bottom base space
+        div
+          p(class='+u-pr-third') Trumps Padding Right base space
+        h3.styleguide-title--sub Full Width 1/4 Space Margin
+        div
+          p(class='+u-mt-quarter') Trumps-mt-space
+        div
+          p(class='+u-ml-quarter') Trumps-mt-space
+        div
+          p(class='+u-mb-quarter') Trumps-mt-space
+        div
+          p(class='+u-mr-quarter') Trumps-mt-space
+        h3.styleguide-title--sub Full Width 1/4 Space Padding
+        div
+          p(class='+u-pt-quarter') Trumps Padding Top base space
+        div
+          p(class='+u-pl-quarter') Trumps Padding Left base space
+        div
+          p(class='+u-pb-quarter') Trumps Padding Bottom base space
+        div
+          p(class='+u-pr-quarter') Trumps Padding Right base space
+        h3.styleguide-title--sub Full Width 1/5 Space Margin
+        div
+          p(class='+u-mt-fifth') Trumps-mt-space
+        div
+          p(class='+u-ml-fifth') Trumps-mt-space
+        div
+          p(class='+u-mb-fifth') Trumps-mt-space
+        div
+          p(class='+u-mr-fifth') Trumps-mt-space
+        h3.styleguide-title--sub Full Width 1/5 Space Padding
+        div
+          p(class='+u-pt-fifth') Trumps Padding Top base space
+        div
+          p(class='+u-pl-fifth') Trumps Padding Left base space
+        div
+          p(class='+u-pb-fifth') Trumps Padding Bottom base space
+        div
+          p(class='+u-pr-fifth') Trumps Padding Right base space
+        h3.styleguide-title--sub Full Width 1/6 Space Margin
+        div
+          p(class='+u-mt-sixth') Trumps-mt-space
+        div
+          p(class='+u-ml-sixth') Trumps-mt-space
+        div
+          p(class='+u-mb-sixth') Trumps-mt-space
+        div
+          p(class='+u-mr-sixth') Trumps-mt-space
+        h3.styleguide-title--sub Full Width 1/6 Space Padding
+        div
+          p(class='+u-pt-sixth') Trumps Padding Top base space
+        div
+          p(class='+u-pl-sixth') Trumps Padding Left base space
+        div
+          p(class='+u-pb-sixth') Trumps Padding Bottom base space
+        div
+          p(class='+u-pr-sixth') Trumps Padding Right base space
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    |         
+    script.
+      window.jQuery || document.write('<script src="components_bower/jquery/dist/jquery.min.js"><\\/script>')
+    |         
+    script(src='assets/scripts/scripts.min.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');

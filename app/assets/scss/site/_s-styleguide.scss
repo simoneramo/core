@@ -1,0 +1,452 @@
+/* ==========================================================================
+   Site Styleguide
+   ========================================================================== */
+
+	//
+	// 
+	// Work in progress
+	// 
+	// 
+
+  $styleguide-green: rgb(92, 173, 105);
+	$styleguide-grey:  rgb(230,230,230);
+	
+  body.styleguide{
+    padding-top: 2em;
+    background-color: $styleguide-green;
+  }
+
+  // 
+  // MAIN HEADER
+  //
+
+  .l-styleguide-header{
+    text-align: center;
+    background-color: #ededed;
+    padding: $space-3 0;
+    margin-bottom: $space-2;
+    max-width: 1400px;
+    @include center-content;
+  }
+
+
+  // 
+  // MAIN CONTAINER
+  //
+
+  .l-styleguide-container{
+    padding: $space-2 $space-2 0;
+    background-color: $white;
+    max-width: 1400px;
+    @include center-content;
+  }
+
+  // 
+
+  // 
+  // STYLEGUIDE GLOBAL STYLES
+  //
+  .styleguide-title{
+    margin-bottom: $space-half; 
+  }
+
+  .styleguide-title--sub{
+    margin-bottom: $space-half;
+  }
+
+
+
+  // 
+  // OBJECT GLOBALS
+  //
+
+  .styleguide-objects, .styleguide-base, .styleguide-utilites{
+    @extend %e-mb-3;
+    border-radius: $global-round;
+    border: solid 3px $styleguide-grey;
+    padding: $space-2;
+  }
+
+  .styleguide-code{
+  	border-radius: $global-round;
+  	background-color: $styleguide-grey;
+  	height:100px;
+  	margin-top: $space-3;
+  	margin-bottom: $space-3;
+  	padding: $space;
+  }
+
+
+  // 
+  // OBJECT ALERTS
+  //
+
+	.styleguide-objects{
+    &.alerts{
+      div{
+        margin-bottom: $space-half;
+      }
+    }
+  }
+  // 
+  // OBJECT BLOCK LIST
+  //
+
+  // 
+  // OBJECT BLOCKQUOTE
+  //
+
+  // 
+  // OBJECT BREADCRUMBS
+  //
+
+  // 
+  // OBJECT BUTTON GROUPS
+  //
+
+  // 
+  // OBJECT BUTTONS
+  //
+
+  // 
+  // OBJECT CODE
+  //
+
+  // 
+  // OBJECT COLUMS
+  //
+
+  // 
+  // OBJECT COLOUMS
+  //
+
+  // 
+  // OBJECT EMPHASIS
+  //
+
+  // 
+  // OBJECT FIGURE
+  //
+
+  // 
+  // OBJECT FLYOUT
+  //
+
+  // 
+  // OBJECT FORMS
+  //
+
+  // 
+  // OBJECT ICON FONTS
+  //
+
+  .styleguide-objects{
+    &.icon-fonts{
+      div{
+      	// .o-icon{
+      	// 	font-size: 3em;
+      	// }
+    	}  
+    }
+  }
+
+  // 
+  // OBJECT ICON IMAGE TEXT
+  //
+
+  // 
+  // OBJECT IMAGES
+  //
+
+  // 
+  // OBJECT ISLAND
+  //
+
+  // 
+  // OBJECT LINK COMPLEX
+  //
+
+  // 
+  // OBJECT LOADERS
+  //
+
+  // 
+  // OBJECT MATRIX
+  //
+
+  .styleguide-objects{
+    &.matrix{
+      h2{
+        margin: $space 0 0;
+      }
+    }
+  }
+
+  // 
+  // OBJECT MEDIA
+  //
+
+  // 
+  // OBJECT HAMBURGER
+  //
+
+  // 
+  // OBJECT NAV
+  //
+
+  // 
+  // OBJECT PAGINATION
+  //
+
+  // 
+  // OBJECT PAGINATION
+  //
+
+  // 
+  // OBJECT PROGRESS BARS
+  //
+
+  .styleguide-objects{
+    &.progress-bars{
+      > div{
+        margin-bottom: $space-half;
+      }
+      h2{
+        margin: $space 0 0;
+      }
+    }
+  }
+
+  // 
+  // OBJECT RULES
+  //
+
+  // 
+  // OBJECT SPRITE
+  //
+
+      //overright object sprite example
+       @include object(o-sprite) {
+        width: 62px;
+         height: 62px;
+         background-image: url(/assets/icons/icons--social/dribble.svg);
+         background-color: red;
+        }
+
+       //overright object spirte add positions
+       @include add(red-square)    { background-position:  0     0  ; }
+       @include add(blue-circle)   { background-position:-16px   0  ; }
+       @include add(orange-sqaure) { background-position:-16px -16px; }
+       @include add(green-circle)  { background-position:  0   -16px; }
+
+
+
+  // 
+  // OBJECT STAT
+  //
+
+  // 
+  // OBJECT TABLES
+  //
+
+  // 
+  // OBJECT THIS OR THIS
+  //
+
+  // 
+  // OBJECT THUMBNAIL
+  //
+
+
+
+  // 
+  // UTILITIES WIDTHS
+  //
+
+  .styleguide-utilites{
+    &.widths{
+      div{
+        padding: $space;
+        background-color: $styleguide-green;
+        margin-bottom: $space-half;
+      }
+      h2{
+        margin: $space 0 0;
+      }
+    }
+  }
+
+  // 
+  // UTILITIES SPACES
+  //
+
+  .styleguide-utilites{
+    &.spaces{
+      div{
+        padding: $space;
+        margin-bottom: $space-half;
+        background-color: #f4f4f4;
+        p{
+          padding:$space;
+          border: 1px dashed black;
+          background-color: $bgc-1;
+        }
+      }
+      h2{
+        margin: $space 0 0;
+      }
+    }
+  }
+    
+  // 
+  // CONFIG COLOURS
+  //
+	.styleguide-base.config{
+		div.styleguide-colors{
+			width: 40px;
+			height: 40px;
+			margin-left: 4px;
+			display: inline-block;
+			border-radius: $global-round;
+			&.red{
+				background-color: $red;
+			}
+			&.green{
+				background-color: $green;
+			}
+			&.yellow{
+				background-color: $yellow;
+			}
+			&.orange{
+				background-color: $orange;
+			}
+			&.blue{
+				background-color: $blue;
+			}
+			&.light-grey{
+				background-color: $light-grey;
+			}
+			&.black{
+				background-color: $black;
+			}
+			&.grey{
+				background-color: $grey;
+			}
+			&.white{
+				background-color: $white;
+			}
+			// code
+			&.code-bgc{
+				background-color: $bgc-code;
+			}
+			&.code-c{
+				background-color: $c-code;
+			}
+			// buttons
+			&.c-btn-1{background-color:$c-btn-1;}
+			&.c-btn-2{background-color:$c-btn-2;}
+			&.bgc-btn-1{background-color:$bgc-btn-1;}
+			&.bgc-btn-2{background-color:$bgc-btn-2;}
+			// social
+			&.google{
+				background-color: $c-google;
+			}
+			&.facebook{
+				background-color: $c-facebook;
+			}
+			&.twitter{
+				background-color: $c-twitter;
+			}
+			&.linkedin{
+				background-color: $c-linkedin;
+			}
+			&.dribble{
+				background-color: $c-dribble;
+			}
+			&.instagram{
+				background-color: $c-instagram;
+			}
+			&.googleplus{
+				background-color: $c-googleplus;
+			}
+			&.behance{
+				background-color: $c-behance;
+			}
+			&.gimmebar{
+				background-color: $c-gimmebar;
+			}
+			&.github{
+				background-color: $c-github;
+			}
+			&.tumblr{
+				background-color: $c-tumblr;
+			}
+			&.youtube{
+				background-color: $c-youtube;
+			}
+			&.vine{
+				background-color: $c-vine;
+			}
+			&.kickstarter{
+				background-color: $c-kickstarter;
+			}
+			&.dropbox{
+				background-color: $c-dropbox;
+			}
+			&.rss{
+				background-color: $c-rss;
+			}
+			&.facebook{
+				background-color: $c-facebook;
+			}
+			&.codepen{
+				background-color: $c-codepen;
+			}
+			&.foursquare{
+				background-color: $c-foursquare;
+			}
+			&.soundcloud{
+				background-color: $c-soundcloud;
+			}
+			&.wordpress{
+				background-color: $c-wordpress;
+			}
+			&.tumblr{
+				background-color: $c-tumblr;
+			}
+			&.blogger{
+				background-color: $c-blogger;
+			}
+			&.squarespace{
+				background-color: $c-squarespace;
+			}
+			&.joomla{
+				background-color: $c-joomla;
+			}
+			&.drupal{
+				background-color: $c-drupal;
+			}
+			&.typepad{
+				background-color: $c-typepad;
+			}
+			&.expression-engine{
+				background-color: $c-expression-engine;
+			}
+			&.kirby{
+				background-color: $c-kirby;
+			}
+			&.moveabletype{
+				background-color: $c-moveabletype;
+			}    
+			&.disqus{
+				background-color: $c-disqus;
+			}
+			&.html{
+				background-color: $c-html;
+			}
+		}
+	}
+
+
+
+

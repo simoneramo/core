@@ -1,0 +1,34 @@
+$use-base-root: true !default;
+
+@if $use-base-root == true{
+/* ==========================================================================
+   Base - Root
+   ========================================================================== */
+
+  html {
+    overflow-y: scroll;
+    min-height: 100%;
+    word-wrap: break-word;
+    font:#{($f-base)}/#{$base-line-height} $f-base-family;
+  }
+
+
+  $use-border-box: true !default;
+    @if $use-border-box == true{
+      html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+    }
+  }
+
+
+  body{
+    min-height: 100%;
+    background-color: $bgc-1;
+    text-rendering: optimizeLegibility;   
+    color: $c-type-1;
+  }
+
+}//end if

@@ -1,0 +1,14 @@
+$use-objects-island:	true !default;
+
+@if $use-objects-island == true{
+/* ==========================================================================
+   Object - Island
+   ========================================================================== */
+   
+  @include object(o-island) {
+  	@include clearfix;
+  	display: block;
+  	padding: $space;
+  }
+
+}//endif

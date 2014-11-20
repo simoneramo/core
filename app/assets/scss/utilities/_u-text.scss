@@ -1,0 +1,65 @@
+$use-utilities-text:  true !default;
+   
+@if $use-utilities-text == true{
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+  // headings
+	@include add(u-h1)                     { font-size: $f-h1;}
+	@include add(u-h2)                     { font-size: $f-h2;}
+	@include add(u-h3)                     { font-size: $f-h3;}
+	@include add(u-h4)                     { font-size: $f-h4;}
+	@include add(u-h5)                     { font-size: $f-h5;}
+	@include add(u-h6)                     { font-size: $f-h6;}
+
+  // large type
+	@include add(u-font-jumbo)             { font-size: $f-jumbo;}
+	@include add(u-font-largest)           { font-size: $f-largest;}
+	@include add(u-font-larger)            { font-size: $f-larger;}
+	@include add(u-font-large)             { font-size: $f-large;}
+
+  // small type
+	@include add(u-font-micro)             { font-size: $f-micro;}
+	@include add(u-font-smallest)          { font-size: $f-smallest;}
+	@include add(u-font-smaller)           { font-size: $f-smaller;}
+	@include add(u-font-small)             { font-size: $f-small;}
+
+  // type
+	@include add(u-font-base)              { font-size: $f-base;}  
+	@include add(u-font-lead)              { font-size: $f-lead;}
+	@include add(u-font-half)              { font-size: $f-half;}
+
+  // font weights
+	@include add(u-font-200)               { font-weight: 200;}
+	@include add(u-font-300)               { font-weight: 300;}
+	@include add(u-font-400)               { font-weight: 400;}
+	@include add(u-font-500)               { font-weight: 500;}
+	@include add(u-font-600)               { font-weight: 600;}
+	@include add(u-font-700)               { font-weight: 700;}
+	@include add(u-font-800)               { font-weight: 800;}
+	@include add(u-font-900)               { font-weight: 900;}
+
+  // font styles
+	@include add(u-font-italic)            { font-style: italic;}
+	@include add(u-font-bold)              { font-style: bold;}
+
+  // link underline
+	@include add(u-underline-link)         { text-decoration: underline;} 
+
+  // text transforms
+	@include add(u-text-lowercase)         { text-transform: lowercase;} 
+	@include add(u-text-uppercase)         { text-transform: uppercase;} 
+	@include add(u-text-capitalize)        { text-transform: capitalize;} 
+
+  // text align
+	@include add(u-text-left)              { text-align: left;}
+	@include add(u-text-right)             { text-align: right;}
+	@include add(u-text-center)            { text-align: center;}
+	@include add(u-text-centre)            { text-align: center;}
+	@include add(u-text-justify)           { text-align: justify;}
+
+  // nowrap
+	@include add(u-text-nowrap)            { white-space: nowrap;}
+
+}//end if

@@ -1,0 +1,49 @@
+$use-objects-code:	true !default;
+
+@if $use-objects-code == true{
+/* ==========================================================================
+   Object - Code
+   ========================================================================== */
+   
+code,
+pre {
+	padding: $space;
+	font-family: $monospace;
+	tab-size: 3;
+}
+
+// Inline code
+code {
+	padding: $space-half;
+	background-color: $bgc-code;
+}
+
+// Blocks of code
+pre {
+	display: block;
+	padding: $space;
+	margin: 0 0 $space;
+	line-height: $base-line-height;
+	color: $c-code;
+	background-color: $bgc-code;
+	border-radius: 4px;
+	white-space: pre;
+	// white-space: pre-wrap;
+	// word-break: break-all;
+	// word-wrap: break-word;
+
+	// Account for some code outputs that place code tags in pre tags
+	code {
+		padding: 0;
+		color: $c-code;
+		background-color: $bgc-code;
+	}
+}
+
+// Enable scrollable blocks of code
+// .pre--scrollable {
+// 	max-height: 340px;
+// 	overflow-y: scroll;
+// }
+
+}//endif
