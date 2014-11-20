@@ -3,6 +3,14 @@ Core Beta
 
 A Personal Css Framework
 
+### Gitignore files
+
+.DS_Store
+.sass-cache
+.dev
+components-bower
+node_modules
+_public/
 
 
 

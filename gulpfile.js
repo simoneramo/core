@@ -3,8 +3,8 @@
 
  To Do List
  ------------------------------------------- 
- 1. Icons and Images used together
- 2. HTML and Jade both used
+ 1. Icons and Images combine 
+ 2. Use both HTML and Jade in /app
  3. Improve overall
  4. Improve Documentation  
  5. Add gulp-bower-files
@@ -125,11 +125,11 @@
 // https://github.com/sass/sass/issues/556#issuecomment-50825607
   gulp.task('cssToSass', ['styles'],function() {
     return gulp.src('components-bower/**/*.css')                         // Add Directory
-      // .pipe($.cached('cssToSass'))                                    // Add cached
-      .pipe($.rename(function(path) {                                    // rename
-        path.basename = '_' + path.basename;
-        path.extname = '.scss';                                          
-      }))
+      // .pipe($.cached('cssToSass'))                                    // Add Cached
+      // .pipe($.rename(function(path) {                                 // use Rename
+      //   path.basename = '_' + path.basename;
+      //   path.extname = '.scss';                                          
+      // }))
       .pipe(gulp.dest('components-bower/converted-scss/'))               // Add gulp-sso to Minify
       .pipe($.notify({ message: 'cssToSass' }))                          // Notify 
       .pipe($.size({title: 'cssToSass size of'}));                       // Size
