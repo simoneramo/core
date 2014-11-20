@@ -1,5 +1,5 @@
-node_modules
-.aws*
-dist
 .DS_Store
-componeents-bower
+.sass-cache
+.dev
+components-bower
+node_modules
