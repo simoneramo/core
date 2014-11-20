@@ -264,7 +264,7 @@
   gulp.task('publish', function () {
     return gulp.src("_public/**/*")
       .pipe($.ghPages({
-        branch: "gh-pages",
+        branch: "master",
         cacheDir: ".publish"
       }))
   });
