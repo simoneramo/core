@@ -143,7 +143,7 @@
   gulp.task('html', function() {
     return gulp.src('app/**/*.jade')                                     									           // Jade Directory
       .pipe($.jade({                                                     // Use gulp-jade
-        pretty: true                                                   // All Jade Options are available - http://jade-lang.com/api/
+        pretty: false                                                   // All Jade Options are available - http://jade-lang.com/api/
       }))
       .on('error', function(err){
         console.log(err.message);
