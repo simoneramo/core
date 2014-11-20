@@ -45,8 +45,6 @@
   var reload = browserSync.reload;
 
 
-
-
 /* Scripts - http://goo.gl/UOpv25 > $ gulp scripts
  ------------------------------------------- */
   gulp.task('scripts', function() {
@@ -260,5 +258,14 @@
   // default: clean and build _public > $ gulp assets
   gulp.task('default', ['clean'], function (cb) {
     runSequence('styles', ['html', 'scripts', 'images', 'fonts', 'icons', 'copy'], cb);
+  });
+
+
+  gulp.task('publish', function () {
+    return gulp.src("_public/**/*")
+      .pipe($.ghPages({
+        branch: "gh-pages",
+        cacheDir: ".publish"
+      }))
   });
 
