@@ -1,3 +1,0 @@
-# third.coffee
-myThirdFunction = ->
-	'third'
