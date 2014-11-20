@@ -91,7 +91,7 @@
       ))
       .pipe(gulp.dest('.dev/css/'))                                          // Dev nested before ccso > delete
       .pipe($.if('**/*.css', $.csso()))
-      .pipe($.rename({suffix: '.min'}))                                  // Add gulp-csso to minify
+      //.pipe($.rename({suffix: '.min'}))                                  // Add gulp-csso to minify
       .pipe(gulp.dest('_public/assets/css'))                             // Destination Path
       .pipe($.notify({ message: 'Styles completed fool' }))              // Notify 
       .pipe($.size({title: 'styles size of'}));                          // Size
@@ -126,10 +126,10 @@
   gulp.task('cssToSass', ['styles'],function() {
     return gulp.src('components-bower/**/*.css')                         // Add Directory
       // .pipe($.cached('cssToSass'))                                    // Add Cached
-      // .pipe($.rename(function(path) {                                 // use Rename
-      //   path.basename = '_' + path.basename;
-      //   path.extname = '.scss';                                          
-      // }))
+      .pipe($.rename(function(path) {                                 // use Rename
+        path.basename = '_' + path.basename;
+        path.extname = '.scss';                                          
+      }))
       .pipe(gulp.dest('components-bower/converted-scss/'))               // Add gulp-sso to Minify
       .pipe($.notify({ message: 'cssToSass' }))                          // Notify 
       .pipe($.size({title: 'cssToSass size of'}));                       // Size
