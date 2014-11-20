@@ -1,3 +1,3 @@
 # Core App
 
-the main files of your application
+The main files of your application
