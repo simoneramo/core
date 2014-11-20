@@ -27,27 +27,23 @@ $use-objects-icon-fonts:	true !default;
 			content:attr(data-icon);
 		}
 
-
-		// icon size modifiers
-		@include modifier(natural) { font-size:inherit; }
-		@include modifier(large)   { font-size:2em; }
-		@include modifier(huge)    { font-size:4em; }
-
 	}
+
+
 
 	// caret
-	.o-caret-icon{
-		&:before{
-			content:"";
-			display: inline-block;
-			width: 0;
-			height: 0;
-			vertical-align: middle;
-			border-top: $space-half solid;
-			border-right: $space-half solid rgba(0, 0, 0, 0);
-			border-left: $space-half solid rgba(0, 0, 0, 0);
-		}
-	}
+	// .o-caret-icon{
+	// 	&:before{
+	// 		content:"";
+	// 		display: inline-block;
+	// 		width: 0;
+	// 		height: 0;
+	// 		vertical-align: middle;
+	// 		border-top: $space-half solid;
+	// 		border-right: $space-half solid rgba(0, 0, 0, 0);
+	// 		border-left: $space-half solid rgba(0, 0, 0, 0);
+	// 	}
+	// }
 	
 
 }//endif
