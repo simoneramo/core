@@ -4,11 +4,13 @@
  To Do List
  ------------------------------------------- 
  1. Icons and Images combine 
- 2. Use both HTML and Jade in /app
  3. Improve overall
  4. Improve Documentation  
  5. Add gulp-bower-files
  6. Add gulp-cache
+ - gulp-html2jade?
+ 7. if production env = 
+    if dev env = 
 
  ------------------------------------------- */
 
@@ -141,9 +143,9 @@
 
 
 
-/* Html > $ gulp html
+/* Jade > $ gulp jade
  ------------------------------------------- */
-  gulp.task('html', function() {
+  gulp.task('jade', function() {
     return gulp.src(
       [
         'app/**/*.jade',                                                 // Jade Directory
@@ -158,10 +160,25 @@
       })
       .pipe(gulp.dest('_public'))     
       .pipe($.notify({ message: 'HTML built' }))                         // Notify 
-      .pipe($.size({title: 'html size of'}));                            // Size
+      .pipe($.size({title: 'jade size of'}));                            // Size
   });
 
 
+/* HTML > $ gulp html
+ ------------------------------------------- */
+  gulp.task('html', function() {
+    return gulp.src('app/**/*.html')     
+      // .pipe($.jade({                                                     // Use gulp-jade
+      //   pretty: false                                                    // All Jade Options are available - http://jade-lang.com/api/
+      // }))
+      // .on('error', function(err){
+      //   console.log(err.message);
+      //   this.end();
+      // })
+      .pipe(gulp.dest('_public'))     
+      .pipe($.notify({ message: 'HTML built' }))                         // Notify 
+      .pipe($.size({title: 'HTML size of'}));                            // Size
+  });
 
 
 /* Min Assets
@@ -246,7 +263,7 @@
       });
       gulp.watch(['app/assets/scss/**/*'], ['styles', reload]);
       gulp.watch(['app/assets/scripts/**/*.{js,coffee}'], ['scripts', reload]);
-      gulp.watch(['app/**/*.{jade,md}'], ['html', reload]);    
+      gulp.watch(['app/**/*.{jade,md}'], ['jade', reload]);    
       gulp.watch(['app/assets/images/**/*'], reload);
       gulp.watch(['app/assets/icons/**/*'], reload);
       gulp.watch(['app/assets/fonts/**/*'], reload);
@@ -262,7 +279,7 @@
 
   // default: clean and build _public using runSequence > $ gulp default
   gulp.task('default', ['clean'], function (cb) {
-    runSequence('styles', ['html', 'scripts', 'images', 'fonts', 'icons', 'copy'], cb);
+    runSequence('styles', ['html', 'jade', 'scripts', 'images', 'fonts', 'icons', 'copy'], cb);
   });
 
   // publish: build and publish to github branch:'' > $ gulp publish
