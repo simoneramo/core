@@ -76,7 +76,7 @@
       .pipe($.rubySass({                                                 // Use gulp-rubySass
         bundleExec: true,
         require: 'sass-globbing',                           									      // - true or false for bundle                               
-        style: 'compressed',                                             // - nested, compact, compressed, expanded 
+        style: 'nested',                                             // - nested, compact, compressed, expanded 
         precision: 10                                                    // - default 3, to use when outputting decimal numbers.
         })
         .on('error', function(err){                                      // Output SASS Error
