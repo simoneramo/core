@@ -66,7 +66,11 @@
 /* Styles Task > $ gulp styles
  ------------------------------------------- */
   gulp.task('styles', function () {
-    return gulp.src(['app/assets/scss/**/*.scss', 'Gemfile'])            // css directory + Gemfile for globbing
+    return gulp.src(
+      [ 'app/assets/scss/**/*.scss',   
+        '!app/assets/scss/variables.scss',                               // omit variable.scs from 
+        'Gemfile'
+      ])                                                                 // css directory + Gemfile for globbing
       .pipe($.changed('scss', {extension: '.scss'}))                     // Check to see if changed
       .pipe($.rubySass({                                                 // Use gulp-rubySass
         bundleExec: true,
