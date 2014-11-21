@@ -9,7 +9,6 @@
  4. Improve Documentation  
  5. Add gulp-bower-files
  6. Add gulp-cache
- 7. Dont copy _partial folder to _public folder
 
  ------------------------------------------- */
 
@@ -145,15 +144,19 @@
 /* Html > $ gulp html
  ------------------------------------------- */
   gulp.task('html', function() {
-    return gulp.src('app/**/*.jade')                                     									           // Jade Directory
+    return gulp.src(
+      [
+        'app/**/*.jade',                                                 // Jade Directory
+        '!app/_partials/**/*.jade',                                      // Exclude _partials directory from compiling in /app - app/_partials/**/*.html
+      ])     
       .pipe($.jade({                                                     // Use gulp-jade
-        pretty: false                                                   // All Jade Options are available - http://jade-lang.com/api/
+        pretty: false                                                    // All Jade Options are available - http://jade-lang.com/api/
       }))
       .on('error', function(err){
         console.log(err.message);
         this.end();
       })
-      .pipe(gulp.dest('_public'))                                        // Destination Path
+      .pipe(gulp.dest('_public'))     
       .pipe($.notify({ message: 'HTML built' }))                         // Notify 
       .pipe($.size({title: 'html size of'}));                            // Size
   });
@@ -202,10 +205,7 @@
 
   // copy root files > $ gulp copy
   gulp.task('copy', function () {
-    return gulp.src([
-      'app/*.{txt,md,htaccess}',
-      'app/CNAME'                                                                   // Directory Files
-    ], {
+    return gulp.src('app/*.{txt,md,htaccess}', {
       dot: true
     }).pipe(gulp.dest('_public'))                                          // Destination Path
     .pipe($.notify({ message: 'root files copied' }))                      // Notify
@@ -254,23 +254,21 @@
 
 
 
-/* Gulp Default task - using runSequence
- ------------------------------------------- */
-
-  // just build assets > $ gulp assets
+  // just build assets using runSequence > $ gulp assets
   gulp.task('assets', function (cb) {
     runSequence(['styles', 'scripts', 'images', 'fonts', 'icons'], cb);
   });
 
-  // default: clean and build _public > $ gulp assets
+
+  // default: clean and build _public using runSequence > $ gulp default
   gulp.task('default', ['clean'], function (cb) {
     runSequence('styles', ['html', 'scripts', 'images', 'fonts', 'icons', 'copy'], cb);
   });
 
-
+  // publish: build and publish to github branch:'' > $ gulp publish
   gulp.task('publish', function () {
     return gulp.src("_public/**/*")
       .pipe($.ghPages({
-        branch: "gh-pages"
+        branch: 'gh-pages'
       }))
   });
