@@ -3,8 +3,15 @@ $use-base-imports:	true !default;
 @if $use-base-imports == true{
 /* ==========================================================================
    Base - Imports
-   ========================================================================== */
+   
+    .eot');                                                // IE9 Compat Modes
+    .eot?#iefix') format('embedded-opentype'),             // IE6-IE8   
+    .woff2') format('woff2'),                              // http://goo.gl/ldoFk2
+    .woff') format('woff'),                                // Modern Browsers 
+    .ttf') format('truetype'),                             // Safari, Android, iOS
+    .svg#name-of-font') format('svg');                     // Legacy iOS
 
+   ========================================================================== */
 
 
 	//icon fonts feather
@@ -26,76 +33,154 @@ $use-base-imports:	true !default;
 	  	src:url('../../assets/icons/icons--fonts/#{$icon-folder-two}/#{$icon-name-two}.eot?#iefix') format('embedded-opentype'),
 	        url('../../assets/icons/icons--fonts/#{$icon-folder-two}/#{$icon-name-two}.ttf') format('truetype'),
 	        url('../../assets/icons/icons--fonts/#{$icon-folder-two}/#{$icon-name-two}.woff') format('woff'),
-	        url('../../assets/icons/icons--fonts/#{$icon-folder-two}/#{$icon-name-two}.svg#{$icon-name}') format('svg');
+	        url('../../assets/icons/icons--fonts/#{$icon-folder-two}/#{$icon-name-two}.svg#{$icon-name-two}') format('svg');
 	    font-weight: normal;
 	    font-style: normal;
 	}
 
-	// type fonts example
-	@font-face {
-	    font-family: '#{$type-font-family}';
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-thin-web.eot');
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-thin-web.eot#?iefix') format('embedded-opentype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-thin-web.woff') format('woff'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-thin-web.ttf') format('truetype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-thin-web.svg.html#gt_walsheim_thin') format('svg');
-	    font-weight: 200;
-	    font-style: normal;
-	}
+  // type fonts example - source sans pro
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light.eot');
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light.woff2') format('woff2'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light.woff') format('woff'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light.ttf') format('truetype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light.svg#{$type-name}') format('svg');
+      font-weight: 200;
+      font-style: normal;
+  }
 
-	@font-face {
-	    font-family: '#{$type-font-family}';
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-thin-oblique-web.eot');
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-thin-oblique-web.eot?#iefix') format('embedded-opentype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-thin-oblique-web.woff') format('woff'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-thin-oblique-web.ttf') format('truetype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-thin-oblique-web.svg.html#gt_walsheim_thin_oblique') format('svg');
-	    font-weight: 300;
-	    font-style: italic;
-	}
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light-italic.eot');
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light-italic.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light-italic.woff2') format('woff2'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light-italic.woff') format('woff'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light-italic.ttf') format('truetype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-extra-light-italic.svg#{$type-name}') format('svg');
+      font-weight: 200;
+      font-style: italic;
+  }
 
-	@font-face {
-	    font-family: '#{$type-font-family}';
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-web.eot');
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-web.eot?#iefix') format('embedded-opentype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-web.woff') format('woff'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-web.ttf') format('truetype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-web.svg#gt_walsheim_regular') format('svg');
-	    font-weight: 400;
-	    font-style: normal;
-	}
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-light.eot');
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-light.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-light.woff2') format('woff2'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-light.woff') format('woff'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-light.ttf') format('truetype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-light.svg#{$type-name}') format('svg');
+      font-weight: 300;
+      font-style: normal;
+  }
 
-	@font-face {
-	    font-family: '#{$type-font-family}';
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-regular-oblique-web.eot');
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-regular-oblique-web.eot?#iefix') format('embedded-opentype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-regular-oblique-web.woff') format('woff'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-regular-oblique-web.ttf') format('truetype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-regular-oblique-web.svg#gt_walsheim_regular_oblique') format('svg');
-	    font-weight: 400;
-	    font-style: italic;
-	}
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-light-italic.eot');
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-light-italic.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-light-italic.woff2') format('woff2'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-light-italic.woff') format('woff'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-light-italic.ttf') format('truetype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-light-italic.svg#{$type-name}') format('svg'); 
+      font-weight: 300;
+      font-style: italic;
+  }
 
-	@font-face {
-	    font-family: '#{$type-font-family}';
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-medium-web.eot');
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-medium-web.eot?#iefix') format('embedded-opentype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-medium-web.woff') format('woff'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-medium-web.ttf') format('truetype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-medium-web.svg#gt_walsheim_medium_oblique') format('svg');
-	    font-weight: 500;
-	    font-style: normal;
-	}
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-regular.eot');
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-regular.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-regular.woff2') format('woff2'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-regular.woff') format('woff'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-regular.ttf') format('truetype'),   
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-regular.svg#s{$type-name}') format('svg');           
+      font-weight: 400;
+      font-style: normal;
+  }
 
-	@font-face {
-	    font-family: '#{$type-font-family}';
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-medium-oblique-web.eot');
-	    src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-medium-oblique-web.eot?#iefix') format('embedded-opentype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-medium-oblique-web.woff') format('woff'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-medium-oblique-web.ttf') format('truetype'),
-	         url('../../assets/fonts/#{$type-folder}/#{$type-name}-medium-oblique-web.svg#gt_walsheim_medium_oblique') format('svg');
-	    font-weight: 500;
-	    font-style: italic;
-	}
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-italic.eot');    
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-italic.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-italic.woff2') format('woff2'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-italic.woff') format('woff'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-italic.ttf') format('truetype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-italic.svg#{$type-name}') format('svg');   
+      font-weight: 400;
+      font-style: italic;
+  }
+
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold.eot');
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold.eot?#iefix') format('embedded-opentype'),           
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold.woff2') format('woff2'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold.woff') format('woff'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold.ttf') format('truetype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold.svg#{$type-name}') format('svg');
+      font-weight: 600;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold-italic.eot');
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold-italic.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold-italic.woff2') format('woff2'), 
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold-italic.woff') format('woff'),  
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold-italic.ttf') format('truetype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-semi-bold-italic.svg#{$type-name}') format('svg');
+      font-weight: 600;
+      font-style: italic;
+  }
+
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold.eot');
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold.woff2') format('woff2'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold.woff') format('woff'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold.ttf') format('truetype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold.svg#{$type-name}') format('svg');          
+      font-weight: 700;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold-italic.eot');
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold-italic.eot?#iefix') format('embedded-opentype'),           
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold-italic.woff2') format('woff2'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold-italic.woff') format('woff'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold-italic.ttf') format('truetype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-bold-italic.svg#{$type-name}') format('svg');
+      font-weight: 700;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-black.eot');
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-black.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-black.woff2') format('woff2'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-black.woff') format('woff'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-black.ttf') format('truetype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-black.svg#{$type-name}') format('svg');
+      font-weight: 900;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: '#{$type-font-family}';
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-black-italic.eot');
+      src: url('../../assets/fonts/#{$type-folder}/#{$type-name}-black-italic.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-black-italic.woff2') format('woff2'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-black-italic.woff') format('woff'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-black-italic.ttf') format('truetype'),
+           url('../../assets/fonts/#{$type-folder}/#{$type-name}-black-italic.svg#{$type-name}') format('svg');
+      font-weight: 900;
+      font-style: italic;
+  }
 
 }//end if

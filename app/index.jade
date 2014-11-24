@@ -7,15 +7,15 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1') 
 
     //- Uncomment and use metaquery insteat of breakpoint?
-    // meta(name="breakpoint", content="phone", media="(max-width: 480px)")  
-    // meta(name="breakpoint", content="small-tablet", media="(min-width: 480px) and (max-width: 600px)")  
-    // meta(name="breakpoint", content="tablet", media="(min-width: 600px) and (max-width: 1024px)")  
-    // meta(name="breakpoint", content="widescreen", media="(min-width: 1024px)")  
-    // meta(name="breakpoint", content="retina", media="only screen and (-webkit-min-device-pixel-ratio : 2)")
+    //- meta(name="breakpoint", content="phone", media="(max-width: 480px)")  
+    //- meta(name="breakpoint", content="small-tablet", media="(min-width: 480px) and (max-width: 600px)")  
+    //- meta(name="breakpoint", content="tablet", media="(min-width: 600px) and (max-width: 1024px)")  
+    //- meta(name="breakpoint", content="widescreen", media="(min-width: 1024px)")  
+    //- meta(name="breakpoint", content="retina", media="only screen and (-webkit-min-device-pixel-ratio : 2)")
     
     //- script(src="../components-bower/metaquery/metaquery.min.js")
     //- inline metaquery
-    // script
+    //- script
       include ../components-bower/metaquery/metaquery.min.js
 
     //- Add to homescreen for Chrome on Android
@@ -40,7 +40,9 @@ html(lang='en')
   body.body
     a(href='styleguide.html') styleguide
     
-
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src=""><\\/script>')
     script(src='assets/scripts/scripts.min.js')
     //- Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.

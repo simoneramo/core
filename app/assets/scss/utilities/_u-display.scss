@@ -9,5 +9,6 @@ $use-utilities-display:  true !default;
   @include add(u-inline)              { display:inline; }
   @include add(u-inline-block)        { display:inline-block; }
   @include add(u-table)               { display:table; }
+  @include add(u-flex)               { display:flex; }
 
 }//endif

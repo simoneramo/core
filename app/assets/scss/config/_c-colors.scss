@@ -19,8 +19,11 @@
 $white:                   white;
 $yellow:                  yellow;
 $orange:                  orange;
+$pink:                    pink;
 $red:                     red;
+$maroon:                  maroon;
 $green:                   green;
+$aqua:                    aqua;
 $blue:                    blue;
 $light-grey:              lightgrey;
 $grey:                    grey;
@@ -33,7 +36,7 @@ $bgc-3:                   #ccc;
 
 // selection 
 $c-selection:             #161616;
-$bgc-selection:           rgba(44, 143, 235, 0.5);
+$bgc-selection:           rgba(236, 229, 97, 0.9);
 
 // link 
 $c-link:                  #2046df;
@@ -66,17 +69,17 @@ $c-alert-danger:          #F58E45;
 $c-alert-error:           #F45757;
 
 // form
-$c-form-1:                rgb(153, 153, 153);
-$c-form-2:                rgb(119, 119, 119);
+$c-form-1:                #999999;
+$c-form-2:                #777777;
 
-$c-form-input:            rgb(190, 190, 190);
-$c-form-hover:            rgb(42, 145, 240);
-$c-form-active:           rgb(164, 210, 158);
-$c-form-focus:            rgb(39, 146, 206);
+$c-form-input:            #bebebe;
+$c-form-hover:            $c-link-hover;
+$c-form-active:           $c-link-active;
+$c-form-focus:            $c-link-visited;
 
 // code 
-$bgc-code:                rgb(247, 247, 247);
-$c-code:                  rgb(51, 51, 51);
+$bgc-code:                #f7f7f7;
+$c-code:                  #333333;
 
 // brands 
 $c-google:                rgb(211, 72, 54);

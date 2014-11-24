@@ -14,23 +14,26 @@ $use-utilities-text:  true !default;
 	@include add(u-h6)                     { font-size: $f-h6;}
 
   // large type
-	@include add(u-font-jumbo)             { font-size: $f-jumbo;}
-	@include add(u-font-largest)           { font-size: $f-largest;}
-	@include add(u-font-larger)            { font-size: $f-larger;}
+	@include add(u-font-massive)           { font-size: $f-massive;}
+	@include add(u-font-huge)              { font-size: $f-huge;}
 	@include add(u-font-large)             { font-size: $f-large;}
 
   // small type
-	@include add(u-font-micro)             { font-size: $f-micro;}
-	@include add(u-font-smallest)          { font-size: $f-smallest;}
-	@include add(u-font-smaller)           { font-size: $f-smaller;}
-	@include add(u-font-small)             { font-size: $f-small;}
+  @include add(u-font-small)             { font-size: $f-small;}		
+  @include add(u-font-tiny)              { font-size: $f-tiny;}
+  @include add(u-font-micro)             { font-size: $f-micro;}
 
   // type
 	@include add(u-font-base)              { font-size: $f-base;}  
 	@include add(u-font-lead)              { font-size: $f-lead;}
 	@include add(u-font-half)              { font-size: $f-half;}
 
-  // font weights
+  // font weights  
+  @include add(u-font-normal)            { font-weight: normal;}
+  @include add(u-font-bold)              { font-weight: bold;}
+  @include add(u-font-lighter)           { font-weight: lighter;}
+  @include add(u-font-bolder)            { font-weight: bolder;}
+  @include add(u-font-100)               { font-weight: 100;}
 	@include add(u-font-200)               { font-weight: 200;}
 	@include add(u-font-300)               { font-weight: 300;}
 	@include add(u-font-400)               { font-weight: 400;}
@@ -41,8 +44,9 @@ $use-utilities-text:  true !default;
 	@include add(u-font-900)               { font-weight: 900;}
 
   // font styles
-	@include add(u-font-italic)            { font-style: italic;}
-	@include add(u-font-bold)              { font-style: bold;}
+  @include add(u-font-normal)            { font-style: normal;}
+  @include add(u-font-italic)            { font-style: italic;}
+  @include add(u-font-oblique)           { font-style: oblique;}
 
   // link underline
 	@include add(u-underline-link)         { text-decoration: underline;} 
@@ -56,7 +60,6 @@ $use-utilities-text:  true !default;
 	@include add(u-text-left)              { text-align: left;}
 	@include add(u-text-right)             { text-align: right;}
 	@include add(u-text-center)            { text-align: center;}
-	@include add(u-text-centre)            { text-align: center;}
 	@include add(u-text-justify)           { text-align: justify;}
 
   // nowrap

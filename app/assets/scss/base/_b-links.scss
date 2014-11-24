@@ -7,7 +7,7 @@ $use-base-links:	true !default;
   a{
     vertical-align: baseline;
     font-size: 100%;
-    transition: color 1s;
+    transition: color .25s;
     &, &:hover{
       color: $c-link;
       text-decoration: none;

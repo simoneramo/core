@@ -8,19 +8,36 @@ $use-objects-options: true !default;
   // object
   @include object(o-options) {
     @include unstyled;
+  
+    letter-spacing:-0.31em;   // whitespace hack
+    word-spacing:-0.43em;   // whitespace hack
+    white-space:nowrap;   // whitespace hack
+    
     > li{
-      display: list-item;
-      > a{
-        display: block;
-        padding: $space-half $space;
+      letter-spacing:normal;   // whitespace hack
+      word-spacing:normal;   // whitespace hack   
+       
+      &, > a{
+        display: inline-block;
+      }
+
+      a{
         border: 0 solid $light-grey;
         border-width: 1px;
         border-left-width: 0;
+        padding: $space;
       }
+        
       &:first-child > a{
         border-left-width:1px;
       }
     }
+
+    // modifier extend - nav
+    @include modifier(fit) {
+      @extend .o-nav.\--fit;
+    }
+
   }
 
 }//endif
