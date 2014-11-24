@@ -26,8 +26,8 @@ $use-utilities-spaces:  true !default;
   @include add(u-pb-fifth)            { padding-bottom: $space-fifth!important; }
   @include add(u-pl-fifth)            { padding-left: $space-fifth!important; }
 
-  @include add(u-p-fifth-box)        { padding: $space-fifth!important; }
-  @include add(u-m-fifth-box)        { margin: $space-fifth!important; }
+  @include add(u-p-fifth-box)         { padding: $space-fifth!important; }
+  @include add(u-m-fifth-box)         { margin: $space-fifth!important; }
 
   @include add(u-mt-quarter)          { margin-top: $space-quarter!important; }
   @include add(u-mr-quarter)          { margin-right: $space-quarter!important; }
