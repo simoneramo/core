@@ -152,7 +152,7 @@
         '!app/_partials/**/*.jade',                                      // Exclude _partials directory from compiling in /app - app/_partials/**/*.html
       ])     
       .pipe($.jade({                                                     // Use gulp-jade
-        pretty: true                                                    // All Jade Options are available - http://jade-lang.com/api/
+        pretty: false                                                    // All Jade Options are available - http://jade-lang.com/api/
       }))
       .on('error', function(err){
         console.log(err.message);
@@ -168,14 +168,8 @@
 /* HTML > $ gulp html
  ------------------------------------------- */
   gulp.task('html', function() {
-    return gulp.src('app/**/*.html')     
-      // .pipe($.jade({                                                     // Use gulp-jade
-      //   pretty: false                                                    // All Jade Options are available - http://jade-lang.com/api/
-      // }))
-      // .on('error', function(err){
-      //   console.log(err.message);
-      //   this.end();
-      // })
+    return gulp.src('app/**/*.html')
+      .pipe($.htmlmin({collapseWhitespace: true}))
       .pipe(gulp.dest('_public'))     
       .pipe($.notify({ message: 'HTML built' }))                         // Notify 
       .pipe($.size({title: 'HTML size of'}));                            // Size
@@ -264,7 +258,8 @@
       });
       gulp.watch(['app/assets/scss/**/*'], ['styles', reload]);
       gulp.watch(['app/assets/scripts/**/*.{js,coffee}'], ['scripts', reload]);
-      gulp.watch(['app/**/*.{jade,md}'], ['jade', reload]);    
+      gulp.watch(['app/**/*.{jade,md}'], ['jade', reload]);
+      gulp.watch(['app/**/*.html'], ['html', reload]);
       gulp.watch(['app/assets/images/**/*'], reload);
       gulp.watch(['app/assets/icons/**/*'], reload);
       gulp.watch(['app/assets/fonts/**/*'], reload);
