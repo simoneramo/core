@@ -36,15 +36,13 @@ $use-utilities-extends: true !default;
   %e-h6                   { font-size: $f-h6; }
 
   // large type
-  %e-font-jumbo           { font-size: $f-jumbo; }
-  %e-font-largest         { font-size: $f-largest; }
-  %e-font-larger          { font-size: $f-larger; }
+  %e-font-massive         { font-size: $f-massive; }
+  %e-font-huge            { font-size: $f-huge; }
   %e-font-large           { font-size: $f-large; }
 
   // small type
   %e-font-micro           { font-size: $f-micro; }
-  %e-font-smallest        { font-size: $f-smallest; }
-  %e-font-smaller         { font-size: $f-smaller; }
+  %e-font-tiny            { font-size: $f-tiny; }
   %e-font-small           { font-size: $f-small; }
 
   // type
@@ -201,20 +199,25 @@ $use-utilities-extends: true !default;
   // widths
   %e-one-whole            { width: 100%; }
   %e-one-half             { width: 50%; }
+
   %e-one-third            { width: 33.333%; }
   %e-two-thirds           { width: 66.666%; }
+
   %e-one-quarter          { width: 25%; }
   %e-two-quarters         { @extend %e-one-half; }
   %e-three-quarters       { width: 75%; }
+
   %e-one-fifth            { width: 20%; }
   %e-two-fifths           { width: 40%; }
   %e-three-fifths         { width: 60%; }
   %e-four-fifths          { width: 80%; }
+
   %e-one-sixth            { width: 16.666%; }
   %e-two-sixths           { @extend %e-one-third; }
   %e-three-sixths         { @extend %e-one-half; }
   %e-four-sixths          { @extend %e-two-thirds; }
   %e-five-sixths          { width: 83.333%; }
+
   %e-one-eighth           { width: 12.5%; }
   %e-two-eighths          { @extend %e-one-quarter; }
   %e-three-eighths        { width: 37.5%; }
@@ -222,6 +225,7 @@ $use-utilities-extends: true !default;
   %e-five-eighths         { width: 62.5%; }
   %e-six-eighths          { @extend %e-three-quarters; }
   %e-seven-eighths        { width: 87.5%; }
+
   %e-one-tenth            { width: 10%; }
   %e-two-tenths           { @extend %e-one-fifth; }
   %e-three-tenths         { width: 30%; }
@@ -230,7 +234,8 @@ $use-utilities-extends: true !default;
   %e-six-tenths           { @extend %e-three-fifths; }
   %e-seven-tenths         { width: 70%; }
   %e-eight-tenths         { @extend %e-four-fifths; }
-  %e-nine-tenths          { width: 90%; }  
+  %e-nine-tenths          { width: 90%; }
+  
   %e-one-twelfth          { width: 8.333%; } 
   %e-two-twelfths         { @extend %e-one-sixth; }
   %e-three-twelfths       { @extend %e-one-quarter; }
@@ -242,6 +247,67 @@ $use-utilities-extends: true !default;
   %e-nine-twelfths        { @extend %e-three-quarters; } 
   %e-ten-twelfths         { @extend %e-five-sixths; }
   %e-eleven-twelfths      { width: 91.666%; }
+
+  // width fractions
+  %e-1-1           { width: 100%; }
+
+  %e-1-2           { width: 50%; }
+  %e-2-2           { @extend %e-1-1; } 
+
+  %e-1-3           { width: 33.333%; } 
+  %e-2-3           { width: 66.666%; }   
+  %e-3-3           { @extend %e-1-1; }
+
+  %e-1-4           { width: 25%; }
+  %e-2-4           { @extend %e-1-1; }
+  %e-3-4           { width: 75%; }
+  %e-4-4           { @extend %e-1-1; }
+
+  %e-1-5           { width: 20%; }
+  %e-2-5           { width: 40%; } 
+  %e-3-5           { width: 60%; }
+  %e-4-5           { width: 80%; }
+  %e-5-5           { @extend %e-1-1; }
+
+  %e-1-6           { width: 16.666%; }
+  %e-2-6           { @extend %e-1-3; } 
+  %e-3-6           { @extend %e-1-2; }
+  %e-4-6           { @extend %e-2-3; }
+  %e-5-6           { width: 83.333%; }
+  %e-6-6           { @extend %e-1-1; }
+
+  %e-1-8           { width: 12.5%; }
+  %e-2-8           { @extend %e-1-4; }
+  %e-3-8           { width: 37.5%; }
+  %e-4-8           { @extend %e-1-2; }
+  %e-5-8           { width: 62.5%; }
+  %e-6-8           { @extend %e-3-4; }
+  %e-7-8           { width: 87.5%; }
+  %e-8-8           { @extend %e-1-1; }
+
+  %e-1-10          { width: 10%; }
+  %e-2-10          { @extend %e-1-5; }
+  %e-3-10          { width: 30%; }
+  %e-4-10          { @extend %e-2-5; }
+  %e-5-10          { @extend %e-1-2; }
+  %e-6-10          { @extend %e-3-5; }
+  %e-7-10          { width: 70%; }
+  %e-8-10          { @extend %e-4-5; }
+  %e-9-10          { width: 90%; }  
+  %e-10-10         { @extend %e-1-1; } 
+   
+  %e-1-12          { width: 8.333%; } 
+  %e-2-12          { @extend %e-1-6; }
+  %e-3-12          { @extend %e-1-4; }
+  %e-4-12          { @extend %e-1-3; }
+  %e-5-12          { width: 41.666% } 
+  %e-6-12          { @extend %e-1-2; }
+  %e-7-12          { width: 58.333%; }
+  %e-8-12          { @extend %e-2-3; }
+  %e-9-12          { @extend %e-3-4; } 
+  %e-10-12         { @extend %e-5-6; }
+  %e-11-12         { width: 91.666%; }
+  %e-12-12         { @extend %e-1-1; }
 
   // mixins as extends
   %e-hidden               { @include hidden; }
