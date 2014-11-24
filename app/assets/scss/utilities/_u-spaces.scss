@@ -14,8 +14,8 @@ $use-utilities-spaces:  true !default;
   @include add(u-pb-sixth)            { padding-bottom: $space-sixth!important; }
   @include add(u-pl-sixth)            { padding-left: $space-sixth!important; }
 
-  @include add(u-p-sixth-box)        { padding: $space-sixth!important; }
-  @include add(u-m-sixth-box)        { margin: $space-sixth!important; }
+  @include add(u-p-sixth-box)         { padding: $space-sixth!important; }
+  @include add(u-m-sixth-box)         { margin: $space-sixth!important; }
 
   @include add(u-mt-fifth)            { margin-top: $space-fifth!important; }
   @include add(u-mr-fifth)            { margin-right: $space-fifth!important; }
