@@ -7,7 +7,7 @@ $use-objects-notify: true !default;
 
   // object
   @include object(o-notify) {
-    background-color: $bgc-btn-1;
+    background-color: $c-notify-primary;
     padding: $space;
     
       // modifier
