@@ -1,0 +1,21 @@
+$use-objects-notify: true !default;
+
+@if $use-objects-notify == true{
+/* ==========================================================================
+   Ojects - Alert
+   ========================================================================== */
+
+  // object
+  @include object(o-notify) {
+    background-color: $bgc-btn-1;
+    padding: $space;
+    
+      // modifier
+      @include modifier(success)    { background-color: $c-notify-success; }
+      @include modifier(info)       { background-color: $c-notify-info; }
+      @include modifier(warning)    { background-color: $c-notify-warning; }
+      @include modifier(danger)     { background-color: $c-notify-danger; }
+      @include modifier(error)      { background-color: $c-notify-error; }
+  } 
+
+}//endif

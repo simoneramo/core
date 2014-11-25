@@ -2,9 +2,6 @@
    Utilities - Global Adds
    ========================================================================== */
 
-  // round
-  @include add(rounded)     { border-radius: $global-round; }
-
   // disabled
   @include add(disabled)    { @extend %e-disabled; }
 
