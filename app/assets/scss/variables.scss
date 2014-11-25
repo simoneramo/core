@@ -5,12 +5,15 @@
   // normailze legacy 
   $legacy_browser_support:                false; 
   
+  
   // border box
   $use-border-box:                        true;  
   
+
   // reset
   $use-reset-general:                     true;
   $use-reset-myers:                       false;
+
 
   // base
   $use-base-imports:                      true;
@@ -21,6 +24,7 @@
   $use-base-media:                        true;
   $use-base-forms:                        true; 
   
+
   // utilities
   $use-utilities-widths:                  true;
   $use-utilities-extends:                 true;
@@ -33,12 +37,15 @@
   $use-utilities-position:                true;  
   $use-utilities-rounded:                 true;  
   $use-utilities-notify:                  true;  
+  $use-utilities-states:                  true;  
+
 
   // debug
   $use-utilities-debug-outlines:          false;
   $use-utilities-debug-media:             false;
   $use-utilities-debug-issues:            false; 
   
+
   // objects
   $use-objects-code:                      true;
   $use-objects-forms:                     true;
@@ -52,7 +59,6 @@
   $use-objects-buttons:                   true;
   $use-objects-buttons-groups:            true;
   $use-objects-columns:                   true;
-  $use-objects-emphasis:                  true;
   $use-objects-icon-fonts:                true;
   $use-objects-icon-text:                 true;
   $use-objects-link-complex:              true;
@@ -74,10 +80,13 @@
   $use-objects-loaders:                   true;
   $use-objects-stats:                     true;
   $use-objects-this-or-this:              true;  
+  $use-objects-flag:                      true;  
   
+
   // delete or add icons here
   $use-icons-feather:                     true;
   $use-icons-octicons:                    true;
+
 
   // modules
   $use-modules-social-gallery:            true;
