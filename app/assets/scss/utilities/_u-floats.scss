@@ -1,0 +1,11 @@
+$use-utilities-floats:  true !default;
+   
+@if $use-utilities-floats == true{
+/* ==========================================================================
+   Utilities - Float
+   ========================================================================== */
+   
+  @include add(u-left) { float: left; }
+  @include add(u-right) { float: right; }
+
+}// end if
