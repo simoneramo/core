@@ -1,0 +1,23 @@
+$use-utilities-rounded:  true !default;
+   
+@if $use-utilities-rounded == true{
+/* ==========================================================================
+   Utilities Rounded
+   ========================================================================== */
+
+  // rounded
+  @include add(u-round)            { border-radius: $global-round; }
+
+  // circle
+  @include add(u-circle)          { border-radius: 100%;}
+
+  // rounded edges
+  @include add(u-round-top)       { border-radius: $global-round $global-round 0 0; }
+  @include add(u-round-right)     { border-radius: 0 $global-round $global-round 0;}
+  @include add(u-round-bottom)    { border-radius: 0 0 $global-round $global-round; }
+  @include add(u-round-left)      { border-radius: $global-round 0 0 $global-round; }
+
+  // rounded reset
+  @include add(u-no-round)        { border-radius: 0; }
+
+}//end if
