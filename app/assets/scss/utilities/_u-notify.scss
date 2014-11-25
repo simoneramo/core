@@ -1,23 +1,22 @@
+$use-utilities-notify:  true !default;
+   
+@if $use-utilities-notify == true{
 /* ==========================================================================
-   Utilities - Global Adds
+   Utilities Notify
    ========================================================================== */
 
-  // disabled
-  @include add(disabled)    { @extend %e-disabled; }
-
-  // active
-  @include add(active)      { @extend %e-active; }
-
-  // bgc colors
+  // notify background colors
   @include add(success)     { background-color: $c-notify-success; }
   @include add(info)        { background-color: $c-notify-info; }
   @include add(warning)     { background-color: $c-notify-warning; }
   @include add(danger)      { background-color: $c-notify-danger; }
   @include add(error)       { background-color: $c-notify-error; }
 
-  // colors
+  // notify colors
   @include add(c-success)   { color: $c-notify-success; }
   @include add(c-info)      { color: $c-notify-info; }
   @include add(c-warning)   { color: $c-notify-warning; }
   @include add(c-danger)    { color: $c-notify-danger; }
   @include add(c-error)     { color: $c-notify-error; }
+
+}//end if
