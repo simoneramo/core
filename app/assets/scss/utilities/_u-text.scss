@@ -48,13 +48,13 @@ $use-utilities-text:  true !default;
   @include add(u-font-italic)            { font-style: italic;}
   @include add(u-font-oblique)           { font-style: oblique;}
 
-  // link underline
-	@include add(u-underline-link)         { text-decoration: underline;} 
+  // text underline
+	@include add(u-text-underline)         { text-decoration: underline;} 
 
   // text transforms
-	@include add(u-text-lowercase)         { text-transform: lowercase;} 
-	@include add(u-text-uppercase)         { text-transform: uppercase;} 
-	@include add(u-text-capitalize)        { text-transform: capitalize;} 
+	@include add(u-text-lower)             { text-transform: lowercase;} 
+	@include add(u-text-upper)             { text-transform: uppercase;} 
+	@include add(u-text-caps)              { text-transform: capitalize;} 
 
   // text align
 	@include add(u-text-left)              { text-align: left;}
