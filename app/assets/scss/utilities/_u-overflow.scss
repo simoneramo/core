@@ -1,0 +1,11 @@
+$use-utilities-overflow:  true !default;
+   
+@if $use-utilities-overflow == true{
+/* ==========================================================================
+   Utilities Overflow
+   ========================================================================== */
+
+  @include add(u-overflow-hidden) { overflow: hidden;}
+  @include add(u-overflow-scroll) { overflow: scroll; }
+
+}//end if
