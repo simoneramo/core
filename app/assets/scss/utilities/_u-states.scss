@@ -1,0 +1,18 @@
+$use-utilities-states:  true !default;
+   
+@if $use-utilities-states == true{
+/* ==========================================================================
+   Utilities States
+   ========================================================================== */
+
+  // disabled
+  @include add(u-disable)       { @extend %e-disable; }
+
+  // active
+  @include add(u-active)        { @extend %e-active; }
+
+  // informative
+  @include add(u-informative)   { @extend %e-informative; }
+
+
+}//enb if

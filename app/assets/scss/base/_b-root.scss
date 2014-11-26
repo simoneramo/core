@@ -10,6 +10,10 @@ $use-base-root: true !default;
     min-height: 100%;
     word-wrap: break-word;
     font:#{($f-base)}/#{$base-line-height} $f-base-family;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
   }
 
 

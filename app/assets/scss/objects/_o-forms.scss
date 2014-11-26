@@ -5,115 +5,102 @@ $use-objects-forms:	true !default;
    Object - Forms
    ========================================================================== */
    
-	.o-form{
-		ul{
-			// // // @include u-clearfix;
-			// @extend %o-list;
-			margin-bottom:0;
-			border: none;
-			li{
-				margin-bottom:$space;
-				.o-alert{
-					margin-top: $space-half;
-					margin-bottom: 0;
-				}
-			}
-			&:last-child{
-					margin-bottom: 0;
-			}
-		}
+  // object
+  @include object(o-form) {
 
-		textarea,
-		input[type="text"],
-		input[type="email"],
-		input[type="password"],
-		input[type="tel"],
-		input[type="search"],
-		input[type="number"],
-		input[type="url"],
-		input[type="date"],
-		input[type="datetime"],
-		input[type="datetime-local"],
-		input[type="time"],
-		input[type="week"]{
-			border: 1px solid $c-form-input;
-			padding: $space-half;
-			&.is-error{
-				border: 1px $c-alert-error solid!important;
-			}
-			&.is-success{
-				border: 1px $c-alert-success solid!important;
-			}
-			&.is-warning{
-				border: 1px $c-alert-warning solid!important;
-			}
-			&.is-info{
-				border: 1px $c-alert-info solid!important;
-			}
-			&.is-danger{
-				border: 1px $c-alert-danger solid!important;
-			}
-		}
-		input[type="color"], select{
-		   border: 1px solid $c-form-input;
-		}
-	}
+    legend{
+      display: block;
+      margin-bottom: $space;
+    }
 
-	/* span > legend reset legend styles */
-	.o-form__legend-wrap{
-		display: block;
-		margin: 0;
-		padding:0;
-		margin-bottom:$space;
-	}
+    ul{
+      @include unstyled;
+      @include clearfix;
+      
+      li{
+        margin-bottom: $space;
+        
+        textarea,
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="search"],
+        input[type="number"],
+        input[type="url"],
+        input[type="date"],
+        input[type="datetime"],
+        input[type="datetime-local"],
+        input[type="time"],
+        input[type="week"] {
+          border: 1px solid $c-form-input;
+          padding: $space-half;
+        }
+        
+        input[type="color"], select{
+           border: 1px solid $c-form-input;
+        }
 
-	// label block
-	.o-form__label-block{
-		display: block;	
-	}
+        &.o-form__g-fw{
+          width: 100%!important;
+        }
 
-	// label inline
-	.o-form__label-inline{
-		display: inline;	
-	}
+      }
 
-	// style inputs 100%
-	.o-form__input-full{
-		width: 100%;
-	}
+       // forms grid using susy for quick classess
+      &.o-form__g-2 li{
+        @include gallery(6 of 12);
+      }
 
-	// style text file inputs
-	.o-form__text-file{
-		margin-bottom:$space;
-	}
+      &.o-form__g-3 li{
+        @include gallery(4 of 12);
+      }
 
-	// help block - under inputes/selects ect.
-	.o-form__help-block{
-		margin-top: $space-half;
-		display: block;
-	}
+      &.o-form__g-4 li{
+        @include gallery(3 of 12);
+      }
+      
+      &.o-form__g-5 li{
+        @include gallery(2 of 10);
+      }
 
-	// text block top of form information
-	.o-form__text-block{
-		@extend .o-alert;
-		margin-bottom:$space;
-	}
+    } 
 
-	// forms grid quick classess
-	ul.o-form__grid li{
-		margin-bottom: 0;
-	}
-	// ul.o-form__grid-2 li{
-	// 	@include gallery(6 of 12);
-	// }
-	// ul.o-form__grid-3 li{
-	// 	@include gallery(4 of 12);
-	// }
-	// ul.o-form__grid-4 li{
-	// 	@include gallery(3 of 12);
-	// }
-	// ul.o-form__grid-5 li{
-	// 	@include gallery(2 of 10);
-	// }
+
+    //.o-form__
+
+    // inputs 100%
+    @include element(input-fw) {
+      @extend %e-1-1;
+    }
+
+    // label block
+    @include element(label-block) {
+      @extend %e-block;
+    }
+
+    // label inline
+    @include element(label-inline) {
+      @extend %e-inline;
+    }
+  	
+  	// inputs text file
+  	@include element(input-file) {
+  		margin-bottom:$space;
+  	}
+
+  	// help box - under inputs selects ect.
+  	@include element(box-help) {
+  		margin-top: $space-half;
+  		@extend %e-block;
+  	}
+
+  	// text box ontop of form for information
+  	@include object(box-text) {
+  		@extend .o-notify;
+  		margin-bottom:$space;
+  	}
+
+  }
 
 }//endif

@@ -15,17 +15,17 @@ $use-utilities-extends: true !default;
   %e-table                { display: table; }
 
   // alert colors
-  %e-success              { background-color: $c-alert-success; }
-  %e-info                 { background-color: $c-alert-info; }
-  %e-warning              { background-color: $c-alert-warning; }
-  %e-danger               { background-color: $c-alert-danger; }
-  %e-error                { background-color: $c-alert-error; }
+  %e-success              { background-color: $c-notify-success; }
+  %e-info                 { background-color: $c-notify-info; }
+  %e-warning              { background-color: $c-notify-warning; }
+  %e-danger               { background-color: $c-notify-danger; }
+  %e-error                { background-color: $c-notify-error; }
 
-  %e-c-success            { color: $c-alert-success; }
-  %e-c-info               { color: $c-alert-info; }
-  %e-c-warning            { color: $c-alert-warning; }
-  %e-c-danger             { color: $c-alert-danger; }
-  %e-c-error              { color: $c-alert-error; }
+  %e-c-success            { color: $c-notify-success; }
+  %e-c-info               { color: $c-notify-info; }
+  %e-c-warning            { color: $c-notify-warning; }
+  %e-c-danger             { color: $c-notify-danger; }
+  %e-c-error              { color: $c-notify-error; }
 
   // headings
   %e-h1                   { font-size: $f-h1; }
@@ -343,7 +343,8 @@ $use-utilities-extends: true !default;
 
   // helpers
   %e-informative             { cursor:help; }
-  %e-disabled
+
+  %e-disable
   // , 
   // .btn[disabled],
   // fieldset[disabled] .btn

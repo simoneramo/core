@@ -19,7 +19,7 @@ $use-objects-flag: true !default;
 
     // element
     @include element(image) {
-      padding-right: $space;
+      padding-right: $space-2;
       display: table-cell;
       vertical-align: middle;
 
@@ -47,7 +47,7 @@ $use-objects-flag: true !default;
     @include modifier(rev) {
       .o-flag__image{
         padding-right: 0;
-        padding-left: 10px;
+        padding-left: $space-2;
       }
     }
 

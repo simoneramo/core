@@ -77,12 +77,12 @@ html(lang='en')
         div.styleguide-colors.c-link-hover
         div.styleguide-colors.c-link-active
         div.styleguide-colors.c-link-visited
-        h3 Alert
-        div.styleguide-colors(class='+success')
-        div.styleguide-colors(class='+info')
-        div.styleguide-colors(class='+error')
-        div.styleguide-colors(class='+warning')
-        div.styleguide-colors(class='+danger')
+        h3 Notify
+        div.styleguide-colors(class='+u-success')
+        div.styleguide-colors(class='+u-info')
+        div.styleguide-colors(class='+u-error')
+        div.styleguide-colors(class='+u-warning')
+        div.styleguide-colors(class='+u-danger')
         br
         h3 Headings
         div.styleguide-colors.c-heading-1
@@ -356,6 +356,53 @@ html(lang='en')
           li
             a.o-btn(href='http://www.unvisted.io') Tab 3
         br
+        .styleguide-code
+          p code here
+      h1 Flag Object
+      div.styleguide-objects.flags
+        .o-flag
+          .o-flag__image
+            img(src="http://placehold.it/200", alt="")
+          .o-flag__body
+            h1(class='+u-h3') Flag Body
+            p A flag is a piece of fabric (most often rectangular or quadrilateral) with a distinctive design that is used as a symbol, as a signaling device, or as decoration. The term flag is also used to refer to the graphic design employed by a flag, or to its depiction in another medium.
+
+            p The first flags were used to assist military co-ordination on battlefields, and flags have since evolved into a general tool for rudimentary signalling and identification, especially in environments where communication is similarly challenging (such as the maritime environment where semaphore is used). National flags are potent patriotic symbols with varied wide-ranging interpretations, often including strong military associations due to their original and ongoing military uses. Flags are also used in messaging, advertising, or for other decorative purposes. The study of flags is known as vexillology, from the Latin word vexillum, meaning flag or banner.
+
+            p Due to the use of flags by military units, "flag" is also used as the name of some military units. A flag (Arabic: لواء) is equivalent to a brigade in Arab countries, and in Spain, a flag (Spanish: bandera) is a battalion-equivalent in the Spanish Legion.
+        hr.o-rule(class='+u-mt-2 +u-mb-2')
+        .o-flag.--rev
+          .o-flag__body
+            h1(class='+u-h3') Flag Body
+            p A flag is a piece of fabric (most often rectangular or quadrilateral) with a distinctive design that is used as a symbol, as a signaling device, or as decoration. The term flag is also used to refer to the graphic design employed by a flag, or to its depiction in another medium.
+
+            p The first flags were used to assist military co-ordination on battlefields, and flags have since evolved into a general tool for rudimentary signalling and identification, especially in environments where communication is similarly challenging (such as the maritime environment where semaphore is used). National flags are potent patriotic symbols with varied wide-ranging interpretations, often including strong military associations due to their original and ongoing military uses. Flags are also used in messaging, advertising, or for other decorative purposes. The study of flags is known as vexillology, from the Latin word vexillum, meaning flag or banner.
+
+            p Due to the use of flags by military units, "flag" is also used as the name of some military units. A flag (Arabic: لواء) is equivalent to a brigade in Arab countries, and in Spain, a flag (Spanish: bandera) is a battalion-equivalent in the Spanish Legion.
+          .o-flag__image
+            img(src="http://placehold.it/200", alt="")
+        hr.o-rule(class='+u-mt-2 +u-mb-2')
+        .o-flag.--top
+          .o-flag__image
+            img(src="http://placehold.it/200", alt="")
+          .o-flag__body
+            h1(class='+u-h3') Flag Body
+            p A flag is a piece of fabric (most often rectangular or quadrilateral) with a distinctive design that is used as a symbol, as a signaling device, or as decoration. The term flag is also used to refer to the graphic design employed by a flag, or to its depiction in another medium.
+
+            p The first flags were used to assist military co-ordination on battlefields, and flags have since evolved into a general tool for rudimentary signalling and identification, especially in environments where communication is similarly challenging (such as the maritime environment where semaphore is used). National flags are potent patriotic symbols with varied wide-ranging interpretations, often including strong military associations due to their original and ongoing military uses. Flags are also used in messaging, advertising, or for other decorative purposes. The study of flags is known as vexillology, from the Latin word vexillum, meaning flag or banner.
+
+            p Due to the use of flags by military units, "flag" is also used as the name of some military units. A flag (Arabic: لواء) is equivalent to a brigade in Arab countries, and in Spain, a flag (Spanish: bandera) is a battalion-equivalent in the Spanish Legion.
+        hr.o-rule(class='+u-mt-2 +u-mb-2')
+        .o-flag.--bottom
+          .o-flag__image
+            img(src="http://placehold.it/200", alt="")
+          .o-flag__body
+            h1(class='+u-h3') Flag Body
+            p A flag is a piece of fabric (most often rectangular or quadrilateral) with a distinctive design that is used as a symbol, as a signaling device, or as decoration. The term flag is also used to refer to the graphic design employed by a flag, or to its depiction in another medium.
+
+            p The first flags were used to assist military co-ordination on battlefields, and flags have since evolved into a general tool for rudimentary signalling and identification, especially in environments where communication is similarly challenging (such as the maritime environment where semaphore is used). National flags are potent patriotic symbols with varied wide-ranging interpretations, often including strong military associations due to their original and ongoing military uses. Flags are also used in messaging, advertising, or for other decorative purposes. The study of flags is known as vexillology, from the Latin word vexillum, meaning flag or banner.
+
+            p Due to the use of flags by military units, "flag" is also used as the name of some military units. A flag (Arabic: لواء) is equivalent to a brigade in Arab countries, and in Spain, a flag (Spanish: bandera) is a battalion-equivalent in the Spanish Legion.
         .styleguide-code
           p code here
       h1 Hamburger
@@ -790,7 +837,7 @@ html(lang='en')
       div.styleguide-objects.progress-bars
         div.o-progress
           div(
-              class='o-progress__bar  +info', 
+              class='o-progress__bar  +u-info', 
               role='progressbar', 
               aria-valuenow='20', 
               aria-valuemin='0', 
@@ -800,7 +847,7 @@ html(lang='en')
             span.o-progress__bar-label 20% Complete    
         div.o-progress
           div(
-            class='o-progress__bar  --striped  +danger', 
+            class='o-progress__bar  --striped  +u-danger', 
             role='progressbar', 
             aria-valuenow='50', 
             aria-valuemin='0', 
@@ -810,7 +857,7 @@ html(lang='en')
             span.o-progress__bar-label 50% Complete    
         div.o-progress
           div(
-            class='o-progress__bar  +warning', 
+            class='o-progress__bar  +u-warning', 
             role='progressbar', a
             ria-valuenow='30', 
             aria-valuemin='0', aria-valuemax='100', 
@@ -818,7 +865,7 @@ html(lang='en')
             )
             span.o-progress__bar-label.sr-only 30% Complete    
         div.o-progress
-          div(class='o-progress__bar  +error', 
+          div(class='o-progress__bar  +u-error', 
             role='progressbar', 
             aria-valuenow='60', 
             aria-valuemin='0', 
@@ -827,7 +874,7 @@ html(lang='en')
             )
             span.o-progress__bar-label 60% Complete    
         div.o-progress
-          div(class='o-progress__bar  --striped  +success', 
+          div(class='o-progress__bar  --striped  +u-success', 
             role='progressbar', 
             aria-valuenow='80', 
             aria-valuemin='0', 
@@ -1259,6 +1306,150 @@ html(lang='en')
             button.o-btn(type='button') 8
         .styleguide-code
           p code here
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form(style="font-family: source-sans-pro")
+          fieldset
+            legend Legend Title
+            ul
+              li
+                p(class='o-notify  +u-success  +u-mb') notify: a message about input
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name" placeholder='email')
+                p.o-form__box-help(class='+u-error  +u-p-half-box') a message about input
+              li
+                p(class='o-notify  +u-warning  +u-mb') Notify: a message about input
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name" placeholder='email')
+                p.o-form__box-help a message about input
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name" placeholder='email')
+                p.o-form__box-help a message about input
+              li
+                p(class='o-notify  +u-info  +u-mb') Notify: a message about input
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name" placeholder='email')
+                p.o-form__box-help a message about input 
+              li
+                button.o-btn(type='button') Submit
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form
+          fieldset
+            legend Legend Title
+            ul
+              li(class='+u-2-2')
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li(class='+u-2-6')
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li(class='+u-1-4')
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li(class='+u-2-3')
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
+              li
+                button.o-btn(type='button') Submit
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form
+          fieldset
+            legend Legend Title
+            ul.o-form__g-2
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
+              li(class='+u-2-2')
+                button.o-btn(type='button') Submit
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form
+          fieldset
+            legend Legend Title
+            ul.o-form__g-3
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li.o-form__g-fw
+                button.o-btn.--full(type='button') Submit
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form
+          fieldset
+            legend Legend Title
+            ul.o-form__g-4
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form
+          fieldset
+            legend Legend Title
+            ul.o-form__g-5
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
+              li
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
       h1 Flyout
       div.styleguide-objects.flyout
         .o-flyout.o-btn
@@ -1287,13 +1478,14 @@ html(lang='en')
                 a.o-btn list item
         .styleguide-code
           p code here
-      h1 icons soical 
-      div.styleguide-objects.flyout
-        p.o-image-text
-          i.o-image-text__icon
-          | words
-        p.o-image-text hello
-          i(class='o-image-text__icon  --rev')
+      h1 Icon Text or Text Icon 
+      div.styleguide-objects.text-image-icon
+        p(class='o-image-text')
+          i.o-image-text__icon(class='+u-circle')
+          | Dribble
+        br
+        p.o-image-text.--rev Twitter
+          i(class='o-image-text__icon  +icon-twitter')
       h1 Rules
       div.styleguide-objects.rules
         h3.styleguide-title--sub default
@@ -1381,17 +1573,17 @@ html(lang='en')
           p code here
       h1 Emphasis
       div.styleguide-objects.emphasis
-        p(class='o-emp  +c-error') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-        p(class='o-emp  +c-info') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-        p(class='o-emp  +c-warning') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-        p(class='o-emp  +c-success') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-        p(class='o-emp  +c-danger') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-c-error') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-c-info') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-c-warning') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-c-success') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-c-danger') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
         br
-        p(class='o-emp  +u-p-box  +error') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-        p(class='o-emp  +u-p-box  +info') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-        p(class='o-emp  +u-p-box  +warning') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-        p(class='o-emp  +u-p-box  +success') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-        p(class='o-emp  +u-p-box  +danger') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-p-box  +u-error') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-p-box  +u-info') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-p-box  +u-warning') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-p-box  +u-success') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-p-box  +u-danger') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
         .styleguide-code
           p code here
       h1 Breadcrumbs
@@ -1462,19 +1654,19 @@ html(lang='en')
       div.styleguide-objects.label-pills
         h1 Pills and Labels
         p.o-label hello
-        p(class='o-label  +success') hello
-        p(class='o-label  +info') hello
-        p(class='o-label  +danger') hello
-        p(class='o-label  +warning') hello
-        p(class='o-label  +error') hello
+        p(class='o-label  +u-success') hello
+        p(class='o-label  +u-info') hello
+        p(class='o-label  +u-danger') hello
+        p(class='o-label  +u-warning') hello
+        p(class='o-label  +u-error') hello
         p(class='o-label  +disabled') hello
         br
         p(class='o-label  --pill  +disabled') hello
-        p(class='o-label  --pill  +success') hello
-        p(class='o-label  --pill  +info') hello
-        p(class='o-label  --pill  +danger') hello
-        p(class='o-label  --pill  +warning') hello
-        p(class='o-label  --pill  +error') hello
+        p(class='o-label  --pill  +u-success') hello
+        p(class='o-label  --pill  +u-info') hello
+        p(class='o-label  --pill  +u-danger') hello
+        p(class='o-label  --pill  +u-warning') hello
+        p(class='o-label  --pill  +u-error') hello
         p(class='o-label  --pill  +disabled') hello
         .styleguide-code
           p code here
@@ -1683,7 +1875,7 @@ html(lang='en')
           figcaption.o-fig__capt Lorem ipsum dolor sit amet
         h3.styleguide-title--sub Figure with rounded image
         figure.o-fig
-          img(class='+rounded' src= "http://placehold.it/200")
+          img(class='+u-rounded' src= "http://placehold.it/200")
           figcaption.o-fig__capt Lorem ipsum dolor sit amet
         .styleguide-code
           p code here
@@ -1711,23 +1903,23 @@ html(lang='en')
           img(class="o-thumb__item" src= "http://placehold.it/200")
         h3.styleguide-title--sub Thumbnail with rounded
         .o-thumb
-          img(class="o-thumb__item  +rounded" src= "http://placehold.it/200")
+          img(class="o-thumb__item  +u-rounded" src= "http://placehold.it/200")
         .styleguide-code
           p code here
-      h1 Alerts
-      div.styleguide-objects.alerts
-        .o-alert(class='+success')
-          p success alert
-        .o-alert(class='+danger')
-          p danger alert
-        .o-alert(class='+error')
-          p error alert
-        .o-alert(class='+warning')
-          p warning alert
-        .o-alert(class='+info')
-          p info alert
-        .o-alert(class='+disabled')
-          p disabled alert
+      h1 Notify
+      div.styleguide-objects.notify
+        .o-notify(class='+u-success')
+          p success notify
+        .o-notify(class='+u-danger')
+          p danger notify
+        .o-notify(class='+u-error')
+          p error notify
+        .o-notify(class='+u-warning')
+          p warning notify
+        .o-notify(class='+u-info')
+          p info notify
+        .o-notify(class='+u-disable')
+          p disabled notify
         .styleguide-code
           p this will be code
       h1 Block Lists
@@ -1778,322 +1970,322 @@ html(lang='en')
       h1.styleguide-title Widths
       div.styleguide-utilites.widths
         h3.styleguide-title--sub Whole & Halves
-        div(class='+u-one-half  +info')
+        div(class='+u-one-half  +u-info')
           p(class='+u-inline-block') 50%
           p(class='+u-inline-block') one-half 
-        div(class='+u-one-whole  +info')
+        div(class='+u-one-whole  +u-info')
           p(class='+u-inline-block') 100%
           p(class='+u-inline-block') one-whole
         h3.styleguide-title--sub Thirds
-        div(class='+u-one-third  +warning')              
+        div(class='+u-one-third  +u-warning')              
           p(class='+u-inline-block') 33.333%
           p(class='+u-inline-block') one-third
-        div(class='+u-two-thirds  +warning')
+        div(class='+u-two-thirds  +u-warning')
           p(class='+u-inline-block') 66.666%
           p(class='+u-inline-block') two-thirds
-        div(class='+u-one-whole  +warning')
+        div(class='+u-one-whole  +u-warning')
           p(class='+u-inline-block') 66.666%
           p(class='+u-inline-block') one-whole 
         h3.styleguide-title--sub Quarters
-        div(class='+u-one-quarter  +danger')
+        div(class='+u-one-quarter  +u-danger')
           p(class='+u-inline-block') 25%
           p(class='+u-inline-block') one-quarters
-        div(class='+u-two-quarters  +danger')
+        div(class='+u-two-quarters  +u-danger')
           p(class='+u-inline-block') 50%
           p(class='+u-inline-block') two-quarters
-        div(class='+u-three-quarters  +danger')         
+        div(class='+u-three-quarters  +u-danger')         
           p(class='+u-inline-block') 75%
           p(class='+u-inline-block') three-quarters
-        div(class='+u-one-whole  +danger')         
+        div(class='+u-one-whole  +u-danger')         
           p(class='+u-inline-block') 100%
           p(class='+u-inline-block') one-whole
         h3.styleguide-title--sub Fifths
-        div(class='+u-one-fifth  +error')              
+        div(class='+u-one-fifth  +u-error')              
           p(class='+u-inline-block') 20%
           p(class='+u-inline-block') one-fifths
-        div(class='+u-two-fifths  +error')             
+        div(class='+u-two-fifths  +u-error')             
           p(class='+u-inline-block') 40%
           p(class='+u-inline-block') two-fifths
-        div(class='+u-three-fifths  +error')           
+        div(class='+u-three-fifths  +u-error')           
           p(class='+u-inline-block') 60%
           p(class='+u-inline-block') three-fifths
-        div(class='+u-four-fifths  +error')            
+        div(class='+u-four-fifths  +u-error')            
           p(class='+u-inline-block') 80%
           p(class='+u-inline-block') four-fifths
-        div(class='+u-one-whole  +error')            
+        div(class='+u-one-whole  +u-error')            
           p(class='+u-inline-block') 100%
           p(class='+u-inline-block') one-whole
         h3.styleguide-title--sub Sixths
-        div(class='+u-one-sixth  +success')              
+        div(class='+u-one-sixth  +u-success')              
           p(class='+u-inline-block') 16.666%
           p(class='+u-inline-block') one-sixth
-        div(class='+u-two-sixths  +success')   
+        div(class='+u-two-sixths  +u-success')   
           p(class='+u-inline-block') 33.333%
           p(class='+u-inline-block') two-sixths
-        div(class='+u-three-sixths  +success')
+        div(class='+u-three-sixths  +u-success')
           p(class='+u-inline-block') 50%
           p(class='+u-inline-block') three-sixths
-        div(class='+u-four-sixths  +success')
+        div(class='+u-four-sixths  +u-success')
           p(class='+u-inline-block') 66.666%
           p(class='+u-inline-block') four-sixths
-        div(class='+u-one-whole  +success')  
+        div(class='+u-one-whole  +u-success')  
           p(class='+u-inline-block') 83.333%          
           p(class='+u-inline-block') five-sixths
-        div(class='+u-sixth-sixths  +success')
+        div(class='+u-sixth-sixths  +u-success')
           p(class='+u-inline-block') 100%           
           p(class='+u-inline-block') one-whole
         h3.styleguide-title--sub Eighths
-        div(class='+u-one-eighth  +warning')
+        div(class='+u-one-eighth  +u-warning')
           p(class='+u-inline-block') 12.5%
           p(class='+u-inline-block') one-eighth
-        div(class='+u-two-eighths  +warning')
+        div(class='+u-two-eighths  +u-warning')
           p(class='+u-inline-block') 33.333%
           p(class='+u-inline-block') two-eighths
-        div(class='+u-three-eighths  +warning')
+        div(class='+u-three-eighths  +u-warning')
           p(class='+u-inline-block') 37.5%
           p(class='+u-inline-block') three-eighths
-        div(class='+u-four-eighths  +warning')
+        div(class='+u-four-eighths  +u-warning')
           p(class='+u-inline-block') 50%
           p(class='+u-inline-block') four-eighths
-        div(class='+u-five-eighths  +warning')
+        div(class='+u-five-eighths  +u-warning')
           p(class='+u-inline-block') 62.5%
           p(class='+u-inline-block') five-eighths
-        div(class='+u-six-eighths  +warning')
+        div(class='+u-six-eighths  +u-warning')
           p(class='+u-inline-block') 75%;
           p(class='+u-inline-block') six-eighths
-        div(class='+u-seven-eighths  +warning')
+        div(class='+u-seven-eighths  +u-warning')
           p(class='+u-inline-block') 87.5%
           p(class='+u-inline-block') six-eighths
-        div(class='+u-one-whole  +warning')
+        div(class='+u-one-whole  +u-warning')
           p(class='+u-inline-block') 100%
           p(class='+u-inline-block') one-whole
         h3.styleguide-title--sub Tenths
-        div(class='+u-one-tenth  +danger')
+        div(class='+u-one-tenth  +u-danger')
           p(class='+u-inline-block') 10%
           p(class='+u-inline-block') one-tenth 
-        div(class='+u-two-tenths  +danger')
+        div(class='+u-two-tenths  +u-danger')
           p(class='+u-inline-block') 20%;
           p(class='+u-inline-block') two-tenths
-        div(class='+u-three-tenths  +danger')
+        div(class='+u-three-tenths  +u-danger')
           p(class='+u-inline-block') 30%;
           p(class='+u-inline-block') three-tenths
-        div(class='+u-four-tenths  +danger')
+        div(class='+u-four-tenths  +u-danger')
           p(class='+u-inline-block') 40%
           p(class='+u-inline-block') four-tenths
-        div(class='+u-five-tenths  +danger')
+        div(class='+u-five-tenths  +u-danger')
           p(class='+u-inline-block') 50%
           p(class='+u-inline-block') five-tenths 
-        div(class='+u-six-tenths  +danger')
+        div(class='+u-six-tenths  +u-danger')
           p(class='+u-inline-block') 60%
           p(class='+u-inline-block') six-tenths
-        div(class='+u-seven-tenths  +danger')
+        div(class='+u-seven-tenths  +u-danger')
           p(class='+u-inline-block') 70%
           p(class='+u-inline-block') seven-tenths
-        div(class='+u-eight-tenths  +danger')
+        div(class='+u-eight-tenths  +u-danger')
           p(class='+u-inline-block') 80%
           p(class='+u-inline-block') eight-tenths
-        div(class='+u-nine-tenths  +danger')
+        div(class='+u-nine-tenths  +u-danger')
           p(class='+u-inline-block') 90%
           p(class='+u-inline-block') nine-tenths
-        div(class='+u-one-whole  +danger')
+        div(class='+u-one-whole  +u-danger')
           p(class='+u-inline-block') 100%
           p(class='+u-inline-block') one-whole
         h3.styleguide-title--sub Twelfths
-        div(class='+u-one-twelfth  +error')            
+        div(class='+u-one-twelfth  +u-error')            
           p(class='+u-inline-block') 8.333%
           p(class='+u-inline-block') one-twelfth
-        div(class='+u-two-twelfths  +error') 
+        div(class='+u-two-twelfths  +u-error') 
           p(class='+u-inline-block') 16.666%
           p(class='+u-inline-block') two-twelfths
-        div(class='+u-three-twelfths  +error')
+        div(class='+u-three-twelfths  +u-error')
           p(class='+u-inline-block') 25%
           p(class='+u-inline-block') three-twelfths
-        div(class='+u-four-twelfths  +error')
+        div(class='+u-four-twelfths  +u-error')
           p(class='+u-inline-block') 33.333%
           p(class='+u-inline-block') four-twelfths
-        div(class='+u-five-twelfths  +error')
+        div(class='+u-five-twelfths  +u-error')
           p(class='+u-inline-block') 41.666%
           p(class='+u-inline-block') five-twelfths
-        div(class='+u-six-twelfths  +error') 
+        div(class='+u-six-twelfths  +u-error') 
           p(class='+u-inline-block') 50%
           p(class='+u-inline-block') six-twelfths
-        div(class='+u-seven-twelfths  +error')         
+        div(class='+u-seven-twelfths  +u-error')         
           p(class='+u-inline-block') 58.333%
           p(class='+u-inline-block') seven-twelfths
-        div(class='+u-eight-twelfths  +error')
+        div(class='+u-eight-twelfths  +u-error')
           p(class='+u-inline-block') 66.666%
           p(class='+u-inline-block') eight-twelfths
-        div(class='+u-nine-twelfths  +error')
+        div(class='+u-nine-twelfths  +u-error')
           p(class='+u-inline-block') 75%
           p(class='+u-inline-block') nine-twelfths
-        div(class='+u-ten-twelfths  +error')
+        div(class='+u-ten-twelfths  +u-error')
           p(class='+u-inline-block') 83.333%
           p(class='+u-inline-block') ten-twelfths
-        div(class='+u-eleven-twelfths  +error')
+        div(class='+u-eleven-twelfths  +u-error')
           p(class='+u-inline-block') 91.666%
           p(class='+u-inline-block') eleven-twelfths
-        div(class='+u-one-whole  +error')
+        div(class='+u-one-whole  +u-error')
           p(class='+u-inline-block') 100%
           p(class='+u-inline-block') one-whole
       h1.styleguide-title Widths
       div.styleguide-utilites.widths
         h3.styleguide-title--sub 1/1 & 1/2
-        div(class='+u-1-1  +success')
+        div(class='+u-1-1  +u-success')
           p(class='+u-inline-block') 1/1
           p(class='+u-inline-block') 100%
         h3.styleguide-title--sub Full Width Halves
-        div(class='+u-1-2  +info')
+        div(class='+u-1-2  +u-info')
           p(class='+u-inline-block') 1/2
           p(class='+u-inline-block') 50%
         h3.styleguide-title--sub 1/3
-        div(class='+u-1-3  +warning')              
+        div(class='+u-1-3  +u-warning')              
           p(class='+u-inline-block') 1/3
           p(class='+u-inline-block') 33.333%
-        div(class='+u-2-3  +warning')
+        div(class='+u-2-3  +u-warning')
           p(class='+u-inline-block') 2/3
           p(class='+u-inline-block') 66.666%
-        div(class='+u-3-3  +danger')         
+        div(class='+u-3-3  +u-danger')         
           p(class='+u-inline-block') 3/3
           p(class='+u-inline-block') 99.999%
         h3.styleguide-title--sub 1/4
-        div(class='+u-1-4 +danger')
+        div(class='+u-1-4 +u-danger')
           p(class='+u-inline-block') 1/4
           p(class='+u-inline-block') 25%
-        div(class='+u-2-4  +danger')
+        div(class='+u-2-4  +u-danger')
           p(class='+u-inline-block') 2/4
           p(class='+u-inline-block') 50%
-        div(class='+u-3-4  +danger')         
+        div(class='+u-3-4  +u-danger')         
           p(class='+u-inline-block') 3/4
           p(class='+u-inline-block') 75%
-        div(class='+u-4-4  +danger')         
+        div(class='+u-4-4  +u-danger')         
           p(class='+u-inline-block') 4/4
           p(class='+u-inline-block') 100%
         h3.styleguide-title--sub 1/5
-        div(class='+u-1-5 +error')              
+        div(class='+u-1-5 +u-error')              
           p(class='+u-inline-block') 1/5
           p(class='+u-inline-block') 20%
-        div(class='+u-2-5  +error')             
+        div(class='+u-2-5  +u-error')             
           p(class='+u-inline-block') 2/5
           p(class='+u-inline-block') 40%
-        div(class='+u-3-5  +error')           
+        div(class='+u-3-5  +u-error')           
           p(class='+u-inline-block') 3/5
           p(class='+u-inline-block') 60%
-        div(class='+u-4-5  +error')            
+        div(class='+u-4-5  +u-error')            
           p(class='+u-inline-block') 4/5
           p(class='+u-inline-block') 1/5
-        div(class='+u-5-5  +error')            
+        div(class='+u-5-5  +u-error')            
           p(class='+u-inline-block') 5/5
           p(class='+u-inline-block') 100%
         h3.styleguide-title--sub 1/6
-        div(class='+u-1-6  +success')              
+        div(class='+u-1-6  +u-success')              
           p(class='+u-inline-block') 1/6
           p(class='+u-inline-block') 16.666
-        div(class='+u-2-6  +success')   
+        div(class='+u-2-6  +u-success')   
           p(class='+u-inline-block') 2/6
           p(class='+u-inline-block') 33.333%
-        div(class='+u-3-6  +success')
+        div(class='+u-3-6  +u-success')
           p(class='+u-inline-block') 3/6
           p(class='+u-inline-block') 50%
-        div(class='+u-4-6  +success')
+        div(class='+u-4-6  +u-success')
           p(class='+u-inline-block') 4/6
           p(class='+u-inline-block') 66.666%
-        div(class='+u-5-6  +success')            
+        div(class='+u-5-6  +u-success')            
           p(class='+u-inline-block') 5/6
           p(class='+u-inline-block') 83.333%
-        div(class='+u-6-6  +success')            
+        div(class='+u-6-6  +u-success')            
           p(class='+u-inline-block') 6/6
           p(class='+u-inline-block') 100%
         h3.styleguide-title--sub 1/8
-        div(class='+u-1-8  +warning')
+        div(class='+u-1-8  +u-warning')
           p(class='+u-inline-block') 1/8
           p(class='+u-inline-block') 12.5%
-        div(class='+u-2-8  +warning')
+        div(class='+u-2-8  +u-warning')
           p(class='+u-inline-block') 2/8
           p(class='+u-inline-block') 25%
-        div(class='+u-3-8  +warning')
+        div(class='+u-3-8  +u-warning')
           p(class='+u-inline-block') 3/8
           p(class='+u-inline-block') 37.5%
-        div(class='+u-4-8  +warning')
+        div(class='+u-4-8  +u-warning')
           p(class='+u-inline-block') 4/8
           p(class='+u-inline-block') 50%
-        div(class='+u-5-8  +warning')
+        div(class='+u-5-8  +u-warning')
           p(class='+u-inline-block') 5/8
           p(class='+u-inline-block') 62.5%
-        div(class='+u-6-8  +warning')
+        div(class='+u-6-8  +u-warning')
           p(class='+u-inline-block') 6/8
           p(class='+u-inline-block') 75%
-        div(class='+u-7-8  +warning')
+        div(class='+u-7-8  +u-warning')
           p(class='+u-inline-block') 7/8
           p(class='+u-inline-block') 87.5%
-        div(class='+u-8-8  +success')            
+        div(class='+u-8-8  +u-success')            
           p(class='+u-inline-block') 8/8
           p(class='+u-inline-block') 100%
         h3.styleguide-title--sub 1/10
-        div(class='+u-1-10  +danger')
+        div(class='+u-1-10  +u-danger')
           p(class='+u-inline-block') 1/10
           p(class='+u-inline-block') 10%
-        div(class='+u-2-10  +danger')
+        div(class='+u-2-10  +u-danger')
           p(class='+u-inline-block') 2/10
           p(class='+u-inline-block') 20%
-        div(class='+u-3-10  +danger')
+        div(class='+u-3-10  +u-danger')
           p(class='+u-inline-block') 3/10
           p(class='+u-inline-block') 30%
-        div(class='+u-4-10  +danger')
+        div(class='+u-4-10  +u-danger')
           p(class='+u-inline-block') 4/10
           p(class='+u-inline-block') 40%
-        div(class='+u-5-10  +danger')
+        div(class='+u-5-10  +u-danger')
           p(class='+u-inline-block') 5/10
           p(class='+u-inline-block') 50%
-        div(class='+u-6-10  +danger')
+        div(class='+u-6-10  +u-danger')
           p(class='+u-inline-block') 6/10
           p(class='+u-inline-block') 60%
-        div(class='+u-7-10  +danger')
+        div(class='+u-7-10  +u-danger')
           p(class='+u-inline-block') 7/10
           p(class='+u-inline-block') 70%
-        div(class='+u-8-10  +danger')
+        div(class='+u-8-10  +u-danger')
           p(class='+u-inline-block') 8/10
           p(class='+u-inline-block') 80%
-        div(class='+u-9-10  +danger')
+        div(class='+u-9-10  +u-danger')
           p(class='+u-inline-block') 9/10
           p(class='+u-inline-block') 90%
-        div(class='+u-10-10  +success')            
+        div(class='+u-10-10  +u-success')            
           p(class='+u-inline-block') 10/10
           p(class='+u-inline-block') 100%
         h3.styleguide-title--sub 1/12
-        div(class='+u-1-12  +error')            
+        div(class='+u-1-12  +u-error')            
           p(class='+u-inline-block') 1/12
           p(class='+u-inline-block') 8.333
-        div(class='+u-2-12  +error') 
+        div(class='+u-2-12  +u-error') 
           p(class='+u-inline-block') 2/12
           p(class='+u-inline-block') 16.666%
-        div(class='+u-3-12  +error')
+        div(class='+u-3-12  +u-error')
           p(class='+u-inline-block') 3/12
           p(class='+u-inline-block') 25%
-        div(class='+u-4-12  +error')
+        div(class='+u-4-12  +u-error')
           p(class='+u-inline-block') 4/12
           p(class='+u-inline-block') 33.333%
-        div(class='+u-5-12  +error')
+        div(class='+u-5-12  +u-error')
           p(class='+u-inline-block') 5/12
           p(class='+u-inline-block') 41.666
-        div(class='+u-6-12  +error') 
+        div(class='+u-6-12  +u-error') 
           p(class='+u-inline-block') 6/12
           p(class='+u-inline-block') 50%
-        div(class='+u-7-12  +error')         
+        div(class='+u-7-12  +u-error')         
           p(class='+u-inline-block') 7/12
           p(class='+u-inline-block') 58.33
-        div(class='+u-8-12  +error')
+        div(class='+u-8-12  +u-error')
           p(class='+u-inline-block') 8/12
           p(class='+u-inline-block') 66.666%
-        div(class='+u-9-12  +error')
+        div(class='+u-9-12  +u-error')
           p(class='+u-inline-block') 9/12
           p(class='+u-inline-block') 75%
-        div(class='+u-10-12  +error')
+        div(class='+u-10-12  +u-error')
           p(class='+u-inline-block') 10/12
           p(class='+u-inline-block') 83.333%
-        div(class='+u-11-12  +error')
+        div(class='+u-11-12  +u-error')
           p(class='+u-inline-block') 11/12
           p(class='+u-inline-block') 91.666%
-        div(class='+u-12-12  +error')
+        div(class='+u-12-12  +u-error')
           p(class='+u-inline-block') 12/12
           p(class='+u-inline-block') 100%
         .styleguide-code

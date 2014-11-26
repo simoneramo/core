@@ -2,6 +2,6 @@
 
  $(document).ready(function(){
         $('.o-burger').on('click',function(){
-          $(this).toggleClass('opened');
+          $(this).toggleClass('--opened');
         });
       });
