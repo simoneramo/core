@@ -75,8 +75,8 @@
       .pipe($.changed('scss', {extension: '.scss'}))                     // Check to see if changed
       .pipe($.rubySass({                                                 // Use gulp-rubySass
         bundleExec: true,
-        require: 'sass-globbing',                           									      // - true or false for bundle                               
-        style: 'nested',                                             // - nested, compact, compressed, expanded 
+        require: 'sass-globbing',                           						 // - true or false for bundle                               
+        style: 'nested',                                                 // - nested, compact, compressed, expanded 
         precision: 10                                                    // - default 3, to use when outputting decimal numbers.
         })
         .on('error', function(err){                                      // Output SASS Error
@@ -85,7 +85,7 @@
         })                       
       )
       // https://github.com/postcss/autoprefixer#browsers                
-      .pipe($.autoprefixer(                                              // Autoprefixer Browsers
+      .pipe($.autoprefixer(                                               // Autoprefixer Browsers
         'last 2 version',                                                 // - last 2 version
         'safari 5',                                                       // - safari 5
         'ie 8',                                                           // - ie 8
@@ -110,7 +110,7 @@
       .pipe($.uncss({                                                    // Use gulp-uncss
         html: [
           '_public/index.html',                                            // List HTML files
-          '_public/styleguide.html'
+          '_public/styleguide.html'                                          
         ]
         // ,
         // ignore: [                                                     // CSS Selectors to ignore
@@ -131,7 +131,7 @@
   gulp.task('cssToSass', ['styles'],function() {
     return gulp.src('components-bower/**/*.css')                         // Add Directory
       // .pipe($.cached('cssToSass'))                                    // Add Cached
-      .pipe($.rename(function(path) {                                 // use Rename
+      .pipe($.rename(function(path) {                                    // use Rename
         path.basename = '_' + path.basename;
         path.extname = '.scss';                                          
       }))
