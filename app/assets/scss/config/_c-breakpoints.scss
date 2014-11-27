@@ -15,10 +15,11 @@
   // $breakpoint-no-query-wrappers:  false           !default;
   
 
+  $breakpoint-to-ems: true;
+
   // https://gist.github.com/ethanmuller/7006656
   
-  // $bp-:    px;
-  // $bp-:    px;
-  // $bp-:    px;
-  // $bp-:    px;
-  // $bp-:    px;
+
+  $bp-medium:       620px !default;
+  $bp-wide:         800px !default;
+  $bp-huge:         1600px !default;
