@@ -18,12 +18,14 @@
   // base
   $use-base-imports:                      true;
   $use-base-root:                         true;
-  $use-base-reset:                        true;
   $use-base-links:                        true;
   $use-base-text:                         true;
+  $use-base-lists:                        true;
+  $use-base-quotes:                       true;
   $use-base-media:                        true;
+  $use-base-code:                         true; 
   $use-base-forms:                        true; 
-  
+
 
   // utilities
   $use-utilities-widths:                  true;
