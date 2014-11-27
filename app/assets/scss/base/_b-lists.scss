@@ -1,0 +1,25 @@
+$use-base-lists: true !default;
+
+@if $use-base-lists == true{
+/* ==========================================================================
+   Base - Lists
+   ========================================================================== */
+   
+  ul, ol, dd{ 
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  ul, ol{
+    padding-left: $space-1-half; 
+  }
+
+  dd{ 
+    margin-left: $space-1-half;
+  }
+
+  dt{ 
+    font-weight: bold; 
+  }
+
+}//endif

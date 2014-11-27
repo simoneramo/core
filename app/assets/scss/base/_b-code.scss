@@ -1,0 +1,44 @@
+$use-base-code:  true !default;
+
+@if $use-base-code == true{
+/* ==========================================================================
+   Base - Code
+   ========================================================================== */
+  
+  code,
+  pre {
+    font-family: $monospace;
+    tab-size: 3;
+  }
+
+
+  code {
+    background-color: $bgc-code;
+    padding: $space-quarter;
+  }
+
+
+  pre {
+    padding: $space;
+    display: block;
+    line-height: $base-line-height;
+    color: $c-code;
+    background-color: $bgc-code;
+    white-space: pre;
+    code {
+      background-color: $bgc-code;
+    }
+  }
+
+
+
+
+  pre{
+    mark{
+      border-bottom:1px solid;
+      background:none;
+      color:inherit;
+    }
+  }
+
+}//endif
