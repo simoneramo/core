@@ -35,4 +35,10 @@ $use-base-root: true !default;
     color: $c-type-1;
   }
 
+
+  ::selection{ 
+    background-color:$bgc-selection; 
+    color:$c-selection; 
+  }
+
 }//end if
