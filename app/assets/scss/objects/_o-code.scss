@@ -5,6 +5,8 @@ $use-objects-code:	true !default;
    Object - Code
    ========================================================================== */
    
+
+   
 code,
 pre {
 	padding: $space;
@@ -12,13 +14,17 @@ pre {
 	tab-size: 3;
 }
 
+
+
+
 // Inline code
 code {
 	padding: $space-half;
 	background-color: $bgc-code;
 }
 
-// Blocks of code
+
+
 pre {
 	display: block;
 	padding: $space;
@@ -28,11 +34,7 @@ pre {
 	background-color: $bgc-code;
 	border-radius: 4px;
 	white-space: pre;
-	// white-space: pre-wrap;
-	// word-break: break-all;
-	// word-wrap: break-word;
 
-	// Account for some code outputs that place code tags in pre tags
 	code {
 		padding: 0;
 		color: $c-code;
@@ -40,10 +42,7 @@ pre {
 	}
 }
 
-// Enable scrollable blocks of code
-// .pre--scrollable {
-// 	max-height: 340px;
-// 	overflow-y: scroll;
-// }
+
+
 
 }//endif
