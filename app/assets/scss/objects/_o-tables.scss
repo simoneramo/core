@@ -51,29 +51,39 @@ $use-objects-tables:  true !default;
     }
 
 
+
     // modifier
     @include modifier(rwd) {
-      min-width: 280px; // adjust to your needs
       th {
         display: none;
       }
+
       td {
         display: block; 
+        
         &:before {
           content: attr(data-th)": ";
           font-weight: bold;
           width: 7.5em;
           display: inline-block;
-          @media (min-width: 480px) {
-            display: none;
+          
+            @if $tables-reponsive == true{
+              @include breakpoint($bp-object){
+                display: none;
+              }
+            }
+
+        }
+      }
+
+      @if $tables-reponsive == true{
+        @include breakpoint($bp-object){
+          th, td {
+            display: table-cell;
           }
         }
       }
-      th, td {
-        @media (min-width: 480px) {
-          display: table-cell;
-        }
-      }
+
     }
 
   }

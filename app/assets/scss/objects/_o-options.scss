@@ -15,29 +15,71 @@ $use-objects-options: true !default;
     
     > li{
       letter-spacing:normal;   // whitespace hack
-      word-spacing:normal;   // whitespace hack   
-       
+      word-spacing:normal;   // whitespace hack
+      
+
       &, > a{
-        display: inline-block;
+        display: block;
       }
 
       a{
         border: 0 solid $light-grey;
         border-width: 1px;
-        border-left-width: 0;
+        border-bottom-width: 0;
         padding: $space;
       }
-        
-      &:first-child > a{
-        border-left-width:1px;
+
+      &:last-child > a{
+        border-left-width: 1px;
+        border-bottom-width: 1px;
       }
-    }
 
-    // modifier extend - nav
-    @include modifier(fit) {
-      @extend .o-nav.\--fit;
     }
+    
+  }//end object
+  
+  @if $options-reponsive == true{
+    @include breakpoint($bp-medium) {
+      
+      @include object(o-options) {
+      
 
+        > li{
+          &, > a{
+            display: inline-block;
+          }
+
+          a{
+            border-width: 1px;
+            border-left-width: 0;
+          }
+          &:last-child > a{
+            border-left-width: 0;
+          }
+
+           &:first-child > a{
+            border-left-width: 1px;
+          }
+
+        }
+
+
+
+        //modifier extend - nav
+        @include modifier(fit) {
+          display:table;
+          width:100%;
+          > li{
+            display:table-cell;
+            > a{
+              display:block;
+            }
+          }
+        }
+
+      }//end object
+      
+    }
   }
 
 }//endif

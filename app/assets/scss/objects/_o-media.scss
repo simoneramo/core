@@ -6,30 +6,66 @@ $use-objects-media: true !default;
    ========================================================================== */
    
   // object
-  @include object(o-media) {
-    @include clearfix;
-    display:block;
+  
+  @if $media-reponsive == true{
 
-    // element
-    @include element(img) {
-      float:left;
-      margin-right:$space;
-      background-color: green;
-      
-      // element - modifier
-      @include modifier(right) {
-        float:right;
-        margin-left:$space;
-        background-color: blue;
-        margin-right: 0;
+    @include breakpoint($bp-medium){
+
+      // object
+      @include object(o-media) {
+        @include clearfix;
+        display:block;
+        
+        // element
+        @include element(img) {
+          float:left;
+          margin-right:$space;
+          
+          // element - modifier
+          @include modifier(right) {
+            float:right;
+            margin-left:$space;
+            margin-right: 0;
+          }
+        }
+        
+        // element
+        @include element(body){
+          overflow:hidden;
+        }
       }
-    }
-    
-    // element
-    @include element(body){
-      overflow:hidden;
+
     }
 
   }
 
+  @else {
+
+    // object
+    @include object(o-media) {
+      @include clearfix;
+      display:block;
+      
+      // element
+      @include element(img) {
+        float:left;
+        margin-right:$space;
+        
+        // element - modifier
+        @include modifier(right) {
+          float:right;
+          margin-left:$space;
+          margin-right: 0;
+        }
+      }
+      
+      // element
+      @include element(body){
+        overflow:hidden;
+      }
+    }
+
+
+  }
+ 
 }//endif

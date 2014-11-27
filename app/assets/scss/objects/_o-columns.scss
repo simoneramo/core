@@ -6,29 +6,34 @@ $use-objects-columns: true !default;
    ========================================================================== */
 
   // object
-  @include object(o-cols) {
-    column-gap: $space;
-    
-    // modifier
-    @include modifier(2) {
-      column-count: 2;
-    }
+   @if $columns-reponsive == true{
+    @include breakpoint($bp-object) {
 
-    // modifier
-    @include modifier(3) {
-      column-count: 3;
-    }
+      @include object(o-cols) {
+        column-gap: $space;
+        
+        // modifier
+        @include modifier(2) {
+          column-count: 2;
+        }
 
-    // modifier
-    @include modifier(4) {
-      column-count: 4; 
-    }
+        // modifier
+        @include modifier(3) {
+          column-count: 3;
+        }
 
-    // modifier
-    @include modifier(5) {
-      column-count: 5; 
-    }
+        // modifier
+        @include modifier(4) {
+          column-count: 4; 
+        }
 
-  }
+        // modifier
+        @include modifier(5) {
+          column-count: 5; 
+        }
+
+      }
+    }
+  }//endif
 
 }//endif

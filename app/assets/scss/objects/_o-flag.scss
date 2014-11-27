@@ -3,53 +3,90 @@ $use-objects-flag: true !default;
 @if $use-objects-flag == true{
 /* ==========================================================================
    Object - Flag
-   ========================================================================== */
    
-  // object
-  @include object(o-flag) {
-    display: table;
-    @extend %e-1-1;
+   // 1. set max-width o-flag__image > img if reponsive
+   ========================================================================== */
+  
+  @if $flag-reponsive == true{
 
-    // element
-    @include element(body) {
-      @extend %e-1-1;
-      display: table-cell;
-      vertical-align: middle;
-    }
-
-    // element
-    @include element(image) {
-      padding-right: $space-2;
-      display: table-cell;
-      vertical-align: middle;
-
-      > img {
-        display: block;
-        max-width: none;
+    // object
+    @include object(o-flag) {
+      @include element(image) {
+        margin-bottom: $space;
+      }
+      @include modifier(rev) {
+          .o-flag__image{
+            margin-bottom: 0;
+            margin-top: $space;
+        }
       }
     }
 
-    // modifier
-    @include modifier(top) {
-      .o-flag__image{
-        vertical-align: top;
-      }
-    }
+    // breakpoint change
+    @include breakpoint($bp-object){ 
 
-    // modifier
-    @include modifier(bottom) {
-      .o-flag__image{
-          vertical-align: bottom;
-      }
-    }
+      // object
+      @include object(o-flag) {
+        display: table;
+        width: 100%;
 
-    // modifier
-    @include modifier(rev) {
-      .o-flag__image{
-        padding-right: 0;
-        padding-left: $space-2;
-      }
-    }
+        // element
+        @include element(body) {
+          width: 100%;
+          display: table-cell;
+          vertical-align: middle;
+          
+          // modifier
+          @include modifier(top) {
+            vertical-align: top;
+          }
+
+          // modifier
+          @include modifier(bottom) {
+            vertical-align: bottom;
+          }
+
+        }
+
+        // element
+        @include element(image) {
+          padding-right: $space-2;
+          display: table-cell;
+          vertical-align: middle;
+
+          > img {
+            display: block;
+            max-width: none;  // 1
+          }
+
+          // modifier
+          @include modifier(top) {
+            vertical-align: top;
+          }
+
+          // modifier
+          @include modifier(bottom) {
+            vertical-align: bottom;
+          }
+
+        }
+
+  
+        // modifier
+        @include modifier(rev) {
+          .o-flag__image{
+            padding-right: 0;
+            padding-left: $space-2;
+          }
+        }
+
+      }//end object
+
+    }//end rwd
+
+  }//end if
+
+  @else{
 
   }
 

@@ -5,7 +5,18 @@
   // normailze legacy 
   $legacy_browser_support:                false; 
   
-  
+
+  // responsive
+  $media-reponsive:                       true;
+  $flag-reponsive:                        true;
+  $columns-reponsive:                     true;
+  $matrix-reponsive:                      true;
+  $forms-reponsive:                       true;
+  $this-or-this-reponsive:                true;
+  $options-reponsive:                     true;
+  $tables-reponsive:                      true;
+
+
   // border box
   $use-border-box:                        true;  
   

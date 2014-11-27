@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Site Template One
+   ========================================================================== */
+   
+
+   body.template-one{
+     // background-image: url(../../assets/images/placeholders/temp-one.png);
+     background-position: center -20px;
+     position: relative;
+     height: 4300px;
+     
+     // img{
+     //   opacity: .3;
+     // }
+
+    h1, h2, h3, h4, h5, h6, p{
+      font-family: 'source-sans-pro';
+    }
+
+   }
+
+
+    //main container
+    .t-o-container{
+      @include layout(10 (6em 2em) 70em);
+      @include container;
+    }
+
+
+    //main header
+    .t-o-header{
+      opacity: .9;
+      background-color: $c-notify-info;
+      height: 49em;
+      h1{
+        color: $white;
+        font-weight: 300;
+        font-size: $f-x-large;
+        text-align: center;
+      }
+    }
+
+
+    //main content
+    .t-o-content{
+      opacity: .5;
+      background-color: $c-notify-warning;
+      padding-top: $space-6;
+      @include clearfix;
+      
+      // .o-media{
+      //   margin-bottom: $space-6;
+      //   .o-media__img{
+      //     width: 70%;
+      //     margin-right: 8%;
+      //     @include modifier(right) {
+      //       margin-left: 8%;
+      //       margin-right: 0;
+      //     } 
+      //     h2{
+      //     font-weight: 300;
+      //     font-size: $f-large;
+      //     }
+      //   }
+      // }
+    }

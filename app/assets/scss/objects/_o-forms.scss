@@ -47,22 +47,47 @@ $use-objects-forms:	true !default;
 
       }
 
-       // forms grid using susy for quick classess
-      &.o-form__g-2 li{
-        @include gallery(6 of 12);
-      }
+      @if $forms-reponsive == true{
+        @include breakpoint($bp-object){
+          &.o-form__g-2 li{
+            @include gallery(6 of 12);
+          }
 
-      &.o-form__g-3 li{
-        @include gallery(4 of 12);
-      }
+          &.o-form__g-3 li{
+            @include gallery(4 of 12);
+          }
 
-      &.o-form__g-4 li{
-        @include gallery(3 of 12);
-      }
-      
-      &.o-form__g-5 li{
-        @include gallery(2 of 10);
-      }
+          &.o-form__g-4 li{
+            @include gallery(3 of 12);
+          }
+          
+          &.o-form__g-5 li{
+            @include gallery(2 of 10);
+          }
+
+        }
+      }//end if
+
+      @else {
+
+           // forms grid using susy for quick classess
+          &.o-form__g-2 li{
+            @include gallery(6 of 12);
+          }
+
+          &.o-form__g-3 li{
+            @include gallery(4 of 12);
+          }
+
+          &.o-form__g-4 li{
+            @include gallery(3 of 12);
+          }
+          
+          &.o-form__g-5 li{
+            @include gallery(2 of 10);
+          }
+
+      }//end else
 
     } 
 
