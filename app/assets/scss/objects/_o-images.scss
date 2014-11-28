@@ -8,26 +8,24 @@ $use-objects-images:	true !default;
 	// images
 	  @include object(o-img) {
 
-		@include modifier(circle){
-			display:block;
+		@include modifier(circle) {
 			border-radius: 50%;
 		}
 
-		@include modifier(right){
+		@include modifier(right) {
 			float:right;
 		}
 
-		@include modifier(left){
+		@include modifier(left) {
 			float:left;
 		}
 		
-		@include modifier(center){
-			display:block;
+		@include modifier(center) {
 			margin-right:auto;
 			margin-left:auto;
 		}
 		
-		@include modifier(full){
+		@include modifier(full) {
 			width:100%;
 		}
 	}

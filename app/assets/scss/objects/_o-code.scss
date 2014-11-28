@@ -6,42 +6,6 @@ $use-objects-code:	true !default;
    ========================================================================== */
    
 
-   
-code,
-pre {
-	padding: $space;
-	font-family: $monospace;
-	tab-size: 3;
-}
-
-
-
-
-// Inline code
-code {
-	padding: $space-half;
-	background-color: $bgc-code;
-}
-
-
-
-pre {
-	display: block;
-	padding: $space;
-	margin: 0 0 $space;
-	line-height: $base-line-height;
-	color: $c-code;
-	background-color: $bgc-code;
-	border-radius: 4px;
-	white-space: pre;
-
-	code {
-		padding: 0;
-		color: $c-code;
-		background-color: $bgc-code;
-	}
-}
-
 
 
 
