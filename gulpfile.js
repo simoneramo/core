@@ -46,8 +46,6 @@
   var reload = browserSync.reload;
 
 
-
-
 /* Scripts - http://goo.gl/UOpv25 > $ gulp scripts
  ------------------------------------------- */
   gulp.task('scripts', function() {
@@ -125,9 +123,9 @@
 
 
 
-// hack //
-// if bower css covert to scss hack - fix later
-// https://github.com/sass/sass/issues/556#issuecomment-50825607
+  // hack //
+  // if bower css covert to scss hack - fix later
+  // https://github.com/sass/sass/issues/556#issuecomment-50825607
   gulp.task('cssToSass', ['styles'],function() {
     return gulp.src('components-bower/**/*.css')                         // Add Directory
       // .pipe($.cached('cssToSass'))                                    // Add Cached
@@ -265,13 +263,10 @@
       gulp.watch(['app/assets/fonts/**/*'], reload);
   });
 
-
-
   // just build assets using runSequence > $ gulp assets
   gulp.task('assets', function (cb) {
     runSequence(['styles', 'scripts', 'images', 'fonts', 'icons'], cb);
   });
-
 
   // default: clean and build _public using runSequence > $ gulp default
   gulp.task('default', ['clean'], function (cb) {

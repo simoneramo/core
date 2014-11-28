@@ -8,7 +8,12 @@
   
   // border box
   $use-border-box:                        true;  
+
   
+  // debug
+  $use-debug-outlines:                    false;
+  $use-debug-media-query:                 true;
+  $use-debug-issues:                      false;
 
   // reset
   $use-reset-general:                     true;
@@ -40,12 +45,6 @@
   $use-utilities-rounded:                 true;  
   $use-utilities-notify:                  true;  
   $use-utilities-states:                  true;  
-
-
-  // debug
-  $use-utilities-debug-outlines:          false;
-  $use-utilities-debug-media:             false;
-  $use-utilities-debug-issues:            false; 
   
 
   // objects
