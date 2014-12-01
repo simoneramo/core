@@ -8,6 +8,9 @@ $use-base-lists: true !default;
   ul, ol, dd{ 
     margin-top: 0;
     margin-bottom: 0;
+    @if $use-global-mb == true{
+      @include global-mb;
+    }
   }
 
   ul, ol{

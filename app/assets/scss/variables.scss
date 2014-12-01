@@ -8,12 +8,14 @@
   
   // border box
   $use-border-box:                        true;  
-
+  $use-global-mb:                         true;  
   
+
   // debug
   $use-debug-outlines:                    false;
-  $use-debug-media-query:                 true;
+  $use-debug-media-query:                 false;
   $use-debug-issues:                      false;
+
 
   // reset
   $use-reset-general:                     true;

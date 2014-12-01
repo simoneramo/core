@@ -1,0 +1,38 @@
+$use-debug-media-query: false !default;
+
+@if $use-debug-media-query == true{
+/* ==========================================================================
+   Debug - Mediaquery View
+   ========================================================================== */
+  body{
+    padding-bottom: 10em;
+    &:after{
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      z-index: 3000;
+      padding: 2em 3em;
+      width: 100%;
+      border-top: 1px solid #000;
+      background: #000;
+      color: #FFF;
+      content:"small";
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      @include breakpoint($bp-medium) {
+        content: 'bp-medium';
+        color: red;
+      }
+      @include breakpoint($bp-large) {
+        content: 'bp-large';
+        color: deepskyblue;
+      }
+      @include breakpoint($bp-huge) {
+        content: 'bp-huge';
+        color: deeppink;
+      }
+    }
+  }
+
+}//endif

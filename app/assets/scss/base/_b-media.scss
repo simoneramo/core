@@ -11,11 +11,16 @@ $use-base-media:	true !default;
     -ms-interpolation-mode: bicubic;
   }
 
-
   // make fluid by default
   img, video, object {
     max-width: 100%; 
     height: auto;
+  }
+
+  figure{
+    @if $use-global-mb == true{
+      @include global-mb;
+    }
   }
 
 }//end if

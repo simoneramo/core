@@ -9,6 +9,7 @@ $use-objects-progress-bars: true !default;
   @include object(o-progress) {
     height: $space-3;
     background-color: $bgc-btn-1;
+    @include global-mb;
 
     // element    
     @include element(bar){

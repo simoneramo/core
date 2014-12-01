@@ -11,7 +11,10 @@ $use-objects-rules: true !default;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     color: $light-grey;
-    margin-bottom: 1em;
+    
+    @if $use-global-mb == true{
+      @include global-mb;
+    }
 
     // modifier
     @include modifier(dotted) {

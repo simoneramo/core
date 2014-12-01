@@ -8,6 +8,15 @@ $use-base-text: true !default;
   @include headings(1, 6) {
     font-family: $f-base-heading-family;
     color: $c-heading-1;
+    @if $use-global-mb == true{
+      @include global-mb;
+    }
+  }
+
+  p{
+    @if $use-global-mb == true{
+      @include global-mb;
+    }
   }
 
   // default italic 
