@@ -20,5 +20,6 @@ $use-utilities-position:  true !default;
   @include add(u-z-2)       { z-index: 2; }
   @include add(u-z-3)       { z-index: 3; }
   @include add(u-z-4)       { z-index: 4; }
+  @include add(u-z-5)       { z-index: 5; }
 
 }//end if

@@ -5,19 +5,26 @@ $use-utilities-rounded:  true !default;
    Utilities Rounded
    ========================================================================== */
 
-  // rounded
-  @include add(u-round)            { border-radius: $global-round; }
+  // round
+  @include add(u-round)               { border-radius: 100%;}
 
-  // circle
-  @include add(u-circle)          { border-radius: 100%;}
 
   // rounded edges
-  @include add(u-round-top)       { border-radius: $global-round $global-round 0 0; }
-  @include add(u-round-right)     { border-radius: 0 $global-round $global-round 0;}
-  @include add(u-round-bottom)    { border-radius: 0 0 $global-round $global-round; }
-  @include add(u-round-left)      { border-radius: $global-round 0 0 $global-round; }
+  @include add(u-rounded)             { border-radius: $utilities-round; }
+
+  @include add(u-rounded-t)           { border-radius: $utilities-round $utilities-round 0 0; }
+  @include add(u-rounded-tr)          { border-radius: 0 $utilities-round 0 0;}
+  @include add(u-roundde-tl)          { border-radius: $utilities-round 0 0 0;}
+
+  @include add(u-rounded-b)           { border-radius: 0 0 $utilities-round $utilities-round; }
+  @include add(u-rounded-br)          { border-radius: 0 0 $utilities-round 0;}
+  @include add(u-rounded-bl)          { border-radius: 0 0 0 $utilities-round ;}
+
+  @include add(u-rounded-l)           { border-radius: $utilities-round 0 0 $utilities-round; }
+  @include add(u-rounded-r)           { border-radius: 0 $utilities-round $utilities-round 0;}
+
 
   // rounded reset
-  @include add(u-no-round)        { border-radius: 0; }
+  @include add(u-reset-rounded)       { border-radius: 0; }
 
 }//end if

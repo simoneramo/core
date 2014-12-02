@@ -20,14 +20,17 @@
 
 
 
-  $styleguide-blue: rgb(47, 81, 134);
+  $styleguide-red: rgb(210, 26, 26);
 	$styleguide-grey:  rgb(230,230,230);
 	
   body.styleguide{
     padding-top: 2em;
-    background-color: $styleguide-blue;
+    background: linear-gradient(45deg, #3d1fc4 0%,#ff3232 100%);
     padding-left: $space;
     padding-right: $space;
+    h1, h2, h3, h4, h5, h6 {
+      color: rgb(65, 73, 79);
+    }
   }
 
   // 
@@ -75,7 +78,7 @@
   // OBJECT GLOBALS
   //
 
-  .styleguide-objects, .styleguide-base, .styleguide-utilites{
+  .styleguide-objects, .styleguide-base, .styleguide-utilities{
     @extend %e-mb-3;
     border-radius: $global-round;
     border: solid 3px $styleguide-grey;
@@ -147,15 +150,12 @@
   //
   .styleguide-objects{
     &.flags{
-      h1{
-        margin-bottom: $space-third;
-      } 
-      p{
-        margin-bottom: $space;
-        &:last-child{
+      .o-flag{
+        border: 1px dashed #ccc;
+        p:last-child{
           margin-bottom: 0;
-        }
-      }  
+        }  
+      }      
     }
   }
   // 
@@ -179,7 +179,6 @@
       div{
       	.o-icon{
       		font-size: 3em;
-          @extend %e-c-info;
       	}
     	}  
     }
@@ -235,6 +234,13 @@
 
   // 
   // OBJECT MEDIA
+  .styleguide-objects{
+    &.media{
+      .o-media{
+        border: 1px dashed #ccc;
+      }
+    }
+  }
   //
 
   // 
@@ -314,20 +320,21 @@
   // UTILITIES WIDTHS
   //
 
-  .styleguide-utilites{
+  .styleguide-utilities{
     &.widths{
       > div{
         padding: $space;
-        @extend %e-info;
+        @extend %e-bgc-info;
         margin-bottom: $space-half;
         p{
           padding: 4px 8px;
           border-radius: 2px;
-          @extend %e-warning;
+          @extend %e-bgc-warning;
           margin-left: $space-half;
+          @include reset-mb;
         }
         p:nth-child(2){
-          @extend %e-success;
+          @extend %e-bgc-success;
         }
       }
       h2{
@@ -340,26 +347,26 @@
   // UTILITIES SPACES
   //
 
-  .styleguide-utilites{
+  .styleguide-utilities{
     &.spaces{
       > div{
         margin-bottom: $space;
         .margin{
           @include clearfix;
-          @extend %e-info;
+          @extend %e-bgc-info;
         }
         .padding{
           @include clearfix;
-          @extend %e-error;
+          @extend %e-bgc-error;
         }
         p{
           padding: $space;
-          border: 1px dashed black;
+          border: 1px dashed #ccc;
           background-color: $bgc-1;
             span{
               padding: 4px 8px;
               border-radius: 2px;
-              @extend %e-warning;
+              @extend %e-bgc-warning;
             }
         }
         &:nth-child(5n){
@@ -372,28 +379,28 @@
     }
   }
 
-  .styleguide-utilites.box{
+  .styleguide-utilities.box{
     > div{
       margin-bottom: $space;
       .margin{
         @include clearfix;
-        @extend %e-info;
+        @extend %e-bgc-info;
       }
 
       .padding{
         @include clearfix;
-        @extend %e-error;
+        @extend %e-bgc-error;
       }
 
       p{
         padding: $space;
-        border: 1px dashed black;
+        border: 1px dashed #ccc;
         background-color: $bgc-1;
         
         span{
           padding: 4px 8px;
           border-radius: 2px;
-          @extend %e-warning;
+          @extend %e-bgc-warning;
         }
 
       }
@@ -404,13 +411,13 @@
   // UTILITIES DISPLAYS
   //
 
-  .styleguide-utilites{
+  .styleguide-utilities{
     &.displays{
       div{
         p{
           padding: 4px 8px;
           border-radius: 2px;
-          @extend %e-warning;
+          @extend %e-bgc-warning;
           margin-bottom: $space;
         }
         &:last-child p{
@@ -421,16 +428,99 @@
   }
 
 
-  .styleguide-utilites{
+  .styleguide-utilities{
     &.text-alignment{
       p span{
         padding: 4px 8px;
         border-radius: 2px;
-        @extend %e-warning; 
+        @extend %e-bgc-warning; 
       }
     }
   }
 
+  // 
+  // UTILITIES VERTICAL ALIGNMENT
+  //
+
+  .styleguide-utilities{
+    &.vertical-align{
+      div{
+        span{
+          padding: 4px 8px;
+          border-radius: 2px;
+          @extend %e-bgc-warning;
+        }
+      }
+    }
+  }
+
+  // 
+  // UTILITIES EXTENDS
+  //
+
+  .styleguide-utilities{
+    &.extends{
+      p{
+        span{
+          padding: 4px 8px;
+          border-radius: 2px;
+          @extend %e-bgc-warning;
+        }
+      }
+    }
+  }
+
+  // 
+  // UTILITIES ROUNDED
+  //
+  .styleguide-utilities{
+    &.rounded{
+      div{
+        padding: $space;
+        border: 1px dashed #ccc;
+        background-color: #eee;
+        span{
+          padding: 4px 8px;
+          border-radius: 2px;
+          @extend %e-bgc-warning;
+        }
+      }
+    }
+  }
+  // 
+  // UTILITIES FLOATS
+  //
+
+  .styleguide-utilities{
+    &.floats{
+      div{
+        border: 1px dashed #ccc;
+        span{
+          padding: 4px 8px;
+          border-radius: 2px;
+          @extend %e-bgc-warning;
+        }
+      }
+    }
+  }
+
+
+  // 
+  // UTILITIES POSITIONS
+  //
+
+  .styleguide-utilities{
+    &.position{
+      div{
+        border: 1px dashed #ccc;
+        span{
+          padding: 4px 8px;
+          border-radius: 2px;
+          @extend %e-bgc-warning;
+        }
+      }
+    }
+  }
 
   // 
   // CONFIG COLOURS
@@ -446,7 +536,7 @@
 			height: 60px;
 			margin-left: 4px;
 			display: inline-block;
-			border-radius: $global-round;
+			border-radius: 3px;
       
       // Custom
       &.red{background-color: $red; }
@@ -550,30 +640,30 @@
 
     // global grid colours
 //   .size1of2 { 
-//     @extend %e-success; 
+//     @extend %e-bgc-success; 
 //   }
 //   .size1of5 { 
-//     @extend %e-info; 
+//     @extend %e-bgc-info; 
 //   }
 //   .size1of3 { 
-//     @extend %e-danger; 
+//     @extend %e-bgc-danger; 
 //   }
 //   .size2of3 {     
-//     @extend %e-error; 
+//     @extend %e-bgc-error; 
 //   }
 //   .size3of5 { 
-//     @extend %e-warning; 
+//     @extend %e-bgc-warning; 
 //   }
 //   .full.grid-element { 
-//     @extend %e-success; 
+//     @extend %e-bgc-success; 
 //   }
 
 //   .gallery {
 //     @include clearfix;
 //     clear: both;
-//     @extend %e-info;
+//     @extend %e-bgc-info;
 //     div {
-//       @extend %e-error;
+//       @extend %e-bgc-error;
 //     }
 //   }
 

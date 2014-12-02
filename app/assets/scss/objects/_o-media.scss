@@ -8,26 +8,26 @@ $use-objects-media: true !default;
   // object
   @include object(o-media) {
     @include clearfix;
-    display:block;
+    display: block;
 
     // element
-    @include element(img) {
-      float:left;
-      margin-right:$space;
-      background-color: green;
-      
-      // element - modifier
-      @include modifier(right) {
-        float:right;
-        margin-left:$space;
-        background-color: blue;
-        margin-right: 0;
-      }
+    @include element(image) {
+      float: left;
+      padding-right: $space-2;
     }
     
     // element
     @include element(body){
-      overflow:hidden;
+      overflow: hidden;
+    }
+
+    // modifier
+    @include modifier(rev) {
+      .o-media__image{
+        float:right;
+        padding-right: 0;
+        padding-left: $space-2;
+      }
     }
 
   }

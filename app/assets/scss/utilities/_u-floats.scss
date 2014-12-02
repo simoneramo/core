@@ -5,7 +5,8 @@ $use-utilities-floats:  true !default;
    Utilities - Float
    ========================================================================== */
    
-  @include add(u-left)      { float: left; }
-  @include add(u-right)     { float: right; }
+  @include add(u-float-left)      { float: left; }
+  @include add(u-float-right)     { float: right; }
+  @include add(u-float-inherit)     { float: inherit; }
 
 }// end if

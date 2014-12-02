@@ -22,24 +22,9 @@ $use-objects-flag: true !default;
       padding-right: $space-2;
       display: table-cell;
       vertical-align: middle;
-
       > img {
         display: block;
         max-width: none;
-      }
-    }
-
-    // modifier
-    @include modifier(top) {
-      .o-flag__image{
-        vertical-align: top;
-      }
-    }
-
-    // modifier
-    @include modifier(bottom) {
-      .o-flag__image{
-          vertical-align: bottom;
       }
     }
 

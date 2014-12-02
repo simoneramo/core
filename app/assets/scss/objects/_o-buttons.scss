@@ -18,10 +18,6 @@ $use-objects-buttons: true !default;
     font-family:inherit;           
     line-height: 2.4;             
     cursor: pointer;
-    
-    &:hover{
-      background: shade($bgc-btn-1,10%);
-    }
 
     // modifier
     @include modifier(small) {
@@ -53,21 +49,6 @@ $use-objects-buttons: true !default;
     }
 
     // modifier
-    @include modifier(alpha) {
-      font-size:1.75em;
-    }
-
-    // modifier
-    @include modifier(beta) {
-      font-size:1.5em;
-    }
-
-    // modifier
-    @include modifier(gamma) {
-      font-size:1.25em;
-    }
-
-    // modifier
     @include modifier(natural) {
       padding-right: $space-1-half;
       padding-left: $space-1-half;
@@ -78,17 +59,22 @@ $use-objects-buttons: true !default;
 
     // modifier
     @include modifier(positive) {
-      @extend %e-success;
+      @extend %e-bgc-success;
     }
 
     // modifier
     @include modifier(negative) {
-      @extend %e-danger;
+      @extend %e-bgc-error;
     }
 
     // modifier
     @include modifier(round) {
       border-radius: 200px;     
+    }
+
+    // modifier
+    @include modifier(inactive) {
+      @extend %e-disable;
     }
   
   }

@@ -2,8 +2,10 @@
    Config - Rounded
    ========================================================================== */
 
-	$global-round: 	3px;
-	$button-round: 	3px;
-	$image-round:  	3px;
-	$label-round:  	3px;
-	$tabs-round:  	3px;
+	$global-round: 	3px!default;
+	$button-round: 	3px!default;
+	$image-round:  	3px!default;
+	$label-round:  	3px!default;
+	$tabs-round:  	3px!default;
+  
+  $utilities-round: 30px;

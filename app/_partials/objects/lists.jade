@@ -1,3 +1,62 @@
-div.l-styleguide-container.container
-  h1(class='styleguide-title +u-font-large') Lists
-  div.styleguide-base.lists
+h1(class='styleguide-title +u-font-huge') Lists Object
+.styleguide-base.lists
+  h3.styleguide-title--sub Orded lists 
+  ol
+    li list item 1
+    li
+      | list item 1
+      ol
+        li list item 2
+        li
+          | list item 2
+          ol
+            li list item 3
+            li list item 3
+        li list item 2
+        li list item 2
+  .styleguide-code
+    p code here
+  h3.styleguide-title--sub Unordered lists  
+  ul
+    li list item 1
+    li
+      | list item 1
+      ul
+        li list item 2
+        li
+          | list item 2
+          ul
+            li list item 3
+            li list item 3
+        li list item 2
+        li list item 2
+  .styleguide-code
+    p code here
+  h3.styleguide-title--sub Unordered Unsyled lists  
+  ul( class='+u-unstyled')
+    li list item 1
+    li
+      | list item 1
+      ul
+        li list item 2
+        li
+          | list item 2
+          ul
+            li list item 3
+            li list item 3
+        li list item 2
+        li list item 2
+  .styleguide-code
+    p code here
+  h3.styleguide-title--sub Definition list 
+  dl
+    dt Definition name
+    dd Definition value
+    dt Definition name
+    dd Definition value
+    dd Definition value
+    dt Definition name
+    dt Definition name
+    dd Definition value
+  .styleguide-code
+    p code here

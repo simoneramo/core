@@ -15,6 +15,10 @@ $use-objects-stats: true !default;
     display: flex;
     flex-direction: column;
     float: left;
+    
+    @if $use-global-mb == true{
+        @include reset-mb;
+    }
 
     // element
     @include element(title) {

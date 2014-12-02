@@ -4,17 +4,20 @@ $use-base-lists: true !default;
 /* ==========================================================================
    Base - Lists
    ========================================================================== */
-   
-  ul, ol, dd{ 
-    margin-top: 0;
-    margin-bottom: 0;
-    @if $use-global-mb == true{
+  
+  @if $use-global-mb == true{
+    ul, ol, dl{
       @include global-mb;
     }
   }
 
+  ul, ol, dd{ 
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   ul, ol{
-    padding-left: $space-1-half; 
+    padding-left: $space-1-half;
   }
 
   dd{ 

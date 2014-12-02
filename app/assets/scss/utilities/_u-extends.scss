@@ -15,11 +15,11 @@ $use-utilities-extends: true !default;
   %e-table                { display: table; }
 
   // alert colors
-  %e-success              { background-color: $c-notify-success; }
-  %e-info                 { background-color: $c-notify-info; }
-  %e-warning              { background-color: $c-notify-warning; }
-  %e-danger               { background-color: $c-notify-danger; }
-  %e-error                { background-color: $c-notify-error; }
+  %e-bgc-success          { background-color: $c-notify-success; }
+  %e-bgc-info             { background-color: $c-notify-info; }
+  %e-bgc-warning          { background-color: $c-notify-warning; }
+  %e-bgc-danger           { background-color: $c-notify-danger; }
+  %e-bgc-error            { background-color: $c-notify-error; }
 
   %e-c-success            { color: $c-notify-success; }
   %e-c-info               { color: $c-notify-info; }
@@ -344,27 +344,12 @@ $use-utilities-extends: true !default;
   // helpers
   %e-informative             { cursor:help; }
 
-  %e-disable
-  // , 
-  // .btn[disabled],
-  // fieldset[disabled] .btn
-    {
-    cursor: not-allowed;
+  %e-disable {
     opacity: 0.5;
-    filter:alpha(opacity = 50);
     box-shadow: none;
+    pointer-events: none;
   }
 
-  /* Active
-   ========================================================================== */
-  // .is-active
-  // , %is-active,
-  // .btn[active],
-  // fieldset[active] .btn{
-  //  cursor: default;
-  //  pointer-events: none;
-  // }
-  
   %e-active{
     background: shade($bgc-btn-1,15%);
     cursor: default;
