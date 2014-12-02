@@ -1,0 +1,5 @@
+// if global margin-bottom reset with > @include reset-mb;
+
+@mixin reset-mb{
+  margin-bottom: 0;
+}

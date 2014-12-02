@@ -1,0 +1,14 @@
+$use-utilities-vertical-align:  true !default;
+   
+@if $use-utilities-vertical-align == true{
+
+/* ==========================================================================
+   Utilities - Vertical Align
+   ========================================================================== */
+
+  @include add(u-vert-middle)          { vertical-align: middle; }
+  @include add(u-vert-top)             { vertical-align: top; }
+  @include add(u-vert-bottom)          { vertical-align: bottom; }
+  @include add(u-vert-inherit)         { vertical-align: inherit; }
+
+}
