@@ -10,7 +10,7 @@ $use-objects-rules: true !default;
     border: none;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    color: $light-grey;
+    color: $silver;
     
     @if $use-global-mb == true{
       @include global-mb;

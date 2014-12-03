@@ -9,13 +9,15 @@ $use-objects-labels-pills:	true !default;
 		display:inline-block;
 		text-align:center;
 		background-color:$bgc-btn-1;
-		padding-left:$space-half;
-		padding-right:$space-half;
-		border-radius:$label-round;
-		line-height: normal;
+		padding-left:$space;
+		padding-right:$space;
 
+		// modifier
+		@include modifier(rounded) {
+			border-radius:$label-round;
+		}
 
-		// Make pill default pill	 
+		// modifier
 		@include modifier(pill) {
 			border-radius:100px;
 		}

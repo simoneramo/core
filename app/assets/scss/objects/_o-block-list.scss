@@ -19,13 +19,13 @@ $use-objects-block-list:  true !default;
 
     // element
     @include modifier(bordered) {
-      border:0 solid $light-grey;
+      border:0 solid $silver;
       border-top-width:1px;
       border-left-width:1px;
       border-right-width:1px;
       
       > li, > dd{
-        border:0 solid $light-grey;
+        border:0 solid $silver;
         border-bottom-width:1px;
         padding:$space;
       }

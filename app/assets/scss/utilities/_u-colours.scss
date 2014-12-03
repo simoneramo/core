@@ -1,0 +1,84 @@
+$use-utilities-colours:  true !default;
+   
+@if $use-utilities-colours == true{
+/* ==========================================================================
+   Utilities - Colours
+   ========================================================================== */
+  
+  // custom colours
+  @include add(u-white)               { background-color: $white; }
+  @include add(u-yellow)              { background-color: $yellow; }
+  @include add(u-orange)              { background-color: $orange; }
+  @include add(u-pink)                { background-color: $pink; }
+  @include add(u-red)                 { background-color: $red; }
+  @include add(u-maroon)              { background-color: $maroon; }
+  @include add(u-green)               { background-color: $green; }
+  @include add(u-aqua)                { background-color: $aqua; }
+  @include add(u-blue)                { background-color: $blue; }
+  @include add(u-silver)              { background-color: $silver; }
+  @include add(u-grey)                { background-color: $gray; }
+  @include add(u-black)               { background-color: $black; }
+  
+
+  // background
+  @include add(u-bgc-1)               { background-color: $bgc-1; }
+  @include add(u-bgc-2)               { background-color: $bgc-2; }
+  @include add(u-bgc-3)               { background-color: $bgc-3; }
+  
+
+  // link 
+  @include add(u-c-link)              { background-color: $c-link; }
+  @include add(u-c-link-hover)        { background-color: $c-link-hover; }
+  @include add(u-c-link-active)       { background-color: $c-link-active; }
+  @include add(u-c-link-visited)      { background-color: $c-link-visited; }
+  
+
+  // headings
+  @include add(u-c-heading-1)         { background-color: $c-heading-1; }
+  @include add(u-c-heading-2)         { background-color: $c-heading-2; }
+  @include add(u-c-heading-3)         { background-color: $c-heading-3; }
+  
+
+  // type
+  @include add(u-c-type-1)            { background-color: $c-type-1; }
+  @include add(u-c-type-2)            { background-color: $c-type-2; }
+  @include add(u-c-type-3)            { background-color: $c-type-3; }
+  
+
+
+  // brands 
+  @include add(u-c-google)            { background-color: $c-google; }
+  @include add(u-c-facebook)          { background-color: $c-facebook; }
+  @include add(u-c-twitter)           { background-color: $c-twitter; }
+  @include add(u-c-linkedin)          { background-color: $c-linkedin; }
+  @include add(u-c-dribble)           { background-color: $c-dribble; }
+  @include add(u-c-instagram)         { background-color: $c-instagram; }
+  @include add(u-c-googleplus)        { background-color: $c-googleplus; }
+  @include add(u-c-behance)           { background-color: $c-behance; }
+  @include add(u-c-gimmebar)          { background-color: $c-gimmebar; }
+  @include add(u-c-github)            { background-color: $c-github; }
+  @include add(u-c-tumblr)            { background-color: $c-tumblr; }
+  @include add(u-c-youtube)           { background-color: $c-youtube; }
+  @include add(u-c-vine)              { background-color: $c-vine; }
+  @include add(u-c-kickstarter)       { background-color: $c-kickstarter; }
+  @include add(u-c-dropbox)           { background-color: $c-dropbox; }
+  @include add(u-c-rss)               { background-color: $c-rss; }
+  @include add(u-c-facebook)          { background-color: $c-facebook; }
+  @include add(u-c-codepen)           { background-color: $c-codepen; }
+  @include add(u-c-foursquare)        { background-color: $c-foursquare; }
+  @include add(u-c-soundcloud)        { background-color: $c-soundcloud; }
+  @include add(u-c-wordpress)         { background-color: $c-wordpress; }
+  @include add(u-c-tumblr)            { background-color: $c-tumblr; }
+  @include add(u-c-blogger)           { background-color: $c-blogger; }
+  @include add(u-c-squarespace)       { background-color: $c-squarespace; }
+  @include add(u-c-joomla)            { background-color: $c-joomla; }
+  @include add(u-c-drupal)            { background-color: $c-drupal; }
+  @include add(u-c-typepad)           { background-color: $c-typepad; }
+  @include add(u-c-expression-engine) { background-color: $c-expression-engine; }
+  @include add(u-c-kirby)             { background-color: $c-kirby; }
+  @include add(u-c-moveabletype)      { background-color: $c-moveabletype; }
+  @include add(u-c-disqus)            { background-color: $c-disqus; }
+  @include add(u-c-html)              { background-color: $c-html; }
+
+
+}//end if

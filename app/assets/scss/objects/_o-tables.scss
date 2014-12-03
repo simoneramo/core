@@ -17,7 +17,7 @@ $use-objects-tables:  true !default;
     // modifier
     @include modifier(bordered) {
       th, td{
-        border:1px solid $light-grey;
+        border:1px solid $silver;
         &:empty{
           border:none;
         }

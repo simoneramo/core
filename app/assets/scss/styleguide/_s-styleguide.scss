@@ -21,7 +21,7 @@
 
 
   $styleguide-red: rgb(210, 26, 26);
-	$styleguide-grey:  rgb(230,230,230);
+	$styleguide-gray:  rgb(230,230,230);
 	
   body.styleguide{
     padding-top: 2em;
@@ -81,7 +81,7 @@
   .styleguide-objects, .styleguide-base, .styleguide-utilities{
     @extend %e-mb-3;
     border-radius: $global-round;
-    border: solid 3px $styleguide-grey;
+    border: solid 3px $styleguide-gray;
     padding: $space;
     @include breakpoint($bp-medium){
       padding: $space-2;
@@ -91,7 +91,7 @@
 
   .styleguide-code{
   	border-radius: $global-round;
-  	background-color: $styleguide-grey;
+  	background-color: $styleguide-gray;
   	height:100px;
   	margin-top: $space-3;
   	margin-bottom: $space-3;
@@ -287,7 +287,7 @@
         width: 62px;
          height: 62px;
          background-image: url(../../assets/icons/social/dribble.svg);
-         background-color: grey;
+         background-color: $gray;
         }
 
        //overright object spirte add positions
@@ -532,25 +532,33 @@
     }
 
 		div.styleguide-colors{
-			width: 60px;
-			height: 60px;
-			margin-left: 4px;
+      text-align: center;
+			width: 120px;
+			height: 120px;
+			margin-left: 1%;
+      margin-right: 1%;
 			display: inline-block;
 			border-radius: 3px;
       
-      // Custom
-      &.red{background-color: $red; }
-      &.green{ background-color: $green; }
-      &.yellow{ background-color: $yellow; }
-      &.orange{ background-color: $orange; }
+      &.white{ background-color: $white; }     
+      &.silver{ background-color: $silver; } 
+      &.gray{ background-color: $gray; }   
+      &.black{ background-color: $black; } 
+      &.red{ background-color: $red; }   
       &.maroon{ background-color: $maroon; }
-      &.pink{ background-color: $pink; }
-      &.aqua{ background-color: $aqua; }
-      &.blue{ background-color: $blue; }
-      &.light-grey{ background-color: $light-grey; }
-      &.black{ background-color: $black; }
-      &.grey{ background-color: $grey; }
-      &.white{ background-color: $white; }      
+      &.orange{ background-color: $orange; }  
+      &.yellow{ background-color: $yellow; }  
+      &.olive{ background-color: $olive; } 
+      &.lime{ background-color: $lime; }  
+      &.green{ background-color: $green; }
+      &.aqua{ background-color: $aqua; }    
+      &.teal{ background-color: $teal; }  
+      &.blue{ background-color: $blue; }  
+      &.navy{ background-color: $navy; } 
+      &.fuchsia{ background-color: $fuchsia; } 
+      &.purple{ background-color: $purple; }
+      &.pink{ background-color: $pink; }  
+                                  
 
       // Background
       &.bgc-1{ background-color: $bgc-1; }
