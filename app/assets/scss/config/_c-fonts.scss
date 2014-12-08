@@ -7,11 +7,21 @@
   $f-base:                          em(16);
   
   // font sizes
-  $f-massive:                       em(72);
-  $f-huge:                          em(60);
-  $f-x-large:                       em(54);
-  $f-large:                         em(48);
 
+
+  // huge sizes
+  $f-h1x:                           em(96);
+  $f-h2x:                           em(84);
+  $f-h3x:                           em(72);
+  $f-h4x:                           em(60);
+  $f-h5x:                           em(54);
+  $f-h6x:                           em(48);
+  
+  $f-massive:                       $f-h1x;
+  $f-huge:                          $f-h3x;
+  $f-large:                         $f-h5x;
+  
+  // heading sizes
   $f-h1:                            em(32);
   $f-h2:                            em(26);
   $f-h3:                            em(22);
@@ -19,12 +29,19 @@
   $f-h5:                            em(18);
   $f-h6:                            em(16);
   
+  // help sizes
   $f-lead:                          $f-base * 1.125;
   $f-half:                          $f-base / 2;
 
-  $f-small:                         em(14);
-  $f-tiny:                          em(12);
-  $f-micro:                         em(10);
+  // small sizes
+  $f-h7:                            em(14);
+  $f-h8:                            em(12);
+  $f-h9:                            em(10);
+  $f-h10:                           em(8);
+  
+  $f-small:                         $f-h7;
+  $f-tiny:                          $f-h8;
+  $f-micro:                         $f-h9;
   
   // font stacks
   $georgia:                         Georgia, Cambria, "Times New Roman", Times, serif;
