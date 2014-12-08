@@ -1,6 +1,6 @@
 $use-objects-notify: true !default;
 
-@if $use-objects-notify == true{
+@if $use-objects-notify == true or $use-objects-forms == true{
 /* ==========================================================================
    Objects - Notify
    ========================================================================== */

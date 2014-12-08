@@ -1,8 +1,8 @@
-$use-objects-labels-pills:	true !default;
+$use-objects-labels:	true !default;
 
-@if $use-objects-labels-pills == true{
+@if $use-objects-labels == true{
 /* ==========================================================================
-   Object - Labels & Pills
+   Object - Labels
    ========================================================================== */
    
 	@include object(o-label){

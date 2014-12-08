@@ -35,19 +35,23 @@
 
 
   // utilities
+  $use-utilities-island:                  true;
   $use-utilities-widths:                  true;
   $use-utilities-extends:                 true;
   $use-utilities-spaces:                  true;
   $use-utilities-display:                 true;
   $use-utilities-print:                   true;
+  $use-utilities-text:                    true;
+  $use-utilities-fonts:                   true;
   $use-utilities-mixins:                  true;  
   $use-utilities-overflow:                true;
   $use-utilities-floats:                  true;  
   $use-utilities-position:                true;  
-  $use-utilities-rounded:                 true;  
-  $use-utilities-notify:                  true;  
+  $use-utilities-rounded:                 true;   
   $use-utilities-states:                  true;  
   $use-utilities-vertical-align:          true; 
+  $use-utilities-white-space:             true;
+
 
   // objects
   $use-objects-code:                      true;
@@ -57,8 +61,8 @@
   $use-objects-tables:                    true;
   $use-objects-island:                    true;
   $use-objects-blockquote:                true;
-  $use-objects-alerts-contextual:         true;
-  $use-objects-labels-pills:              true;
+  $use-objects-notify:                    true;
+  $use-objects-labels:                    true;
   $use-objects-buttons:                   true;
   $use-objects-buttons-groups:            true;
   $use-objects-columns:                   true;
@@ -86,7 +90,7 @@
   $use-objects-flag:                      true;  
   
 
-  // delete or add icons here
+  // delete or add icons folder
   $use-icons-feather:                     true;
   $use-icons-octicons:                    true;
 

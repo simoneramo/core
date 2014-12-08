@@ -18,7 +18,7 @@ $use-objects-flyout:	true !default;
 		}
 
 
-		@include modifier(alt) { 
+		@include modifier(left) { 
 			&:hover{
 					@include element(content) {
 					top:0;

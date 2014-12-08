@@ -1,6 +1,6 @@
 $use-objects-block-list:  true !default;
 
-@if $use-objects-block-list == true or $use-base-matrix == true{
+@if $use-objects-block-list == true{
 /* ==========================================================================
    Objects - Block List
    ========================================================================== */
@@ -34,13 +34,8 @@ $use-objects-block-list:  true !default;
 
     // element
     @include element(link) {
-      display:block;
-      padding: $space-1-half $space;
-      margin: -$space-1-half;
-      margin-left: -$space;
-      margin-right: -$space;
+     @include link-block-space;
     }
-
   }
   
 }//endif
