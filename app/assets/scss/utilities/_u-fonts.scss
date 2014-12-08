@@ -1,0 +1,120 @@
+$use-utilities-fonts:  true !default;
+   
+@if $use-utilities-fonts == true{
+/* ==========================================================================
+   Utilities Text
+   ========================================================================== */
+
+  // huge heading sizes
+  @include add(u-font-massive)           { font-size: $f-massive;}
+  @include add(u-font-huge)              { font-size: $f-huge;}
+  @include add(u-font-large)             { font-size: $f-large;}
+  @include add(u-h1x)                    { font-size: $f-h1x;}
+  @include add(u-h2x)                    { font-size: $f-h2x;}
+  @include add(u-h3x)                    { font-size: $f-h3x;}
+  @include add(u-h4x)                    { font-size: $f-h4x;}
+  @include add(u-h5x)                    { font-size: $f-h5x;}
+  @include add(u-h6x)                    { font-size: $f-h6x;}
+
+  // // huge heading sizes
+  // @include add(u-fs-mas)       { font-size: $f-massive;}
+  // @include add(u-fs-hug)       { font-size: $f-huge;}
+  // @include add(u-fs-lar)       { font-size: $f-large;}
+  // @include add(u-fs-h1x)       { font-size: $f-h1x;}
+  // @include add(u-fs-h2x)       { font-size: $f-h2x;}
+  // @include add(u-fs-h3x)       { font-size: $f-h3x;}
+  // @include add(u-fs-h4x)       { font-size: $f-h4x;}
+  // @include add(u-fs-h5x)       { font-size: $f-h5x;}
+  // @include add(u-fs-h6x)       { font-size: $f-h6x;}  
+  
+  // h1 - h6
+  @include add(u-h1)                     { font-size: $f-h1;}
+  @include add(u-h2)                     { font-size: $f-h2;}
+  @include add(u-h3)                     { font-size: $f-h3;}
+  @include add(u-h4)                     { font-size: $f-h4;}
+  @include add(u-h5)                     { font-size: $f-h5;}
+  @include add(u-h6)                     { font-size: $f-h6;}
+
+  // // h1 - h6
+  // @include add(u-fs-h1)        { font-size: $f-h1;}
+  // @include add(u-fs-h2)        { font-size: $f-h2;}
+  // @include add(u-fs-h3)        { font-size: $f-h3;}
+  // @include add(u-fs-h4)        { font-size: $f-h4;}
+  // @include add(u-fs-h5)        { font-size: $f-h5;}
+  // @include add(u-fs-h6)        { font-size: $f-h6;}
+
+  // base type
+  @include add(u-font-base)              { font-size: $f-base;}
+
+  // helper type
+  @include add(u-font-lead)              { font-size: $f-lead;}
+  @include add(u-font-half)              { font-size: $f-half;}
+
+  // // base type
+  // @include add(u-fs-bas)       { font-size: $f-base;}
+  
+  // // helper type
+  // @include add(u-fs-lea)       { font-size: $f-lead;}
+  // @include add(u-fs-hal)       { font-size: $f-half;}
+  // @include add(u-fs-inh)       { font-size: inherit;}
+
+  // small heading sizes
+  @include add(u-font-small)             { font-size: $f-small;}    
+  @include add(u-font-tiny)              { font-size: $f-tiny;}
+  @include add(u-font-micro)             { font-size: $f-micro;}
+  @include add(u-h7)                     { font-size: $f-h7;}  
+  @include add(u-h8)                     { font-size: $f-h8;}  
+  @include add(u-h9)                     { font-size: $f-h9;}  
+  @include add(u-h10)                    { font-size: $f-h10;}  
+  
+  // // small heading sizes
+  // @include add(u-fs-sma)        { font-size: $f-small;}    
+  // @include add(u-fs-tin)        { font-size: $f-tiny;}
+  // @include add(u-fs-mic)        { font-size: $f-micro;}
+  // @include add(u-fs-h7)         { font-size: $f-h7;}  
+  // @include add(u-fs-h8)         { font-size: $f-h8;}  
+  // @include add(u-fs-h9)         { font-size: $f-h9;}  
+  // @include add(u-fs-h10)        { font-size: $f-h10;}  
+
+  // font weights  
+  @include add(u-font-normal)            { font-weight: normal;}
+  @include add(u-font-bold)              { font-weight: bold;}
+  @include add(u-font-lighter)           { font-weight: lighter;}
+  @include add(u-font-bolder)            { font-weight: bolder;}
+  @include add(u-font-100)               { font-weight: 100;}
+  @include add(u-font-200)               { font-weight: 200;}
+  @include add(u-font-300)               { font-weight: 300;}
+  @include add(u-font-400)               { font-weight: 400;}
+  @include add(u-font-500)               { font-weight: 500;}
+  @include add(u-font-600)               { font-weight: 600;}
+  @include add(u-font-700)               { font-weight: 700;}
+  @include add(u-font-800)               { font-weight: 800;}
+  @include add(u-font-900)               { font-weight: 900;}
+
+  // // font weights  
+  // @include add(u-fw-nor)       { font-weight: normal;}
+  // @include add(u-fw-bol)       { font-weight: bold;}
+  // @include add(u-fw-lig)       { font-weight: lighter;}
+  // @include add(u-fw-bol)       { font-weight: bolder;}
+
+  // @include add(u-fw-100)       { font-weight: 100;}
+  // @include add(u-fw-200)       { font-weight: 200;}
+  // @include add(u-fw-300)       { font-weight: 300;}
+  // @include add(u-fw-400)       { font-weight: 400;}
+  // @include add(u-fw-500)       { font-weight: 500;}
+  // @include add(u-fw-600)       { font-weight: 600;}
+  // @include add(u-fw-700)       { font-weight: 700;}
+  // @include add(u-fw-800)       { font-weight: 800;}
+  // @include add(u-fw-900)       { font-weight: 900;}
+
+  // font styles
+  @include add(u-font-normal)            { font-style: normal;}
+  @include add(u-font-italic)            { font-style: italic;}
+  @include add(u-font-oblique)           { font-style: oblique;}
+
+  // // font styles
+  // @include add(u-fs-nor)       { font-style: normal;}
+  // @include add(u-fs-ita)       { font-style: italic;}
+  // @include add(u-fs-obl)       { font-style: oblique;}
+
+}//end if 

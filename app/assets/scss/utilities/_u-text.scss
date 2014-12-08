@@ -5,56 +5,21 @@ $use-utilities-text:  true !default;
    Utilities Text
    ========================================================================== */
 
-  // headings
-	@include add(u-h1)                     { font-size: $f-h1;}
-	@include add(u-h2)                     { font-size: $f-h2;}
-	@include add(u-h3)                     { font-size: $f-h3;}
-	@include add(u-h4)                     { font-size: $f-h4;}
-	@include add(u-h5)                     { font-size: $f-h5;}
-	@include add(u-h6)                     { font-size: $f-h6;}
-
-  // large type
-	@include add(u-font-massive)           { font-size: $f-massive;}
-	@include add(u-font-huge)              { font-size: $f-huge;}
-	@include add(u-font-large)             { font-size: $f-large;}
-
-  // small type
-  @include add(u-font-small)             { font-size: $f-small;}		
-  @include add(u-font-tiny)              { font-size: $f-tiny;}
-  @include add(u-font-micro)             { font-size: $f-micro;}
-
-  // type
-	@include add(u-font-base)              { font-size: $f-base;}  
-	@include add(u-font-lead)              { font-size: $f-lead;}
-	@include add(u-font-half)              { font-size: $f-half;}
-
-  // font weights  
-  @include add(u-font-normal)            { font-weight: normal;}
-  @include add(u-font-bold)              { font-weight: bold;}
-  @include add(u-font-lighter)           { font-weight: lighter;}
-  @include add(u-font-bolder)            { font-weight: bolder;}
-  @include add(u-font-100)               { font-weight: 100;}
-	@include add(u-font-200)               { font-weight: 200;}
-	@include add(u-font-300)               { font-weight: 300;}
-	@include add(u-font-400)               { font-weight: 400;}
-	@include add(u-font-500)               { font-weight: 500;}
-	@include add(u-font-600)               { font-weight: 600;}
-	@include add(u-font-700)               { font-weight: 700;}
-	@include add(u-font-800)               { font-weight: 800;}
-	@include add(u-font-900)               { font-weight: 900;}
-
-  // font styles
-  @include add(u-font-normal)            { font-style: normal;}
-  @include add(u-font-italic)            { font-style: italic;}
-  @include add(u-font-oblique)           { font-style: oblique;}
-
   // text underline
 	@include add(u-text-underline)         { text-decoration: underline;} 
+
+  // // text underline
+  // @include add(u-td-ul)        { text-decoration: underline;} 
 
   // text transforms
 	@include add(u-text-lower)             { text-transform: lowercase;} 
 	@include add(u-text-upper)             { text-transform: uppercase;} 
 	@include add(u-text-caps)              { text-transform: capitalize;} 
+
+  // // text transforms
+  // @include add(u-tt-low)       { text-transform: lowercase;} 
+  // @include add(u-tt-upp)       { text-transform: uppercase;} 
+  // @include add(u-tt-cap)       { text-transform: capitalize;} 
 
   // text align
 	@include add(u-text-left)              { text-align: left;}
@@ -62,7 +27,12 @@ $use-utilities-text:  true !default;
 	@include add(u-text-center)            { text-align: center;}
 	@include add(u-text-justify)           { text-align: justify;}
 
-  // nowrap
-	@include add(u-text-nowrap)            { white-space: nowrap;}
+
+  // // text align
+  // @include add(u-ta-lef)       { text-align: left;}
+  // @include add(u-ta-rig)       { text-align: right;}
+  // @include add(u-ta-cen)       { text-align: center;}
+  // @include add(u-ta-jus)       { text-align: justify;}
+
 
 }//end if

@@ -15,4 +15,15 @@ $use-utilities-states:  true !default;
   @include add(u-informative)   { @extend %e-informative; }
 
 
+  // event
+
+  // // disabled
+  // @include add(u-e-dis)      { @extend %e-disable; }
+
+  // // active
+  // @include add(u-e-act)      { @extend %e-active; }
+
+  // // informative
+  // @include add(u-e-inf)      { @extend %e-informative; }
+
 }//enb if

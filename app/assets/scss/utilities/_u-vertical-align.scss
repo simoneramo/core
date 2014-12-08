@@ -11,4 +11,9 @@ $use-utilities-vertical-align:  true !default;
   @include add(u-vert-bottom)          { vertical-align: bottom; }
   @include add(u-vert-inherit)         { vertical-align: inherit; }
 
+  // @include add(u-va-mid)       { vertical-align: middle; }
+  // @include add(u-va-top)       { vertical-align: top; }
+  // @include add(u-va-bot)       { vertical-align: bottom; }
+  // @include add(u-va-inh)       { vertical-align: inherit; }
+
 }

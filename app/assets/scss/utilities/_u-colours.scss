@@ -81,4 +81,146 @@ $use-utilities-colours:  true !default;
   @include add(u-c-html)              { background-color: $c-html; }
 
 
+
+  // notify background colors
+  @include add(u-bgc-success)     { background-color: $c-notify-success; }
+  @include add(u-bgc-info)        { background-color: $c-notify-info; }
+  @include add(u-bgc-warning)     { background-color: $c-notify-warning; }
+  @include add(u-bgc-danger)      { background-color: $c-notify-danger; }
+  @include add(u-bgc-error)       { background-color: $c-notify-error; }
+
+  // notify colors
+  @include add(u-c-success)       { color: $c-notify-success; }
+  @include add(u-c-info)          { color: $c-notify-info; }
+  @include add(u-c-warning)       { color: $c-notify-warning; }
+  @include add(u-c-danger)        { color: $c-notify-danger; }
+  @include add(u-c-error)         { color: $c-notify-error; }
+
+
+  // // notify background colors
+  // @include add(u-n-suc)      { background-color: $c-notify-success; }
+  // @include add(u-n-inf)      { background-color: $c-notify-info; }
+  // @include add(u-n-war)      { background-color: $c-notify-warning; }
+  // @include add(u-n-dan)      { background-color: $c-notify-danger; }
+  // @include add(u-n-err)      { background-color: $c-notify-error; }
+
+
+
+  // // bc custom colours
+  // @include add(u-bc-whi)        { background-color: $white; }
+  // @include add(u-bc-yel)        { background-color: $yellow; }
+  // @include add(u-bc-ora)        { background-color: $orange; }
+  // @include add(u-bc-pin)        { background-color: $pink; }
+  // @include add(u-bc-red)        { background-color: $red; }
+  // @include add(u-bc-mar)        { background-color: $maroon; }
+  // @include add(u-bc-gre)        { background-color: $green; }
+  // @include add(u-bc-aqu)        { background-color: $aqua; }
+  // @include add(u-bc-blu)        { background-color: $blue; }
+  // @include add(u-bc-sil)        { background-color: $silver; }
+  // @include add(u-bc-gre)        { background-color: $gray; }
+  // @include add(u-bc-bla)        { background-color: $black; }
+  
+  // // bc custom colours
+  // @include add(u-c-whi)        { color: $white; }
+  // @include add(u-c-yel)        { color: $yellow; }
+  // @include add(u-c-ora)        { color: $orange; }
+  // @include add(u-c-pin)        { color: $pink; }
+  // @include add(u-c-red)        { color: $red; }
+  // @include add(u-c-mar)        { color: $maroon; }
+  // @include add(u-c-gre)        { color: $green; }
+  // @include add(u-c-aqu)        { color: $aqua; }
+  // @include add(u-c-blu)        { color: $blue; }
+  // @include add(u-c-sil)        { color: $silver; }
+  // @include add(u-c-gre)        { color: $gray; }
+  // @include add(u-c-bla)        { color: $black; }
+
+
+  // // backgrounds 
+  // @include add(u-bc-1)         { background-color: $bgc-1; }
+  // @include add(u-bc-2)         { background-color: $bgc-2; }
+  // @include add(u-bc-3)         { background-color: $bgc-3; }
+  
+
+  // // links c
+  // @include add(u-c-l)          { color: $c-link; }
+  // @include add(u-c-lh)         { color: $c-link-hover; }
+  // @include add(u-c-la)         { color: $c-link-active; }
+  // @include add(u-c-lv)         { color: $c-link-visited; }
+  
+
+  // // headings c
+  // @include add(u-c-h-1)        { color: $c-heading-1; }
+  // @include add(u-c-h-2)        { color: $c-heading-2; }
+  // @include add(u-c-h-3)        { color: $c-heading-3; }
+  
+
+  // // type c
+  // @include add(u-c-t-1)        { color: $c-type-1; }
+  // @include add(u-c-t-2)        { color: $c-type-2; }
+  // @include add(u-c-t-3)        { color: $c-type-3; }
+  
+
+  // // brands bc
+  // @include add(u-bc-goo)        { background-color: $c-google; }
+  // @include add(u-bc-fb)         { background-color: $c-facebook; }
+  // @include add(u-bc-twi)        { background-color: $c-twitter; }
+  // @include add(u-bc-li)         { background-color: $c-linkedin; }
+  // @include add(u-bc-dri)        { background-color: $c-dribble; }
+  // @include add(u-bc-ig)         { background-color: $c-instagram; }
+  // @include add(u-bc-gp)         { background-color: $c-googleplus; }
+  // @include add(u-bc-beh)        { background-color: $c-behance; }
+  // @include add(u-bc-gb)         { background-color: $c-gimmebar; }
+  // @include add(u-bc-gh)         { background-color: $c-github; }
+  // @include add(u-bc-tum)        { background-color: $c-tumblr; }
+  // @include add(u-bc-yt)         { background-color: $c-youtube; }
+  // @include add(u-bc-vin)        { background-color: $c-vine; }
+  // @include add(u-bc-ks)         { background-color: $c-kickstarter; }
+  // @include add(u-bc-db)         { background-color: $c-dropbox; }
+  // @include add(u-bc-rss)        { background-color: $c-rss; }
+  // @include add(u-bc-cp)         { background-color: $c-codepen; }
+  // @include add(u-bc-fs)         { background-color: $c-foursquare; }
+  // @include add(u-bc-sc)         { background-color: $c-soundcloud; }
+  // @include add(u-bc-wp)         { background-color: $c-wordpress; }
+  // @include add(u-bc-blo)        { background-color: $c-blogger; }
+  // @include add(u-bc-ss)         { background-color: $c-squarespace; }
+  // @include add(u-bc-joo)        { background-color: $c-joomla; }
+  // @include add(u-bc-dru)        { background-color: $c-drupal; }
+  // @include add(u-bc-tp)         { background-color: $c-typepad; }
+  // @include add(u-bc-ee)         { background-color: $c-expression-engine; }
+  // @include add(u-bc-kir)        { background-color: $c-kirby; }
+  // @include add(u-bc-mt)         { background-color: $c-moveabletype; }
+  // @include add(u-bc-dis)        { background-color: $c-disqus; }
+  // @include add(u-bc-htm)        { background-color: $c-html; }
+
+  //  // brands c
+  // @include add(u-c-goo)        { color: $c-google; }
+  // @include add(u-c-fb)         { color: $c-facebook; }
+  // @include add(u-c-twi)        { color: $c-twitter; }
+  // @include add(u-c-li)         { color: $c-linkedin; }
+  // @include add(u-c-dri)        { color: $c-dribble; }
+  // @include add(u-c-ig)         { color: $c-instagram; }
+  // @include add(u-c-gp)         { color: $c-googleplus; }
+  // @include add(u-c-beh)        { color: $c-behance; }
+  // @include add(u-c-gb)         { color: $c-gimmebar; }
+  // @include add(u-c-gh)         { color: $c-github; }
+  // @include add(u-c-tum)        { color: $c-tumblr; }
+  // @include add(u-c-yt)         { color: $c-youtube; }
+  // @include add(u-c-vin)        { color: $c-vine; }
+  // @include add(u-c-ks)         { color: $c-kickstarter; }
+  // @include add(u-c-db)         { color: $c-dropbox; }
+  // @include add(u-c-rss)        { color: $c-rss; }
+  // @include add(u-c-cp)         { color: $c-codepen; }
+  // @include add(u-c-fs)         { color: $c-foursquare; }
+  // @include add(u-c-sc)         { color: $c-soundcloud; }
+  // @include add(u-c-wp)         { color: $c-wordpress; }
+  // @include add(u-c-blo)        { color: $c-blogger; }
+  // @include add(u-c-ss)         { color: $c-squarespace; }
+  // @include add(u-c-joo)        { color: $c-joomla; }
+  // @include add(u-c-dru)        { color: $c-drupal; }
+  // @include add(u-c-tp)         { color: $c-typepad; }
+  // @include add(u-c-ee)         { color: $c-expression-engine; }
+  // @include add(u-c-kir)        { color: $c-kirby; }
+  // @include add(u-c-mt)         { color: $c-moveabletype; }
+  // @include add(u-c-dis)        { color: $c-disqus; }
+  // @include add(u-c-htm)        { color: $c-html; }
 }//end if

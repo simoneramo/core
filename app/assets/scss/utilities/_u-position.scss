@@ -10,10 +10,22 @@ $use-utilities-position:  true !default;
   @include add(u-pos-abs)   { position: absolute; }
   @include add(u-pos-fix)   { position: fixed; }
 
+  //  // position
+  // @include add(u-p-rel)    { position: relative; }
+  // @include add(u-p-abs)    { position: absolute; }
+  // @include add(u-p-fix)    { position: fixed; }
+
+  // position where
   @include add(u-pos-t0)    { top: 0; }
   @include add(u-pos-r0)    { right: 0; }
   @include add(u-pos-b0)    { bottom: 0; }
   @include add(u-pos-l0)    { left: 0; }
+
+  //  // position where
+  // @include add(u-p-t0)     { top: 0; }
+  // @include add(u-p-r0)     { right: 0; }
+  // @include add(u-p-b0)     { bottom: 0; }
+  // @include add(u-p-l0)     { left: 0; }
 
   // z-index
   @include add(u-z-1)       { z-index: 1; }
@@ -21,5 +33,13 @@ $use-utilities-position:  true !default;
   @include add(u-z-3)       { z-index: 3; }
   @include add(u-z-4)       { z-index: 4; }
   @include add(u-z-5)       { z-index: 5; }
+
+  // // z-index
+  // @include add(u-z-1)      { z-index: 1; }
+  // @include add(u-z-2)      { z-index: 2; }
+  // @include add(u-z-3)      { z-index: 3; }
+  // @include add(u-z-4)      { z-index: 4; }
+  // @include add(u-z-5)      { z-index: 5; }
+
 
 }//end if

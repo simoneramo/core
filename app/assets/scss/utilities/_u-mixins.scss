@@ -12,5 +12,21 @@ $use-utilities-mixins:  true !default;
   @include add(u-vertical-align)               { @include vertical-align;  }
   @include add(u-vertical-align-table)         { @include vertical-align-table; }
   @include add(u-unstyled)         			 			 { @include unstyled; }
+  @include add(u-margin-bottom)                { @include global-mb; }
+
+  // // mixin
+  // @include add(u-m-hid)          { @include hidden; }
+  // @include add(u-m-cf)           { @include clearfix; }
+  // @include add(u-m-vh)           { @include visually-hidden; }
+  // @include add(u-m-so)           { @include sr-only; }
+  // @include add(u-m-us)           { @include unstyled; }
+  // @include add(u-m-ir)           { @include image-replace; }
+  // @include add(u-m-cc)           { @include center-content; }
+  // @include add(u-m-inv)          { @include invisible; } 
+  // @include add(u-m-va-con)       { transform-style: preserve-3d; }
+  // @include add(u-m-va)           { @include vertical-align;  }
+  // @include add(u-m-va-tab)       { @include vertical-align-table; }
+  // @include add(u-m-mb-res)       { @include global-mb; }
+  // @include add(u-m-bl-lin)       { @include link-block-space; }
 
 }//endif

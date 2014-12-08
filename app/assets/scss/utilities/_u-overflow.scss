@@ -8,4 +8,7 @@ $use-utilities-overflow:  true !default;
   @include add(u-overflow-hidden) { overflow: hidden;}
   @include add(u-overflow-scroll) { overflow: scroll; }
 
+  // @include add(u-of-hid)       { overflow: hidden;}
+  // @include add(u-of-scr)       { overflow: scroll; }
+
 }//end if
