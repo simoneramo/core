@@ -188,10 +188,10 @@
 
   // copy root files > $ gulp copy
   gulp.task('copy', function () {
-    return gulp.src('app/*.{txt,md,htaccess}', {
+    return gulp.src('app/*.{txt,md,htaccess,xml}', {
       dot: true
     }).pipe(gulp.dest('_public'))                                        // Destination Path
-    .pipe($.notify({ message: 'root files copied' }))                    // Notify
+    //.pipe($.notify({ message: 'root files copied' }))                    // Notify
     .pipe($.size({title: 'root files size of'}));                        // Size
   });
 
@@ -200,7 +200,7 @@
   gulp.task('fonts', function () {
     return gulp.src('app/assets/fonts/**/*')                             // Fonts Directory
     .pipe(gulp.dest('_public/assets/fonts'))                           // Destination Path
-    .pipe($.notify({ message: 'Fonts copied' }))                       // Notify
+    //.pipe($.notify({ message: 'Fonts copied' }))                       // Notify
     .pipe($.size({title: 'fonts size of'}));                           // Size
   });
 
