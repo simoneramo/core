@@ -2,7 +2,7 @@ doctype html
 html(lang='en')
   head
     meta(charset="UTF-8")
-    title Core Sink
+    title Core Objects
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1') 
 
@@ -20,17 +20,9 @@ html(lang='en')
   body.styleguide
     include ../_partials/site/header
     div.l-styleguide-container.container
-
-      //- base
-      include ../_partials/base/links
-      include ../_partials/base/media
-      include ../_partials/base/quotes
-      include ../_partials/base/text
-      include ../_partials/base/lists
-      include ../_partials/base/code
-
+      
       //- objects
-      include ../_partials/objects/lists
+      
       include ../_partials/objects/loaders 
       include ../_partials/objects/tabs 
       include ../_partials/objects/flag
@@ -65,23 +57,7 @@ html(lang='en')
       include ../_partials/objects/thumbnail
       include ../_partials/objects/notify
       include ../_partials/objects/block-list
-      
-      //- utilities
-      include ../_partials/utilities/extends
-      include ../_partials/utilities/floats
-      include ../_partials/utilities/rounded
-      include ../_partials/utilities/colours
-      include ../_partials/utilities/fonts
-      include ../_partials/utilities/text
-      include ../_partials/utilities/vertical-align     
-      include ../_partials/utilities/position
-      include ../_partials/utilities/notify
-      include ../_partials/utilities/colours
-      include ../_partials/utilities/display
-      include ../_partials/utilities/widths
-      include ../_partials/utilities/spaces
-      include ../_partials/utilities/web-fonts
-
+      include ../_partials/objects/lists
 
     include ../_partials/site/scripts
     include ../_partials/site/analytics

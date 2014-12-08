@@ -18,105 +18,115 @@ html(lang='en')
       
     link(type='text/css', rel='stylesheet', href='../assets/css/main.css')
   body.styleguide
-    .l-styleguide-container.container
-      ul(class='+u-unstyled  +u-text-center  +u-h1')
-        li
-          a(href='sink.html') Sink
-      ul(class='+u-unstyled  +u-text-center  +u-h1')
-        li
-          a(href='u-display.html') Utilities Display
-        li
-          a(href='u-extends.html') Utilities Extends
-        li
-          a(href='u-notify.html') Utilities Notify
-        li
-          a(href='u-extends.html') Utilities Extends
-        li
-          a(href='u-floats.html') Utilities Floats
-        li
-          a(href='u-position.html') Utilities Position
-        li
-          a(href='u-rounded.html') Utilities Rounded
-        li 
-          a(href='u-spaces.html') Utilities Spaces
-        li 
-          a(href='u-states.html') Utilities States
-        li 
-          a(href='u-text.html') Utilities Text
-        li 
-          a(href='u-vertical-align.html') Utilities Vertical Align
-        li 
-          a(href='u-widths.html') Utilities Widths
-        hr
-      ul(class='+u-unstyled  +u-text-center  +u-h1')
-        li
-          a(href='o-notify.html') Objects Notify
-        li
-          a(href='o-link-complex.html') Objects Link Complex
-        li
-          a(href='o-code.html') Objects Code
-        li 
-          a(href='o-forms.html') Objects Forms
-        li 
-          a(href='o-images.html') Objects Images
-        li 
-          a(href='o-rules.html') Objects Rules
-        li 
-          a(href='o-tables.html') Objects Tables
-        li 
-          a(href='o-island.html') Objects Island
-        li 
-          a(href='o-blockquote.html') Objects Blockquote
-        li 
-          a(href='o-labels-pills.html') Objects Labels & Pills
-        li 
-          a(href='o-buttons.html') Objects Buttons
-        li 
-          a(href='o-button-groups.html') Objects Buttons Broups
-        li 
-          a(href='o-columns.html') Objects Columns
-        li 
-          a(href='o-icon-fonts.html') Objects Icon Fonts
-        li 
-          a(href='o-icon-text.html') Objects Icon Text
-        li 
-          a(href='o-link-complex.html') Objects Link Complex
-        li 
-          a(href='o-lists.html') Objects Lists
-        li 
-          a(href='o-sprite.html') Objects Sprite
-        li 
-          a(href='o-block-list.html') Objects Block List
-        li 
-          a(href='o-thumbnail.html') Objects Thumbnail
-        li 
-          a(href='o-breadcrumbs.html') Objects Breadcrumbs
-        li 
-          a(href='o-flyout.html') Objects Flyout
-        li 
-          a(href='o-matrix.html') Objects Matrix
-        li 
-          a(href='o-media.html') Objects Media
-        li 
-          a(href='o-hamburger.html') Objects Hamburger
-        li 
-          a(href='o-nav.html') Objects Nav
-        li 
-          a(href='o-options.html') Objects Options
-        li 
-          a(href='o-pagination.html') Objects Pagination
-        li 
-          a(href='o-progress-bars.html') Objects progress-bars
-        li 
-          a(href='o-split.html') Objects Split
-        li 
-          a(href='o-loaders.html') Objects Loaders
-        li 
-          a(href='o-stats.html') Objects Stats
-        li 
-          a(href='o-this-or-this.html') Objects This or This  
-        li 
-          a(href='o-flag.html') Objects Flag  
+    include ../_partials/site/header
+    ul(class='o-nav  --banner')
+      li
+        a(class='o-btn --large  +u-rounded  +u-m-box  +u-bgc-warning' href='base.html') base
+      li
+        a(class='o-btn --large  +u-rounded  +u-m-box  +u-bgc-warning' href='objects.html') objects
+      li
+        a(class='o-btn --large  +u-rounded  +u-m-box  +u-bgc-warning' href='utilities.html') utilities
+      li
+        a(class='o-btn --large  +u-rounded  +u-m-box  +u-bgc-warning' href='sink.html') sink
+    //- .l-styleguide-container.container
+    //-   ul(class='+u-unstyled  +u-text-center  +u-h1')
+    //-     li
+    //-       a(href='sink.html') Sink
+    //-   ul(class='+u-unstyled  +u-text-center  +u-h1')
+    //-     li
+    //-       a(href='u-display.html') Utilities Display
+    //-     li
+    //-       a(href='u-extends.html') Utilities Extends
+    //-     li
+    //-       a(href='u-notify.html') Utilities Notify
+    //-     li
+    //-       a(href='u-extends.html') Utilities Extends
+    //-     li
+    //-       a(href='u-floats.html') Utilities Floats
+    //-     li
+    //-       a(href='u-position.html') Utilities Position
+    //-     li
+    //-       a(href='u-rounded.html') Utilities Rounded
+    //-     li 
+    //-       a(href='u-spaces.html') Utilities Spaces
+    //-     li 
+    //-       a(href='u-states.html') Utilities States
+    //-     li 
+    //-       a(href='u-text.html') Utilities Text
+    //-     li 
+    //-       a(href='u-vertical-align.html') Utilities Vertical Align
+    //-     li 
+    //-       a(href='u-widths.html') Utilities Widths
+    //-     hr
+    //-   ul(class='+u-unstyled  +u-text-center  +u-h1')
+    //-     li
+    //-       a(href='o-notify.html') Objects Notify
+    //-     li
+    //-       a(href='o-link-complex.html') Objects Link Complex
+    //-     li
+    //-       a(href='o-code.html') Objects Code
+    //-     li 
+    //-       a(href='o-forms.html') Objects Forms
+    //-     li 
+    //-       a(href='o-images.html') Objects Images
+    //-     li 
+    //-       a(href='o-rules.html') Objects Rules
+    //-     li 
+    //-       a(href='o-tables.html') Objects Tables
+    //-     li 
+    //-       a(href='o-island.html') Objects Island
+    //-     li 
+    //-       a(href='o-blockquote.html') Objects Blockquote
+    //-     li 
+    //-       a(href='o-labels-pills.html') Objects Labels & Pills
+    //-     li 
+    //-       a(href='o-buttons.html') Objects Buttons
+    //-     li 
+    //-       a(href='o-button-groups.html') Objects Buttons Broups
+    //-     li 
+    //-       a(href='o-columns.html') Objects Columns
+    //-     li 
+    //-       a(href='o-icon-fonts.html') Objects Icon Fonts
+    //-     li 
+    //-       a(href='o-icon-text.html') Objects Icon Text
+    //-     li 
+    //-       a(href='o-link-complex.html') Objects Link Complex
+    //-     li 
+    //-       a(href='o-lists.html') Objects Lists
+    //-     li 
+    //-       a(href='o-sprite.html') Objects Sprite
+    //-     li 
+    //-       a(href='o-block-list.html') Objects Block List
+    //-     li 
+    //-       a(href='o-thumbnail.html') Objects Thumbnail
+    //-     li 
+    //-       a(href='o-breadcrumbs.html') Objects Breadcrumbs
+    //-     li 
+    //-       a(href='o-flyout.html') Objects Flyout
+    //-     li 
+    //-       a(href='o-matrix.html') Objects Matrix
+    //-     li 
+    //-       a(href='o-media.html') Objects Media
+    //-     li 
+    //-       a(href='o-hamburger.html') Objects Hamburger
+    //-     li 
+    //-       a(href='o-nav.html') Objects Nav
+    //-     li 
+    //-       a(href='o-options.html') Objects Options
+    //-     li 
+    //-       a(href='o-pagination.html') Objects Pagination
+    //-     li 
+    //-       a(href='o-progress-bars.html') Objects progress-bars
+    //-     li 
+    //-       a(href='o-split.html') Objects Split
+    //-     li 
+    //-       a(href='o-loaders.html') Objects Loaders
+    //-     li 
+    //-       a(href='o-stats.html') Objects Stats
+    //-     li 
+    //-       a(href='o-this-or-this.html') Objects This or This  
+    //-     li 
+    //-       a(href='o-flag.html') Objects Flag  
     
     include ../_partials/site/scripts
     include ../_partials/site/analytics
