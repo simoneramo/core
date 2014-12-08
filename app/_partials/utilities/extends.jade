@@ -1,605 +1,581 @@
-h1(class='styleguide-title +u-font-huge') Extends Utilities
+h1(class='styleguide-title +u-h4x') Extends Utilities
+h2.styleguide-title--sub Extend Displays
 div.styleguide-utilities.extends
-
-  p 
-    span %e-block                { display: block; }
-  p 
-    span %e-inline               { display: block; }
-  p 
-    span %e-inline-block         { display: inline-block; }
-  p 
-    span %e-table                { display: table; }
-
+  code %e-block { display: block; }
   br
-  p 
-    span %e-success              { background-color: $c-notify-success; }
-  p 
-    span %e-info                 { background-color: $c-notify-info; }
-  p 
-    span %e-warning              { background-color: $c-notify-warning; }
-  p 
-    span %e-danger               { background-color: $c-notify-danger; }
-  p 
-    span %e-error                { background-color: $c-notify-error; }
-
-  p 
-    span %e-c-success            { color: $c-notify-success; }
-  p 
-    span %e-c-info               { color: $c-notify-info; }
-  p 
-    span %e-c-warning            { color: $c-notify-warning; }
-  p 
-    span %e-c-danger             { color: $c-notify-danger; }
-  p 
-    span %e-c-error              { color: $c-notify-error; }
-
+  code %e-inline { display: block; }
   br
-  p 
-    span %e-h1                   { font-size: $f-h1; }
-  p 
-    span %e-h2                   { font-size: $f-h2; }
-  p 
-    span %e-h3                   { font-size: $f-h3; }
-  p 
-    span %e-h4                   { font-size: $f-h4; }
-  p 
-    span %e-h5                   { font-size: $f-h5; }
-  p 
-    span %e-h6                   { font-size: $f-h6; }
-
+  code %e-inline-block { display: inline-block; }
   br
-  p 
-    span %e-font-massive         { font-size: $f-massive; }
-  p 
-    span %e-font-huge            { font-size: $f-huge; }
-  p 
-    span %e-font-large           { font-size: $f-large; }
-
+  code %e-table { display: table; }
+h2.styleguide-title--sub Extend Nofity Background Colour
+div.styleguide-utilities.extends
+  code %e-success { background-color: $c-notify-success; }
   br
-  p 
-    span %e-font-micro           { font-size: $f-micro; }
-  p 
-    span %e-font-tiny            { font-size: $f-tiny; }
-  p 
-    span %e-font-small           { font-size: $f-small; }
-
+  code %e-info { background-color: $c-notify-info; }
   br
-  p 
-    span %e-font-base            { font-size: $f-base; }  
-  p 
-    span %e-font-lead            { font-size: $f-lead; }
-  p 
-    span %e-font-half            { font-size: $f-half; }
-
+  code %e-warning { background-color: $c-notify-warning; }
   br
-  p 
-    span %e-font-200             { font-weight: 200; }
-  p 
-    span %e-font-300             { font-weight: 300; }
-  p 
-    span %e-font-400             { font-weight: 400; }
-  p 
-    span %e-font-500             { font-weight: 500; }
-  p 
-    span %e-font-600             { font-weight: 600; }
-  p 
-    span %e-font-700             { font-weight: 700; }
-  p 
-    span %e-font-800             { font-weight: 800; }
-  p 
-    span %e-font-900             { font-weight: 900; }
-
+  code %e-danger { background-color: $c-notify-danger; }
   br
-  p 
-    span %e-font-italic          { font-style: italic; }
-  p 
-    span %e-font-bold            { font-style: bold; }
-
+  code %e-error { background-color: $c-notify-error; }
+h2.styleguide-title--sub Extend Notify Colour
+div.styleguide-utilities.extends
+  code %e-c-success { color: $c-notify-success; }
   br
-  p 
-    span %u-text-underline       { text-decoration: underline; } 
-
+  code %e-c-info { color: $c-notify-info; }
   br
-  p 
-    span %e-text-lowercase       { text-transform: lowercase; } 
-  p 
-    span %e-text-uppercase       { text-transform: uppercase; } 
-  p 
-    span %e-text-capitalize      { text-transform: capitalize; } 
-
+  code %e-c-warning { color: $c-notify-warning; }
   br
-  p 
-    span %e-text-left            { text-align: left; }
-  p 
-    span %e-text-right           { text-align: right; }
-  p 
-    span %e-text-center          { text-align: center; }
-  p 
-    span %e-text-justify         { text-align: justify; }
-
+  code %e-c-danger{ color: $c-notify-danger; }
   br
-  p 
-    span %e-text-nowrap          { white-space: nowrap; }
-
+  code %e-c-error { color: $c-notify-error; }
+h2.styleguide-title--sub Extend H1 - h6
+div.styleguide-utilities.extends
+  code %e-h { font-size: $f-h1; }
   br
-  p 
-    span %e-float-left           { float: left; }
-  p 
-    span %e-float-right          { float: right; }
-  p 
-    span %e-float-none           { float: none; }
-
+  code %e-h { font-size: $f-h2; }
   br
-  p 
-    span %e-overflow-hidden      { overflow: hidden; }
-  p 
-    span %e-overflow-scroll      { overflow: scroll; }
-
+  code %e-h { font-size: $f-h3; }
   br
-  p 
-    span %e-pos-rel              { position: relative; }
-  p 
-    span %e-pos-abs              { position: absolute; }
-  p 
-    span %e-pos-fix              { position: fixed; }
-
+  code %e-h { font-size: $f-h4; }
   br
-  p 
-    span %e-pos-t0               { top: 0; }
-  p 
-    span %e-pos-r0               { right: 0; }
-  p 
-    span %e-pos-b0               { bottom: 0; }
-  p 
-    span %e-pos-l0               { left: 0; }
-
+  code %e-h { font-size: $f-h5; }
   br
-  p 
-    span %e-z-1                  { z-index: 1; }
-  p 
-    span %e-z-2                  { z-index: 2; }
-  p 
-    span %e-z-3                  { z-index: 3; }
-  p 
-    span %e-z-4                  { z-index: 4; }
-
+  code %e-h { font-size: $f-h6; }
+h2.styleguide-title--sub Extend Large Type
+div.styleguide-utilities.extends
+  code %e-font-massive { font-size: $f-massive; }
   br
-  p 
-    span %e-mt-sixth             { margin-top: $space-sixth; }
-  p 
-    span %e-mr-sixth             { margin-right: $space-sixth; }
-  p 
-    span %e-mb-sixth             { margin-bottom: $space-sixth; }
-  p 
-    span %e-ml-sixth             { margin-left: $space-sixth; }
-  p 
-    span %e-pt-sixth             { padding-top: $space-sixth; }
-  p 
-    span %e-pr-sixth             { padding-right: $space-sixth; }
-  p 
-    span %e-pb-sixth             { padding-bottom: $space-sixth; }
-  p 
-    span %e-pl-sixth             { padding-left: $space-sixth; }
-  
-  p 
-    span %e-mt-fifth             { margin-top: $space-fifth; }
-  p 
-    span %e-mr-fifth             { margin-right: $space-fifth; }
-  p 
-    span %e-mb-fifth             { margin-bottom: $space-fifth; }
-  p 
-    span %e-ml-fifth             { margin-left: $space-fifth; }
-  p 
-    span %e-pt-fifth             { padding-top: $space-fifth; }
-  p 
-    span %e-pr-fifth             { padding-right: $space-fifth; }
-  p 
-    span %e-pb-fifth             { padding-bottom: $space-fifth; }
-  p 
-    span %e-pl-fifth             { padding-left: $space-fifth; }
-  
-  p 
-    span %e-mt-quarter           { margin-top: $space-quarter; }
-  p 
-    span %e-mr-quarter           { margin-right: $space-quarter; }
-  p 
-    span %e-mb-quarter           { margin-bottom: $space-quarter; }
-  p 
-    span %e-ml-quarter           { margin-left: $space-quarter; }
-  p 
-    span %e-pt-quarter           { padding-top: $space-quarter; }
-  p 
-    span %e-pr-quarter           { padding-right: $space-quarter; }
-  p 
-    span %e-pb-quarter           { padding-bottom: $space-quarter; }
-  p 
-    span %e-pl-quarter           { padding-left: $space-quarter; }
-  
-  p 
-    span %e-mt-third             { margin-top: $space-third; }
-  p 
-    span %e-mr-third             { margin-right: $space-third; }
-  p 
-    span %e-mb-third             { margin-bottom: $space-third; }
-  p 
-    span %e-ml-third             { margin-left: $space-third; }
-  p 
-    span %e-pt-third             { padding-top: $space-third; }
-  p 
-    span %e-pr-third             { padding-right: $space-third; }
-  p 
-    span %e-pb-third             { padding-bottom: $space-third; }
-  p 
-    span %e-pl-third             { padding-left: $space-third; }
-  
-  p 
-    span %e-mt-half              { margin-top: $space-half; }
-  p 
-    span %e-mr-half              { margin-right: $space-half; }
-  p 
-    span %e-mb-half              { margin-bottom: $space-half; }
-  p 
-    span %e-ml-half              { margin-left: $space-half; }
-  p 
-    span %e-pt-half              { padding-top: $space-half; }
-  p 
-    span %e-pr-half              { padding-right: $space-half; }
-  p 
-    span %e-pb-half              { padding-bottom: $space-half; }
-  p 
-    span %e-pl-half              { padding-left: $space-half; }
-  
-  p 
-    span %e-mt                   { margin-top: $space; }
-  p 
-    span %e-mr                   { margin-right: $space; }
-  p 
-    span %e-mb                   { margin-bottom: $space; }
-  p 
-    span %e-ml                   { margin-left: $space; }
-  p 
-    span %e-pt                   { padding-top: $space; }
-  p 
-    span %e-pr                   { padding-right: $space; }
-  p 
-    span %e-pb                   { padding-bottom: $space; }
-  p 
-    span %e-pl                   { padding-left: $space; }
-  
-  p 
-    span %e-mt-1-half            { margin-top: $space-1-half; }
-  p 
-    span %e-mr-1-half            { margin-right: $space-1-half; }
-  p 
-    span %e-mb-1-half            { margin-bottom: $space-1-half; }
-  p 
-    span %e-ml-1-half            { margin-left: $space-1-half; }
-  p 
-    span %e-pt-1-half            { padding-top: $space-1-half; }
-  p 
-    span %e-pr-1-half            { padding-right: $space-1-half; }
-  p 
-    span %e-pb-1-half            { padding-bottom: $space-1-half; }
-  p 
-    span %e-pl-1-half            { padding-left: $space-1-half; }
-  
-  p 
-    span %e-mt-2                 { margin-top: $space-2; }
-  p 
-    span %e-mr-2                 { margin-right: $space-2; }
-  p 
-    span %e-mb-2                 { margin-bottom: $space-2; }
-  p 
-    span %e-ml-2                 { margin-left: $space-2; }
-  p 
-    span %e-pt-2                 { padding-top: $space-2; }
-  p 
-    span %e-pr-2                 { padding-right: $space-2;   }
-  p 
-    span %e-pb-2                 { padding-bottom: $space-2; }
-  p 
-    span %e-pl-2                 { padding-left: $space-2; }
-  
-  p 
-    span %e-mt-3                 { margin-top: $space-3; }
-  p 
-    span %e-mr-3                 { margin-right: $space-3;  }
-  p 
-    span %e-mb-3                 { margin-bottom: $space-3; }
-  p 
-    span %e-ml-3                 { margin-left: $space-3; }
-  p 
-    span %e-pt-3                 { padding-top: $space-3; }
-  p 
-    span %e-pr-3                 { padding-right: $space-3; }
-  p 
-    span %e-pb-3                 { padding-bottom: $space-3; }
-  p 
-    span %e-pl-3                 { padding-left: $space-3; }
-  
-  p 
-    span %e-mt-4                 { margin-top: $space-4; }
-  p 
-    span %e-mr-4                 { margin-right: $space-4; }
-  p 
-    span %e-mb-4                 { margin-bottom: $space-4; }
-  p 
-    span %e-ml-4                 { margin-left: $space-4; }
-  p 
-    span %e-pt-4                 { padding-top: $space-4; }
-  p 
-    span %e-pr-4                 { padding-right: $space-4; }
-  p 
-    span %e-pb-4                 { padding-bottom: $space-4; }
-  p 
-    span %e-pl-4                 { padding-left: $space-4; }
-  
-  p 
-    span %e-mt-5                 { margin-top: $space-5; }
-  p 
-    span %e-mr-5                 { margin-right: $space-5; }
-  p 
-    span %e-mb-5                 { margin-bottom: $space-5; }
-  p 
-    span %e-ml-5                 { margin-left: $space-5; }
-  p 
-    span %e-pt-5                 { padding-top: $space-5; }
-  p 
-    span %e-pr-5                 { padding-right: $space-5; }
-  p 
-    span %e-pb-5                 { padding-bottom: $space-5; }
-  p 
-    span %e-pl-5                 { padding-left: $space-5; }
-  
-  p 
-    span %e-mt-6                 { margin-top: $space-6; }
-  p 
-    span %e-mr-6                 { margin-right: $space-6; }
-  p 
-    span %e-mb-6                 { margin-bottom: $space-6; }
-  p 
-    span %e-ml-6                 { margin-left: $space-6; }
-  p 
-    span %e-pt-6                 { padding-top: $space-6; }
-  p 
-    span %e-pr-6                 { padding-right: $space-6; }
-  p 
-    span %e-pb-6                 { padding-bottom: $space-6; }
-  p 
-    span %e-pl-6                 { padding-left: $space-6; }
-
-
+  code %e-font-huge { font-size: $f-huge; }
   br
-  p 
-    span %e-one-whole            { width: 100%; }
-  p 
-    span %e-one-half             { width: 50%; }
-
-  p 
-    span %e-one-third            { width: 33.333%; }
-  p 
-    span %e-two-thirds           { width: 66.666%; }
-
-  p 
-    span %e-one-quarter          { width: 25%; }
-  p 
-    span %e-two-quarters         { @extend %e-one-half; }
-  p 
-    span %e-three-quarters       { width: 75%; }
-
-  p 
-    span %e-one-fifth            { width: 20%; }
-  p 
-    span %e-two-fifths           { width: 40%; }
-  p 
-    span %e-three-fifths         { width: 60%; }
-  p 
-    span %e-four-fifths          { width: 80%; }
-
-  p 
-    span %e-one-sixth            { width: 16.666%; }
-  p 
-    span %e-two-sixths           { @extend %e-one-third; }
-  p 
-    span %e-three-sixths         { @extend %e-one-half; }
-  p 
-    span %e-four-sixths          { @extend %e-two-thirds; }
-  p 
-    span %e-five-sixths          { width: 83.333%; }
-
-  p 
-    span %e-one-eighth           { width: 12.5%; }
-  p 
-    span %e-two-eighths          { @extend %e-one-quarter; }
-  p 
-    span %e-three-eighths        { width: 37.5%; }
-  p 
-    span %e-four-eighths         { @extend %e-one-half; }
-  p 
-    span %e-five-eighths         { width: 62.5%; }
-  p 
-    span %e-six-eighths          { @extend %e-three-quarters; }
-  p 
-    span %e-seven-eighths        { width: 87.5%; }
-
-  p 
-    span %e-one-tenth            { width: 10%; }
-  p 
-    span %e-two-tenths           { @extend %e-one-fifth; }
-  p 
-    span %e-three-tenths         { width: 30%; }
-  p 
-    span %e-four-tenths          { @extend %e-two-fifths; }
-  p 
-    span %e-five-tenths          { @extend %e-one-half; }
-  p 
-    span %e-six-tenths           { @extend %e-three-fifths; }
-  p 
-    span %e-seven-tenths         { width: 70%; }
-  p 
-    span %e-eight-tenths         { @extend %e-four-fifths; }
-  p 
-    span %e-nine-tenths          { width: 90%; }
-  
-  p 
-    span %e-one-twelfth          { width: 8.333%; } 
-  p 
-    span %e-two-twelfths         { @extend %e-one-sixth; }
-  p 
-    span %e-three-twelfths       { @extend %e-one-quarter; }
-  p 
-    span %e-four-twelfths        { @extend %e-one-third; }
-  p 
-    span %e-five-twelfths        { width: 41.666% } 
-  p 
-    span %e-six-twelfths         { @extend %e-one-half; }
-  p 
-    span %e-seven-twelfths       { width: 58.333%; }
-  p 
-    span %e-eight-twelfths       { @extend %e-two-thirds; }
-  p 
-    span %e-nine-twelfths        { @extend %e-three-quarters; } 
-  p 
-    span %e-ten-twelfths         { @extend %e-five-sixths; }
-  p 
-    span %e-eleven-twelfths      { width: 91.666%; }
-
+  code %e-font-large { font-size: $f-large; }
+h2.styleguide-title--sub Extend Small Type
+div.styleguide-utilities.extends
+  code %e-font-micro { font-size: $f-micro; }
   br
-  p 
-    span %e-1-1           { width: 100%; }
-
-  p 
-    span %e-1-2           { width: 50%; }
-  p 
-    span %e-2-2           { @extend %e-1-1; } 
-
-  p 
-    span %e-1-3           { width: 33.333%; } 
-  p 
-    span %e-2-3           { width: 66.666%; }   
-  p 
-    span %e-3-3           { @extend %e-1-1; }
-
-  p 
-    span %e-1-4           { width: 25%; }
-  p 
-    span %e-2-4           { @extend %e-1-1; }
-  p 
-    span %e-3-4           { width: 75%; }
-  p 
-    span %e-4-4           { @extend %e-1-1; }
-
-  p 
-    span %e-1-5           { width: 20%; }
-  p 
-    span %e-2-5           { width: 40%; } 
-  p 
-    span %e-3-5           { width: 60%; }
-  p 
-    span %e-4-5           { width: 80%; }
-  p 
-    span %e-5-5           { @extend %e-1-1; }
-
-  p 
-    span %e-1-6           { width: 16.666%; }
-  p 
-    span %e-2-6           { @extend %e-1-3; } 
-  p 
-    span %e-3-6           { @extend %e-1-2; }
-  p 
-    span %e-4-6           { @extend %e-2-3; }
-  p 
-    span %e-5-6           { width: 83.333%; }
-  p 
-    span %e-6-6           { @extend %e-1-1; }
-
-  p 
-    span %e-1-8           { width: 12.5%; }
-  p 
-    span %e-2-8           { @extend %e-1-4; }
-  p 
-    span %e-3-8           { width: 37.5%; }
-  p 
-    span %e-4-8           { @extend %e-1-2; }
-  p 
-    span %e-5-8           { width: 62.5%; }
-  p 
-    span %e-6-8           { @extend %e-3-4; }
-  p 
-    span %e-7-8           { width: 87.5%; }
-  p 
-    span %e-8-8           { @extend %e-1-1; }
-
-  p 
-    span %e-1-10          { width: 10%; }
-  p 
-    span %e-2-10          { @extend %e-1-5; }
-  p 
-    span %e-3-10          { width: 30%; }
-  p 
-    span %e-4-10          { @extend %e-2-5; }
-  p 
-    span %e-5-10          { @extend %e-1-2; }
-  p 
-    span %e-6-10          { @extend %e-3-5; }
-  p 
-    span %e-7-10          { width: 70%; }
-  p 
-    span %e-8-10          { @extend %e-4-5; }
-  p 
-    span %e-9-10          { width: 90%; }  
-  p 
-    span %e-10-10         { @extend %e-1-1; } 
-   
-  p 
-    span %e-1-12          { width: 8.333%; } 
-  p 
-    span %e-2-12          { @extend %e-1-6; }
-  p 
-    span %e-3-12          { @extend %e-1-4; }
-  p 
-    span %e-4-12          { @extend %e-1-3; }
-  p 
-    span %e-5-12          { width: 41.666% } 
-  p 
-    span %e-6-12          { @extend %e-1-2; }
-  p 
-    span %e-7-12          { width: 58.333%; }
-  p 
-    span %e-8-12          { @extend %e-2-3; }
-  p 
-    span %e-9-12          { @extend %e-3-4; } 
-  p 
-    span %e-10-12         { @extend %e-5-6; }
-  p 
-    span %e-11-12         { width: 91.666%; }
-  p 
-    span %e-12-12         { @extend %e-1-1; }
-
+  code %e-font-tiny { font-size: $f-tiny; }
   br
-  p 
-    span %e-hidden               { @include hidden; }
-  p 
-    span %e-clearfix             { @include clearfix; }
-  p 
-    span %e-visually-hidden      { @include visually-hidden; }
-  p 
-    span %e-sr-only              { @include sr-only; }
-  p 
-    span %e-no-style             { @include unstyled; }
-  p 
-    span %e-invisible            { @include invisible; }
-  p 
-    span %e-image-replace        { @include image-replace; }
-  p 
-    span %e-center-content       { @include center-content; }
-  p 
-    span %e-invisible            { @include invisible; } 
-
+  code %e-font-small { font-size: $f-small; }
+h2.styleguide-title--sub Extend Type
+div.styleguide-utilities.extends
+  code %e-font-base { font-size: $f-base; }  
   br
-  p 
-    span %e-informative             { cursor:help; }
-  p 
-    span %e-disable
-  p 
-    span %e-active{
+  code %e-font-lead { font-size: $f-lead; }
+  br
+  code %e-font-half { font-size: $f-half; }
+h2.styleguide-title--sub Extend Font Weights
+div.styleguide-utilities.extends
+  code %e-font-200{ font-weight: 200; }
+  br
+  code %e-font-300{ font-weight: 300; }
+  br
+  code %e-font-400{ font-weight: 400; }
+  br
+  code %e-font-500{ font-weight: 500; }
+  br
+  code %e-font-600{ font-weight: 600; }
+  br
+  code %e-font-700{ font-weight: 700; }
+  br
+  code %e-font-800{ font-weight: 800; }
+  br
+  code %e-font-900{ font-weight: 900; }
+h2.styleguide-title--sub Extend Style
+div.styleguide-utilities.extends
+  code %e-font-italic { font-style: italic; }
+  br
+  code %e-font-bold { font-style: bold; }
+h2.styleguide-title--sub Extend Underline
+div.styleguide-utilities.extends
+  code %u-text-underline { text-decoration: underline; } 
+h2.styleguide-title--sub Extend Transform
+div.styleguide-utilities.extends
+  code %e-text-lowercase { text-transform: lowercase; } 
+  br
+  code %e-text-uppercase { text-transform: uppercase; } 
+  br
+  code %e-text-capitaliz { text-transform: capitalize; } 
+h2.styleguide-title--sub Extend Text Align
+div.styleguide-utilities.extends
+  code %e-text-left { text-align: left; }
+  br
+  code %e-text-right { text-align: right; }
+  br
+  code %e-text-center { text-align: center; }
+  br
+  code %e-text-justify { text-align: justify; }
+h2.styleguide-title--sub Extend White Space
+div.styleguide-utilities.extends
+  code %e-text-nowrap { white-space: nowrap; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends Floats
+  code %e-float-left { float: left; }
+  br
+  code %e-float-right { float: right; }
+  br
+  code %e-float-none { float: none; }
+h2.styleguide-title--sub Extend Overflow
+div.styleguide-utilities.extends
+  code %e-overflow-hidde { overflow: hidden; }
+  br
+  code %e-overflow-scrol { overflow: scroll; }
+h2.styleguide-title--sub Extend Postion
+div.styleguide-utilities.extends
+  code %e-pos-rel { position: relative; }
+  br
+  code %e-pos-abs { position: absolute; }
+  br
+  code %e-pos-fix { position: fixed; }
+h2.styleguide-title--sub Extend 
+div.styleguide-utilities.extends
+  code %e-pos-t0 { top: 0; }
+  br
+  code %e-pos-r0 { right: 0; }
+  br
+  code %e-pos-b0 { bottom: 0; }
+  br
+  code %e-pos-l0 { left: 0; }
+h2.styleguide-title--sub Extend Zindex
+div.styleguide-utilities.extends
+  code %e-z-1  { z-index: 1; }
+  br
+  code %e-z-2  { z-index: 2; }
+  br
+  code %e-z-3  { z-index: 3; }
+  br
+  code %e-z-4  { z-index: 4; }
+h2.styleguide-title--sub Extend Margin .16 Space
+div.styleguide-utilities.extends 
+  code %e-mt-sixth{ margin-top: $space-sixth; }
+  br
+  code %e-mr-sixth{ margin-right: $space-sixth; }
+  br
+  code %e-mb-sixth{ margin-bottom: $space-sixth; }
+  br
+  code %e-ml-sixth{ margin-left: $space-sixth; }
+  br
+  code %e-pt-sixth{ padding-top: $space-sixth; }
+  br
+  code %e-pr-sixth{ padding-right: $space-sixth; }
+  br
+  code %e-pb-sixth{ padding-bottom: $space-sixth; }
+  br
+  code %e-pl-sixth{ padding-left: $space-sixth; }
+h2.styleguide-title--sub Extend Margin .2 Space
+div.styleguide-utilities.extends
+  code %e-mt-fifth{ margin-top: $space-fifth; }
+  br
+  code %e-mr-fifth{ margin-right: $space-fifth; }
+  br
+  code %e-mb-fifth{ margin-bottom: $space-fifth; }
+  br
+  code %e-ml-fifth{ margin-left: $space-fifth; }
+  br
+  code %e-pt-fifth{ padding-top: $space-fifth; }
+  br
+  code %e-pr-fifth{ padding-right: $space-fifth; }
+  br
+  code %e-pb-fifth{ padding-bottom: $space-fifth; }
+  br
+  code %e-pl-fifth{ padding-left: $space-fifth; }
+h2.styleguide-title--sub Extend Margin .25 Space
+div.styleguide-utilities.extends
+  code %e-mt-quarter { margin-top: $space-quarter; }
+  br
+  code %e-mr-quarter { margin-right: $space-quarter; }
+  br
+  code %e-mb-quarter { margin-bottom: $space-quarter; }
+  br
+  code %e-ml-quarter { margin-left: $space-quarter; }
+  br
+  code %e-pt-quarter { padding-top: $space-quarter; }
+  br
+  code %e-pr-quarter { padding-right: $space-quarter; }
+  br
+  code %e-pb-quarter { padding-bottom: $space-quarter; }
+  br
+  code %e-pl-quarter { padding-left: $space-quarter; }
+h2.styleguide-title--sub Extend Margin .333 Space
+div.styleguide-utilities.extends
+  code %e-mt-third{ margin-top: $space-third; }
+  br
+  code %e-mr-third{ margin-right: $space-third; }
+  br
+  code %e-mb-third{ margin-bottom: $space-third; }
+  br
+  code %e-ml-third{ margin-left: $space-third; }
+  br
+  code %e-pt-third{ padding-top: $space-third; }
+  br
+  code %e-pr-third{ padding-right: $space-third; }
+  br
+  code %e-pb-third{ padding-bottom: $space-third; }
+  br
+  code %e-pl-third{ padding-left: $space-third; }
+h2.styleguide-title--sub Extend Margin .5 Space
+div.styleguide-utilities.extends
+  code %e-mt-half { margin-top: $space-half; }
+  br
+  code %e-mr-half { margin-right: $space-half; }
+  br
+  code %e-mb-half { margin-bottom: $space-half; }
+  br
+  code %e-ml-half { margin-left: $space-half; }
+  br
+  code %e-pt-half { padding-top: $space-half; }
+  br
+  code %e-pr-half { padding-right: $space-half; }
+  br
+  code %e-pb-half { padding-bottom: $space-half; }
+  br
+  code %e-pl-half { padding-left: $space-half; }
+h2.styleguide-title--sub Extend Margin Space
+div.styleguide-utilities.extends
+  code %e-m { margin-top: $space; }
+  br
+  code %e-m { margin-right: $space; }
+  br
+  code %e-m { margin-bottom: $space; }
+  br
+  code %e-m { margin-left: $space; }
+  br
+  code %e-p { padding-top: $space; }
+  br
+  code %e-p { padding-right: $space; }
+  br
+  code %e-p { padding-bottom: $space; }
+  br
+  code %e-p { padding-left: $space; }
+h2.styleguide-title--sub  Extend Margin 1.5x Space
+div.styleguide-utilities.extends
+  code %e-mt-1-half { margin-top: $space-1-half; }
+  br
+  code %e-mr-1-half { margin-right: $space-1-half; }
+  br
+  code %e-mb-1-half { margin-bottom: $space-1-half; }
+  br
+  code %e-ml-1-half { margin-left: $space-1-half; }
+  br
+  code %e-pt-1-half { padding-top: $space-1-half; }
+  br
+  code %e-pr-1-half { padding-right: $space-1-half; }
+  br
+  code %e-pb-1-half { padding-bottom: $space-1-half; }
+  br
+  code %e-pl-1-half { padding-left: $space-1-half; }
+h2.styleguide-title--sub  Extend Margin 2x Space
+div.styleguide-utilities.extends
+  code %e-mt-2 { margin-top: $space-2; }
+  br
+  code %e-mr-2 { margin-right: $space-2; }
+  br
+  code %e-mb-2 { margin-bottom: $space-2; }
+  br
+  code %e-ml-2 { margin-left: $space-2; }
+  br
+  code %e-pt-2 { padding-top: $space-2; }
+  br
+  code %e-pr-2 { padding-right: $space-2;   }
+  br
+  code %e-pb-2 { padding-bottom: $space-2; }
+  br
+  code %e-pl-2 { padding-left: $space-2; }
+h2.styleguide-title--sub  Extend Margin 3x Space
+div.styleguide-utilities.extends
+  code %e-mt-3 { margin-top: $space-3; }
+  br
+  code %e-mr-3 { margin-right: $space-3;  }
+  br
+  code %e-mb-3 { margin-bottom: $space-3; }
+  br
+  code %e-ml-3 { margin-left: $space-3; }
+  br
+  code %e-pt-3 { padding-top: $space-3; }
+  br
+  code %e-pr-3 { padding-right: $space-3; }
+  br
+  code %e-pb-3 { padding-bottom: $space-3; }
+  br
+  code %e-pl-3 { padding-left: $space-3; }
+h2.styleguide-title--sub Extend Margin 4x Space
+div.styleguide-utilities.extends
+  code %e-mt-4 { margin-top: $space-4; }
+  br
+  code %e-mr-4 { margin-right: $space-4; }
+  br
+  code %e-mb-4 { margin-bottom: $space-4; }
+  br
+  code %e-ml-4 { margin-left: $space-4; }
+  br
+  code %e-pt-4 { padding-top: $space-4; }
+  br
+  code %e-pr-4 { padding-right: $space-4; }
+  br
+  code %e-pb-4 { padding-bottom: $space-4; }
+  br
+  code %e-pl-4 { padding-left: $space-4; }
+h2.styleguide-title--sub Extend Margin 5x Space
+div.styleguide-utilities.extends
+  code %e-mt-5 { margin-top: $space-5; }
+  br
+  code %e-mr-5 { margin-right: $space-5; }
+  br
+  code %e-mb-5 { margin-bottom: $space-5; }
+  br
+  code %e-ml-5 { margin-left: $space-5; }
+  br
+  code %e-pt-5 { padding-top: $space-5; }
+  br
+  code %e-pr-5 { padding-right: $space-5; }
+  br
+  code %e-pb-5 { padding-bottom: $space-5; }
+  br
+  code %e-pl-5 { padding-left: $space-5; }
+h2.styleguide-title--sub Extend Margin 6x Space
+div.styleguide-utilities.extends
+  code %e-mt-6 { margin-top: $space-6; }
+  br
+  code %e-mr-6 { margin-right: $space-6; }
+  br
+  code %e-mb-6 { margin-bottom: $space-6; }
+  br
+  code %e-ml-6 { margin-left: $space-6; }
+  br
+  code %e-pt-6 { padding-top: $space-6; }
+  br
+  code %e-pr-6 { padding-right: $space-6; }
+  br
+  code %e-pb-6 { padding-bottom: $space-6; }
+  br
+  code %e-pl-6 { padding-left: $space-6; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-one-whole { width: 100%; }
+  br
+  code %e-one-half{ width: 50%; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-one-third { width: 33.333%; }
+  br
+  code %e-two-thirds { width: 66.666%; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-one-quarter { width: 25%; }
+  br
+  code %e-two-quarters { @extend %e-one-half; }
+  br
+  code %e-three-quarters { width: 75%; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-one-fifth { width: 20%; }
+  br
+  code %e-two-fifths { width: 40%; }
+  br
+  code %e-three-fifths { width: 60%; }
+  br
+  code %e-four-fifths { width: 80%; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-one-sixth { width: 16.666%; }
+  br
+  code %e-two-sixths { @extend %e-one-third; }
+  br
+  code %e-three-sixths { @extend %e-one-half; }
+  br
+  code %e-four-sixths { @extend %e-two-thirds; }
+  br
+  code %e-five-sixths { width: 83.333%; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-one-eighth { width: 12.5%; }
+  br
+  code %e-two-eighths { @extend %e-one-quarter; }
+  br
+  code %e-three-eighths { width: 37.5%; }
+  br
+  code %e-four-eighths { @extend %e-one-half; }
+  br
+  code %e-five-eighths { width: 62.5%; }
+  br
+  code %e-six-eighths { @extend %e-three-quarters; }
+  br
+  code %e-seven-eighths { width: 87.5%; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-one-tenth { width: 10%; }
+  br
+  code %e-two-tenths { @extend %e-one-fifth; }
+  br
+  code %e-three-tenths { width: 30%; }
+  br
+  code %e-four-tenths { @extend %e-two-fifths; }
+  br
+  code %e-five-tenths { @extend %e-one-half; }
+  br
+  code %e-six-tenths { @extend %e-three-fifths; }
+  br
+  code %e-seven-tenths { width: 70%; }
+  br
+  code %e-eight-tenths { @extend %e-four-fifths; }
+  br
+  code %e-nine-tenths { width: 90%; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-one-twelfth { width: 8.333%; } 
+  br
+  code %e-two-twelfths { @extend %e-one-sixth; }
+  br
+  code %e-three-twelfths { @extend %e-one-quarter; }
+  br
+  code %e-four-twelfths { @extend %e-one-third; }
+  br
+  code %e-five-twelfths { width: 41.666% } 
+  br
+  code %e-six-twelfths { @extend %e-one-half; }
+  br
+  code %e-seven-twelfths { width: 58.333%; }
+  br
+  code %e-eight-twelfths { @extend %e-two-thirds; }
+  br
+  code %e-nine-twelfths { @extend %e-three-quarters; } 
+  br
+  code %e-ten-twelfths { @extend %e-five-sixths; }
+  br
+  code %e-eleven-twelfth { width: 91.666%; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-1-1 { width: 100%; }
+  br
+  code %e-1-2 { width: 50%; }
+  br
+  code %e-2-2 { @extend %e-1-1; } 
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-1-3 { width: 33.333%; } 
+  br
+  code %e-2-3 { width: 66.666%; }   
+  br
+  code %e-3-3 { @extend %e-1-1; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-1-4 { width: 25%; }
+  br
+  code %e-2-4 { @extend %e-1-1; }
+  br
+  code %e-3-4 { width: 75%; }
+  br
+  code %e-4-4 { @extend %e-1-1; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-1-5 { width: 20%; }
+  br
+  code %e-2-5 { width: 40%; } 
+  br
+  code %e-3-5 { width: 60%; }
+  br
+  code %e-4-5 { width: 80%; }
+  br
+  code %e-5-5 { @extend %e-1-1; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-1-6 { width: 16.666%; }
+  br
+  code %e-2-6 { @extend %e-1-3; } 
+  br
+  code %e-3-6 { @extend %e-1-2; }
+  br
+  code %e-4-6 { @extend %e-2-3; }
+  br
+  code %e-5-6 { width: 83.333%; }
+  br
+  code %e-6-6 { @extend %e-1-1; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-1-8 { width: 12.5%; }
+  br
+  code %e-2-8 { @extend %e-1-4; }
+  br
+  code %e-3-8 { width: 37.5%; }
+  br
+  code %e-4-8 { @extend %e-1-2; }
+  br
+  code %e-5-8 { width: 62.5%; }
+  br
+  code %e-6-8 { @extend %e-3-4; }
+  br
+  code %e-7-8 { width: 87.5%; }
+  br
+  code %e-8-8 { @extend %e-1-1; }
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-1-10 { width: 10%; }
+  br
+  code %e-2-10 { @extend %e-1-5; }
+  br
+  code %e-3-10 { width: 30%; }
+  br
+  code %e-4-10 { @extend %e-2-5; }
+  br
+  code %e-5-10 { @extend %e-1-2; }
+  br
+  code %e-6-10 { @extend %e-3-5; }
+  br
+  code %e-7-10 { width: 70%; }
+  br
+  code %e-8-10 { @extend %e-4-5; }
+  br
+  code %e-9-10 { width: 90%; }  
+  br
+  code %e-10-10 { @extend %e-1-1; } 
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-1-12 { width: 8.333%; } 
+  br
+  code %e-2-12 { @extend %e-1-6; }
+  br
+  code %e-3-12 { @extend %e-1-4; }
+  br
+  code %e-4-12 { @extend %e-1-3; }
+  br
+  code %e-5-12 { width: 41.666% } 
+  br
+  code %e-6-12 { @extend %e-1-2; }
+  br
+  code %e-7-12 { width: 58.333%; }
+  br
+  code %e-8-12 { @extend %e-2-3; }
+  br
+  code %e-9-12 { @extend %e-3-4; } 
+  br
+  code %e-10-12 { @extend %e-5-6; }
+  br
+  code %e-11-12 { width: 91.666%; }
+  br
+  code %e-12-12 { @extend %e-1-1; }
+h2.styleguide-title--sub Extend Mixins
+div.styleguide-utilities.extends
+  code %e-hidden { @include hidden; }
+  br
+  code %e-clearfix{ @include clearfix; }
+  br
+  code %e-visually-hidde { @include visually-hidden; }
+  br
+  code %e-sr-only { @include sr-only; }
+  br
+  code %e-no-style { @include unstyled; }
+  br
+  code %e-invisible { @include invisible; }
+  br
+  code %e-image-replace { @include image-replace; }
+  br
+  code %e-center-content { @include center-content; }
+  br
+  code %e-invisible { @include invisible; } 
+h2.styleguide-title--sub Extend
+div.styleguide-utilities.extends
+  code %e-informative { cursor:help; }
+  br
+  code %e-disable
+  br
+  code %e-active {

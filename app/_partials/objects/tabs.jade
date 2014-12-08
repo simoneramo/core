@@ -1,25 +1,47 @@
-h1(class='styleguide-title +u-font-huge') Tabs Object
-div.styleguide-base.tabs
+h1(class='styleguide-title +u-h4x') Tabs Object
+h2.styleguide-title--sub Tabs Left (Default)
+div.styleguide-objects.tabs
   ul.o-tabs(style='border-bottom:2px solid #f7f7f7')
     li
       a.o-btn(href='http://www.unvisted.io') Tab 1
     li
-      a.o-btn(class='+active' href='https://twitter.com') Tab 2
+      a.o-btn(href='https://twitter.com') Tab 2
     li
       a.o-btn(href='http://www.unvisted.io') Tab 3
+.styleguide-code
+  p code here
+h2.styleguide-title--sub Tabs Center
+div.styleguide-objects.tabs
   ul.o-tabs.--right(style='border-bottom:2px solid #f7f7f7')
     li
-      a.o-btn(class='+active'  href='https://twitter.com') Tab 1
+      a.o-btn(href='https://twitter.com') Tab 1
     li
       a.o-btn(href='http://www.unvisted.io') Tab 2
     li
       a.o-btn(href='http://www.unvisted.io') Tab 3
+.styleguide-code
+  p code here
+h2.styleguide-title--sub Tabs Right
+div.styleguide-objects.tabs
   ul.o-tabs.--centered(style='border-bottom:2px solid #f7f7f7')
     li
       a.o-btn(href='https://twitter.com') Tab 1
     li
-      a.o-btn(class='+active' href='https://twitter.com') Tab 2
+      a.o-btn(href='https://twitter.com') Tab 2
     li
       a.o-btn(href='http://www.unvisted.io') Tab 3
-  .styleguide-code
-    p code here
+.styleguide-code
+  p code here
+h2.styleguide-title--sub Tabs with States
+div.styleguide-objects.tabs
+  ul.o-tabs.--centered(style='border-bottom:2px solid #f7f7f7')
+    li
+      a.o-btn(class="+u-disable" href='https://twitter.com') Tab 1
+    li
+      a.o-btn(class="+u-active" href='https://twitter.com') Tab 2
+    li
+      a.o-btn( href='http://www.unvisted.io') Tab 3
+    li
+      a.o-btn(class="+u-informative" href='http://www.unvisted.io') Tab 4
+.styleguide-code
+  p code here

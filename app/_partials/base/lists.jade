@@ -1,23 +1,33 @@
-h1(class='styleguide-title +u-h4x') Lists Object
-h2.styleguide-title--sub Orded lists 
-.styleguide-objects.lists
+h1(class='styleguide-title +u-h4x') Base Lists
+h2.styleguide-title--sub Ordered lists 
+.styleguide-base.lists
   ol
     li list item 1
     li
       | list item 1
       ol
-        li list item 2
+        li 
+          a(href='base.html') list item 2 link
         li
           | list item 2
           ol
             li list item 3
             li list item 3
+              ol
+                li list item 4
+                li
+                  | list item 4
+                  ol
+                    li list item 5
+                    li list item 5
+        li list item 2
+        li list item 2
         li list item 2
         li list item 2
 .styleguide-code
   p code here
 h2.styleguide-title--sub Unordered lists  
-.styleguide-objects.lists
+.styleguide-base.lists
   ul
     li list item 1
     li
@@ -33,28 +43,12 @@ h2.styleguide-title--sub Unordered lists
         li list item 2
 .styleguide-code
   p code here
-h2.styleguide-title--sub Unordered Unsyled lists 
-.styleguide-objects.lists
-  ul( class='+u-unstyled')
-    li list item 1
-    li
-      | list item 1
-      ul
-        li list item 2
-        li
-          | list item 2
-          ul
-            li list item 3
-            li list item 3
-        li list item 2
-        li list item 2
-.styleguide-code
-  p code here
 h2.styleguide-title--sub Definition list
-.styleguide-objects.lists 
+.styleguide-base.lists 
   dl
     dt Definition name
-    dd Definition value
+    dd 
+      a(href='base.html') Definition value link
     dt Definition name
     dd Definition value
     dd Definition value
