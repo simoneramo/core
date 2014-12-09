@@ -9,8 +9,8 @@ $use-utilities-floats:  true !default;
   @include add(u-float-right)     { float: right; }
   @include add(u-float-inherit)   { float: inherit; }
 
-  @include add(u-f-lef)      { float: left; }
-  @include add(u-f-rig)      { float: right; }
-  @include add(u-f-inh)      { float: inherit; }
+  @include add(u-f-left)      { float: left; }
+  @include add(u-f-right)      { float: right; }
+  @include add(u-f-inherit)      { float: inherit; }
 
 }// end if

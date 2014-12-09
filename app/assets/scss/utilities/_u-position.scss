@@ -22,10 +22,10 @@ $use-utilities-position:  true !default;
   @include add(u-pos-l0)    { left: 0; }
 
   //  // position where
-  // @include add(u-p-t0)     { top: 0; }
-  // @include add(u-p-r0)     { right: 0; }
-  // @include add(u-p-b0)     { bottom: 0; }
-  // @include add(u-p-l0)     { left: 0; }
+  // @include add(u-p-t-0)     { top: 0; }
+  // @include add(u-p-r-0)     { right: 0; }
+  // @include add(u-p-b-0)     { bottom: 0; }
+  // @include add(u-p-l-0)     { left: 0; }
 
   // z-index
   @include add(u-z-1)       { z-index: 1; }

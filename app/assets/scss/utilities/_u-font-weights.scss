@@ -21,9 +21,11 @@ $use-utilities-font-weights:  true !default;
   @include add(u-font-900)               { font-weight: 900;}
 
   // // font weights  
-  // @include add(u-fw-nor)       { font-weight: normal;}
-  // @include add(u-fw-bol)       { font-weight: bold;}
-
+  // @include add(u-fw-normal)    { font-weight: normal;}
+  // @include add(u-fw-bold)      { font-weight: bold;}
+  // @include add(u-fw-lighter)   { font-weight: lighter;}
+  // @include add(u-fw-bolder)    { font-weight: bolder;}
+  
   // @include add(u-fw-100)       { font-weight: 100;}
   // @include add(u-fw-200)       { font-weight: 200;}
   // @include add(u-fw-300)       { font-weight: 300;}

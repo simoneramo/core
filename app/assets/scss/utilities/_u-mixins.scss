@@ -15,18 +15,18 @@ $use-utilities-mixins:  true !default;
   @include add(u-margin-bottom)                { @include global-mb; }
 
   // // mixin
-  // @include add(u-m-hid)          { @include hidden; }
-  // @include add(u-m-cf)           { @include clearfix; }
-  // @include add(u-m-vh)           { @include visually-hidden; }
-  // @include add(u-m-so)           { @include sr-only; }
-  // @include add(u-m-us)           { @include unstyled; }
-  // @include add(u-m-ir)           { @include image-replace; }
-  // @include add(u-m-cc)           { @include center-content; }
-  // @include add(u-m-inv)          { @include invisible; } 
-  // @include add(u-m-va-con)       { transform-style: preserve-3d; }
-  // @include add(u-m-va)           { @include vertical-align;  }
-  // @include add(u-m-va-tab)       { @include vertical-align-table; }
-  // @include add(u-m-mb-res)       { @include global-mb; }
-  // @include add(u-m-bl-lin)       { @include link-block-space; }
+  // @include add(u-m-hidden)                   { @include hidden; }
+  // @include add(u-m-clearfix)                 { @include clearfix; }
+  // @include add(u-m-visually-hidden)          { @include visually-hidden; }
+  // @include add(u-m-sr-only)                  { @include sr-only; }
+  // @include add(u-m-unstyled)                 { @include unstyled; }
+  // @include add(u-m-image-replace)            { @include image-replace; }
+  // @include add(u-m-center-content)           { @include center-content; }
+  // @include add(u-m-invisible)                { @include invisible; } 
+  // @include add(u-m-va-container)             { transform-style: preserve-3d; }
+  // @include add(u-m-vertical-align)           { @include vertical-align;  }
+  // @include add(u-m-vertical-align-table)     { @include vertical-align-table; }
+  // @include add(u-m-global-margin-bottom)     { @include global-mb; }
+  // @include add(u-m-link-block)               { @include link-block-space; }
 
 }//endif

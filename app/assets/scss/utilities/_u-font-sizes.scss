@@ -17,9 +17,9 @@ $use-utilities-font-sizes:  true !default;
   @include add(u-h6x)                    { font-size: $f-h6x;}
 
   // // huge heading sizes
-  // @include add(u-fs-mas)       { font-size: $f-massive;}
-  // @include add(u-fs-hug)       { font-size: $f-huge;}
-  // @include add(u-fs-lar)       { font-size: $f-large;}
+  // @include add(u-fs-mas)       { font-size: $f-massive;} delete
+  // @include add(u-fs-hug)       { font-size: $f-huge;} delete
+  // @include add(u-fs-lar)       { font-size: $f-large;} delete
   // @include add(u-fs-h1x)       { font-size: $f-h1x;}
   // @include add(u-fs-h2x)       { font-size: $f-h2x;}
   // @include add(u-fs-h3x)       { font-size: $f-h3x;}
@@ -51,12 +51,12 @@ $use-utilities-font-sizes:  true !default;
   @include add(u-font-half)              { font-size: $f-half;}
 
   // // base type
-  // @include add(u-fs-bas)       { font-size: $f-base;}
+  // @include add(u-fs-base)       { font-size: $f-base;}
   
   // // helper type
-  // @include add(u-fs-lea)       { font-size: $f-lead;}
-  // @include add(u-fs-hal)       { font-size: $f-half;}
-  // @include add(u-fs-inh)       { font-size: inherit;}
+  // @include add(u-fs-lead)       { font-size: $f-lead;}
+  // @include add(u-fs-half)       { font-size: $f-half;}
+  // @include add(u-fs-inherit)       { font-size: inherit;}
 
   // small heading sizes
   @include add(u-font-small)             { font-size: $f-small;}    
@@ -68,9 +68,9 @@ $use-utilities-font-sizes:  true !default;
   @include add(u-h10)                    { font-size: $f-h10;}  
   
   // // small heading sizes
-  // @include add(u-fs-sma)        { font-size: $f-small;}    
-  // @include add(u-fs-tin)        { font-size: $f-tiny;}
-  // @include add(u-fs-mic)        { font-size: $f-micro;}
+  // @include add(u-fs-sma)        { font-size: $f-small;} delete  
+  // @include add(u-fs-tin)        { font-size: $f-tiny;} delete
+  // @include add(u-fs-mic)        { font-size: $f-micro;} delete
   // @include add(u-fs-h7)         { font-size: $f-h7;}  
   // @include add(u-fs-h8)         { font-size: $f-h8;}  
   // @include add(u-fs-h9)         { font-size: $f-h9;}  

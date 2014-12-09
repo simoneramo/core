@@ -9,6 +9,6 @@ $use-utilities-white-space:  true !default;
   @include add(u-text-nowrap)            { white-space: nowrap;}
 
   // // nowrap
-  // @include add(u-ws-nw)        { white-space: nowrap;}
+  // @include add(u-ws-nowrap)        { white-space: nowrap;}
 
 }//end if

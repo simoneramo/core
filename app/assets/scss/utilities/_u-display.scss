@@ -12,11 +12,11 @@ $use-utilities-display:  true !default;
   @include add(u-table-cell)          { display:table-cell; }
   @include add(u-flex)                { display:flex; }
 
-  // @include add(u-d-blo)        { display:block; }
-  // @include add(u-d-inl)        { display:inline; }
-  // @include add(u-d-ib)         { display:inline-block; }
-  // @include add(u-d-tab)        { display:table; }
-  // @include add(u-d-tc)         { display:table-cell; }
-  // @include add(u-d-fle)        { display:flex; }
+  // @include add(u-d-block)             { display:block; }
+  // @include add(u-d-inline)            { display:inline; }
+  // @include add(u-d-inline-block)      { display:inline-block; }
+  // @include add(u-d-table)             { display:table; }
+  // @include add(u-d-table-cell)        { display:table-cell; }
+  // @include add(u-d-flex)              { display:flex; }
 
 }//endif

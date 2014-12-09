@@ -11,8 +11,8 @@ $use-utilities-font-styles:  true !default;
   @include add(u-font-oblique)           { font-style: oblique;}
 
   // // font styles
-  // @include add(u-fs-nor)       { font-style: normal;}
-  // @include add(u-fs-ita)       { font-style: italic;}
-  // @include add(u-fs-obl)       { font-style: oblique;}
+  // @include add(u-fs-normal)       { font-style: normal;}
+  // @include add(u-fs-italic)       { font-style: italic;}
+  // @include add(u-fs-oblique)       { font-style: oblique;}
 
 }//end if 

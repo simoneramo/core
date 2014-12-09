@@ -9,7 +9,7 @@ $use-utilities-text:  true !default;
 	@include add(u-text-underline)         { text-decoration: underline;} 
 
   // // text underline
-  // @include add(u-td-ul)        { text-decoration: underline;} 
+  // @include add(u-td-underline)        { text-decoration: underline;} 
 
   // text transforms
 	@include add(u-text-lower)             { text-transform: lowercase;} 
@@ -17,9 +17,9 @@ $use-utilities-text:  true !default;
 	@include add(u-text-caps)              { text-transform: capitalize;} 
 
   // // text transforms
-  // @include add(u-tt-low)       { text-transform: lowercase;} 
-  // @include add(u-tt-upp)       { text-transform: uppercase;} 
-  // @include add(u-tt-cap)       { text-transform: capitalize;} 
+  // @include add(u-tt-lower)         { text-transform: lowercase;} 
+  // @include add(u-tt-upper)         { text-transform: uppercase;} 
+  // @include add(u-tt-capital)       { text-transform: capitalize;} 
 
   // text align
 	@include add(u-text-left)              { text-align: left;}
@@ -28,9 +28,9 @@ $use-utilities-text:  true !default;
 	@include add(u-text-justify)           { text-align: justify;}
 
   // // text align
-  // @include add(u-ta-lef)       { text-align: left;}
-  // @include add(u-ta-rig)       { text-align: right;}
-  // @include add(u-ta-cen)       { text-align: center;}
-  // @include add(u-ta-jus)       { text-align: justify;}
+  // @include add(u-ta-left)         { text-align: left;}
+  // @include add(u-ta-right)        { text-align: right;}
+  // @include add(u-ta-center)       { text-align: center;}
+  // @include add(u-ta-justify)      { text-align: justify;}
 
 }//end if
