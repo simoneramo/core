@@ -15,7 +15,7 @@ $use-utilities-states:  true !default;
   @include add(u-informative)   { @extend %e-informative; }
 
 
-  // event
+  // event states
 
   // // disabled
   // @include add(u-e-dis)      { @extend %e-disable; }

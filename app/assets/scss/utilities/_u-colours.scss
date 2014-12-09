@@ -19,12 +19,29 @@ $use-utilities-colours:  true !default;
   @include add(u-grey)                { background-color: $gray; }
   @include add(u-black)               { background-color: $black; }
   
+  // // bc custom colours
+  // @include add(u-bc-whi)        { background-color: $white; }
+  // @include add(u-bc-yel)        { background-color: $yellow; }
+  // @include add(u-bc-ora)        { background-color: $orange; }
+  // @include add(u-bc-pin)        { background-color: $pink; }
+  // @include add(u-bc-red)        { background-color: $red; }
+  // @include add(u-bc-mar)        { background-color: $maroon; }
+  // @include add(u-bc-gre)        { background-color: $green; }
+  // @include add(u-bc-aqu)        { background-color: $aqua; }
+  // @include add(u-bc-blu)        { background-color: $blue; }
+  // @include add(u-bc-sil)        { background-color: $silver; }
+  // @include add(u-bc-gre)        { background-color: $gray; }
+  // @include add(u-bc-bla)        { background-color: $black; }
 
   // background
   @include add(u-bgc-1)               { background-color: $bgc-1; }
   @include add(u-bgc-2)               { background-color: $bgc-2; }
   @include add(u-bgc-3)               { background-color: $bgc-3; }
-  
+
+  // // backgrounds 
+  // @include add(u-bc-1)         { background-color: $bgc-1; }
+  // @include add(u-bc-2)         { background-color: $bgc-2; }
+  // @include add(u-bc-3)         { background-color: $bgc-3; }
 
   // link 
   @include add(u-c-link)              { background-color: $c-link; }
@@ -32,19 +49,31 @@ $use-utilities-colours:  true !default;
   @include add(u-c-link-active)       { background-color: $c-link-active; }
   @include add(u-c-link-visited)      { background-color: $c-link-visited; }
   
-
+  // // links c
+  // @include add(u-c-l)          { color: $c-link; }
+  // @include add(u-c-lh)         { color: $c-link-hover; }
+  // @include add(u-c-la)         { color: $c-link-active; }
+  // @include add(u-c-lv)         { color: $c-link-visited; }
+  
   // headings
   @include add(u-c-heading-1)         { background-color: $c-heading-1; }
   @include add(u-c-heading-2)         { background-color: $c-heading-2; }
   @include add(u-c-heading-3)         { background-color: $c-heading-3; }
   
+  // // headings c
+  // @include add(u-c-h-1)        { color: $c-heading-1; }
+  // @include add(u-c-h-2)        { color: $c-heading-2; }
+  // @include add(u-c-h-3)        { color: $c-heading-3; }
 
   // type
   @include add(u-c-type-1)            { background-color: $c-type-1; }
   @include add(u-c-type-2)            { background-color: $c-type-2; }
   @include add(u-c-type-3)            { background-color: $c-type-3; }
   
-
+  // // type c
+  // @include add(u-c-t-1)        { color: $c-type-1; }
+  // @include add(u-c-t-2)        { color: $c-type-2; }
+  // @include add(u-c-t-3)        { color: $c-type-3; }
 
   // brands 
   @include add(u-c-google)            { background-color: $c-google; }
@@ -79,85 +108,6 @@ $use-utilities-colours:  true !default;
   @include add(u-c-moveabletype)      { background-color: $c-moveabletype; }
   @include add(u-c-disqus)            { background-color: $c-disqus; }
   @include add(u-c-html)              { background-color: $c-html; }
-
-
-
-  // notify background colors
-  @include add(u-bgc-success)     { background-color: $c-notify-success; }
-  @include add(u-bgc-info)        { background-color: $c-notify-info; }
-  @include add(u-bgc-warning)     { background-color: $c-notify-warning; }
-  @include add(u-bgc-danger)      { background-color: $c-notify-danger; }
-  @include add(u-bgc-error)       { background-color: $c-notify-error; }
-
-  // notify colors
-  @include add(u-c-success)       { color: $c-notify-success; }
-  @include add(u-c-info)          { color: $c-notify-info; }
-  @include add(u-c-warning)       { color: $c-notify-warning; }
-  @include add(u-c-danger)        { color: $c-notify-danger; }
-  @include add(u-c-error)         { color: $c-notify-error; }
-
-
-  // // notify background colors
-  // @include add(u-n-suc)      { background-color: $c-notify-success; }
-  // @include add(u-n-inf)      { background-color: $c-notify-info; }
-  // @include add(u-n-war)      { background-color: $c-notify-warning; }
-  // @include add(u-n-dan)      { background-color: $c-notify-danger; }
-  // @include add(u-n-err)      { background-color: $c-notify-error; }
-
-
-
-  // // bc custom colours
-  // @include add(u-bc-whi)        { background-color: $white; }
-  // @include add(u-bc-yel)        { background-color: $yellow; }
-  // @include add(u-bc-ora)        { background-color: $orange; }
-  // @include add(u-bc-pin)        { background-color: $pink; }
-  // @include add(u-bc-red)        { background-color: $red; }
-  // @include add(u-bc-mar)        { background-color: $maroon; }
-  // @include add(u-bc-gre)        { background-color: $green; }
-  // @include add(u-bc-aqu)        { background-color: $aqua; }
-  // @include add(u-bc-blu)        { background-color: $blue; }
-  // @include add(u-bc-sil)        { background-color: $silver; }
-  // @include add(u-bc-gre)        { background-color: $gray; }
-  // @include add(u-bc-bla)        { background-color: $black; }
-  
-  // // bc custom colours
-  // @include add(u-c-whi)        { color: $white; }
-  // @include add(u-c-yel)        { color: $yellow; }
-  // @include add(u-c-ora)        { color: $orange; }
-  // @include add(u-c-pin)        { color: $pink; }
-  // @include add(u-c-red)        { color: $red; }
-  // @include add(u-c-mar)        { color: $maroon; }
-  // @include add(u-c-gre)        { color: $green; }
-  // @include add(u-c-aqu)        { color: $aqua; }
-  // @include add(u-c-blu)        { color: $blue; }
-  // @include add(u-c-sil)        { color: $silver; }
-  // @include add(u-c-gre)        { color: $gray; }
-  // @include add(u-c-bla)        { color: $black; }
-
-
-  // // backgrounds 
-  // @include add(u-bc-1)         { background-color: $bgc-1; }
-  // @include add(u-bc-2)         { background-color: $bgc-2; }
-  // @include add(u-bc-3)         { background-color: $bgc-3; }
-  
-
-  // // links c
-  // @include add(u-c-l)          { color: $c-link; }
-  // @include add(u-c-lh)         { color: $c-link-hover; }
-  // @include add(u-c-la)         { color: $c-link-active; }
-  // @include add(u-c-lv)         { color: $c-link-visited; }
-  
-
-  // // headings c
-  // @include add(u-c-h-1)        { color: $c-heading-1; }
-  // @include add(u-c-h-2)        { color: $c-heading-2; }
-  // @include add(u-c-h-3)        { color: $c-heading-3; }
-  
-
-  // // type c
-  // @include add(u-c-t-1)        { color: $c-type-1; }
-  // @include add(u-c-t-2)        { color: $c-type-2; }
-  // @include add(u-c-t-3)        { color: $c-type-3; }
   
 
   // // brands bc
@@ -223,4 +173,34 @@ $use-utilities-colours:  true !default;
   // @include add(u-c-mt)         { color: $c-moveabletype; }
   // @include add(u-c-dis)        { color: $c-disqus; }
   // @include add(u-c-htm)        { color: $c-html; }
+
+
+  // notify background colors
+  @include add(u-bgc-success)     { background-color: $c-notify-success; }
+  @include add(u-bgc-info)        { background-color: $c-notify-info; }
+  @include add(u-bgc-warning)     { background-color: $c-notify-warning; }
+  @include add(u-bgc-danger)      { background-color: $c-notify-danger; }
+  @include add(u-bgc-error)       { background-color: $c-notify-error; }
+
+  // // notify background colors
+  // @include add(u-bc-n-suc)      { background-color: $c-notify-success; }
+  // @include add(u-bc-n-inf)      { background-color: $c-notify-info; }
+  // @include add(u-bc-n-war)      { background-color: $c-notify-warning; }
+  // @include add(u-bc-n-dan)      { background-color: $c-notify-danger; }
+  // @include add(u-bc-n-err)      { background-color: $c-notify-error; }
+
+  // notify colors
+  @include add(u-c-success)       { color: $c-notify-success; }
+  @include add(u-c-info)          { color: $c-notify-info; }
+  @include add(u-c-warning)       { color: $c-notify-warning; }
+  @include add(u-c-danger)        { color: $c-notify-danger; }
+  @include add(u-c-error)         { color: $c-notify-error; }
+
+  // // notify colors
+  // @include add(u-c-n-suc)      { color: $c-notify-success; }
+  // @include add(u-c-n-inf)      { color: $c-notify-info; }
+  // @include add(u-c-n-war)      { color: $c-notify-warning; }
+  // @include add(u-c-n-dan)      { color: $c-notify-danger; }
+  // @include add(u-c-n-err)      { color: $c-notify-error; }
+
 }//end if

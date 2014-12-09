@@ -491,20 +491,53 @@
   .styleguide-utilities{
     &.rounded{
       div{
-        padding: $space;
-        border: 1px dashed #ccc;
-        background-color: #eee;
+          padding: $space;
+          border: 1px dashed #ccc;
+          background-color: #eee;
         span{
           padding: 4px 8px;
           border-radius: 2px;
-          @extend %e-bgc-warning;
+          @extend %e-bgc-info;
+          color: $white;
+          code{
+            background-color: transparent;
+          }
         }
+      }
+      .\+u-rounded-l, .\+u-r-lef{
+        border-radius: 30px 0 0 30px;
+      }
+      .\+u-rounded-br, .\+u-r-br {
+        border-radius: 0 0 30px 0;
+      }
+      .\+u-rounded-bl, .\+u-r-bl {
+        border-radius: 0 0 0 30px;
+      }
+      .\+u-rounded-b, .\+u-r-bot {
+        border-radius: 0 0 30px 30px;
+      }
+      .\+u-rounded-r, .\+u-r-rig {
+      border-radius: 0 30px 30px 0;
+      }
+      .\+u-rounded-tr, .\+u-r-tr {
+        border-radius: 0 30px 0 0;
+      }
+      .\+u-rounded-tl, .\+u-r-tl {
+        border-radius: 30px 0 0 0;
+      }
+      .\+u-rounded-t, .\+u-r-top {
+        border-radius: 30px 30px 0 0;
+      }
+      .\+u-rounded, .\+u-r-all {
+        border-radius: 30px;
       }
     }
   }
+
   // 
   // UTILITIES FLOATS
   //
+
 
   .styleguide-utilities{
     &.floats{
@@ -513,7 +546,11 @@
         span{
           padding: 4px 8px;
           border-radius: 2px;
-          @extend %e-bgc-warning;
+          @extend %e-bgc-info;
+          color: $white;
+          code{
+            background-color: transparent;
+          }
         }
       }
     }

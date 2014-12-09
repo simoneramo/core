@@ -27,12 +27,10 @@ $use-utilities-text:  true !default;
 	@include add(u-text-center)            { text-align: center;}
 	@include add(u-text-justify)           { text-align: justify;}
 
-
   // // text align
   // @include add(u-ta-lef)       { text-align: left;}
   // @include add(u-ta-rig)       { text-align: right;}
   // @include add(u-ta-cen)       { text-align: center;}
   // @include add(u-ta-jus)       { text-align: justify;}
-
 
 }//end if

@@ -24,7 +24,7 @@
     // changed           = require('gulp-changed')       
     // autoprefixer      = require('gulp-autoprefixer'),    
     // imagemin          = require('gulp-imagemin'),
-    // cache             = require('gulp-cache'),
+    // newer             = require('gulp-newer');
     // uglify            = require('gulp-uglify'),
     // size              = require('gulp-size'),          
     // notify            = require('gulp-notify'),
@@ -161,11 +161,15 @@
   // optimize images > $ gulp images
   gulp.task('images', function () {
     return gulp.src('app/assets/images/**/*')                            // Images Directory
-    .pipe($.cache($.imagemin({                                         // Use gulp-imagemin
+    .pipe($.newer('_public/assets/images'))
+    .pipe($.imagemin({                                         // Use gulp-imagemin
       optimizationLevel: 3,                                            // Default: 3: level between 0 and 7.
       progressive: true,                                               // Lossless conversion to progressive.
-      interlaced: true                                                 // Interlace gif for progressive rendering.    
-    })))
+      interlaced: true,
+        svgoPlugins: [{
+          removeViewBox: false
+        }]                                                            // Interlace gif for progressive rendering.    
+    }))
     .pipe(gulp.dest('_public/assets/images'))                          // Destination Path
     //.pipe($.notify({ message: 'Images built and optimized' }))         // Notify
     .pipe($.size({title: 'images size of'}));                          // Size
@@ -175,11 +179,15 @@
   // icons > $ gulp icons
   gulp.task('icons', function () {
     return gulp.src('app/assets/icons/**/*')                             // Icons Directory
-    .pipe($.cache($.imagemin({                                         // Use gulp-imagemin 
+    .pipe($.newer('_public/assets/icons'))
+    .pipe($.imagemin({                                         // Use gulp-imagemin 
         optimizationLevel: 3,                                            // Default: 3: level between 0 and 7.
         progressive: true,                                               // Lossless conversion to progressive.
-        interlaced: true                                                 // Interlace gif for progressive rendering.    
-    })))
+        interlaced: true,
+        svgoPlugins: [{
+          removeViewBox: false
+        }]                                                                   // Interlace gif for progressive rendering.    
+    }))
     .pipe(gulp.dest('_public/assets/icons'))                           // Destination Path
     //.pipe($.notify({ message: 'Icons built and optimized' }))          // Notify
     .pipe($.size({title: 'icons size of'}));                           // Size
@@ -188,9 +196,16 @@
 
   // copy root files > $ gulp copy
   gulp.task('copy', function () {
-    return gulp.src('app/*.{txt,md,htaccess,xml}', {
-      dot: true
-    }).pipe(gulp.dest('_public'))                                        // Destination Path
+    return gulp.src(
+      [
+        'app/*.{txt,md,htaccess,xml}',
+        'app/{CNAME,htaccess,LICENCE}'
+      ], 
+      {
+        dot: true
+      }
+    )
+    .pipe(gulp.dest('_public'))                                        // Destination Path
     //.pipe($.notify({ message: 'root files copied' }))                    // Notify
     .pipe($.size({title: 'root files size of'}));                        // Size
   });
@@ -251,4 +266,3 @@
       branch: 'gh-pages'
     }))
   });
-

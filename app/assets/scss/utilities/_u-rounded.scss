@@ -8,19 +8,19 @@ $use-utilities-rounded:  true !default;
   // round
   @include add(u-round)               { border-radius: 100%;}
 
-  // // circle
-  // @include add(u-r-cir)      { border-radius: 100%;}
+  // circle
+  @include add(u-r-cir)      { border-radius: 100%;}
 
   // rounded edges all
   @include add(u-rounded)             { border-radius: $utilities-round; }
 
-  // // rounded edges all
-  // @include add(u-r-all)      { border-radius: $utilities-round; }
+  // rounded edges all
+  @include add(u-r-all)      { border-radius: $utilities-round; }
 
   // rounded edges
   @include add(u-rounded-t)           { border-radius: $utilities-round $utilities-round 0 0; }
   @include add(u-rounded-tr)          { border-radius: 0 $utilities-round 0 0;}
-  @include add(u-roundde-tl)          { border-radius: $utilities-round 0 0 0;}
+  @include add(u-rounded-tl)          { border-radius: $utilities-round 0 0 0;}
 
   @include add(u-rounded-b)           { border-radius: 0 0 $utilities-round $utilities-round; }
   @include add(u-rounded-br)          { border-radius: 0 0 $utilities-round 0;}
@@ -30,22 +30,22 @@ $use-utilities-rounded:  true !default;
   @include add(u-rounded-r)           { border-radius: 0 $utilities-round $utilities-round 0;}
 
   // rounded edges
-  // @include add(u-r-top)      { border-radius: $utilities-round $utilities-round 0 0; }
-  // @include add(u-r-tr)       { border-radius: 0 $utilities-round 0 0;}
-  // @include add(u-r-tl)       { border-radius: $utilities-round 0 0 0;}
+  @include add(u-r-top)      { border-radius: $utilities-round $utilities-round 0 0; }
+  @include add(u-r-tr)       { border-radius: 0 $utilities-round 0 0;}
+  @include add(u-r-tl)       { border-radius: $utilities-round 0 0 0;}
 
-  // @include add(u-r-bot)      { border-radius: 0 0 $utilities-round $utilities-round; }
-  // @include add(u-r-br)       { border-radius: 0 0 $utilities-round 0;}
-  // @include add(u-r-bl)       { border-radius: 0 0 0 $utilities-round ;}
+  @include add(u-r-bot)      { border-radius: 0 0 $utilities-round $utilities-round; }
+  @include add(u-r-br)       { border-radius: 0 0 $utilities-round 0;}
+  @include add(u-r-bl)       { border-radius: 0 0 0 $utilities-round ;}
 
-  // @include add(u-r-lef)      { border-radius: $utilities-round 0 0 $utilities-round; }
-  // @include add(u-r-rig)      { border-radius: 0 $utilities-round $utilities-round 0;}
+  @include add(u-r-lef)      { border-radius: $utilities-round 0 0 $utilities-round; }
+  @include add(u-r-rig)      { border-radius: 0 $utilities-round $utilities-round 0;}
 
   // rounded reset
   @include add(u-reset-rounded)       { border-radius: 0; }
 
-  // // rounded reset
-  // @include add(u-r-res)      { border-radius: 0; }
+  // rounded reset
+  @include add(u-r-res)      { border-radius: 0; }
 
 
 
