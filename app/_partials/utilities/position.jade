@@ -1,34 +1,85 @@
-h1(class='styleguide-title +u-h4x') Position Utilities
+//- h1(class='styleguide-title +u-h4x') Position Utilities
+//- .styleguide-utilities.position(style='height:200px;')
+//-   p inspect element
+//-   div(class='+u-pos-fix')
+//-     span +u-pos-fix
+//- .styleguide-utilities.position(class='+u-clearfix')
+//-   div(class='+u-pos-rel')
+//-     span +u-pos-rel
+//- .styleguide-utilities.position(class='+u-pos-rel' style='height:400px;')
+//-   div(class='+u-pos-abs')
+//-     span +u-pos-abs
+//- .styleguide-utilities.position(class='+u-pos-rel' style='height:400px;')
+//-   div(class='+u-pos-abs  +u-pos-t0')
+//-     span +u-pos-abs  +u-pos-t0
+//-   div(class='+u-pos-abs  +u-pos-r0')
+//-     span +u-pos-abs  +u-pos-r0
+//-   div(class='+u-pos-abs  +u-pos-b0')
+//-     span +u-pos-abs  +u-pos-b0
+//-   div(class='+u-pos-abs  +u-pos-l0')
+//-     span +u-pos-abs  +u-pos-b0
+//- .styleguide-utilities.position(class='+u-pos-rel' style='height:400px;')
+//-   div(class='+u-pos-abs  +u-pos-t0  +u-pos-r0' style='height:100px; width:300px;')
+//-     span +u-pos-abs  +u-pos-b0 +u-pos-r0
+//- .styleguide-utilities.position(class='js-z-index  +u-pos-rel' style='height:400px;')
+//-   div(class='+u-pos-abs  +u-pos-l0  +u-z-5  +u-bgc-success  +u-p-box  +u-m-box' style='height:200px; width:400px;')
+//-     span +u-z-5
+//-   div(class='+u-pos-abs  +u-pos-l0  +u-z-4  +u-bgc-info  +u-p-box  +u-m-2-box' style='height:200px; width:400px;')
+//-     span +u-z-4
+//-   div(class='+u-pos-abs  +u-pos-l0  +u-z-3  +u-bgc-danger  +u-p-box  +u-m-3-box' style='height:200px; width:400px;')
+//-     span +u-z-3
+//-   div(class='+u-pos-abs  +u-pos-l0  +u-z-2  +u-bgc-error  +u-p-box  +u-m-4-box' style='height:200px; width:400px;')
+//-     span +u-z-2
+//-   div(class='+u-pos-abs  +u-pos-l0  +u-z-1  +u-bgc-warning  +u-p-box  +u-m-5-box' style='height:200px; width:400px;')
+//-     span +u-z-1
+h1(class='styleguide-title +u-h4x') Position Utilities New
+h2.styleguide-title--sub Position What
 .styleguide-utilities.position(style='height:200px;')
-  p inspect element
-  div(class='+u-pos-fix' style='height:200px; width:200px;')
-    span +u-pos-fix
+  div(class='+u-p-fixed')
+    span 
+      code +u-p-fixed
+    b.js-close(class='+u-i-p') x
 .styleguide-utilities.position(class='+u-clearfix')
-  div(class='+u-pos-rel' style='height:200px; width:200px;')
-    span +u-pos-rel
-.styleguide-utilities.position(class='+u-pos-rel' style='height:400px;')
-  div(class='+u-pos-abs' style='height:200px; width:200px;')
-    span +u-pos-abs
-.styleguide-utilities.position(class='+u-pos-rel' style='height:400px;')
-  div(class='+u-pos-abs  +u-pos-t0' style='height:100px; width:200px;')
-    span +u-pos-abs  +u-pos-t0
-  div(class='+u-pos-abs  +u-pos-r0' style='height:100px; width:200px;')
-    span +u-pos-abs  +u-pos-r0
-  div(class='+u-pos-abs  +u-pos-b0' style='height:100px; width:200px;')
-    span +u-pos-abs  +u-pos-b0
-  div(class='+u-pos-abs  +u-pos-l0' style='height:100px; width:200px;')
-    span +u-pos-abs  +u-pos-b0
-.styleguide-utilities.position(class='+u-pos-rel' style='height:400px;')
-  div(class='+u-pos-abs  +u-pos-t0  +u-pos-r0' style='height:100px; width:300px;')
-    span +u-pos-abs  +u-pos-b0 +u-pos-r0
-.styleguide-utilities.position(class='js-z-index  +u-pos-rel' style='height:400px;')
-  div(class='+u-pos-abs  +u-pos-l0  +u-z-5  +u-bgc-success  +u-p-box  +u-m-box' style='height:200px; width:400px;')
-    span +u-z-5
-  div(class='+u-pos-abs  +u-pos-l0  +u-z-4  +u-bgc-info  +u-p-box  +u-m-2-box' style='height:200px; width:400px;')
-    span +u-z-4
-  div(class='+u-pos-abs  +u-pos-l0  +u-z-3  +u-bgc-danger  +u-p-box  +u-m-3-box' style='height:200px; width:400px;')
-    span +u-z-3
-  div(class='+u-pos-abs  +u-pos-l0  +u-z-2  +u-bgc-error  +u-p-box  +u-m-4-box' style='height:200px; width:400px;')
-    span +u-z-2
-  div(class='+u-pos-abs  +u-pos-l0  +u-z-1  +u-bgc-warning  +u-p-box  +u-m-5-box' style='height:200px; width:400px;')
-    span +u-z-1
+  div(class='+u-p-relative')
+    span 
+      code ++u-p-relative'
+.styleguide-utilities.position(class='+u-p-relative' style='height:400px;')
+  div(class='+u-p-absolute')
+    span 
+      code +u-p-absolute
+h2.styleguide-title--sub Position Where
+.styleguide-utilities.position(class='+u-p-relative' style='height:400px;')
+  div(class='+u-p-absolute  +u-p-t-0')
+    span 
+      code +u-p-absolute  +u-p-t-0
+  div(class='+u-p-absolute  +u-p-r-0')
+    span 
+      code +u-p-absolute  +u-p-r-0
+  div(class='+u-p-absolute  +u-p-b-0')
+    span 
+      code +u-p-absolute  +u-p-b-0
+  div(class='+u-p-absolute  +u-p-l-0')
+    span 
+      code +u-p-absolute  +u-p-b-0
+h2.styleguide-title--sub Position There & There
+.styleguide-utilities.position(class='+u-p-relative' style='height:200px;')
+  div(class='+u-p-absolute  +u-p-t-0  +u-p-r-0')
+    span
+      code +u-p-absolute  +u-p-t-0  +u-p-r-0
+h2.styleguide-title--sub Position z-index
+.styleguide-utilities.position(class='js-z-index  +u-p-relative' style='height:360px;')
+  div(class='+u-p-absolute  +u-p-l-0  +u-z-5  +u-bc-success  +u-p-box  +u-i-m' style='height:200px; width:400px;')
+    span 
+      code +u-z-5
+  div(class='+u-p-absolute  +u-p-l-0  +u-z-4  +u-bc-info  +u-i-p  +u-i-m-2' style='height:200px; width:400px;')
+    span(class='+u-bc-warning')
+      code +u-z-4
+  div(class='+u-p-absolute  +u-p-l-0  +u-z-3  +u-bc-danger  +u-i-p  +u-i-m-3' style='height:200px; width:400px;')
+    span 
+      code +u-z-3
+  div(class='+u-p-absolute  +u-p-l-0  +u-z-2  +u-bc-error  +u-i-p  +u-i-m-4' style='height:200px; width:400px;')
+    span 
+      code +u-z-2
+  div(class='+u-p-absolute  +u-p-l-0  +u-z-1  +u-bc-warning  +u-i-p  +u-i-m-5' style='height:200px; width:400px;')
+    span 
+      code +u-z-1

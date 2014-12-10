@@ -8,11 +8,11 @@ $use-objects-flag: true !default;
   // object
   @include object(o-flag) {
     display: table;
-    @extend %e-1-1;
+    @extend %e-w-1\/1;
 
     // element
     @include element(body) {
-      @extend %e-1-1;
+      @extend %e-w-1\/1;
       display: table-cell;
       vertical-align: middle;
     }

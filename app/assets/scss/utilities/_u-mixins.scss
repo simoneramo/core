@@ -14,19 +14,19 @@ $use-utilities-mixins:  true !default;
   @include add(u-unstyled)         			 			 { @include unstyled; }
   @include add(u-margin-bottom)                { @include global-mb; }
 
-  // // mixin
-  // @include add(u-m-hidden)                   { @include hidden; }
-  // @include add(u-m-clearfix)                 { @include clearfix; }
-  // @include add(u-m-visually-hidden)          { @include visually-hidden; }
-  // @include add(u-m-sr-only)                  { @include sr-only; }
-  // @include add(u-m-unstyled)                 { @include unstyled; }
-  // @include add(u-m-image-replace)            { @include image-replace; }
-  // @include add(u-m-center-content)           { @include center-content; }
-  // @include add(u-m-invisible)                { @include invisible; } 
-  // @include add(u-m-va-container)             { transform-style: preserve-3d; }
-  // @include add(u-m-vertical-align)           { @include vertical-align;  }
-  // @include add(u-m-vertical-align-table)     { @include vertical-align-table; }
-  // @include add(u-m-global-margin-bottom)     { @include global-mb; }
-  // @include add(u-m-link-block)               { @include link-block-space; }
+  // mixin
+  @include add(u-m-hidden)                   { @include hidden; }
+  @include add(u-m-clearfix)                 { @include clearfix; }
+  @include add(u-m-visually-hidden)          { @include visually-hidden; }
+  @include add(u-m-sr-only)                  { @include sr-only; }
+  @include add(u-m-unstyled)                 { @include unstyled; }
+  @include add(u-m-image-replace)            { @include image-replace; }
+  @include add(u-m-center-content)           { @include center-content; }
+  @include add(u-m-invisible)                { @include invisible; } 
+  @include add(u-m-va-container)             { transform-style: preserve-3d; }
+  @include add(u-m-va)                       { @include vertical-align;  }
+  @include add(u-m-va-table)                 { @include vertical-align-table; }
+  @include add(u-m-global-mb)                { @include global-mb; }
+  @include add(u-m-link-block-space)         { @include link-block-space; }
 
 }//endif

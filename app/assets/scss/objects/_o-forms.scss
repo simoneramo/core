@@ -71,7 +71,7 @@ $use-objects-forms:	true !default;
 
     // inputs 100%
     @include element(input-fw) {
-      @extend %e-1-1;
+      @extend %e-w-1\/1;
     }
 
     // label block

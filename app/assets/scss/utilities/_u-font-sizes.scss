@@ -51,12 +51,12 @@ $use-utilities-font-sizes:  true !default;
   @include add(u-font-half)              { font-size: $f-half;}
 
   // // base type
-  // @include add(u-fs-base)       { font-size: $f-base;}
+  // @include add(u-fs-base)         { font-size: $f-base;}
   
   // // helper type
-  // @include add(u-fs-lead)       { font-size: $f-lead;}
-  // @include add(u-fs-half)       { font-size: $f-half;}
-  // @include add(u-fs-inherit)       { font-size: inherit;}
+  // @include add(u-fs-lead)         { font-size: $f-lead;}
+  // @include add(u-fs-half)         { font-size: $f-half;}
+  // @include add(u-fs-inherit)      { font-size: inherit;}
 
   // small heading sizes
   @include add(u-font-small)             { font-size: $f-small;}    
@@ -68,13 +68,13 @@ $use-utilities-font-sizes:  true !default;
   @include add(u-h10)                    { font-size: $f-h10;}  
   
   // // small heading sizes
-  // @include add(u-fs-sma)        { font-size: $f-small;} delete  
-  // @include add(u-fs-tin)        { font-size: $f-tiny;} delete
-  // @include add(u-fs-mic)        { font-size: $f-micro;} delete
-  // @include add(u-fs-h7)         { font-size: $f-h7;}  
-  // @include add(u-fs-h8)         { font-size: $f-h8;}  
-  // @include add(u-fs-h9)         { font-size: $f-h9;}  
-  // @include add(u-fs-h10)        { font-size: $f-h10;}  
+  // @include add(u-fs-small)        { font-size: $f-small;} delete  
+  // @include add(u-fs-tiny)         { font-size: $f-tiny;} delete
+  // @include add(u-fs-micro)        { font-size: $f-micro;} delete
+  // @include add(u-fs-h7)           { font-size: $f-h7;}  
+  // @include add(u-fs-h8)           { font-size: $f-h8;}  
+  // @include add(u-fs-h9)           { font-size: $f-h9;}  
+  // @include add(u-fs-h10)          { font-size: $f-h10;}  
 
 
 }//end if 
