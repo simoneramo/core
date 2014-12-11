@@ -377,6 +377,7 @@
           padding: $space;
           border: 1px dashed #ccc;
           background-color: $bgc-1;
+          @include reset-mb;
             span{
               padding: 4px 8px;
               border-radius: 2px;
@@ -431,8 +432,11 @@
         p{
           padding: 4px 8px;
           border-radius: 2px;
-          @extend %e-bgc-warning;
-          margin-bottom: $space;
+          @extend %e-bgc-info;
+          color: $white;
+          code{
+            background-color: transparent;
+          }
         }
         &:last-child p{
           margin-bottom: 0;
