@@ -6,28 +6,14 @@ $use-utilities-text:  true !default;
    ========================================================================== */
 
   // text underline
-  @include add(u-text-underline) { text-decoration: underline;} 
-  
-  // // text underline
   @include add(u-td-underline)   { text-decoration: underline;} 
-  
+
   // text transforms
-  @include add(u-text-lower)     { text-transform: lowercase;} 
-  @include add(u-text-upper)     { text-transform: uppercase;} 
-  @include add(u-text-caps)      { text-transform: capitalize;} 
-  
-  // // text transforms
   @include add(u-tt-lower)       { text-transform: lowercase;} 
   @include add(u-tt-upper)       { text-transform: uppercase;} 
   @include add(u-tt-caps)        { text-transform: capitalize;} 
-  
+
   // text align
-  @include add(u-text-left)      { text-align: left;}
-  @include add(u-text-right)     { text-align: right;}
-  @include add(u-text-center)    { text-align: center;}
-  @include add(u-text-justify)   { text-align: justify;}
-  
-  // // text align
   @include add(u-ta-left)        { text-align: left;}
   @include add(u-ta-right)       { text-align: right;}
   @include add(u-ta-center)      { text-align: center;}
