@@ -8,7 +8,7 @@ $use-base-forms:  true !default;
 
   form{
     @if $use-global-mb == true{
-      @include global-mb;
+      @include mb;
     }
   }
   

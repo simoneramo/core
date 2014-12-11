@@ -5,28 +5,19 @@ $use-utilities-mixins:  true !default;
   Utilities - Mixins
   ========================================================================== */
   
-  // mixins as trumps
-  @include add(u-clearfix)                     { @include clearfix; }
-  @include add(u-center-content )              { @include center-content;}
-  @include add(u-vertical-align-container)     { transform-style: preserve-3d; }
-  @include add(u-vertical-align)               { @include vertical-align;  }
-  @include add(u-vertical-align-table)         { @include vertical-align-table; }
-  @include add(u-unstyled)         			 			 { @include unstyled; }
-  @include add(u-margin-bottom)                { @include global-mb; }
-
   // mixin
-  @include add(u-m-hidden)                   { @include hidden; }
-  @include add(u-m-clearfix)                 { @include clearfix; }
-  @include add(u-m-visually-hidden)          { @include visually-hidden; }
-  @include add(u-m-sr-only)                  { @include sr-only; }
-  @include add(u-m-unstyled)                 { @include unstyled; }
-  @include add(u-m-image-replace)            { @include image-replace; }
-  @include add(u-m-center-content)           { @include center-content; }
-  @include add(u-m-invisible)                { @include invisible; } 
-  @include add(u-m-va-container)             { transform-style: preserve-3d; }
-  @include add(u-m-va)                       { @include vertical-align;  }
-  @include add(u-m-va-table)                 { @include vertical-align-table; }
-  @include add(u-m-global-mb)                { @include global-mb; }
-  @include add(u-m-link-block-space)         { @include link-block-space; }
+  @include add(u-hidden)           { @include hidden; }
+  @include add(u-clearfix)         { @include clearfix; }
+  @include add(u-visually-hidden)  { @include visually-hidden; }
+  @include add(u-sr-only)          { @include sr-only; }
+  @include add(u-unstyled)         { @include unstyled; }
+  @include add(u-image-replace)    { @include image-replace; }
+  @include add(u-center-content)   { @include center-content; }
+  @include add(u-invisible)        { @include invisible; } 
+  @include add(u-va-container)     { transform-style: preserve-3d; }
+  @include add(u-va)               { @include vertical-align;  }
+  @include add(u-va-table)         { @include vertical-align-table; }
+  @include add(u-global-mb)        { @include global-mb; }
+  @include add(u-link-block-space) { @include link-block-space; }
 
 }//endif

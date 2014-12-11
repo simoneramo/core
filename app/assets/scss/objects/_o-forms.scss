@@ -76,12 +76,12 @@ $use-objects-forms:	true !default;
 
     // label block
     @include element(label-block) {
-      @extend %e-block;
+      @extend %e-d-block;
     }
 
     // label inline
     @include element(label-inline) {
-      @extend %e-inline;
+      @extend %e-d-inline;
     }
   	
   	// inputs text file
@@ -92,7 +92,7 @@ $use-objects-forms:	true !default;
   	// help box - under inputs selects ect.
   	@include element(box-help) {
   		margin-top: $space-half;
-  		@extend %e-block;
+  		@extend %e-d-block;
   	}
 
   	// text box ontop of form for information

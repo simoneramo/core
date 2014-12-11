@@ -6,14 +6,14 @@ $use-utilities-vertical-align:  true !default;
    Utilities - Vertical Align
    ========================================================================== */
 
-  @include add(u-vert-middle)          { vertical-align: middle; }
-  @include add(u-vert-top)             { vertical-align: top; }
-  @include add(u-vert-bottom)          { vertical-align: bottom; }
-  @include add(u-vert-inherit)         { vertical-align: inherit; }
+  @include add(u-vert-middle)  { vertical-align: middle; }
+  @include add(u-vert-top)     { vertical-align: top; }
+  @include add(u-vert-bottom)  { vertical-align: bottom; }
+  @include add(u-vert-inherit) { vertical-align: inherit; }
+  
+  @include add(u-va-middle)    { vertical-align: middle; }
+  @include add(u-va-top)       { vertical-align: top; }
+  @include add(u-va-bottom)    { vertical-align: bottom; }
+  @include add(u-va-inherit)   { vertical-align: inherit; }
 
-  @include add(u-va-middle)        { vertical-align: middle; }
-  @include add(u-va-top)           { vertical-align: top; }
-  @include add(u-va-bottom)        { vertical-align: bottom; }
-  @include add(u-va-inherit)       { vertical-align: inherit; }
-
-}
+}//endif

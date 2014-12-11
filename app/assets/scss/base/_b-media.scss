@@ -19,7 +19,7 @@ $use-base-media:	true !default;
 
   figure{
     @if $use-global-mb == true{
-      @include global-mb;
+      @include mb;
     }
   }
 

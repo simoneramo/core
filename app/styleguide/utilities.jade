@@ -19,25 +19,38 @@ html(lang='en')
     link(type='text/css', rel='stylesheet', href='../assets/css/main.css')
   body.styleguide
     include ../_partials/site/header
+      ul(class='o-nav  --banner')
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='base.html') base
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='objects.html') objects
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning  +u-s-active' href='utilities.html') utilities
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='sink.html') sink
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='modules.html') modules
     div.l-styleguide-container.container
       
-      //- utilities
-      include ../_partials/utilities/position
-      include ../_partials/utilities/floats
-      include ../_partials/utilities/rounded
-      include ../_partials/utilities/colours
+      //- utilities       
+      include ../_partials/utilities/position      
+      include ../_partials/utilities/text     
       include ../_partials/utilities/font-sizes
       include ../_partials/utilities/font-styles
       include ../_partials/utilities/font-weights
-      include ../_partials/utilities/text
+      include ../_partials/utilities/floats
+      include ../_partials/utilities/rounded
+      include ../_partials/utilities/colours
       include ../_partials/utilities/vertical-align     
       include ../_partials/utilities/notify
       include ../_partials/utilities/colours
       include ../_partials/utilities/display
       include ../_partials/utilities/widths
       include ../_partials/utilities/spaces
+      include ../_partials/utilities/island
       include ../_partials/utilities/web-fonts
       include ../_partials/utilities/extends
+
 
     include ../_partials/site/scripts
     include ../_partials/site/analytics

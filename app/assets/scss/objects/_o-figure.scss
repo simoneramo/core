@@ -7,7 +7,7 @@ $use-objects-figure:	true !default;
    
 	@include object(o-fig) {
 		@include element(capt) {
-			@extend %e-font-small;
+			@extend %e-fs-h7;
 			margin-top: $space-half;
     }
 	}

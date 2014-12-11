@@ -21,7 +21,7 @@ html(lang='en')
     include ../_partials/site/header
       ul(class='o-nav  --banner')
         li
-          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning  +u-s-active' href='base.html') base
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='base.html') base
         li
           a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='objects.html') objects
         li
@@ -29,16 +29,14 @@ html(lang='en')
         li
           a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='sink.html') sink
         li
-          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='modules.html') modules
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning  +u-s-active' href='modules.html') modules
     div.l-styleguide-container.container
       
-      //- base
-      include ../_partials/base/links
-      include ../_partials/base/media
-      include ../_partials/base/quotes
-      include ../_partials/base/text
-      include ../_partials/base/lists
-      include ../_partials/base/code
+      //- modules
+      include ../_partials/modules/fitvids
+      include ../_partials/modules/fittext 
+      include ../_partials/modules/owl-carousel
+      include ../_partials/modules/fluid-box
 
     include ../_partials/site/scripts
     include ../_partials/site/analytics

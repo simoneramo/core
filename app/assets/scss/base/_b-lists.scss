@@ -7,7 +7,7 @@ $use-base-lists: true !default;
   
   @if $use-global-mb == true{
     ul, ol, dl{
-      @include global-mb;
+      @include mb;
     }
   }
 

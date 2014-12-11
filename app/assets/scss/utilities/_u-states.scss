@@ -5,25 +5,13 @@ $use-utilities-states:  true !default;
    Utilities States
    ========================================================================== */
 
-  // disabled
-  @include add(u-disable)       { @extend %e-disable; }
-
+  // disable
+  @include add(u-s-disable) { @extend %e-s-disable; }
+  
   // active
-  @include add(u-active)        { @extend %e-active; }
-
-  // informative
-  @include add(u-informative)   { @extend %e-informative; }
-
-
-  // states
-
-  // // disabled
-  // @include add(u-s-disable)      { @extend %e-disable; }
-
-  // // active
-  // @include add(u-s-active)      { @extend %e-active; }
-
-  // // informative
-  // @include add(u-s-inform)      { @extend %e-informative; }
+  @include add(u-s-active)  { @extend %e-s-active; }
+  
+  // inform
+  @include add(u-s-inform)  { @extend %e-s-inform; }
 
 }//enb if

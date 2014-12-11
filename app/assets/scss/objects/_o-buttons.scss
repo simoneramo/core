@@ -59,12 +59,12 @@ $use-objects-buttons: true !default;
 
     // modifier
     @include modifier(positive) {
-      @extend %e-bgc-success;
+      @extend %e-bc-success;
     }
 
     // modifier
     @include modifier(negative) {
-      @extend %e-bgc-error;
+      @extend %e-bc-error;
     }
 
     // modifier
@@ -74,7 +74,7 @@ $use-objects-buttons: true !default;
 
     // modifier
     @include modifier(inactive) {
-      @extend %e-disable;
+      @extend %e-s-disable;
     }
   
   }
