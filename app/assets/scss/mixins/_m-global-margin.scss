@@ -1,9 +1,0 @@
-// Set global margin bottom - $base-space
-@mixin mb{
-	margin-bottom: $space;
-}
-
-// css:
-// .class-name{
-//   @include global-margin-bottom;
-// }

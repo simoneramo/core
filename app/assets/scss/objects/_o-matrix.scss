@@ -8,7 +8,7 @@ $use-objects-matrix:	true !default;
   // extend from o-block-list from o-block-list.scss 
   // extend --bordered by extending .\--bordered from o-block-list.scss 
   @include object(o-matrix) {
-		@include clearfix;
+		@include cf;
     @include unstyled;
     border-left: 1px solid $silver;
 		> li{

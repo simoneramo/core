@@ -272,11 +272,11 @@
       > div{
         margin-bottom: $space;
         .margin{
-          @include clearfix;
+          @include cf;
           @extend %e-bc-info;
         }
         .padding{
-          @include clearfix;
+          @include cf;
           @extend %e-bc-error;
         }
         p{
@@ -476,3 +476,29 @@
 			border-radius: 3px;
     }
 	}
+
+  // CONFIG COLOURS
+  .styleguide-utilities{
+    &.web-fonts{
+      font-family : 'Source Sans Pro', sans;
+    }
+  }
+
+  .styleguide-modules {   
+    &.fluid-social{
+    .m-social-gallery{
+        &__item{    
+          display:inline-block;
+          width: 25%;
+          a{
+            transition: all 0.1s;
+            &:hover{
+              transform: scale(1.25);
+              transition: all 0.08s;
+            }
+          }
+        }
+      }
+    }
+  }
+

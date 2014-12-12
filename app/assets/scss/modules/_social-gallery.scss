@@ -53,6 +53,7 @@ $use-modules-social-gallery:	true !default;
 		&.soundcloud a {						background-color: $c-soundcloud; }
 		&.facebook a {							background-color: $c-facebook; }
 		&.codepen a {								background-color: $c-codepen }
+		&.yahoo a {									background-color: $c-yahoo }
 	}
 
 }// end if

@@ -1,16 +1,16 @@
 h1(class='styleguide-title +u-fs-h4x') Forms Object
 .styleguide-objects.forms
-  form.o-form(style="font-family: source-sans-pro")
+  form.o-form
     fieldset
       legend Legend Title
       ul
         li
-          p(class='o-notify  +u-success  +u-mb') notify: a message about input
+          p(class='o-notify  --success') notify: a message about input
           label(for="") Name:
           input.o-form__input-fw(type="text", name="name" placeholder='email')
           p.o-form__box-help(class='+u-error  +u-p-half-box') a message about input
         li
-          p(class='o-notify  +u-warning  +u-mb') Notify: a message about input
+          p(class='o-notify  --warning') Notify: a message about input
           label(for="") Email:
           input.o-form__input-fw(type="email", name="name" placeholder='email')
           p.o-form__box-help a message about input
@@ -19,7 +19,7 @@ h1(class='styleguide-title +u-fs-h4x') Forms Object
           input.o-form__input-fw(type="password", name="name" placeholder='email')
           p.o-form__box-help a message about input
         li
-          p(class='o-notify  +u-info  +u-mb') Notify: a message about input
+          p(class='o-notify  --info') Notify: a message about input
           label(for="") Telephone:
           input.o-form__input-fw(type="tel", name="name" placeholder='email')
           p.o-form__box-help a message about input 
@@ -31,16 +31,16 @@ div.styleguide-objects.forms
     fieldset
       legend Legend Title
       ul
-        li(class='+u-2-2')
+        li(class='+u-w-2/8')
           label(for="") Name:
           input.o-form__input-fw(type="text", name="name")
-        li(class='+u-2-6')
+        li(class='+u-w-2/8')
           label(for="") Email:
           input.o-form__input-fw(type="email", name="name")
-        li(class='+u-1-4')
+        li(class='+u-w-2/8')
           label(for="") Password:
           input.o-form__input-fw(type="password", name="name")
-        li(class='+u-2-3')
+        li(class='+u-w-2/8')
           label(for="") Telephone:
           input.o-form__input-fw(type="tel", name="name")
         li

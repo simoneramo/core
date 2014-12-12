@@ -13,7 +13,7 @@ $use-objects-rules: true !default;
     color: $silver;
     
     @if $use-global-mb == true{
-      @include global-mb;
+      @include mb;
     }
 
     // modifier

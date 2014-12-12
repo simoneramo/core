@@ -27,7 +27,7 @@ FPV
 - dispaly = d
 - border = b
 - island = i
-- mixin = m
+- mixin =
 
 
 

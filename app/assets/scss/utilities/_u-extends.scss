@@ -353,17 +353,17 @@ $use-utilities-extends: true !default;
   
   // mixins as extends
   %e-m-hidden               { @include hidden; }
-  %e-m-clearfix             { @include clearfix; }
+  %e-m-cf                   { @include cf; }
   %e-m-visually-hidden      { @include visually-hidden; }
   %e-m-sr-only              { @include sr-only; }
   %e-m-unstyled             { @include unstyled; }
-  %e-m-image-replace        { @include image-replace; }
-  %e-m-center-content       { @include center-content; }
+  %e-m-ir                   { @include ir; }
+  %e-m-cc                   { @include cc; }
   %e-m-invisible            { @include invisible; }
   %e-m-va-container         { transform-style: preserve-3d; }
   %e-m-vertical-align       { @include vertical-align; }
   %e-m-vertical-align-table { @include vertical-align-table; }
-  %e-m-global-margin-bottom { @include global-mb; }
+  %e-m-mb                   { @include mb; }
   %e-m-link-block           { @include link-block-space; }
   
   

@@ -8,7 +8,7 @@ $use-objects-split: true !default;
   // object
   @include object(o-split){
     @include unstyled;
-    @include clearfix;
+    @include cf;
     text-align:right;
     
     // element

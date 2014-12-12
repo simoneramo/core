@@ -1,5 +1,5 @@
 // Clearfix
-@mixin clearfix{
+@mixin cf{
   &:before,
   &:after {
     content: "";

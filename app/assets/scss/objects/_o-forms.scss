@@ -15,7 +15,7 @@ $use-objects-forms:	true !default;
 
     ul{
       @include unstyled;
-      @include clearfix;
+      @include cf;
       
       li{
         margin-bottom: $space;

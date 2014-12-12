@@ -176,24 +176,17 @@
   });
 
 
-  // icons > $ gulp icons
-  gulp.task('icons', function () {
-    return gulp.src('app/assets/icons/**/*')                             // Icons Directory
-    .pipe($.newer('_public/assets/icons'))
-    .pipe($.imagemin({                                         // Use gulp-imagemin 
-        optimizationLevel: 3,                                            // Default: 3: level between 0 and 7.
-        progressive: true,                                               // Lossless conversion to progressive.
-        interlaced: true,
-        svgoPlugins: [{
-          removeViewBox: false
-        }]                                                                   // Interlace gif for progressive rendering.    
-    }))
-    .pipe(gulp.dest('_public/assets/icons'))                           // Destination Path
-    //.pipe($.notify({ message: 'Icons built and optimized' }))          // Notify
-    .pipe($.size({title: 'icons size of'}));                           // Size
+
+  // fonts > $ gulp fonts
+  gulp.task('fonts', function () {
+    return gulp.src('app/assets/fonts/**/*')                           // Fonts Directory
+    .pipe(gulp.dest('_public/assets/fonts'))                           // Destination Path
+    //.pipe($.notify({ message: 'Fonts copied' }))                     // Notify
+    .pipe($.size({title: 'fonts size of'}));                           // Size
   });
 
 
+  
   // copy root files > $ gulp copy
   gulp.task('copy', function () {
     return gulp.src(
@@ -208,15 +201,6 @@
     .pipe(gulp.dest('_public'))                                        // Destination Path
     //.pipe($.notify({ message: 'root files copied' }))                    // Notify
     .pipe($.size({title: 'root files size of'}));                        // Size
-  });
-
-
-  // fonts > $ gulp fonts
-  gulp.task('fonts', function () {
-    return gulp.src('app/assets/fonts/**/*')                             // Fonts Directory
-    .pipe(gulp.dest('_public/assets/fonts'))                           // Destination Path
-    //.pipe($.notify({ message: 'Fonts copied' }))                       // Notify
-    .pipe($.size({title: 'fonts size of'}));                           // Size
   });
 
 
@@ -249,13 +233,13 @@
 
   // just build assets using runSequence > $ gulp assets
   gulp.task('assets', function (cb) {
-    runSequence(['styles', 'scripts', 'images', 'fonts', 'icons'], cb);
+    runSequence(['styles', 'scripts', 'images', 'fonts'], cb);
   });
 
 
   // default: clean and build _public using runSequence > $ gulp default
   gulp.task('default', ['clean'], function (cb) {
-    runSequence('styles', ['html', 'jade', 'scripts', 'images', 'fonts', 'icons', 'copy'], cb);
+    runSequence('styles', ['html', 'jade', 'scripts', 'images', 'fonts', 'copy'], cb);
   });
 
 

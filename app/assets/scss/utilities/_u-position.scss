@@ -5,7 +5,7 @@ $use-utilities-position:  true !default;
    Utilities - Position
    ========================================================================== */
   
-  // position
+  // position what
   @include add(u-p-relative) { position: relative; }
   @include add(u-p-absolute) { position: absolute; }
   @include add(u-p-fixed)    { position: fixed; }

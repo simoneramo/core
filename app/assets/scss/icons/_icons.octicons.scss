@@ -8,7 +8,7 @@ $use-icons-octicons:	true !default;
 
 	// font family
 	[class^="\+octicons"], [class*=" \+octicons"] {
-			font-family:$icon-font-family-two;
+			font-family:$font-family-2;
 	}	
 
 	.\+octicons-alert:before {

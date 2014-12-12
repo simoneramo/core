@@ -11,7 +11,7 @@ $use-objects-notify: true !default;
     padding: $space;
     
     @if $use-global-mb == true{
-      @include global-mb;
+      @include mb;
     }
       
       p{
