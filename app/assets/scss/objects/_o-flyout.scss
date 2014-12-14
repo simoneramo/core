@@ -6,7 +6,6 @@ $use-objects-flyout:	true !default;
    ========================================================================== */
    
 	@include object(o-flyout) {
-
 		position:relative;
 		overflow:hidden;
 	
@@ -14,9 +13,7 @@ $use-objects-flyout:	true !default;
 			position:absolute;
 			top:100%;
 			left:-9999px;
-			background: tint($c-btn-1,50%);
 		}
-
 
 		@include modifier(left) { 
 			&:hover{

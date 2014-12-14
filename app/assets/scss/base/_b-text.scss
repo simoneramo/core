@@ -6,7 +6,7 @@ $use-base-text: true !default;
    ========================================================================== */
    
   @include headings(1, 6) {
-    font-family: $f-base-heading-family;
+    font-family: $ff-heading-base;
     color: $c-heading-1;
     @if $use-global-mb == true{
       @include mb;
@@ -26,7 +26,7 @@ $use-base-text: true !default;
 
   // make $f-small
   small{
-    font-size: $f-small;
+    font-size: $fs-h7;
   }
 
   // set default space

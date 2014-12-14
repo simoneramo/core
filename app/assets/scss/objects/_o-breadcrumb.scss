@@ -59,11 +59,11 @@ $use-objects-breadcrumb:  true !default;
           position: relative;
           display: block;
           padding: 0 3em 0 5em;
-          background: $bgc-btn-1;
+          background: $c-object;
           line-height: 3.875em;
 
           &.is-active, &:hover, &.is-active:after, &:hover:after {
-            background-color: shade($bgc-btn-1,10%);
+            background-color: shade($c-object,10%);
           }
 
           &:after {
@@ -74,8 +74,8 @@ $use-objects-breadcrumb:  true !default;
             width: 3.875em; 
             height: 3.875em;
             border-radius: 0 0 0 100%;
-            background: $bgc-btn-1;
-            box-shadow: 0.188em -0.188em 0 0.188em $bgc-1, 0.188em -0.188em 0 0.188em $bgc-1;
+            background: $c-object;
+            box-shadow: 0.188em -0.188em 0 0.188em $bc-1, 0.188em -0.188em 0 0.188em $bc-1;
             content: '';
             transform: scale(1) rotate(45deg);
           }

@@ -9,7 +9,7 @@ $use-base-root: true !default;
     overflow-y: scroll;
     min-height: 100%;
     word-wrap: break-word;
-    font:#{($f-base)}/#{$base-line-height} $f-base-family;
+    font:#{($fs-base)}/#{$lh-base} $ff-base;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-osx-font-smoothing: grayscale;
@@ -30,14 +30,14 @@ $use-base-root: true !default;
 
   body{
     min-height: 100%;
-    background-color: $bgc-1;
+    background-color: $bc-1;
     text-rendering: optimizeLegibility;   
     color: $c-type-1;
   }
 
 
   ::selection{ 
-    background-color:$bgc-selection; 
+    background-color:$bc-selection; 
     color:$c-selection; 
   }
 

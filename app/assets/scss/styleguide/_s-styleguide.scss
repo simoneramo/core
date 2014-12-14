@@ -9,7 +9,7 @@
   // styleguide body
   body.styleguide{
     padding-top: 2em;
-    background-color: $c-notify-success;
+    background-color: $c-success;
     padding-left: $space;
     padding-right: $space;
     h1, h2, h3, h4, h5, h6 {
@@ -23,7 +23,7 @@
     @include container;
     .o-nav{
       .\+u-s-active{
-        background-color: tint($c-notify-success,50%);
+        background-color: tint($c-success,50%);
       }
     }
   }
@@ -34,7 +34,7 @@
     @include breakpoint($bp-medium) {
       padding: $space-2 $space-2 $space;
     }
-    background-color: $white;
+    background-color: $c-white;
     @include container;
   }
 
@@ -53,10 +53,10 @@
   }
 
   // styleguide objects, base & utilities
-  .styleguide-objects, .styleguide-base, .styleguide-utilities, .styleguide-modules{
+  .styleguide-objects, .styleguide-config, .styleguide-base, .styleguide-utilities, .styleguide-modules{
     @extend %e-s-mb-3;
     border-radius: $global-round;
-    border: solid 3px tint($gray, 90%);
+    border: solid 3px tint($c-gray, 90%);
     padding: $space;
     @include breakpoint($bp-medium){
       padding: $space-2;
@@ -67,7 +67,7 @@
   // styleguide code
   .styleguide-code{
   	border-radius: $global-round;
-  	background-color: tint($gray, 90%);
+  	background-color: tint($c-gray, 90%);
   	height:100px;
   	margin-top: $space-3;
   	margin-bottom: $space-3;
@@ -282,7 +282,7 @@
         p{
           padding: $space;
           border: 1px dashed #ccc;
-          background-color: $bgc-1;
+          background-color: $bc-1;
           @include reset-mb;
             span{
               padding: 4px 8px;
@@ -307,7 +307,7 @@
       p{
         padding: $space;
         border: 1px dashed #ccc;
-        background-color: $bgc-1;
+        background-color: $bc-1;
         @include reset-mb;
         span{
           padding: 4px 8px;
@@ -387,7 +387,7 @@
           padding: 4px 8px;
           border-radius: 2px;
           @extend %e-bc-info;
-          color: $white;
+          color: $c-white;
           code{
             background-color: transparent;
           }
@@ -435,7 +435,7 @@
           padding: 4px 8px;
           border-radius: 2px;
           @extend %e-bc-info;
-          color: $white;
+          color: $c-white;
           code{
             background-color: transparent;
           }
@@ -455,7 +455,7 @@
           padding: 4px 8px;
           border-radius: 2px;
           @extend %e-bc-info;
-          color: $white;
+          color: $c-white;
           code{
             background-color: transparent;
           }
@@ -502,3 +502,16 @@
     }
   }
 
+  // UTILITIES EXTENDS
+  .styleguide-config{
+    &.extends, &.spaces, &.rounded, &.fonts, &.colours{
+      p{
+        code{
+          padding: 4px 8px;
+          border-radius: 2px;
+          @extend %e-bc-warning;
+          display: inline-block;
+        }
+      }
+    }
+  }

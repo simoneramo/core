@@ -2,71 +2,61 @@
    Config - Type
    ========================================================================== */
   
-  // global
-  $base-line-height:                1.45;
-  $f-base:                          em(16);
-  
-  // huge sizes
-  $f-h1x:                           em(96);
-  $f-h2x:                           em(84);
-  $f-h3x:                           em(72);
-  $f-h4x:                           em(60);
-  $f-h5x:                           em(54);
-  $f-h6x:                           em(48);
-  
-  $f-massive:                       $f-h1x;
-  $f-huge:                          $f-h3x;
-  $f-large:                         $f-h5x;
-  
-  // heading sizes
-  $f-h1:                            em(32);
-  $f-h2:                            em(26);
-  $f-h3:                            em(22);
-  $f-h4:                            em(20);
-  $f-h5:                            em(18);
-  $f-h6:                            em(16);
+  // line-height base
+  $lh-base:                  1.45;
   
   // helper sizes
-  $f-lead:                          $f-base * 1.125;
-  $f-half:                          $f-base / 2;
+  $fs-base:                  em(16);
+  $fs-lead:                  $fs-base * 1.125;
+  $fs-half:                  $fs-base / 2;
 
+  // huge sizes
+  $fs-h1x:                   em(96);
+  $fs-h2x:                   em(84);
+  $fs-h3x:                   em(72);
+  $fs-h4x:                   em(60);
+  $fs-h5x:                   em(54);
+  $fs-h6x:                   em(48);
+
+  // heading sizes
+  $fs-h1:                    em(32);
+  $fs-h2:                    em(26);
+  $fs-h3:                    em(22);
+  $fs-h4:                    em(20);
+  $fs-h5:                    em(18);
+  $fs-h6:                    em(16);
+ 
   // small sizes
-  $f-h7:                            em(14);
-  $f-h8:                            em(12);
-  $f-h9:                            em(10);
-  $f-h10:                           em(8);
-  
-  $f-small:                         $f-h7;
-  $f-tiny:                          $f-h8;
-  $f-micro:                         $f-h9;
-  $f-nano:                          $f-h10;
+  $fs-h7:                    em(14);
+  $fs-h8:                    em(12);
+  $fs-h9:                    em(10);
+  $fs-h10:                   em(8);
     
   // font stacks
-  $georgia:                         Georgia, Cambria, "Times New Roman", Times, serif;
-  $helvetica:                       "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  $lucida-grande:                   "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-  $monospace:                       "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
-  $verdana:                         Verdana, Geneva, sans-serif;
+  $georgia:                  Georgia, Cambria, "Times New Roman", Times, serif;
+  $helvetica:                "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  $lucida-grande:            "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  $monospace:                "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+  $verdana:                  Verdana, Geneva, sans-serif;
+
+  // font stacks base & headings
+  $ff-base:                  $helvetica;
+  $ff-heading-base:          $helvetica;
   
-  // font family
-  $f-base-face:                     $helvetica;
-  $f-base-family:                   $helvetica;
-  $f-base-heading-family:           $helvetica;
+  // web/fonts 1
+  $ff-family-1:              feather;
+  $ff-folder-1:              feather;
+  $ff-name-1:                feather;
   
-  // fonts face 1
-  $font-family-1:                   feather;
-  $font-folder-1:                   feather;
-  $font-name-1:                     feather;
+  // web/fonts 2
+  $ff-family-2:              octicons;
+  $ff-folder-2:              octicons;
+  $ff-name-2:                octicons;
   
-  // fonts face 2
-  $font-family-2:                   octicons;
-  $font-folder-2:                   octicons;
-  $font-name-2:                     octicons;
-  
-  // fonts face 3
-  $font-family-3:                   Source Sans Pro;
-  $font-folder-3:                   SourceSansPro;
-  $font-name-3:                     SourceSansPro;
+  // web/fonts 3
+  $ff-family-3:              Source Sans Pro;
+  $ff-folder-3:              SourceSansPro;
+  $ff-name-3:                SourceSansPro;
 
 
 

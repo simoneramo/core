@@ -7,23 +7,24 @@ $use-objects-notify: true !default;
 
   // object
   @include object(o-notify) {
-    background-color: $c-notify-primary;
+    background-color: $c-object;
     padding: $space;
     
     @if $use-global-mb == true{
       @include mb;
-    }
-      
-      p{
+
+      p:last-child{
         margin-bottom: 0;
       }
+    }
     
-      // modifier
-      @include modifier(success)    { background-color: $c-notify-success; }
-      @include modifier(info)       { background-color: $c-notify-info; }
-      @include modifier(warning)    { background-color: $c-notify-warning; }
-      @include modifier(danger)     { background-color: $c-notify-danger; }
-      @include modifier(error)      { background-color: $c-notify-error; }
+    // modifier
+    @include modifier(success)    { background-color: $c-success; }
+    @include modifier(info)       { background-color: $c-info; }
+    @include modifier(warning)    { background-color: $c-warning; }
+    @include modifier(danger)     { background-color: $c-danger; }
+    @include modifier(error)      { background-color: $c-error; }
+    
   } 
 
 }//endif

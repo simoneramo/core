@@ -8,7 +8,7 @@ $use-objects-blockquote:	true !default;
 
   .o-blockquote{
 		padding-left:$space;
-		border-left:8px solid rgba(0, 0, 0, 0.1);
+		border-left:8px solid $c-object;
   }
 
 	.o-blockquote,.o-blockquote-right{

@@ -10,11 +10,11 @@ $use-objects-matrix:	true !default;
   @include object(o-matrix) {
 		@include cf;
     @include unstyled;
-    border-left: 1px solid $silver;
+    border-left: 1px solid $c-object;
 		> li{
 			float:left;
       padding: $space;
-      border: 0 solid $silver;
+      border: 0 solid $c-object;
       border-top-width: 1px;
       border-right-width: 1px;
       border-bottom-width: 1px;

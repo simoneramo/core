@@ -8,7 +8,7 @@ $use-objects-labels:	true !default;
 	@include object(o-label){
 		display:inline-block;
 		text-align:center;
-		background-color:$bgc-btn-1;
+		background-color: $c-object;
 		padding-left:$space;
 		padding-right:$space;
 

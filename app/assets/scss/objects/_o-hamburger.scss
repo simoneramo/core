@@ -17,7 +17,7 @@ $use-objects-hamburger:  true !default;
     cursor: pointer;
     
     &:before, &:after {
-      background: $c-hamburger; 
+      background: $c-object; 
       position: absolute;
       top: 0; 
       right: 0; 
@@ -47,10 +47,10 @@ $use-objects-hamburger:  true !default;
       left: 0;
       margin: auto;
       transition: all .15s ease-in-out;
-      background: $c-hamburger; 
+      background: $c-object; 
       width: 35px; 
       height: 4px; 
-      box-shadow: 0 -12px $c-hamburger, 0 12px $c-hamburger; 
+      box-shadow: 0 -12px $c-object, 0 12px $c-object; 
     }
 
     // modifier

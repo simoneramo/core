@@ -7,14 +7,14 @@ $use-objects-cols-or-this:  true !default;
   
   // object
   @include object(o-this-or-this) {
-    display:table;
-    width:100%;
-    text-align:center;
+    display: table;
+    width: 100%;
+    text-align: center;
 
     // element
     @include element(cols) {
-      display:table-cell;
-      vertical-align:middle;
+      display: table-cell;
+      vertical-align: middle;
     }
 
   }

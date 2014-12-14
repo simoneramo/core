@@ -6,49 +6,49 @@ $use-utilities-colours:  true !default;
    ========================================================================== */
 
   // custom colours
-  @include add(u-bc-white)             { background-color: $white; }
-  @include add(u-bc-silver)            { background-color: $silver; }
-  @include add(u-bc-gray)              { background-color: $gray; }  
-  @include add(u-bc-black)             { background-color: $black; }  
-  @include add(u-bc-red)               { background-color: $red; }
-  @include add(u-bc-maroon)            { background-color: $maroon; } 
-  @include add(u-bc-orange)            { background-color: $orange; }
-  @include add(u-bc-yellow)            { background-color: $yellow; }
-  @include add(u-bc-olive)             { background-color: $olive; }  
-  @include add(u-bc-lime)              { background-color: $lime; }
-  @include add(u-bc-green)             { background-color: $green; }  
-  @include add(u-bc-aqua)              { background-color: $aqua; }
-  @include add(u-bc-teal)              { background-color: $teal; }   
-  @include add(u-bc-blue)              { background-color: $blue; }
-  @include add(u-bc-navy)              { background-color: $navy; }   
-  @include add(u-bc-fuchsia)           { background-color: $fuchsia; }
-  @include add(u-bc-purple)            { background-color: $purple; } 
-  @include add(u-bc-pink)              { background-color: $pink; }
+  @include add(u-bc-white)             { background-color: $c-white; }
+  @include add(u-bc-silver)            { background-color: $c-silver; }
+  @include add(u-bc-gray)              { background-color: $c-gray; }  
+  @include add(u-bc-black)             { background-color: $c-black; }  
+  @include add(u-bc-red)               { background-color: $c-red; }
+  @include add(u-bc-maroon)            { background-color: $c-maroon; } 
+  @include add(u-bc-orange)            { background-color: $c-orange; }
+  @include add(u-bc-yellow)            { background-color: $c-yellow; }
+  @include add(u-bc-olive)             { background-color: $c-olive; }  
+  @include add(u-bc-lime)              { background-color: $c-lime; }
+  @include add(u-bc-green)             { background-color: $c-green; }  
+  @include add(u-bc-aqua)              { background-color: $c-aqua; }
+  @include add(u-bc-teal)              { background-color: $c-teal; }   
+  @include add(u-bc-blue)              { background-color: $c-blue; }
+  @include add(u-bc-navy)              { background-color: $c-navy; }   
+  @include add(u-bc-fuchsia)           { background-color: $c-fuchsia; }
+  @include add(u-bc-purple)            { background-color: $c-purple; } 
+  @include add(u-bc-pink)              { background-color: $c-pink; }
   
   // custom bbackground
-  @include add(u-c-white)              { color: $white; }
-  @include add(u-c-silver)             { color: $silver; }
-  @include add(u-c-gray)               { color: $gray; }  
-  @include add(u-c-black)              { color: $black; }  
-  @include add(u-c-red)                { color: $red; }
-  @include add(u-c-maroon)             { color: $maroon; } 
-  @include add(u-c-orange)             { color: $orange; }
-  @include add(u-c-yellow)             { color: $yellow; }
-  @include add(u-c-olive)              { color: $olive; }  
-  @include add(u-c-lime)               { color: $lime; }
-  @include add(u-c-green)              { color: $green; }  
-  @include add(u-c-aqua)               { color: $aqua; }
-  @include add(u-c-teal)               { color: $teal; }   
-  @include add(u-c-blue)               { color: $blue; }
-  @include add(u-c-navy)               { color: $navy; }   
-  @include add(u-c-fuchsia)            { color: $fuchsia; }
-  @include add(u-c-purple)             { color: $purple; } 
-  @include add(u-c-pink)               { color: $pink; }
+  @include add(u-c-white)              { color: $c-white; }
+  @include add(u-c-silver)             { color: $c-silver; }
+  @include add(u-c-gray)               { color: $c-gray; }  
+  @include add(u-c-black)              { color: $c-black; }  
+  @include add(u-c-red)                { color: $c-red; }
+  @include add(u-c-maroon)             { color: $c-maroon; } 
+  @include add(u-c-orange)             { color: $c-orange; }
+  @include add(u-c-yellow)             { color: $c-yellow; }
+  @include add(u-c-olive)              { color: $c-olive; }  
+  @include add(u-c-lime)               { color: $c-lime; }
+  @include add(u-c-green)              { color: $c-green; }  
+  @include add(u-c-aqua)               { color: $c-aqua; }
+  @include add(u-c-teal)               { color: $c-teal; }   
+  @include add(u-c-blue)               { color: $c-blue; }
+  @include add(u-c-navy)               { color: $c-navy; }   
+  @include add(u-c-fuchsia)            { color: $c-fuchsia; }
+  @include add(u-c-purple)             { color: $c-purple; } 
+  @include add(u-c-pink)               { color: $c-pink; }
   
   // backgrounds 
-  @include add(u-bc-1)                 { background-color: $bgc-1; }
-  @include add(u-bc-2)                 { background-color: $bgc-2; }
-  @include add(u-bc-3)                 { background-color: $bgc-3; }
+  @include add(u-bc-1)                 { background-color: $bc-1; }
+  @include add(u-bc-2)                 { background-color: $bc-2; }
+  @include add(u-bc-3)                 { background-color: $bc-3; }
   
   // links colours
   @include add(u-c-link)               { color: $c-link; }
@@ -74,17 +74,18 @@ $use-utilities-colours:  true !default;
   
   // buttons 
   @include add(u-c-btn-1)              { color: $c-btn-1; }
+  @include add(u-bc-btn-1)             { background-color: $bc-btn-1; }
+  
   @include add(u-c-btn-2)              { color: $c-btn-2; }
-  @include add(u-bc-btn-1)             { background-color: $bgc-btn-1; }
-  @include add(u-bc-btn-2)             { background-color: $bgc-btn-2; }
+  @include add(u-bc-btn-2)             { background-color: $bc-btn-2; }
 
   // code  
   @include add(u-c-code)               { color: $c-code; }
-  @include add(u-bc-code)              { background-color: $bgc-code; }
+  @include add(u-bc-code)              { background-color: $bc-code; }
   
   // selection
   @include add(u-c-select)             { color: $c-selection; }
-  @include add(u-bc-select)            { color: $bgc-selection; }
+  @include add(u-bc-select)            { color: $bc-selection; }
   
   // forms
   @include add(u-c-form-1)             { color: $c-form-1; }
@@ -140,7 +141,9 @@ $use-utilities-colours:  true !default;
   @include add(u-c-lastfm)             { color: $c-lastfm; }
   @include add(u-c-skype)              { color: $c-skype; }
   @include add(u-c-digg)               { color: $c-digg; }
-  @include add(u-c-swarm)               { color: $c-swarm; }
+  @include add(u-c-swarm)              { color: $c-swarm; }
+  @include add(u-c-etsy)               { color: $c-etsy; }
+
 
   // brands background
   @include add(u-bc-google)            { background-color: $c-google; }
@@ -187,22 +190,22 @@ $use-utilities-colours:  true !default;
   @include add(u-bc-paypal)            { background-color: $c-paypal; }
   @include add(u-bc-lastfm)            { background-color: $c-lastfm; }
   @include add(u-bc-skype)             { background-color: $c-skype; }
-  @include add(u-bc-digg)             { background-color: $c-digg; }
+  @include add(u-bc-digg)              { background-color: $c-digg; }
   @include add(u-bc-swarm)             { background-color: $c-swarm; }
-
+  @include add(u-bc-etsy)              { background-color: $c-etsy; }
 
   // notify background
-  @include add(u-bc-success)           { background-color: $c-notify-success; }
-  @include add(u-bc-info)              { background-color: $c-notify-info; }
-  @include add(u-bc-warning)           { background-color: $c-notify-warning; }
-  @include add(u-bc-danger)            { background-color: $c-notify-danger; }
-  @include add(u-bc-error)             { background-color: $c-notify-error; }
+  @include add(u-bc-success)           { background-color: $c-success; }
+  @include add(u-bc-info)              { background-color: $c-info; }
+  @include add(u-bc-warning)           { background-color: $c-warning; }
+  @include add(u-bc-danger)            { background-color: $c-danger; }
+  @include add(u-bc-error)             { background-color: $c-error; }
   
   // notify colours
-  @include add(u-c-success)            { color: $c-notify-success; }
-  @include add(u-c-info)               { color: $c-notify-info; }
-  @include add(u-c-warning)            { color: $c-notify-warning; }
-  @include add(u-c-danger)             { color: $c-notify-danger; }
-  @include add(u-c-error)              { color: $c-notify-error; }
+  @include add(u-c-success)            { color: $c-success; }
+  @include add(u-c-info)               { color: $c-info; }
+  @include add(u-c-warning)            { color: $c-warning; }
+  @include add(u-c-danger)             { color: $c-danger; }
+  @include add(u-c-error)              { color: $c-error; }
 
 }//end if

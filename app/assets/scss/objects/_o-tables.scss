@@ -17,7 +17,7 @@ $use-objects-tables:  true !default;
     // modifier
     @include modifier(bordered) {
       th, td{
-        border:1px solid $silver;
+        border:1px solid $c-object;
         &:empty{
           border:none;
         }
@@ -45,7 +45,7 @@ $use-objects-tables:  true !default;
         > tbody > tr:hover > td, 
         > tbody > tr:hover > th {
         color: $c-selection;
-        background-color: $bgc-selection;
+        background-color: $bc-selection;
         cursor: default;
       }
     }

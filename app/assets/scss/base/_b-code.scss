@@ -11,27 +11,22 @@ $use-base-code:  true !default;
     tab-size: 3;
   }
 
-
   code {
-    background-color: $bgc-code;
+    background-color: $bc-code;
     padding: $space-quarter;
   }
-
 
   pre {
     padding: $space;
     display: block;
-    line-height: $base-line-height;
+    line-height: $lh-base;
     color: $c-code;
-    background-color: $bgc-code;
+    background-color: $bc-code;
     white-space: pre;
     code {
-      background-color: $bgc-code;
+      background-color: $bc-code;
     }
   }
-
-
-
 
   pre{
     mark{

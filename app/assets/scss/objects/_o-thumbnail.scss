@@ -12,7 +12,7 @@ $use-objects-thumbnail: true !default;
     @include element(item) {
       display: block;
       padding: $space-half;
-      border: 1px solid $bgc-btn-1
+      border: 1px solid $c-object;
     }
 
   }

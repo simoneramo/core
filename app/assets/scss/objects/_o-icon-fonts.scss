@@ -7,14 +7,14 @@ $use-objects-icon-fonts:	true !default;
 
 	@include object(o-icon) {
 		text-transform: none;
-		font-weight:normal;
-		font-size:$f-base;
-		line-height:1;
-		zoom:1;
+		font-weight: normal;
+		font-size: $fs-base;
+		line-height: 1;
+		zoom: 1;
 	    /**
 	     * So using `.icon` on certain elements doesn’t make a visual difference.
 	     */
-		font-style:normal;
+		font-style: normal;
 		speak: none;
 		/** Place the icon in a box the exact same dimensions as the icon itself. */
 		font-variant: normal;
