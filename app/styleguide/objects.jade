@@ -2,6 +2,7 @@ doctype html
 html(lang='en')
   head
     meta(charset="UTF-8")
+    include ../_partials/site/compatibility-mode
     title Core Objects
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1') 
@@ -33,7 +34,6 @@ html(lang='en')
     div.l-styleguide-container.container
       
       //- objects
-      
       include ../_partials/objects/loaders 
       include ../_partials/objects/tabs 
       include ../_partials/objects/flag

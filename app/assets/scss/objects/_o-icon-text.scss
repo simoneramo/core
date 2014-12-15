@@ -19,12 +19,12 @@ $use-objects-icon-text: true !default;
       line-height: 1;
       zoom: 1;
       background-size: 96%;
-      margin-right: $space-quarter;
+      margin-right: $space-4th;
     }
 
     @include modifier(rev) {
       .o-image-text__icon{
-        margin-left: $space-quarter;
+        margin-left: $space-4th;
         margin-right: 0;  
       }
     }

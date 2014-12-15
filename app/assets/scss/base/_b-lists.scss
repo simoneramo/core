@@ -5,23 +5,23 @@ $use-base-lists: true !default;
    Base - Lists
    ========================================================================== */
   
-  @if $use-global-mb == true{
-    ul, ol, dl{
+  ul, ol, dl{ 
+    margin-top: 0;
+    margin-bottom: 0;
+    @if $use-global-mb == true{
       @include mb;
+      ul, ol, dl{
+        margin-bottom: 0;
+      }
     }
   }
 
-  ul, ol, dd{ 
-    margin-top: 0;
-    margin-bottom: 0;
+  li, dt, dd{
+    line-height: 1.6;
   }
 
-  ul, ol{
+  ul, ol, {
     padding-left: $space-1-half;
-  }
-
-  dl{
-    margin-top: 0;
   }
 
   dd{ 

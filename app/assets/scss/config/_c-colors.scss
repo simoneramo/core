@@ -20,123 +20,122 @@
 
    ========================================================================== */
 
-// http://en.wikipedia.org/wiki/Web_colors#HTML_color_names
 // custom
-$c-white:                   white;     //    #FFFFFF   rgb(100 100 100)
-$c-silver:                  silver;    //    #C0C0C0   rgb(75 75 75)
-$c-gray:                    gray;      //    #808080   rgb(50 50 50)
-$c-black:                   black;     //    #000000   rgb(0 0 0)
-$c-red:                     red;       //    #FF0000   rgb(100 0 0)
-$c-maroon:                  maroon;    //    #800000   rgb(50 0 0)
-$c-orange:                  orange;    //    #FFA500   rgb(255 16 50)
-$c-yellow:                  yellow;    //    #FFFF00   rgb(100 100 0)
-$c-olive:                   olive;     //    #808000   rgb(50 50 0)
-$c-lime:                    lime;      //    #00FF00   rgb(0 100 0)
-$c-green:                   green;     //    #008000   rgb(0 50 0)
-$c-aqua:                    aqua;      //    #00FFFF   rgb(0 100 100)
-$c-teal:                    teal;      //    #008080   rgb(0 50 50)
-$c-blue:                    blue;      //    #0000FF   rgb(0 0 100)
-$c-navy:                    navy;      //    #000080   rgb(0 0 50)
-$c-fuchsia:                 fuchsia;   //    #FF00FF   rgb(100 0 100)
-$c-purple:                  purple;    //    #800080   rgb(50 0 50)
-$c-pink:                    pink;      //    #FFC0CB   rgb(255 192 203)
+$c-white:                 white;           // #FFFFFF   rgb(100 100 100)
+$c-silver:                silver;          // #C0C0C0   rgb(75 75 75)
+$c-gray:                  gray;            // #808080   rgb(50 50 50)
+$c-black:                 black;           // #000000   rgb(0 0 0)
+$c-red:                   red;             // #FF0000   rgb(100 0 0)
+$c-maroon:                maroon;          // #800000   rgb(50 0 0)
+$c-orange:                orange;          // #FFA500   rgb(255 16 50)
+$c-yellow:                yellow;          // #FFFF00   rgb(100 100 0)
+$c-olive:                 olive;           // #808000   rgb(50 50 0)
+$c-lime:                  lime;            // #00FF00   rgb(0 100 0)
+$c-green:                 green;           // #008000   rgb(0 50 0)
+$c-aqua:                  aqua;            // #00FFFF   rgb(0 100 100)
+$c-teal:                  teal;            // #008080   rgb(0 50 50)
+$c-blue:                  blue;            // #0000FF   rgb(0 0 100)
+$c-navy:                  navy;            // #000080   rgb(0 0 50)
+$c-fuchsia:               fuchsia;         // #FF00FF   rgb(100 0 100)
+$c-purple:                purple;          // #800080   rgb(50 0 50)
+$c-pink:                  pink;            // #FFC0CB   rgb(255 192 203)
 
 // background
-$bc-1:                    #ffffff;
-$bc-2:                    #f3f3f3;
-$bc-3:                    #ccc;
+$bc-1:                    #ffffff!default;
+$bc-2:                    #f3f3f3!default;
+$bc-3:                    #ccc!default;
 
 // selection 
-$c-selection:             #161616;
-$bc-selection:            rgba(240, 233, 89, 0.9);
+$c-selection:             #161616!default;
+$bc-selection:            rgba(240, 233, 89, 0.9)!default;
 
 // link 
-$c-link:                  #2046df;
-$c-link-hover:            #ec1831;
-$c-link-active:           #ff001e;
-$c-link-visited:          #d01fe0;
+$c-link:                  #2046df!default;
+$c-link-hover:            #ec1831!default;
+$c-link-active:           #ff001e!default;
+$c-link-visited:          #d01fe0!default;
 
 // headings
-$c-heading-1:             #2c2c2c;
-$c-heading-2:             #424242;
-$c-heading-3:             #585858;
+$c-heading-1:             #2c2c2c!default;
+$c-heading-2:             #424242!default;
+$c-heading-3:             #585858!default;
 
 // type
-$c-type-1:                #2c2c2c;
-$c-type-2:                #424242;
-$c-type-3:                #585858;
+$c-type-1:                #2c2c2c!default;
+$c-type-2:                #424242!default;
+$c-type-3:                #585858!default;
 
 // object
-$c-object:                #bebebe;
+$c-object:                #bebebe!default;
 
 // object buttons 
-$c-btn-1:                 #222222;
-$c-btn-2:                 #aeaeae;
-$bc-btn-1:                #bebebe;
-$bc-btn-2:                #a6a6a6;
+$c-btn-1:                 #222222!default;
+$c-btn-2:                 #aeaeae!default;
+$bc-btn-1:                #bebebe!default;
+$bc-btn-2:                #a6a6a6!default;
 
 // object notify
-$c-success:               #4FC56B;
-$c-info:                  #59A7F2;
-$c-warning:               #FADB40;
-$c-danger:                #F58E45;
-$c-error:                 #F45757;
+$c-success:               #4FC56B!default;
+$c-info:                  #59A7F2!default;
+$c-warning:               #FADB40!default;
+$c-danger:                #F58E45!default;
+$c-error:                 #F45757!default;
 
 // object form
-$c-form-1:                #999999;
-$c-form-2:                #777777;
-$c-form-input:            #bebebe;
-$c-form-hover:            $c-link-hover;
-$c-form-active:           $c-link-active;
-$c-form-focus:            $c-link-visited;
+$c-form-1:                #999999!default;
+$c-form-2:                #777777!default;
+$c-form-input:            #bebebe!default;
+$c-form-hover:            $c-link-hover!default;
+$c-form-active:           $c-link-active!default;
+$c-form-focus:            $c-link-visited!default;
 
 // object code 
-$bc-code:                #f7f7f7;
-$c-code:                  #333333;
+$bc-code:                 #f7f7f7!default;
+$c-code:                  #333333!default;
 
 // brands 
-$c-google:                #1194f6;
-$c-facebook:              #336699;
-$c-twitter:               #00aced;
-$c-linkedin:              #0977b5;
-$c-dribble:               #ea4c89;
-$c-instagram:             #336699;
-$c-googleplus:            #c20907;
-$c-behance:               #333333;
-$c-gimmebar:              #D6156C;
-$c-github:                #333333;
-$c-tumblr:                #35465d;
-$c-youtube:               #e52d27;
-$c-vine:                  #00bf8f;
-$c-vimeo:                 #04aeec;
-$c-kickstarter:           #14e06e;
-$c-dropbox:               #007ee5;
-$c-flickr:                #f4f4f4;
-$c-rss:                   #eb7f38;
-$c-codepen:               #d75e5e;
-$c-foursquare:            #f94877;
-$c-soundcloud:            #f83c0e;
-$c-wordpress:             #464646;
-$c-blogger:               #f57d00;
-$c-squarespace:           #222222;
-$c-joomla:                #5e5e5e;
-$c-drupal:                #0077c0;
-$c-typepad:               #629841;
-$c-expression-engine:     #5c81a5;
-$c-kirby:                 #ff0400;
-$c-moveabletype:          #9cbaca;
-$c-disqus:                #2e9fff;
-$c-html:                  #ed3e35;
-$c-yahoo:                 #400191;
-$c-pinterest:             #cc3333;
-$c-google-drive:          #333333;
-$c-delicious:             #0B79E5;
-$c-android:               #a4c639;
-$c-apple:                 #cccccc;
-$c-forrst:                #5b9a68;
-$c-paypal:                #00437f;
-$c-lastfm:                #c3000d;
-$c-skype:                 #009fe3;
-$c-digg:                  #333333;
-$c-swarm:                 #ffb000;
-$c-etsy:                  #ffb000;
+$c-google:                #1194f6!default;
+$c-facebook:              #336699!default;
+$c-twitter:               #00aced!default;
+$c-linkedin:              #0977b5!default;
+$c-dribble:               #ea4c89!default;
+$c-instagram:             #336699!default;
+$c-googleplus:            #c20907!default;
+$c-behance:               #333333!default;
+$c-gimmebar:              #D6156C!default;
+$c-github:                #333333!default;
+$c-tumblr:                #35465d!default;
+$c-youtube:               #e52d27!default;
+$c-vine:                  #00bf8f!default;
+$c-vimeo:                 #04aeec!default;
+$c-kickstarter:           #14e06e!default;
+$c-dropbox:               #007ee5!default;
+$c-flickr:                #f4f4f4!default;
+$c-rss:                   #eb7f38!default;
+$c-codepen:               #d75e5e!default;
+$c-foursquare:            #f94877!default;
+$c-soundcloud:            #f83c0e!default;
+$c-wordpress:             #464646!default;
+$c-blogger:               #f57d00!default;
+$c-squarespace:           #222222!default;
+$c-joomla:                #5e5e5e!default;
+$c-drupal:                #0077c0!default;
+$c-typepad:               #629841!default;
+$c-expression-engine:     #5c81a5!default;
+$c-kirby:                 #ff0400!default;
+$c-moveabletype:          #9cbaca!default;
+$c-disqus:                #2e9fff!default;
+$c-html:                  #ed3e35!default;
+$c-yahoo:                 #400191!default;
+$c-pinterest:             #cc3333!default;
+$c-google-drive:          #333333!default;
+$c-delicious:             #0B79E5!default;
+$c-android:               #a4c639!default;
+$c-apple:                 #cccccc!default;
+$c-forrst:                #5b9a68!default;
+$c-paypal:                #00437f!default;
+$c-lastfm:                #c3000d!default;
+$c-skype:                 #009fe3!default;
+$c-digg:                  #333333!default;
+$c-swarm:                 #ffb000!default;
+$c-etsy:                  #ffb000!default;

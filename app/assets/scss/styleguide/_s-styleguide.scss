@@ -9,7 +9,6 @@
   // styleguide body
   body.styleguide{
     padding-top: 2em;
-    background-color: $c-success;
     padding-left: $space;
     padding-right: $space;
     h1, h2, h3, h4, h5, h6 {
@@ -21,9 +20,18 @@
   .l-styleguide-header{
     padding: $space-2;
     @include container;
+    @include breakpoint($bp-medium) {
+      h1{
+        font-size: $fs-h1x;
+      }
+      p{
+        padding-left: $space-6;
+        padding-right: $space-6;
+      } 
+    }
     .o-nav{
       .\+u-s-active{
-        background-color: tint($c-success,50%);
+        background-color: tint($c-warning,50%);
       }
     }
   }
@@ -42,9 +50,10 @@
   .styleguide-title{
     margin-bottom: $space-half; 
   }
+
   .styleguide-title--sub{
     margin-bottom: $space-half;
-    padding: $space-quarter $space;
+    padding: $space-4th $space;
     border-radius: 2px;
     font-weight: normal;
     @extend %e-bc-warning;
@@ -77,8 +86,7 @@
     }
   }
 
-
-  // OBJECT ALERTS
+  // objects alerts
 	.styleguide-objects{
     &.alerts{
       div{
@@ -86,41 +94,8 @@
       }
     }
   }
-  // 
-  // OBJECT BLOCK LIST
-  //
 
-  // 
-  // OBJECT BLOCKQUOTE
-  //
-
-  // 
-  // OBJECT BREADCRUMBS
-  //
-
-  // 
-  // OBJECT BUTTON GROUPS
-  //
-
-  // 
-  // OBJECT BUTTONS
-  //
-
-  // 
-  // OBJECT CODE
-  //
-
-  // 
-  // OBJECT COLUMS
-  //
-
-  // 
-  // OBJECT COLOUMS
-  //
-
-  // 
-  // OBJECT FLAG
-  //
+  // objects flags
   .styleguide-objects{
     &.flags{
       .o-flag{
@@ -132,13 +107,7 @@
     }
   }
 
-  // OBJECT FIGURE
-
-  // OBJECT FLYOUT
-
-  // OBJECT FORMS
-
-  // OBJECT ICON FONTS
+  // objects icon fonts
   .styleguide-objects{
     &.icon-fonts{
       div{
@@ -149,7 +118,7 @@
     }
   }
 
-  // OBJECT ICON IMAGE TEXT
+  // objects icon image text
   .styleguide-objects{
     &.text-image-icon{
       .o-image-text__icon{
@@ -158,30 +127,24 @@
         width: $space-4;                                                  // width
         background-size:50%;                                              // size of the svg
         background-position:center;                                       // center the image
-        background-image: url('../../assets/icons/social/dribble.svg');   // path to image
+        background-image: url('../../assets/images/social/dribble.svg');   // path to image
       }
 
       @include add(icon-twitter) {
         background-color: $c-twitter;  
-        background-image: url('../../assets/icons/social/twitter.svg');
+        background-image: url('../../assets/images/social/twitter.svg');
       }
     }
   }
 
-  // OBJECT IMAGES
-
-  // OBJECT ISLAND
+  // objects sland
   .styleguide-objects.island{
     .o-island{
       border: 1px dashed #ccc;
     }    
   }
 
-  // OBJECT LINK COMPLEX
-
-  // OBJECT LOADERS
-
-  // OBJECT MATRIX
+  // objects matrix
   .styleguide-objects{
     &.matrix{
       h2{
@@ -190,7 +153,7 @@
     }
   }
 
-  // OBJECT MEDIA
+  // objects media
   .styleguide-objects{
     &.media{
       .o-media{
@@ -199,15 +162,7 @@
     }
   }
 
-  // OBJECT HAMBURGER
-
-  // OBJECT NAV
-
-  // OBJECT PAGINATION
- 
-  // OBJECT PAGINATION
-
-  // OBJECT PROGRESS BARS
+  // objects progress bars
   .styleguide-objects{
     &.progress-bars{
       > div{
@@ -219,10 +174,7 @@
     }
   }
 
-  // OBJECT RULES
-
- 
-  // OBJECT SPRITE
+  // utitities sprite
    @include object(o-sprite) {
     width: 62px;
     height: 62px;
@@ -235,15 +187,7 @@
   @include add(green-sprite)     { background-position:-62px -62px; }
   @include add(red-sprite)       { background-position:  0   -62px; }
 
-  // OBJECT STAT
-
-  // OBJECT TABLES
-
-  // OBJECT THIS OR THIS
-
-  // OBJECT THUMBNAIL
-
-  // UTILITIES WIDTHS
+  // utitities widths
   .styleguide-utilities{
     &.widths{
       > div{
@@ -266,7 +210,7 @@
     }
   }
 
-  // UTILITIES SPACES
+  // utitities spaces
   .styleguide-utilities{
     &.spaces{
       > div{
@@ -300,7 +244,7 @@
     }
   }
 
-  // UTILITIES ISLAND
+  // utitities island
   .styleguide-utilities.island{
     > div{
       @include mb;
@@ -318,7 +262,7 @@
     }
   }
 
-  // UTILITIES DISPLAYS
+  // utitities displays
   .styleguide-utilities{
     &.displays{
       div{
@@ -337,7 +281,7 @@
     }
   }
 
-  // UTILITIES text-alignment
+  // utitities text alignment
   .styleguide-utilities{
     &.text-alignment{
       p span{
@@ -348,7 +292,7 @@
     }
   }
 
-  // UTILITIES VERTICAL ALIGNMENT
+  // utitities vertical align
   .styleguide-utilities{
     &.vertical-align{
       div{
@@ -362,7 +306,7 @@
     }
   }
 
-  // UTILITIES EXTENDS
+  // utitities extends
   .styleguide-utilities{
     &.extends{
       p{
@@ -376,57 +320,57 @@
     }
   }
 
-  // UTILITIES ROUNDED
+  // utitities rounded
   .styleguide-utilities{
     &.rounded{
       div{
-          padding: $space;
-          border: 1px dashed #ccc;
-          background-color: #eee;
+        padding: $space;
+        border: 1px dashed #ccc;
+        background-color: #eee;
         span{
-          padding: 4px 8px;
-          border-radius: 2px;
-          @extend %e-bc-info;
-          color: $c-white;
+        padding: 4px 8px;
+        border-radius: 2px;
+        @extend %e-bc-info;
+        color: $c-white;
           code{
             background-color: transparent;
           }
         }
       }
-      .\+u-rounded-l, .\+u-r-left{
+      .\+u-r-left {
         border-radius: 30px 0 0 30px;
       }
-      .\+u-rounded-br, .\+u-r-br {
+      .\+u-r-br {
         border-radius: 0 0 30px 0;
       }
-      .\+u-rounded-bl, .\+u-r-bl {
+      .\+u-r-bl {
         border-radius: 0 0 0 30px;
       }
-      .\+u-rounded-b, .\+u-r-bottom {
+      .\+u-r-bottom {
         border-radius: 0 0 30px 30px;
       }
-      .\+u-rounded-r, .\+u-r-right {
+      .\+u-r-right {
       border-radius: 0 30px 30px 0;
       }
-      .\+u-rounded-tr, .\+u-r-tr {
+      .\+u-r-tr {
         border-radius: 0 30px 0 0;
       }
-      .\+u-rounded-tl, .\+u-r-tl {
+      .\+u-r-tl {
         border-radius: 30px 0 0 0;
       }
-      .\+u-rounded-t, .\+u-r-top {
+      .\+u-r-top {
         border-radius: 30px 30px 0 0;
       }
-      .\+u-rounded, .\+u-r-all {
+      .\+u-r-all {
         border-radius: 30px;
       }
-      .\+u-rounded, .\+u-r-reset {
+      .\+u-r-reset {
         opacity: .6;
       }
     }
   }
 
-  // UTILITIES FLOATS
+  // utitities floats
   .styleguide-utilities{
     &.floats{
       div{
@@ -444,7 +388,7 @@
     }
   }
 
-  // UTILITIES POSITIONS
+  // utitities position 
   .styleguide-utilities{
     &.position{
       div{
@@ -464,9 +408,9 @@
     }
   }
 
-  // CONFIG COLOURS
+  // config colours
 	.styleguide-utilities.config{
-		.styleguide-colors{
+		.styleguide-colours{
       text-align: center;
 			width: 120px;
 			height: 120px;
@@ -477,13 +421,28 @@
     }
 	}
 
-  // CONFIG COLOURS
+  // config web fonts
   .styleguide-utilities{
     &.web-fonts{
       font-family : 'Source Sans Pro', sans;
     }
   }
 
+  // config
+  .styleguide-config{
+    &.extends, &.spaces, &.rounded, &.fonts, &.colours, &.breakpoints{
+      p{
+        code{
+          padding: 4px 8px;
+          border-radius: 2px;
+          @extend %e-bc-error;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  // modules fluid social
   .styleguide-modules {   
     &.fluid-social{
     .m-social-gallery{
@@ -497,20 +456,6 @@
               transition: all 0.08s;
             }
           }
-        }
-      }
-    }
-  }
-
-  // UTILITIES EXTENDS
-  .styleguide-config{
-    &.extends, &.spaces, &.rounded, &.fonts, &.colours{
-      p{
-        code{
-          padding: 4px 8px;
-          border-radius: 2px;
-          @extend %e-bc-warning;
-          display: inline-block;
         }
       }
     }

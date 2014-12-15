@@ -46,14 +46,9 @@ $use-objects-buttons-groups:  true !default;
       // element
       @include element(group) {
         float:left;
-        margin-right: $space-quarter;
+        margin-right: $space-4th;
       }
 
   }
-
-  // menu btn group toolbar
-  // menu.o-btn-group-toolbar, .o-btn-group menu{
-  //   @include unstyled;
-  // }
 
 }//endif

@@ -2,6 +2,7 @@ doctype html
 html(lang='en')
   head
     meta(charset="UTF-8")
+    include ../_partials/site/compatibility-mode
     title Core Sink
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1') 
@@ -30,6 +31,9 @@ html(lang='en')
           a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning  +u-s-active' href='sink.html') sink
         li
           a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='modules.html') modules
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='config.html') config
+
     div.l-styleguide-container.container
 
       //- base
@@ -95,6 +99,20 @@ html(lang='en')
       include ../_partials/utilities/spaces
       include ../_partials/utilities/web-fonts
 
+      //- config
+      include ../_partials/config/breakpoints
+      include ../_partials/config/colours
+      include ../_partials/config/extends
+      include ../_partials/config/fonts
+      include ../_partials/config/rounded
+      include ../_partials/config/spaces
+
+      //- modules
+      include ../_partials/modules/fit-vids
+      include ../_partials/modules/fit-text 
+      include ../_partials/modules/owl-carousel
+      include ../_partials/modules/fluid-box
+      include ../_partials/modules/fluid-social
 
     include ../_partials/site/scripts
     include ../_partials/site/analytics

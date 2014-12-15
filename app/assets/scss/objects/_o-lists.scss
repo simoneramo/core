@@ -9,19 +9,11 @@ $use-objects-lists:	true !default;
 	@include object(o-list) {
 		@include unstyled;
 
-
-		//make ul ol have numbers dl cant have numbers
-		@include modifier(numbered) {
-			padding-left: $space-1-half;
-		  li{
-		  		list-style-type:decimal;
-		  	ul{
-			  	// make ul and ol inside have discs 
-				  li.o-list__disc{
-				  	list-style-type: disc;
-					}
-				}
-		  }
+		
+		@include modifier(straight) {
+			ul, ol{
+				padding: 0;
+			}
 		}
 
 		// horizontal
@@ -41,6 +33,42 @@ $use-objects-lists:	true !default;
 			  padding-left: $space;
 			}
 		}
+
+	}
+
+}//endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		// //make ul ol have numbers dl cant have numbers
+		// @include modifier(numbered) {
+		// 	padding-left: $space-1-half;
+		//   li{
+		//   		list-style-type:decimal;
+		//   	ul{
+		// 	  	// make ul and ol inside have discs 
+		// 		  li.o-list__disc{
+		// 		  	list-style-type: disc;
+		// 			}
+		// 		}
+		//   }
+		// }
+
 
 
 	// 	// inline list
@@ -67,8 +95,6 @@ $use-objects-lists:	true !default;
 	
 
 
-	
-	}
 
 
 
@@ -78,4 +104,3 @@ $use-objects-lists:	true !default;
 		http://stackoverflow.com/questions/34399/show-unordered-list-inline-but-keep-the-bullets
 	*/
 
-}//endif

@@ -3,34 +3,34 @@
    ========================================================================== */
   
   // line-height base
-  $lh-base:                  1.45;
+  $lh-base:                  1.45!default;
   
   // helper sizes
-  $fs-base:                  em(16);
-  $fs-lead:                  $fs-base * 1.125;
-  $fs-half:                  $fs-base / 2;
+  $fs-base:                  em(16)!default;
+  $fs-lead:                  $fs-base * 1.125!default;
+  $fs-half:                  $fs-base / 2!default;
 
   // huge sizes
-  $fs-h1x:                   em(96);
-  $fs-h2x:                   em(84);
-  $fs-h3x:                   em(72);
-  $fs-h4x:                   em(60);
-  $fs-h5x:                   em(54);
-  $fs-h6x:                   em(48);
+  $fs-h1x:                   em(96)!default;
+  $fs-h2x:                   em(84)!default;
+  $fs-h3x:                   em(72)!default;
+  $fs-h4x:                   em(60)!default;
+  $fs-h5x:                   em(54)!default;
+  $fs-h6x:                   em(48)!default;
 
   // heading sizes
-  $fs-h1:                    em(32);
-  $fs-h2:                    em(26);
-  $fs-h3:                    em(22);
-  $fs-h4:                    em(20);
-  $fs-h5:                    em(18);
-  $fs-h6:                    em(16);
+  $fs-h1:                    em(32)!default;
+  $fs-h2:                    em(26)!default;
+  $fs-h3:                    em(22)!default;
+  $fs-h4:                    em(20)!default;
+  $fs-h5:                    em(18)!default;
+  $fs-h6:                    em(16)!default;
  
   // small sizes
-  $fs-h7:                    em(14);
-  $fs-h8:                    em(12);
-  $fs-h9:                    em(10);
-  $fs-h10:                   em(8);
+  $fs-h7:                    em(14)!default;
+  $fs-h8:                    em(12)!default;
+  $fs-h9:                    em(10)!default;
+  $fs-h10:                   em(8)!default;
     
   // font stacks
   $georgia:                  Georgia, Cambria, "Times New Roman", Times, serif;

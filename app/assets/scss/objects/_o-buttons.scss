@@ -68,8 +68,12 @@ $use-objects-buttons: true !default;
     }
 
     // modifier
-    @include modifier(round) {
+    @include modifier(pill) {
       border-radius: 200px;     
+    }
+
+    @include modifier(rounded) {
+     border-radius: $button-round;    
     }
 
     // modifier

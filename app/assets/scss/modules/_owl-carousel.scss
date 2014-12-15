@@ -2,13 +2,8 @@ $use-modules-owl-carousel:	true !default;
 
 @if $use-modules-owl-carousel == true{
 /* ==========================================================================
-   Modules - Owl Carousel
+   Modules - Owl Carousel v1.3.3 - https://github.com/OwlFonk/OwlCarousel
    ========================================================================== */
-
-	/* 
-	 * 	Core Owl Carousel CSS File
-	 *	v1.3.3
-	 */
 
 	.m-owl-carousel{
 		display: none;
@@ -145,7 +140,7 @@ $use-modules-owl-carousel:	true !default;
 
 
 
-	/* preloading images */
+	// preloading images
 	.owl-item.loading{
 		min-height: 150px;
 		background: url(../assets/images/modules/ajax-loader.gif) no-repeat center center
