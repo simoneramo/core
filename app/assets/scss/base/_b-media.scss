@@ -9,6 +9,9 @@ $use-base-media:	true !default;
     display: block;
     vertical-align: bottom;
     -ms-interpolation-mode: bicubic;
+    @if $use-global-mb == true{
+      @include mb;
+    }
   }
 
   // make fluid by default

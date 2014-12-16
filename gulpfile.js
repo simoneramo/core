@@ -191,7 +191,7 @@
   gulp.task('copy', function () {
     return gulp.src(
       [
-        'app/*.{txt,md,htaccess,xml}',
+        'app/*.{txt,md,htaccess,xml,ico}',
         'app/{CNAME,htaccess,LICENCE}'
       ], 
       {

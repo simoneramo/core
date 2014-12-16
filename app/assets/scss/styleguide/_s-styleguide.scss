@@ -86,6 +86,16 @@
     }
   }
 
+
+  // objects blockquotes
+  .styleguide-objects{
+    &.blockquote{
+      .o-blockquote{
+         border: 1px dashed #ccc;
+      }
+    }
+  }
+
   // objects alerts
 	.styleguide-objects{
     &.alerts{

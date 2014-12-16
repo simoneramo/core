@@ -9,6 +9,9 @@ $use-base-code:  true !default;
   pre {
     font-family: $monospace;
     tab-size: 3;
+    @if $use-global-mb == true{
+      @include mb;
+    }
   }
 
   code {
