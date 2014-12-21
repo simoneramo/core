@@ -1,0 +1,211 @@
+$use-trumps-colours:  true !default;
+   
+@if $use-trumps-colours == true{
+/* ==========================================================================
+   Trum - Colours
+   ========================================================================== */
+
+  // custom colours
+  @include add(u-bc-white\!)             { background-color: $c-white; }
+  @include add(u-bc-silver\!)            { background-color: $c-silver; }
+  @include add(u-bc-gray\!)              { background-color: $c-gray; }  
+  @include add(u-bc-black\!)             { background-color: $c-black; }  
+  @include add(u-bc-red\!)               { background-color: $c-red; }
+  @include add(u-bc-maroon\!)            { background-color: $c-maroon; } 
+  @include add(u-bc-orange\!)            { background-color: $c-orange; }
+  @include add(u-bc-yellow\!)            { background-color: $c-yellow; }
+  @include add(u-bc-olive\!)             { background-color: $c-olive; }  
+  @include add(u-bc-lime\!)              { background-color: $c-lime; }
+  @include add(u-bc-green\!)             { background-color: $c-green; }  
+  @include add(u-bc-aqua\!)              { background-color: $c-aqua; }
+  @include add(u-bc-teal\!)              { background-color: $c-teal; }   
+  @include add(u-bc-blue\!)              { background-color: $c-blue; }
+  @include add(u-bc-navy\!)              { background-color: $c-navy; }   
+  @include add(u-bc-fuchsia\!)           { background-color: $c-fuchsia; }
+  @include add(u-bc-purple\!)            { background-color: $c-purple; } 
+  @include add(u-bc-pink\!)              { background-color: $c-pink; }
+  
+  // custom bbackground
+  @include add(u-c-white\!)              { color: $c-white; }
+  @include add(u-c-silver\!)             { color: $c-silver; }
+  @include add(u-c-gray\!)               { color: $c-gray; }  
+  @include add(u-c-black\!)              { color: $c-black; }  
+  @include add(u-c-red\!)                { color: $c-red; }
+  @include add(u-c-maroon\!)             { color: $c-maroon; } 
+  @include add(u-c-orange\!)             { color: $c-orange; }
+  @include add(u-c-yellow\!)             { color: $c-yellow; }
+  @include add(u-c-olive\!)              { color: $c-olive; }  
+  @include add(u-c-lime\!)               { color: $c-lime; }
+  @include add(u-c-green\!)              { color: $c-green; }  
+  @include add(u-c-aqua\!)               { color: $c-aqua; }
+  @include add(u-c-teal\!)               { color: $c-teal; }   
+  @include add(u-c-blue\!)               { color: $c-blue; }
+  @include add(u-c-navy\!)               { color: $c-navy; }   
+  @include add(u-c-fuchsia\!)            { color: $c-fuchsia; }
+  @include add(u-c-purple\!)             { color: $c-purple; } 
+  @include add(u-c-pink\!)               { color: $c-pink; }
+  
+  // backgrounds 
+  @include add(u-bc-1\!)                 { background-color: $bc-1; }
+  @include add(u-bc-2\!)                 { background-color: $bc-2; }
+  @include add(u-bc-3\!)                 { background-color: $bc-3; }
+  
+  // links colours
+  @include add(u-c-link\!)               { color: $c-link; }
+  @include add(u-c-hover\!)              { color: $c-link-hover; }
+  @include add(u-c-active\!)             { color: $c-link-active; }
+  @include add(u-c-visited\!)            { color: $c-link-visited; }
+  
+  // links background
+  @include add(u-bc-link\!)              { background-color: $c-link; }
+  @include add(u-bc-hover\!)             { background-color: $c-link-hover; }
+  @include add(u-bc-active\!)            { background-color: $c-link-active; }
+  @include add(u-bc-visited\!)           { background-color: $c-link-visited; }
+  
+  // headings colours
+  @include add(u-c-h-1\!)                { color: $c-heading-1; }
+  @include add(u-c-h-2\!)                { color: $c-heading-2; }
+  @include add(u-c-h-3\!)                { color: $c-heading-3; }
+  
+  // type colours
+  @include add(u-c-t-1\!)                { color: $c-type-1; }
+  @include add(u-c-t-2\!)                { color: $c-type-2; }
+  @include add(u-c-t-3\!)                { color: $c-type-3; }
+  
+  // buttons 
+  @include add(u-c-btn-1\!)              { color: $c-btn-1; }
+  @include add(u-bc-btn-1\!)             { background-color: $bc-btn-1; }
+  
+  @include add(u-c-btn-2\!)              { color: $c-btn-2; }
+  @include add(u-bc-btn-2\!)             { background-color: $bc-btn-2; }
+
+  // code  
+  @include add(u-c-code\!)               { color: $c-code; }
+  @include add(u-bc-code\!)              { background-color: $bc-code; }
+  
+  // selection
+  @include add(u-c-select\!)             { color: $c-selection; }
+  @include add(u-bc-select\!)            { color: $bc-selection; }
+  
+  // forms
+  @include add(u-c-form-1\!)             { color: $c-form-1; }
+  @include add(u-c-form-2\!)             { color: $c-form-2; }
+  @include add(u-bc-form-input\!)        { background-color: $c-form-input; }
+  @include add(u-bc-form-hover\!)        { background-color: $c-form-hover; }
+  @include add(u-bc-form-active\!)       { background-color: $c-form-active; }
+  @include add(u-bc-form-focus\!)        { background-color: $c-form-focus; }
+  
+  // brands colours
+  @include add(u-c-google\!)             { color: $c-google; }
+  @include add(u-c-facebook\!)           { color: $c-facebook; }
+  @include add(u-c-twitter\!)            { color: $c-twitter; }
+  @include add(u-c-linkedin\!)           { color: $c-linkedin; }
+  @include add(u-c-dribble\!)            { color: $c-dribble; }
+  @include add(u-c-instagram\!)          { color: $c-instagram; }
+  @include add(u-c-googleplus\!)         { color: $c-googleplus; }
+  @include add(u-c-behance\!)            { color: $c-behance; }
+  @include add(u-c-gimmebar\!)           { color: $c-gimmebar; }
+  @include add(u-c-github\!)             { color: $c-github; }
+  @include add(u-c-tumblr\!)             { color: $c-tumblr; }
+  @include add(u-c-youtube\!)            { color: $c-youtube; }
+  @include add(u-c-vine\!)               { color: $c-vine; }
+  @include add(u-c-kickstarter\!)        { color: $c-kickstarter; }
+  @include add(u-c-dropbox\!)            { color: $c-dropbox; }
+  @include add(u-c-rss\!)                { color: $c-rss; }
+  @include add(u-c-facebook\!)           { color: $c-facebook; }
+  @include add(u-c-codepen\!)            { color: $c-codepen; }
+  @include add(u-c-foursquare\!)         { color: $c-foursquare; }
+  @include add(u-c-soundcloud\!)         { color: $c-soundcloud; }
+  @include add(u-c-wordpress\!)          { color: $c-wordpress; }
+  @include add(u-c-tumblr\!)             { color: $c-tumblr; }
+  @include add(u-c-blogger\!)            { color: $c-blogger; }
+  @include add(u-c-squarespace\!)        { color: $c-squarespace; }
+  @include add(u-c-joomla\!)             { color: $c-joomla; }
+  @include add(u-c-drupal\!)             { color: $c-drupal; }
+  @include add(u-c-typepad\!)            { color: $c-typepad; }
+  @include add(u-c-expression-engine\!)  { color: $c-expression-engine; }
+  @include add(u-c-kirby\!)              { color: $c-kirby; }
+  @include add(u-c-moveabletype\!)       { color: $c-moveabletype; }
+  @include add(u-c-disqus\!)             { color: $c-disqus; }
+  @include add(u-c-html\!)               { color: $c-html; }
+  @include add(u-c-yahoo\!)              { color: $c-yahoo; }
+  @include add(u-c-vimeo\!)              { color: $c-vimeo; }
+  @include add(u-c-flickr\!)             { color: $c-flickr; }
+  @include add(u-c-pinterest\!)          { color: $c-pinterest; }
+  @include add(u-c-google-drive\!)       { color: $c-google-drive; }
+  @include add(u-c-android\!)            { color: $c-android; }
+  @include add(u-c-apple\!)              { color: $c-apple; }
+  @include add(u-c-delicious\!)          { color: $c-delicious; }
+  @include add(u-c-forrst\!)             { color: $c-forrst; }
+  @include add(u-c-paypal\!)             { color: $c-paypal; }
+  @include add(u-c-lastfm\!)             { color: $c-lastfm; }
+  @include add(u-c-skype\!)              { color: $c-skype; }
+  @include add(u-c-digg\!)               { color: $c-digg; }
+  @include add(u-c-swarm\!)              { color: $c-swarm; }
+  @include add(u-c-etsy\!)               { color: $c-etsy; }
+
+
+  // brands background
+  @include add(u-bc-google\!)            { background-color: $c-google; }
+  @include add(u-bc-facebook\!)          { background-color: $c-facebook; }
+  @include add(u-bc-twitter\!)           { background-color: $c-twitter; }
+  @include add(u-bc-linkedin\!)          { background-color: $c-linkedin; }
+  @include add(u-bc-dribble\!)           { background-color: $c-dribble; }
+  @include add(u-bc-instagram\!)         { background-color: $c-instagram; }
+  @include add(u-bc-googleplus\!)        { background-color: $c-googleplus; }
+  @include add(u-bc-behance\!)           { background-color: $c-behance; }
+  @include add(u-bc-gimmebar\!)          { background-color: $c-gimmebar; }
+  @include add(u-bc-github\!)            { background-color: $c-github; }
+  @include add(u-bc-tumblr\!)            { background-color: $c-tumblr; }
+  @include add(u-bc-youtube\!)           { background-color: $c-youtube; }
+  @include add(u-bc-vine\!)              { background-color: $c-vine; }
+  @include add(u-bc-kickstarter\!)       { background-color: $c-kickstarter; }
+  @include add(u-bc-dropbox\!)           { background-color: $c-dropbox; }
+  @include add(u-bc-rss\!)               { background-color: $c-rss; }
+  @include add(u-bc-facebook\!)          { background-color: $c-facebook; }
+  @include add(u-bc-codepen\!)           { background-color: $c-codepen; }
+  @include add(u-bc-foursquare\!)        { background-color: $c-foursquare; }
+  @include add(u-bc-soundcloud\!)        { background-color: $c-soundcloud; }
+  @include add(u-bc-wordpress\!)         { background-color: $c-wordpress; }
+  @include add(u-bc-tumblr\!)            { background-color: $c-tumblr; }
+  @include add(u-bc-blogger\!)           { background-color: $c-blogger; }
+  @include add(u-bc-squarespace\!)       { background-color: $c-squarespace; }
+  @include add(u-bc-joomla\!)            { background-color: $c-joomla; }
+  @include add(u-bc-drupal\!)            { background-color: $c-drupal; }
+  @include add(u-bc-typepad\!)           { background-color: $c-typepad; }
+  @include add(u-bc-expression-engine\!) { background-color: $c-expression-engine; }
+  @include add(u-bc-kirby\!)             { background-color: $c-kirby; }
+  @include add(u-bc-moveabletype\!)      { background-color: $c-moveabletype; }
+  @include add(u-bc-disqus\!)            { background-color: $c-disqus; }
+  @include add(u-bc-html\!)              { background-color: $c-html; }
+  @include add(u-bc-yahoo\!)             { background-color: $c-yahoo; }
+  @include add(u-bc-vimeo\!)             { background-color: $c-vimeo; }
+  @include add(u-bc-flickr\!)            { background-color: $c-flickr; }
+  @include add(u-bc-pinterest\!)         { background-color: $c-pinterest; }
+  @include add(u-bc-google-drive\!)      { background-color: $c-google-drive; }
+  @include add(u-bc-android\!)           { background-color: $c-android; }
+  @include add(u-bc-apple\!)             { background-color: $c-apple; }
+  @include add(u-bc-delicious\!)         { background-color: $c-delicious; }
+  @include add(u-bc-forrst\!)            { background-color: $c-forrst; }
+  @include add(u-bc-paypal\!)            { background-color: $c-paypal; }
+  @include add(u-bc-lastfm\!)            { background-color: $c-lastfm; }
+  @include add(u-bc-skype\!)             { background-color: $c-skype; }
+  @include add(u-bc-digg\!)              { background-color: $c-digg; }
+  @include add(u-bc-swarm\!)             { background-color: $c-swarm; }
+  @include add(u-bc-etsy\!)              { background-color: $c-etsy; }
+
+  // notify background
+  @include add(u-bc-success\!)           { background-color: $c-success; }
+  @include add(u-bc-info\!)              { background-color: $c-info; }
+  @include add(u-bc-warning\!)           { background-color: $c-warning; }
+  @include add(u-bc-danger\!)            { background-color: $c-danger; }
+  @include add(u-bc-error\!)             { background-color: $c-error; }
+  
+  // notify colours
+  @include add(u-c-success\!)            { color: $c-success; }
+  @include add(u-c-info\!)               { color: $c-info; }
+  @include add(u-c-warning\!)            { color: $c-warning; }
+  @include add(u-c-danger\!)             { color: $c-danger; }
+  @include add(u-c-error\!)              { color: $c-error; }
+
+}//end if

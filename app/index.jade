@@ -7,6 +7,10 @@ html(lang='en')
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1') 
 
+    include _partials/site/favicon
+    //- or
+    //- include _partials/site/favicon-png
+
     include _partials/site/metaquery
 
     include _partials/site/icon-chrome-android
@@ -17,7 +21,7 @@ html(lang='en')
 
     include _partials/site/if-mobile-url
       
-    link(type='text/css', rel='stylesheet', href='assets/css/main.css')
+    link(type='text/css', rel='stylesheet', href='/assets/css/main.css')
 
   body
     a(href='styleguide/') styleguide
@@ -25,6 +29,6 @@ html(lang='en')
     script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
     script.
       window.jQuery || document.write('<script src=""><\\/script>')
-    script(src='assets/scripts/scripts.min.js')
+    script(src='/assets/scripts/scripts.min.js')
 
     include _partials/site/analytics

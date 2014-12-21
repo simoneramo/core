@@ -53,7 +53,7 @@
   $use-utilities-states:                  true;  
   $use-utilities-vertical-align:          true; 
   $use-utilities-white-space:             true;
-
+  $use-utilities-colours:                 true;
 
   // objects
   $use-objects-code:                      true;
@@ -84,7 +84,6 @@
   $use-objects-options:                   true;
   $use-objects-pagination:                true;
   $use-objects-progress-bars:             true;
-  $use-objects-site-map:                  true;
   $use-objects-split:                     true;
   $use-objects-loaders:                   true;
   $use-objects-stats:                     true;
@@ -103,3 +102,10 @@
   $use-modules-fit-text:                  true;
   $use-modules-fit-vids:                  true;
   $use-modules-fluid-box:                 true;
+  
+
+  // trumps
+  $use-trumps-island:                     true;
+  $use-trumps-widths:                     true;
+  $use-trumps-spaces:                     true;
+  $use-trumps-colours:                    true;

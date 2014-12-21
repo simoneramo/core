@@ -135,7 +135,7 @@
         '!app/_partials/**/*.jade',                                      // Exclude _partials directory from compiling in /app - app/_partials/**/*.html
       ])     
     .pipe($.jade({                                                     // Use gulp-jade
-      pretty: false                                                    // All Jade Options are available - http://jade-lang.com/api/
+      pretty: true                                                    // All Jade Options are available - http://jade-lang.com/api/
     }))
     .on('error', function(err){
       console.log(err.message);
