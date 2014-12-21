@@ -27,7 +27,7 @@
       p{
         padding-left: $space-6;
         padding-right: $space-6;
-      } 
+      }
     }
     .o-nav{
       .\+u-s-active{
@@ -48,7 +48,7 @@
 
   // styleguide titles
   .styleguide-title{
-    margin-bottom: $space-half; 
+    margin-bottom: $space-half;
   }
 
   .styleguide-title--sub{
@@ -112,8 +112,8 @@
         border: 1px dashed #ccc;
         p:last-child{
           margin-bottom: 0;
-        }  
-      }      
+        }
+      }
     }
   }
 
@@ -124,7 +124,7 @@
       	.o-icon{
       		font-size: 3em;
       	}
-    	}  
+    	}
     }
   }
 
@@ -141,7 +141,7 @@
       }
 
       @include add(icon-twitter) {
-        background-color: $c-twitter;  
+        background-color: $c-twitter;
         background-image: url('../../assets/images/social/twitter.svg');
       }
     }
@@ -151,7 +151,7 @@
   .styleguide-objects.island{
     .o-island{
       border: 1px dashed #ccc;
-    }    
+    }
   }
 
   // objects matrix
@@ -297,7 +297,7 @@
       p span{
         padding: 4px 8px;
         border-radius: 2px;
-        @extend %e-bc-warning; 
+        @extend %e-bc-warning;
       }
     }
   }
@@ -310,7 +310,7 @@
           padding: 4px 8px;
           border-radius: 2px;
           @extend %e-bc-warning;
-          
+
         }
       }
     }
@@ -398,7 +398,7 @@
     }
   }
 
-  // utitities position 
+  // utitities position
   .styleguide-utilities{
     &.position{
       div{
@@ -453,10 +453,10 @@
   }
 
   // modules fluid social
-  .styleguide-modules {   
+  .styleguide-modules {
     &.fluid-social{
     .m-social-gallery{
-        &__item{    
+        &__item{
           display:inline-block;
           width: 25%;
           a{

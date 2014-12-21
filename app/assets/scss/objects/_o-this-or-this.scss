@@ -4,7 +4,7 @@ $use-objects-cols-or-this:  true !default;
 /* ==========================================================================
    Objects - This or This
    ========================================================================== */
-  
+
   // object
   @include object(o-this-or-this) {
     display: table;
@@ -18,5 +18,5 @@ $use-objects-cols-or-this:  true !default;
     }
 
   }
-  
+
 }//endif

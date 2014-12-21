@@ -31,14 +31,14 @@ $use-base-root: true !default;
   body{
     min-height: 100%;
     background-color: $bc-1;
-    text-rendering: optimizeLegibility;   
+    text-rendering: optimizeLegibility;
     color: $c-type-1;
   }
 
 
-  ::selection{ 
-    background-color:$bc-selection; 
-    color:$c-selection; 
+  ::selection{
+    background-color:$bc-selection;
+    color:$c-selection;
   }
 
 }//end if

@@ -1,92 +1,92 @@
 $use-trumps-colours:  true !default;
-   
+
 @if $use-trumps-colours == true{
 /* ==========================================================================
-   Trum - Colours
+   Trump - Colours
    ========================================================================== */
 
   // custom colours
   @include add(u-bc-white\!)             { background-color: $c-white; }
   @include add(u-bc-silver\!)            { background-color: $c-silver; }
-  @include add(u-bc-gray\!)              { background-color: $c-gray; }  
-  @include add(u-bc-black\!)             { background-color: $c-black; }  
+  @include add(u-bc-gray\!)              { background-color: $c-gray; }
+  @include add(u-bc-black\!)             { background-color: $c-black; }
   @include add(u-bc-red\!)               { background-color: $c-red; }
-  @include add(u-bc-maroon\!)            { background-color: $c-maroon; } 
+  @include add(u-bc-maroon\!)            { background-color: $c-maroon; }
   @include add(u-bc-orange\!)            { background-color: $c-orange; }
   @include add(u-bc-yellow\!)            { background-color: $c-yellow; }
-  @include add(u-bc-olive\!)             { background-color: $c-olive; }  
+  @include add(u-bc-olive\!)             { background-color: $c-olive; }
   @include add(u-bc-lime\!)              { background-color: $c-lime; }
-  @include add(u-bc-green\!)             { background-color: $c-green; }  
+  @include add(u-bc-green\!)             { background-color: $c-green; }
   @include add(u-bc-aqua\!)              { background-color: $c-aqua; }
-  @include add(u-bc-teal\!)              { background-color: $c-teal; }   
+  @include add(u-bc-teal\!)              { background-color: $c-teal; }
   @include add(u-bc-blue\!)              { background-color: $c-blue; }
-  @include add(u-bc-navy\!)              { background-color: $c-navy; }   
+  @include add(u-bc-navy\!)              { background-color: $c-navy; }
   @include add(u-bc-fuchsia\!)           { background-color: $c-fuchsia; }
-  @include add(u-bc-purple\!)            { background-color: $c-purple; } 
+  @include add(u-bc-purple\!)            { background-color: $c-purple; }
   @include add(u-bc-pink\!)              { background-color: $c-pink; }
-  
+
   // custom bbackground
   @include add(u-c-white\!)              { color: $c-white; }
   @include add(u-c-silver\!)             { color: $c-silver; }
-  @include add(u-c-gray\!)               { color: $c-gray; }  
-  @include add(u-c-black\!)              { color: $c-black; }  
+  @include add(u-c-gray\!)               { color: $c-gray; }
+  @include add(u-c-black\!)              { color: $c-black; }
   @include add(u-c-red\!)                { color: $c-red; }
-  @include add(u-c-maroon\!)             { color: $c-maroon; } 
+  @include add(u-c-maroon\!)             { color: $c-maroon; }
   @include add(u-c-orange\!)             { color: $c-orange; }
   @include add(u-c-yellow\!)             { color: $c-yellow; }
-  @include add(u-c-olive\!)              { color: $c-olive; }  
+  @include add(u-c-olive\!)              { color: $c-olive; }
   @include add(u-c-lime\!)               { color: $c-lime; }
-  @include add(u-c-green\!)              { color: $c-green; }  
+  @include add(u-c-green\!)              { color: $c-green; }
   @include add(u-c-aqua\!)               { color: $c-aqua; }
-  @include add(u-c-teal\!)               { color: $c-teal; }   
+  @include add(u-c-teal\!)               { color: $c-teal; }
   @include add(u-c-blue\!)               { color: $c-blue; }
-  @include add(u-c-navy\!)               { color: $c-navy; }   
+  @include add(u-c-navy\!)               { color: $c-navy; }
   @include add(u-c-fuchsia\!)            { color: $c-fuchsia; }
-  @include add(u-c-purple\!)             { color: $c-purple; } 
+  @include add(u-c-purple\!)             { color: $c-purple; }
   @include add(u-c-pink\!)               { color: $c-pink; }
-  
-  // backgrounds 
+
+  // backgrounds
   @include add(u-bc-1\!)                 { background-color: $bc-1; }
   @include add(u-bc-2\!)                 { background-color: $bc-2; }
   @include add(u-bc-3\!)                 { background-color: $bc-3; }
-  
+
   // links colours
   @include add(u-c-link\!)               { color: $c-link; }
   @include add(u-c-hover\!)              { color: $c-link-hover; }
   @include add(u-c-active\!)             { color: $c-link-active; }
   @include add(u-c-visited\!)            { color: $c-link-visited; }
-  
+
   // links background
   @include add(u-bc-link\!)              { background-color: $c-link; }
   @include add(u-bc-hover\!)             { background-color: $c-link-hover; }
   @include add(u-bc-active\!)            { background-color: $c-link-active; }
   @include add(u-bc-visited\!)           { background-color: $c-link-visited; }
-  
+
   // headings colours
   @include add(u-c-h-1\!)                { color: $c-heading-1; }
   @include add(u-c-h-2\!)                { color: $c-heading-2; }
   @include add(u-c-h-3\!)                { color: $c-heading-3; }
-  
+
   // type colours
   @include add(u-c-t-1\!)                { color: $c-type-1; }
   @include add(u-c-t-2\!)                { color: $c-type-2; }
   @include add(u-c-t-3\!)                { color: $c-type-3; }
-  
-  // buttons 
+
+  // buttons
   @include add(u-c-btn-1\!)              { color: $c-btn-1; }
   @include add(u-bc-btn-1\!)             { background-color: $bc-btn-1; }
-  
+
   @include add(u-c-btn-2\!)              { color: $c-btn-2; }
   @include add(u-bc-btn-2\!)             { background-color: $bc-btn-2; }
 
-  // code  
+  // code
   @include add(u-c-code\!)               { color: $c-code; }
   @include add(u-bc-code\!)              { background-color: $bc-code; }
-  
+
   // selection
   @include add(u-c-select\!)             { color: $c-selection; }
   @include add(u-bc-select\!)            { color: $bc-selection; }
-  
+
   // forms
   @include add(u-c-form-1\!)             { color: $c-form-1; }
   @include add(u-c-form-2\!)             { color: $c-form-2; }
@@ -94,7 +94,7 @@ $use-trumps-colours:  true !default;
   @include add(u-bc-form-hover\!)        { background-color: $c-form-hover; }
   @include add(u-bc-form-active\!)       { background-color: $c-form-active; }
   @include add(u-bc-form-focus\!)        { background-color: $c-form-focus; }
-  
+
   // brands colours
   @include add(u-c-google\!)             { color: $c-google; }
   @include add(u-c-facebook\!)           { color: $c-facebook; }
@@ -143,7 +143,6 @@ $use-trumps-colours:  true !default;
   @include add(u-c-digg\!)               { color: $c-digg; }
   @include add(u-c-swarm\!)              { color: $c-swarm; }
   @include add(u-c-etsy\!)               { color: $c-etsy; }
-
 
   // brands background
   @include add(u-bc-google\!)            { background-color: $c-google; }
@@ -200,7 +199,7 @@ $use-trumps-colours:  true !default;
   @include add(u-bc-warning\!)           { background-color: $c-warning; }
   @include add(u-bc-danger\!)            { background-color: $c-danger; }
   @include add(u-bc-error\!)             { background-color: $c-error; }
-  
+
   // notify colours
   @include add(u-c-success\!)            { color: $c-success; }
   @include add(u-c-info\!)               { color: $c-info; }

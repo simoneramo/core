@@ -1,5 +1,19 @@
-// Style any number of headings in one fell swoop, e.g.:
-// Credit: @lar_zzz, @paranoida, @rowanmanning and @thierrylemoulec
+/* ==========================================================================
+   Mixin - Headings
+
+   // Style any number of headings in one fell swoop, e.g.:
+   // Credit: @lar_zzz, @paranoida, @rowanmanning and @thierrylemoulec
+
+   css:
+   -----
+   .{class-name}{
+     @include headings(1, 6){
+       color: red;
+     }
+   }
+
+   ========================================================================== */
+
 
 @mixin headings($from: 1, $to: 6){
   %base-heading {
@@ -14,11 +28,3 @@
     }
   }
 }
-
-
-//  css:
-//  .{class-name}{
-//    @include headings(1, 6){
-//      color: red;
-//    }
-//  }

@@ -4,7 +4,7 @@ $use-base-text: true !default;
 /* ==========================================================================
    Base - Text
    ========================================================================== */
-   
+
   @include headings(1, 6) {
     font-family: $ff-heading-base;
     color: $c-heading-1;
@@ -16,9 +16,9 @@ $use-base-text: true !default;
     }
   }
 
-  // default italic 
+  // default italic
   address{
-    font-style: normal; 
+    font-style: normal;
   }
 
   // make $f-small

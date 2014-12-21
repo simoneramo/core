@@ -4,14 +4,14 @@ $use-objects-rules: true !default;
   /* ==========================================================================
    Object - Social Rules
    ========================================================================== */
-  
+
   // object
   @include object(o-rule) {
     border: none;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     color: $c-object;
-    
+
     @if $use-global-mb == true{
       @include mb;
     }

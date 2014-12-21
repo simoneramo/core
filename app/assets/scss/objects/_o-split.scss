@@ -4,13 +4,13 @@ $use-objects-split: true !default;
   /* ==========================================================================
    Object - Split
    ========================================================================== */
-  
+
   // object
   @include object(o-split){
     @include unstyled;
     @include cf;
     text-align:right;
-    
+
     // element
     @include element(title) {
       text-align:left;

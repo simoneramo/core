@@ -9,22 +9,23 @@ $use-objects-notify: true !default;
   @include object(o-notify) {
     background-color: $c-object;
     padding: $space;
-    
+
     @if $use-global-mb == true{
       @include mb;
 
       p:last-child{
-        margin-bottom: 0;
+        @include reset-mb;
       }
     }
-    
+
     // modifier
-    @include modifier(success)    { background-color: $c-success; }
-    @include modifier(info)       { background-color: $c-info; }
-    @include modifier(warning)    { background-color: $c-warning; }
-    @include modifier(danger)     { background-color: $c-danger; }
-    @include modifier(error)      { background-color: $c-error; }
-    
-  } 
+    @include modifier(success)    { @extend %e-bc-success; }
+    @include modifier(info)       { @extend %e-bc-info; }
+    @include modifier(warning)    { @extend %e-bc-warning; }
+    @include modifier(danger)     { @extend %e-bc-danger; }
+    @include modifier(error)      { @extend %e-bc-error; }
+    @include modifier(disable)    { @extend %e-s-disable; }
+
+  }
 
 }//endif

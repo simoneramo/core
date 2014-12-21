@@ -4,7 +4,7 @@ $use-objects-labels:	true !default;
 /* ==========================================================================
    Object - Labels
    ========================================================================== */
-   
+
 	@include object(o-label){
 		display:inline-block;
 		text-align:center;
@@ -22,5 +22,5 @@ $use-objects-labels:	true !default;
 			border-radius:100px;
 		}
 	}
- 
+
 }//endif

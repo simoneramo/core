@@ -1,17 +1,17 @@
 $use-utilities-text:  true !default;
-   
+
 @if $use-utilities-text == true{
 /* ==========================================================================
    Utilities Text
    ========================================================================== */
 
   // text underline
-  @include add(u-td-underline)   { text-decoration: underline;} 
+  @include add(u-td-underline)   { text-decoration: underline;}
 
   // text transforms
-  @include add(u-tt-lower)       { text-transform: lowercase;} 
-  @include add(u-tt-upper)       { text-transform: uppercase;} 
-  @include add(u-tt-caps)        { text-transform: capitalize;} 
+  @include add(u-tt-lower)       { text-transform: lowercase;}
+  @include add(u-tt-upper)       { text-transform: uppercase;}
+  @include add(u-tt-caps)        { text-transform: capitalize;}
 
   // text align
   @include add(u-ta-left)        { text-align: left;}

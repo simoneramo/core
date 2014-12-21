@@ -4,19 +4,19 @@ $use-objects-buttons: true !default;
 /* ==========================================================================
    Object - Buttons
    ========================================================================== */
-  
+
   // object
   @include object(o-btn) {
-    display:inline-block;                
-    margin:0;                              
-    padding: 0 $space;             
-    border:none;                      
-    background: $c-object;       
-    vertical-align:middle;      
-    white-space:nowrap;        
-    font-size:100%;         
-    font-family:inherit;           
-    line-height: 2.4;             
+    display:inline-block;
+    margin:0;
+    padding: 0 $space;
+    border:none;
+    background: $c-object;
+    vertical-align:middle;
+    white-space:nowrap;
+    font-size:100%;
+    font-family:inherit;
+    line-height: 2.4;
     cursor: pointer;
 
     // modifier
@@ -42,8 +42,8 @@ $use-objects-buttons: true !default;
 
     // modifier
     @include modifier(full) {
-      padding-right:0;          
-      padding-left: 0;           
+      padding-right:0;
+      padding-left: 0;
       width:100%;
       text-align:center;
     }
@@ -69,18 +69,18 @@ $use-objects-buttons: true !default;
 
     // modifier
     @include modifier(pill) {
-      border-radius: 200px;     
+      border-radius: 200px;
     }
 
     @include modifier(rounded) {
-     border-radius: $button-round;    
+     border-radius: $button-round;
     }
 
     // modifier
     @include modifier(inactive) {
       @extend %e-s-disable;
     }
-  
+
   }
 
 }//endif

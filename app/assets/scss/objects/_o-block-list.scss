@@ -4,11 +4,11 @@ $use-objects-block-list:  true !default;
 /* ==========================================================================
    Objects - Block List
    ========================================================================== */
-   
+
   // object
   @include object(o-block-list) {
     @include unstyled;
-    
+
     > li, > dd, > dt{
       padding: $space;
     }
@@ -23,7 +23,7 @@ $use-objects-block-list:  true !default;
       border-top-width:1px;
       border-left-width:1px;
       border-right-width:1px;
-      
+
       > li, > dd{
         border:0 solid $c-object;
         border-bottom-width:1px;
@@ -37,6 +37,5 @@ $use-objects-block-list:  true !default;
      @include link-block-space;
     }
   }
-  
-}//endif
 
+}//endif

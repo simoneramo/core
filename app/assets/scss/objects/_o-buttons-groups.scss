@@ -4,7 +4,7 @@ $use-objects-buttons-groups:  true !default;
 /* ==========================================================================
    Objects - Buttons Groups
    ========================================================================== */
-  
+
   // object
   @include object(o-btn-group) {
 
@@ -42,12 +42,12 @@ $use-objects-buttons-groups:  true !default;
   // object
   @include object(o-btn-toolbar) {
     display: inline-block;
-    
-      // element
-      @include element(group) {
-        float:left;
-        margin-right: $space-4th;
-      }
+
+    // element
+    @include element(group) {
+      float:left;
+      margin-right: $space-4th;
+    }
 
   }
 

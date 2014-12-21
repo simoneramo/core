@@ -1,3 +1,7 @@
-@mixin keyframes($name) {
-  @keyframes $name { @content }
-}
+/* ==========================================================================
+   Mixin - Loaders
+   ========================================================================== */
+
+  @mixin keyframes($name) {
+    @keyframes $name { @content }
+  }

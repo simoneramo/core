@@ -1,20 +1,26 @@
-	// Omeal v0.0.1
-	// Object, Modifier, Element, Add & Location
-	// https://twitter.com/simoneramo
+/* ==========================================================================
+   Mixin - O.M.E.A.L
 
-	// Using csstyle concept and mixins 'below' but changed
-	// nameing coventions to: 
-	//		object  --modifier  __element  +add  @location
-	// objects are prefixed with 'o-' o-object
-	
-	// Credit to
-	//
-	// Csstyle 
-	// Clean, Simple Styling for the Web
-	// http://www.csstyle.io
-	// https://twitter.com/geddski
-	// https://github.com/geddski
-	
+   Omeal v0.0.1
+   -----
+	 Object, Modifier, Element, Add & Location
+	 https://twitter.com/simoneramo
+
+	 Using csstyle concept and mixins 'below' but changed
+	 nameing coventions to:
+			object  --modifier  __element  +add  @location
+	 objects are prefixed with 'o-' o-object
+
+	 Credit to @geddski
+
+	 Csstyle
+   -----
+	 Clean, Simple Styling for the Web
+	 http://www.csstyle.io
+	 https://twitter.com/geddski
+	 https://github.com/geddski
+
+   ========================================================================== */
 
 	// objects
 	@mixin object($name){
@@ -41,7 +47,7 @@
 	  }
 	}
 
-	// elements 
+	// elements
 	// make up the structure of a object
 	// override objects
 	@mixin element($name){
@@ -56,7 +62,7 @@
 	    $elementIndex: $elementIndex - 1;
 
 	    $object: str-slice(#{&}, 0, $modifierIndex);
-	    
+
 	    // element is nested in an modifier
 	    @if $modifierIndex > 0 {
 	      // element is also nested in another element
@@ -85,7 +91,6 @@
 	    @content;
 	  }
 	}
-
 
 	// locations
 	// override objects, modifiers, elements, and add globals

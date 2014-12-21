@@ -4,12 +4,12 @@ $use-objects-lists:	true !default;
 /* ==========================================================================
    Object - Lists
    ========================================================================== */
-   
+
 	/*make li have no bullets */
 	@include object(o-list) {
 		@include unstyled;
 
-		
+
 		@include modifier(straight) {
 			ul, ol{
 				padding: 0;
@@ -61,7 +61,7 @@ $use-objects-lists:	true !default;
 		//   li{
 		//   		list-style-type:decimal;
 		//   	ul{
-		// 	  	// make ul and ol inside have discs 
+		// 	  	// make ul and ol inside have discs
 		// 		  li.o-list__disc{
 		// 		  	list-style-type: disc;
 		// 			}
@@ -91,8 +91,8 @@ $use-objects-lists:	true !default;
 	// 		list-style-type: disc;
 	// 		margin-left: 0;
 	// 		padding-left: 0;
-	// 	} 
-	
+	// 	}
+
 
 
 

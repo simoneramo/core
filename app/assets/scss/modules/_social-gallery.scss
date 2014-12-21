@@ -3,8 +3,15 @@ $use-modules-social-gallery:	true !default;
 @if $use-modules-social-gallery == true{
 /* ==========================================================================
    Modules CSS Social Gallery - 1.0
+
+  example: add background-color from colors
+
+  .m-social-gallery__item{
+    &.wordpress a {   background-color: $c-wordpress; }
+  }
+
    ========================================================================== */
-   
+
 	.m-social-gallery{
 		&__item{
 			width: 12.5%;  // change to suit in you site styles
@@ -21,11 +28,5 @@ $use-modules-social-gallery:	true !default;
 			}
 		}
 	}
-
-	// example: add background-color from colors
-	//
-	// .m-social-gallery__item{
-	// 	&.wordpress a {							background-color: $c-wordpress; }
-	// }
 
 }// end if

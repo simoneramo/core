@@ -4,7 +4,7 @@ $use-objects-media: true !default;
   /* ==========================================================================
    Object - Media
    ========================================================================== */
-   
+
   // object
   @include object(o-media) {
     @include cf;
@@ -15,14 +15,14 @@ $use-objects-media: true !default;
       float: left;
       padding-right: $space-2;
     }
-    
+
     // element
     @include element(body){
       overflow: hidden;
     }
 
     // modifier
-    @include modifier(rev) {
+    @include modifier(right) {
       .o-media__image{
         float:right;
         padding-right: 0;

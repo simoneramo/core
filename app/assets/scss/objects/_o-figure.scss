@@ -4,12 +4,12 @@ $use-objects-figure:	true !default;
 /* ==========================================================================
    Object - Figure
    ========================================================================== */
-   
+
 	@include object(o-fig) {
 		@include element(capt) {
 			@extend %e-fs-h7;
 			margin-top: $space-half;
     }
 	}
-	
+
 }// end

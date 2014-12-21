@@ -1,5 +1,5 @@
 $use-utilities-rounded:  true !default;
-   
+
 @if $use-utilities-rounded == true{
 /* ==========================================================================
    Utilities Rounded
@@ -10,9 +10,9 @@ $use-utilities-rounded:  true !default;
   @include add(u-r-top)    { border-radius: $utilities-round $utilities-round 0 0; }
   @include add(u-r-left)   { border-radius: $utilities-round 0 0 $utilities-round; }
   @include add(u-r-right)  { border-radius: 0 $utilities-round $utilities-round 0; }
-  @include add(u-r-bottom) { border-radius: 0 0 $utilities-round $utilities-round; } 
-  @include add(u-r-tl)     { border-radius: $utilities-round 0 0 0; }  
-  @include add(u-r-tr)     { border-radius: 0 $utilities-round 0 0; }  
+  @include add(u-r-bottom) { border-radius: 0 0 $utilities-round $utilities-round; }
+  @include add(u-r-tl)     { border-radius: $utilities-round 0 0 0; }
+  @include add(u-r-tr)     { border-radius: 0 $utilities-round 0 0; }
   @include add(u-r-br)     { border-radius: 0 0 $utilities-round 0; }
   @include add(u-r-bl)     { border-radius: 0 0 0 $utilities-round ; }
   @include add(u-r-reset)  { border-radius: 0; }

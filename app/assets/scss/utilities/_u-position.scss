@@ -1,21 +1,21 @@
 $use-utilities-position:  true !default;
-   
+
 @if $use-utilities-position == true{
 /* ==========================================================================
    Utilities - Position
    ========================================================================== */
-  
+
   // position what
   @include add(u-p-relative) { position: relative; }
   @include add(u-p-absolute) { position: absolute; }
   @include add(u-p-fixed)    { position: fixed; }
-  
+
   // position where
   @include add(u-p-t-0)      { top: 0; }
   @include add(u-p-r-0)      { right: 0; }
   @include add(u-p-b-0)      { bottom: 0; }
   @include add(u-p-l-0)      { left: 0; }
-  
+
   // z-index
   @include add(u-z-1)        { z-index: 1; }
   @include add(u-z-2)        { z-index: 2; }

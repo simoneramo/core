@@ -4,18 +4,18 @@ $use-objects-flyout:	true !default;
 /* ==========================================================================
    Object - Flyout
    ========================================================================== */
-   
+
 	@include object(o-flyout) {
 		position:relative;
 		overflow:hidden;
-	
+
 		@include element(content) {
 			position:absolute;
 			top:100%;
 			left:-9999px;
 		}
 
-		@include modifier(left) { 
+		@include modifier(left) {
 			&:hover{
 					@include element(content) {
 					top:0;
@@ -32,5 +32,5 @@ $use-objects-flyout:	true !default;
 		}
 
 	}
-	
+
 }//endif

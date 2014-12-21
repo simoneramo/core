@@ -1,5 +1,9 @@
-// if global margin-bottom reset with > @include reset-mb;
+/* ==========================================================================
+   Mixin - Reset Global Margin Bottom
 
-@mixin reset-mb{
-  margin-bottom: 0;
-}
+   // if global margin-bottom reset with > @include reset-mb;
+   ========================================================================== */
+
+  @mixin reset-mb{
+    margin-bottom: 0;
+  }

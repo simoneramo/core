@@ -4,7 +4,7 @@ $use-objects-stats: true !default;
   /* ==========================================================================
    Object - Stats
    ========================================================================== */
-  
+
   // wrapper object
   .o-stat-group{
     @include cf;
@@ -15,7 +15,7 @@ $use-objects-stats: true !default;
     display: flex;
     flex-direction: column;
     float: left;
-    
+
     @if $use-global-mb == true{
         @include reset-mb;
     }
@@ -24,12 +24,13 @@ $use-objects-stats: true !default;
     @include element(title) {
       order: 1;
     }
+
     // element
     @include element(value) {
       margin-left: 0;
       order: 2;
     }
-    
+
   }
 
 }//endif

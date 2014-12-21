@@ -4,19 +4,19 @@ $use-objects-options: true !default;
   /* ==========================================================================
    Object - Options
    ========================================================================== */
-  
+
   // object
   @include object(o-options) {
     @include unstyled;
-  
+
     letter-spacing:-0.31em;   // whitespace hack
     word-spacing:-0.43em;   // whitespace hack
     white-space:nowrap;   // whitespace hack
-    
+
     > li{
       letter-spacing:normal;   // whitespace hack
-      word-spacing:normal;   // whitespace hack   
-       
+      word-spacing:normal;   // whitespace hack
+
       &, > a{
         display: inline-block;
       }
@@ -27,7 +27,7 @@ $use-objects-options: true !default;
         border-left-width: 0;
         padding: $space;
       }
-        
+
       &:first-child > a{
         border-left-width:1px;
       }

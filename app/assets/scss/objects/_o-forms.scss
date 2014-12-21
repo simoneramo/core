@@ -4,7 +4,7 @@ $use-objects-forms:	true !default;
 /* ==========================================================================
    Object - Forms
    ========================================================================== */
-   
+
   // object
   @include object(o-form) {
 
@@ -16,10 +16,10 @@ $use-objects-forms:	true !default;
     ul{
       @include unstyled;
       @include cf;
-      
+
       li{
         margin-bottom: $space;
-        
+
         textarea,
         input[type="text"],
         input[type="email"],
@@ -36,7 +36,7 @@ $use-objects-forms:	true !default;
           border: 1px solid $c-form-input;
           padding: $space-half;
         }
-        
+
         input[type="color"], select{
            border: 1px solid $c-form-input;
         }
@@ -59,12 +59,12 @@ $use-objects-forms:	true !default;
       &.o-form__g-4 li{
         @include gallery(3 of 12);
       }
-      
+
       &.o-form__g-5 li{
         @include gallery(2 of 10);
       }
 
-    } 
+    }
 
 
     //.o-form__
@@ -83,7 +83,7 @@ $use-objects-forms:	true !default;
     @include element(label-inline) {
       @extend %e-d-inline;
     }
-  	
+
   	// inputs text file
   	@include element(input-file) {
   		margin-bottom:$space;

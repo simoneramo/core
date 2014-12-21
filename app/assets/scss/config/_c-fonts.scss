@@ -1,10 +1,10 @@
 /* ==========================================================================
    Config - Type
    ========================================================================== */
-  
+
   // line-height base
   $lh-base:                  1.45!default;
-  
+
   // helper sizes
   $fs-base:                  em(16)!default;
   $fs-lead:                  $fs-base * 1.125!default;
@@ -25,13 +25,13 @@
   $fs-h4:                    em(20)!default;
   $fs-h5:                    em(18)!default;
   $fs-h6:                    em(16)!default;
- 
+
   // small sizes
   $fs-h7:                    em(14)!default;
   $fs-h8:                    em(12)!default;
   $fs-h9:                    em(10)!default;
   $fs-h10:                   em(8)!default;
-    
+
   // font stacks
   $georgia:                  Georgia, Cambria, "Times New Roman", Times, serif;
   $helvetica:                "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -42,22 +42,18 @@
   // font stacks base & headings
   $ff-base:                  $helvetica;
   $ff-heading-base:          $helvetica;
-  
+
   // web/fonts 1
   $ff-family-1:              feather;
   $ff-folder-1:              feather;
   $ff-name-1:                feather;
-  
+
   // web/fonts 2
   $ff-family-2:              octicons;
   $ff-folder-2:              octicons;
   $ff-name-2:                octicons;
-  
+
   // web/fonts 3
   $ff-family-3:              Source Sans Pro;
   $ff-folder-3:              SourceSansPro;
   $ff-name-3:                SourceSansPro;
-
-
-
-

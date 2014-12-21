@@ -1,16 +1,20 @@
-// No list style
-@mixin unstyled{
-  padding-left: 0;
-	li{
-		list-style:none;
-	}
-	dd{
-		margin-left: 0;
-	}
-}
+/* ==========================================================================
+   Mixin - No List Style
 
+   css:
+   -----
+   .class-name{
+     @include no-style;
+   }
 
-// css:
-// .class-name{
-//   @include no-style;
-// }
+   ========================================================================== */
+
+  @mixin unstyled{
+    padding-left: 0;
+  	li{
+  		list-style:none;
+  	}
+  	dd{
+  		margin-left: 0;
+  	}
+  }

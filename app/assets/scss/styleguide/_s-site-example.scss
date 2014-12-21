@@ -18,7 +18,7 @@
   .l-se-strip-1{
     padding: $space-4*2 0;
     background-color: $c-info;
-    
+
     .l-se-container{
       div:first-child{
         @include span(7);
@@ -36,7 +36,7 @@
   .l-se-strip-2{
     padding: $space-4*2 0;
     background-color: $c-success;
-    
+
     .l-se-container{
       div:first-child{
         @include span(7 omega);
@@ -54,7 +54,7 @@
   .l-se-main-3{
     padding: $space-4*2 0;
     background-color: $c-error;
-    
+
     .l-se-container{
       div:first-child{
         @include span(7);
@@ -75,7 +75,7 @@
   .l-se-main-4{
     padding: $space-4*2 0;
     background-color: $c-warning;
-    
+
     .l-se-container{
       div:first-child{
         @include span(3);
@@ -96,7 +96,7 @@
   .l-se-main-5{
     padding: $space-4*2 0;
     background-color: $c-danger;
-    
+
     .l-se-container{
       ul{
         @include unstyled;
@@ -142,4 +142,3 @@
 
 
 
- 

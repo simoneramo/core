@@ -4,7 +4,7 @@ $use-objects-tables:  true !default;
 /* ==========================================================================
    Objects - Tables
    ========================================================================== */
-  
+
   // object
   @include object(o-table) {
     width:100%;
@@ -13,7 +13,6 @@ $use-objects-tables:  true !default;
       text-align:left;
     }
 
-  
     // modifier
     @include modifier(bordered) {
       th, td{
@@ -30,7 +29,6 @@ $use-objects-tables:  true !default;
       }
     }
 
-
     // modifier
     @include modifier(striped) {
       tbody tr:nth-of-type(odd){
@@ -38,18 +36,15 @@ $use-objects-tables:  true !default;
       }
     }
 
-
-
     // modifier
     @include modifier(hover) {
-        > tbody > tr:hover > td, 
-        > tbody > tr:hover > th {
+      > tbody > tr:hover > td,
+      > tbody > tr:hover > th {
         color: $c-selection;
         background-color: $bc-selection;
         cursor: default;
       }
     }
-
 
     // modifier
     @include modifier(rwd) {
@@ -58,7 +53,7 @@ $use-objects-tables:  true !default;
         display: none;
       }
       td {
-        display: block; 
+        display: block;
         &:before {
           content: attr(data-th)": ";
           font-weight: bold;
@@ -77,6 +72,5 @@ $use-objects-tables:  true !default;
     }
 
   }
-
 
 }//endif

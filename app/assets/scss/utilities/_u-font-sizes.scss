@@ -1,36 +1,36 @@
 $use-utilities-font-sizes:  true !default;
-   
+
 @if $use-utilities-font-sizes == true{
 /* ==========================================================================
    Utilities Fonts Sizes
    ========================================================================== */
 
   // big heading sizes
-  @include add(u-fs-h1x)     { font-size: $fs-h1x; }
-  @include add(u-fs-h2x)     { font-size: $fs-h2x; }
-  @include add(u-fs-h3x)     { font-size: $fs-h3x; }
-  @include add(u-fs-h4x)     { font-size: $fs-h4x; }
-  @include add(u-fs-h5x)     { font-size: $fs-h5x; }
-  @include add(u-fs-h6x)     { font-size: $fs-h6x; }  
-  
-  // h1 - h6
-  @include add(u-fs-h1)      { font-size: $fs-h1; }
-  @include add(u-fs-h2)      { font-size: $fs-h2; }
-  @include add(u-fs-h3)      { font-size: $fs-h3; }
-  @include add(u-fs-h4)      { font-size: $fs-h4; }
-  @include add(u-fs-h5)      { font-size: $fs-h5; }
-  @include add(u-fs-h6)      { font-size: $fs-h6; }
-  
-  // helper type
-  @include add(u-fs-base)    { font-size: $fs-base; }
-  @include add(u-fs-lead)    { font-size: $fs-lead; }
-  @include add(u-fs-half)    { font-size: $fs-half; }
-  @include add(u-fs-inherit) { font-size: inherit; }
-  
-  // small font sizes
-  @include add(u-fs-h7)      { font-size: $fs-h7; }  
-  @include add(u-fs-h8)      { font-size: $fs-h8; }  
-  @include add(u-fs-h9)      { font-size: $fs-h9; }  
-  @include add(u-fs-h10)     { font-size: $fs-h10; }  
+  @include add(u-fs-h1x)        { font-size: $fs-h1x; }
+  @include add(u-fs-h2x)        { font-size: $fs-h2x; }
+  @include add(u-fs-h3x)        { font-size: $fs-h3x; }
+  @include add(u-fs-h4x)        { font-size: $fs-h4x; }
+  @include add(u-fs-h5x)        { font-size: $fs-h5x; }
+  @include add(u-fs-h6x)        { font-size: $fs-h6x; }
 
-}//end if 
+  // h1 - h6
+  @include add(u-fs-h1)         { font-size: $fs-h1; }
+  @include add(u-fs-h2)         { font-size: $fs-h2; }
+  @include add(u-fs-h3)         { font-size: $fs-h3; }
+  @include add(u-fs-h4)         { font-size: $fs-h4; }
+  @include add(u-fs-h5)         { font-size: $fs-h5; }
+  @include add(u-fs-h6)         { font-size: $fs-h6; }
+
+  // helper type
+  @include add(u-fs-base)       { font-size: $fs-base; }
+  @include add(u-fs-lead)       { font-size: $fs-lead; }
+  @include add(u-fs-half)       { font-size: $fs-half; }
+  @include add(u-fs-inherit)    { font-size: inherit; }
+
+  // small font sizes
+  @include add(u-fs-h7)         { font-size: $fs-h7; }
+  @include add(u-fs-h8)         { font-size: $fs-h8; }
+  @include add(u-fs-h9)         { font-size: $fs-h9; }
+  @include add(u-fs-h10)        { font-size: $fs-h10; }
+
+}//end if
