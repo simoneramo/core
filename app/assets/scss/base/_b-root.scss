@@ -3,6 +3,12 @@ $use-base-root: true !default;
 @if $use-base-root == true{
 /* ==========================================================================
    Base - Root
+   
+   - html
+   - border-box
+   - body
+   - :selection
+   
    ========================================================================== */
 
   html {
@@ -16,17 +22,15 @@ $use-base-root: true !default;
     -webkit-font-smoothing: antialiased;
   }
 
-
-  $use-border-box: true !default;
-    @if $use-border-box == true{
-      html {
-        box-sizing: border-box;
-      }
-      *, *:before, *:after {
-        box-sizing: inherit;
+  $use-base-border-box: true !default;
+  @if $use-base-border-box == true{
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
     }
   }
-
 
   body{
     min-height: 100%;
@@ -35,10 +39,12 @@ $use-base-root: true !default;
     color: $c-type-1;
   }
 
-
-  ::selection{
-    background-color:$bc-selection;
-    color:$c-selection;
+  $use-base-selection: true !default;
+  @if $use-base-selection == true{
+    ::selection{
+      background-color:$bc-selection;
+      color:$c-selection;
+    }
   }
 
 }//end if

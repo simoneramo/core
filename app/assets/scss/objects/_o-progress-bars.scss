@@ -9,12 +9,12 @@ $use-objects-progress-bars: true !default;
   @include object(o-progress) {
     height: $space-3;
     background-color: $c-object;
-    @if $use-global-mb == true{
+    @if $use-base-global-mb == true{
       @include mb;
     }
 
     // element
-    @include element(bar){
+    @include element(bar) {
       height: 100%;
       text-align: center;
       background-color: shade($c-object,10%);
@@ -33,7 +33,7 @@ $use-objects-progress-bars: true !default;
       @include modifier(disable)    { @extend %e-s-disable; }
 
       // element - modifier
-      @include modifier(striped){
+      @include modifier(striped) {
         background-image: linear-gradient(45deg,rgba(255, 255, 255, 0.15) 25%,rgba(0, 0, 0, 0) 25%,rgba(0, 0, 0, 0) 50%,rgba(255, 255, 255, 0.15) 50%,rgba(255, 255, 255, 0.15) 75%,rgba(0, 0, 0, 0) 75%,rgba(0, 0, 0, 0));
         background-size: 40px 40px;
       }

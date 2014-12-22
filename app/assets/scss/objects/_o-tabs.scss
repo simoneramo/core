@@ -12,11 +12,7 @@ $use-objects-tabs:  true !default;
 
     > li {
       display: inline-block;
-      margin: 0 $space-5th;
-      a {
-        border-radius-top-right: $tabs-round;
-        border-radius-top-left: $tabs-round;
-      }
+      margin: 0 $space-fifth;
     }
 
     // modifier

@@ -45,7 +45,7 @@ $use-objects-flag: true !default;
     }
 
     // modifier
-    @include modifier(rev) {
+    @include modifier(right) {
       .o-flag__image{
         padding-right: 0;
         padding-left: $space-2;

@@ -11,7 +11,7 @@ $use-objects-thumbnail: true !default;
     // element
     @include element(item) {
       display: block;
-      padding: $space-half;
+      padding: $space-halve;
       border: 1px solid $c-object;
     }
 

@@ -32,7 +32,7 @@ $use-base-quotes: true !default;
   blockquote{
     padding-left:$space;
     quotes:"\201C" "\201D";
-    @if $use-global-mb == true{
+    @if $use-base-global-mb == true{
       @include mb;
     }
 

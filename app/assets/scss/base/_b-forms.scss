@@ -7,7 +7,7 @@ $use-base-forms:  true !default;
    ========================================================================== */
 
   form{
-    @if $use-global-mb == true{
+    @if $use-base-global-mb == true{
       @include mb;
     }
   }
@@ -57,7 +57,7 @@ $use-base-forms:  true !default;
   }
 
   // use border-box
-  @if $use-border-box == true{
+  @if $use-base-border-box == true{
     input[type="search"] {
       box-sizing:border-box;
     }

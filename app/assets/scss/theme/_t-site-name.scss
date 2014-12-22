@@ -1,0 +1,144 @@
+/* ==========================================================================
+   Site Example
+   ========================================================================== */
+
+   // se = site example
+   // l = layout
+
+   // site-example main container
+  .l-se-container{
+    padding: $space;
+    @include breakpoint($bp-medium) {
+      padding: $space-2 $space-2 $space;
+    }
+     @include layout(10 (4em 1em) 80em inside show overlay);
+    @include container;
+  }
+
+  .l-se-strip-1{
+    padding: $space-8 0;
+    background-color: $c-info;
+
+    .l-se-container{
+      div:first-child{
+        @include span(7);
+        h1{
+          color: $c-white;
+          font-size: 2.4em;
+        }
+        .o-btn{
+          background-color: $c-warning;
+        }
+      }
+    }
+  }
+
+  .l-se-strip-2{
+    padding: $space-8 0;
+    background-color: $c-success;
+
+    .l-se-container{
+      div:first-child{
+        @include span(7 omega);
+        h1{
+          color: $c-white;
+          font-size: 2.4em;
+        }
+        .o-btn{
+          background-color: $c-warning;
+        }
+      }
+    }
+  }
+
+  .l-se-main-3{
+    padding: $space-8 0;
+    background-color: $c-error;
+
+    .l-se-container{
+      div:first-child{
+        @include span(7);
+        h1{
+          color: $c-white;
+          font-size: 2.4em;
+        }
+      }
+      div:last-child{
+        @include span(3);
+        .o-btn{
+          background-color: $c-warning;
+        }
+      }
+    }
+  }
+
+  .l-se-main-4{
+    padding: $space-8 0;
+    background-color: $c-warning;
+
+    .l-se-container{
+      div:first-child{
+        @include span(3);
+        .o-btn{
+          background-color: $c-danger;
+        }
+      }
+      div:last-child{
+        @include span(7);
+        h1{
+          font-size: 2.4em;
+        }
+      }
+    }
+  }
+
+
+  .l-se-main-5{
+    padding: $space-8 0;
+    background-color: $c-danger;
+
+    .l-se-container{
+      ul{
+        @include unstyled;
+        li{
+          @include gallery(3 of 12);
+          @include mb;
+        }
+      }
+    }
+  }
+
+
+ .l-se-main-6{
+    padding: $space-8 0;
+    background-color: $c-purple;
+    .l-se-container{
+      div{
+        text-align: center;
+        h1{
+          font-size: $fs-h4x;
+          color: $c-info;
+          line-height: 1.2;
+          margin-bottom: $space-sixth;
+        }
+        p{
+          font-size: $fs-lead;
+          color: $c-white;
+        }
+        .o-btn{
+          background-color: $c-info;
+          font-size: $fs-lead;
+        }
+      }
+    }
+  }
+
+
+
+  .l-se-main-7{
+    padding: $space-8 0;
+    background-color: $c-success;
+  }
+
+
+

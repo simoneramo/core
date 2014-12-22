@@ -34,7 +34,7 @@ $use-objects-forms:	true !default;
         input[type="time"],
         input[type="week"] {
           border: 1px solid $c-form-input;
-          padding: $space-half;
+          padding: $space-halve;
         }
 
         input[type="color"], select{
@@ -91,7 +91,7 @@ $use-objects-forms:	true !default;
 
   	// help box - under inputs selects ect.
   	@include element(box-help) {
-  		margin-top: $space-half;
+  		margin-top: $space-halve;
   		@extend %e-d-block;
   	}
 

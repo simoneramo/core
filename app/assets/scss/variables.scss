@@ -4,12 +4,7 @@
     
   // normailze legacy 
   $legacy_browser_support:                false; 
-  
-  
-  // border box
-  $use-border-box:                        true;  
-  $use-global-mb:                         true;  
-  
+
 
   // debug
   $use-debug-outlines:                    false;
@@ -22,9 +17,12 @@
   $use-reset-myers:                       false;
 
 
-  // base
-  $use-base-imports:                      true;
+  // base 
   $use-base-root:                         true;
+  $use-base-border-box:                   true;
+  $use-base-selection:                    true;
+  $use-base-global-mb:                    true;  
+  $use-base-imports:                      true;
   $use-base-links:                        true;
   $use-base-text:                         true;
   $use-base-lists:                        true;

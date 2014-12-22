@@ -16,7 +16,7 @@ $use-objects-stats: true !default;
     flex-direction: column;
     float: left;
 
-    @if $use-global-mb == true{
+    @if $use-base-global-mb == true{
         @include reset-mb;
     }
 

@@ -9,7 +9,7 @@ $use-base-media:	true !default;
     display: block;
     vertical-align: bottom;
     -ms-interpolation-mode: bicubic;
-    @if $use-global-mb == true{
+    @if $use-base-global-mb == true{
       @include mb;
     }
   }
@@ -21,7 +21,7 @@ $use-base-media:	true !default;
   }
 
   figure{
-    @if $use-global-mb == true{
+    @if $use-base-global-mb == true{
       @include mb;
     }
   }

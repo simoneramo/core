@@ -103,9 +103,9 @@ $use-modules-owl-carousel:	true !default;
 
 			 	span{
 					display: block;
-					width: $space-half;
-					height: $space-half;
-					margin: $space-half;
+					width: $space-halve;
+					height: $space-halve;
+					margin: $space-halve;
 
 					@if $legacy_browser_support {
 					filter: Alpha(Opacity=50);/*IE7 fix*/

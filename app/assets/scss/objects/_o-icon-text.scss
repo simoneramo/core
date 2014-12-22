@@ -3,6 +3,15 @@ $use-objects-icon-text: true !default;
 @if $use-objects-icon-text == true{
 /* ==========================================================================
    Object - Icon Text
+   
+
+   // add your site styles
+   @include add(icon-add-name){
+     add height: 40px;
+     add width: 40px;
+     background-image: url('svg-image.svg');
+   }
+
    ========================================================================== */
 
   @include object(o-image-text) {
@@ -19,26 +28,16 @@ $use-objects-icon-text: true !default;
       line-height: 1;
       zoom: 1;
       background-size: 96%;
-      margin-right: $space-4th;
+      margin-right: $space-quarter;
     }
 
     @include modifier(rev) {
       .o-image-text__icon{
-        margin-left: $space-4th;
+        margin-left: $space-quarter;
         margin-right: 0;
       }
     }
 
   }
-
-  /*
-  // add your site styles
-  //
-  @include add(icon-add-name){
-    add height: 40px;
-    add width: 40px;
-    background-image: url('svg-image.svg');
-  }
-  */
 
 }// end

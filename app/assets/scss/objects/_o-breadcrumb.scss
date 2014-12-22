@@ -9,8 +9,8 @@ $use-objects-breadcrumb:  true !default;
   @include object(o-breadcrumb) {
     > li + li:before{
       content:"\00BB";
-      padding-left: $space-1-half;
-      padding-right: $space-1-half;
+      padding-left: $space-1-halve;
+      padding-right: $space-1-halve;
     }
 
     // modifier

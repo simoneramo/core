@@ -11,7 +11,7 @@ $use-base-text: true !default;
   }
 
   p{
-    @if $use-global-mb == true{
+    @if $use-base-global-mb == true{
       @include mb;
     }
   }
@@ -27,8 +27,8 @@ $use-base-text: true !default;
   }
 
   // set default space
-  sup{ top: -$space-4th; }
-  sub{ bottom: -$space-4th; }
+  sup{ top: -$space-halve; }
+  sub{ bottom: -$space-halve; }
 
   // Apply underlines to inserted
   // remove underlines from potentially troublesome elements

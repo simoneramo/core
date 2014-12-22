@@ -9,7 +9,7 @@ $use-objects-pagination:  true !default;
   @include object(o-pagination) {
     @include unstyled;
     > li > a{
-      margin: $space-half;
+      margin: $space-halve;
     }
 
     // element

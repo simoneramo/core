@@ -9,14 +9,14 @@ $use-base-code:  true !default;
   pre {
     font-family: $monospace;
     tab-size: 3;
-    @if $use-global-mb == true{
+    @if $use-base-global-mb == true{
       @include mb;
     }
   }
 
   code {
     background-color: $bc-code;
-    padding: $space-4th;
+    padding: $space-quarter;
   }
 
   pre {

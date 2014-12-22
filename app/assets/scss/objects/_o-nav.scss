@@ -37,7 +37,7 @@ $use-objects-nav: true !default;
     @include modifier(block) {
       > li{
         > a{
-          padding:$space-half $space;
+          padding:$space-halve $space;
         }
       }
     }

@@ -1,50 +1,66 @@
 @charset "utf-8";
 
+
 // bower components
 @import "../../../components-bower/susy/sass/susy"; 
 @import "../../../components-bower/breakpoint-sass/stylesheets/breakpoint"; 
 
+
 // functions
 @import "functions/**/*";
+
 
 // mixins
 @import "mixins/**/*";
 
+
 // variables
 @import "variables";
+
 
 // config
 @import "config/**/*";
 
+
 // normalize
 @import "../../../components-bower/normalize-scss/normalize"; 
+
 
 // reset
 @import "reset/**/*";
 
+
 // base
 @import "base/**/*";
+
 
 // utilities
 @import "utilities/**/*";
 
+
 // objects
 @import "objects/**/*";
+
 
 // modules
 @import "modules/**/*";
 
-// site
-@import "site/**/*";
-
-// styleguide
-@import "styleguide/**/*";
 
 // icons
 @import "icons/**/*";
 
+
+// components
+@import "components/**/*";
+
+
+// theme
+@import "theme/**/*";
+
+
 // icons
 @import "trumps/**/*";
+
 
 // debug
 @import "debug/**/*";
