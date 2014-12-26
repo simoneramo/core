@@ -4,39 +4,41 @@ html(lang='en')
     meta(charset="UTF-8")
     include ../_partials/site/compatibility-mode
     title Core
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1') 
+    include ../_partials/site/description
+    include ../_partials/site/meta-viewport
 
     include ../_partials/site/favicon
     //- or
     //- include ../_partials/site/favicon-png
-    
+
     include ../_partials/site/metaquery
 
     include ../_partials/site/icon-chrome-android
-    
+
     include ../_partials/site/icon-safari-ios
-    
+
     include ../_partials/site/icon-tile-win8
 
     include ../_partials/site/if-mobile-url
-      
+
     link(type='text/css', rel='stylesheet', href='../assets/css/main.css')
   body.styleguide
     include ../_partials/site/header
     ul(class='o-nav  --banner')
       li
-        a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='base.html') base
+        a(class='o-btn  --large  +u-r-all' href='base/') base
       li
-        a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='objects.html') objects
+        a(class='o-btn  --large  +u-r-all' href='objects/') objects
       li
-        a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='utilities.html') utilities
+        a(class='o-btn  --large  +u-r-all' href='utilities/') utilities
       li
-        a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='sink.html') sink
+        a(class='o-btn  --large  +u-r-all' href='sink/') sink
       li
-        a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='modules.html') modules
+        a(class='o-btn  --large  +u-r-all' href='modules/') modules
       li
-        a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='config.html') config
-    
+        a(class='o-btn  --large  +u-r-all' href='config/') config
+      li
+        a(class='o-btn  --large  +u-r-all' href='mixins/') mixins
+
     include ../_partials/site/scripts
     include ../_partials/site/analytics

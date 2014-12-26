@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    include ../../_partials/site/compatibility-mode
+    title Core Config
+    include ../../_partials/site/description
+    include ../../_partials/site/meta-viewport
+
+    include ../../_partials/site/favicon
+    //- or
+    //- include ../../_partials/site/favicon-png
+
+    include ../../_partials/site/metaquery
+
+    include ../../_partials/site/icon-chrome-android
+
+    include ../../_partials/site/icon-safari-ios
+
+    include ../../_partials/site/icon-tile-win8
+
+    include ../../_partials/site/if-mobile-url
+
+    link(type='text/css', rel='stylesheet', href='../../assets/css/main.css')
+  body.styleguide
+    include ../../_partials/site/header
+      ul(class='o-nav  --banner')
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='../base') base
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='../objects') objects
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='../utilities') utilities
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='../sink') sink
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='../modules') modules
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning  +u-s-active' href='../config') config
+        li
+          a(class='o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning' href='../mixins') mixins
+
+    .l-core-container.container
+      //- config
+      include ../../_partials/config/breakpoints
+      include ../../_partials/config/colours
+      include ../../_partials/config/extends
+      include ../../_partials/config/fonts
+      include ../../_partials/config/rounded
+      include ../../_partials/config/spaces
+
+    include ../../_partials/site/scripts
+    include ../../_partials/site/analytics

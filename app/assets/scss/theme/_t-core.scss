@@ -1,6 +1,6 @@
 /* ==========================================================================
    Theme - Core
-   
+
    // The styles for core examples
    ========================================================================== */
 
@@ -479,21 +479,19 @@
     &.headings{
       border-color: $c-error;
       background-color: $c-error;
-      
+
       @include headings(1, 6) {
         color: $c-white;
       }
-      
+
     }
   }
 
   // mixins
   .t-core-mixins {
     &.font-size-vertical-rhythm{
-
       background-color: $c-warning;
-      border-color: $c-warning; 
-    
+      border-color: $c-warning;
       .s-vr-fs-h1x{ @include fs-vr($fs-h1x); }
       .s-vr-fs-h2x{ @include fs-vr($fs-h2x); }
       .s-vr-fs-h3x{ @include fs-vr($fs-h3x); }
@@ -501,5 +499,73 @@
       .s-vr-fs-h5x{ @include fs-vr($fs-h5x); }
       .s-vr-fs-h6x{ @include fs-vr($fs-h6x); }
 
+    }
+  }
+
+  .t-core-mixins {
+    &.image-replace {
+      .t-core-image-replace{
+        @include ir;
+        background-image: url(http://placehold.it/100);
+        height: 100px;
+        width: 100px;
+      }
+    }
+  }
+
+  .t-core-mixins {
+    &.center-content {
+      div {
+        @include cc;
+        height:100px;
+        width: 100px;
+        background-color: $c-success;
+      }
+    }
+  }
+
+  .t-core-mixins {
+    &.global-mb {
+      div {
+        height:100px;
+        background-color: $c-success;
+        @include mb;
+      }
+    }
+  }
+
+  .t-core-mixins {
+    &.reset-mb {
+      div {
+        @include mb;
+        height:100px;
+        background-color: $c-warning;
+        @include reset-mb;
+      }
+    }
+  }
+
+  .t-core-mixins {
+    &.vertical-align {
+      div {
+        height:100px;
+        text-align: center;
+        p {
+          @include vertical-align;
+        }
+      }
+    }
+  }
+
+  .t-core-mixins {
+    &.vertical-align-table {
+      .div {
+        @include vertical-align-table;
+        height: 200px;
+        text-align: center;
+        p{
+          @include reset-mb;
+        }
+      }
     }
   }
